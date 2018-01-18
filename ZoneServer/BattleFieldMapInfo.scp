@@ -1,0 +1,85 @@
+
+
+// 전장 맵 설정 파일
+// MAP 맵이름	
+// A팀 리스폰포인트 X2 Y2	
+// B팀 리스폰포인트 X2 Y2
+// POINT_NOTIFY (ON/OFF) - POINT를 디스플레이 한다.
+// PK_POINT (ON/OFF) - PK 시 포인트를 변경한다.
+
+MAP bat_a01
+{
+ 	A_X2 55
+ 	A_Y2 213
+ 	B_X2 55
+ 	B_Y2 213
+ 	POINT_NOTIFY OFF
+	PK_POINT OFF
+}
+
+MAP bat_a02
+{
+ 	A_X2 55
+ 	A_Y2 213
+ 	B_X2 55
+ 	B_Y2 213
+ 	POINT_NOTIFY OFF
+	PK_POINT OFF
+}
+
+MAP bat_b01
+{
+ 	A_X2 0
+ 	A_Y2 0
+ 	B_X2 0
+ 	B_Y2 0
+ 	POINT_NOTIFY ON
+	PK_POINT OFF
+}
+
+MAP bat_b02
+{
+ 	A_X2 0
+ 	A_Y2 0
+ 	B_X2 0
+ 	B_Y2 0
+ 	POINT_NOTIFY ON
+	PK_POINT OFF
+}
+
+
+MAP bat_c01
+{
+	NPC_NOTIFY ON
+	ALIVE_PC ON
+ 	A_X2 54
+ 	A_Y2 128
+ 	B_X2 146
+ 	B_Y2 56
+ 	POINT_NOTIFY ON
+	PK_POINT OFF
+}
+
+MAP bat_c02
+{
+	NPC_NOTIFY ON
+	ALIVE_PC ON
+ 	A_X2 54
+ 	A_Y2 128
+ 	B_X2 146
+ 	B_Y2 56
+ 	POINT_NOTIFY ON
+	PK_POINT OFF
+}
+
+MAP bat_c03
+{
+	NPC_NOTIFY ON
+	ALIVE_PC ON
+ 	A_X2 54
+ 	A_Y2 128
+ 	B_X2 146
+ 	B_Y2 56
+ 	POINT_NOTIFY ON
+	PK_POINT OFF
+}

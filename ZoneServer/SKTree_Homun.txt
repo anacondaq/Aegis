@@ -1,0 +1,251 @@
+
+MER_LIF
+{
+	HLIF_HEAL
+	begin
+	end
+
+	HLIF_AVOID
+	begin
+		HLIF_HEAL	3
+	end
+
+	HLIF_BRAIN
+	begin
+		HLIF_HEAL	5
+	end
+}
+
+MER_LIF_H
+{
+	HLIF_CHANGE
+	begin
+	end
+}
+
+MER_AMISTR
+{
+	HAMI_CASTLE
+	begin
+	end
+
+	HAMI_DEFENCE
+	begin
+		HAMI_CASTLE		5
+	end
+
+	HAMI_SKIN
+	begin
+		HAMI_DEFENCE	3
+	end
+}
+
+MER_AMISTR_H
+{
+	HAMI_BLOODLUST
+	begin
+	end
+}
+
+MER_FILIR
+{
+	HFLI_MOON
+	begin
+	end
+
+	HFLI_FLEET
+	begin
+		HFLI_MOON	3
+	end
+
+	HFLI_SPEED
+	begin
+		HFLI_FLEET	3
+	end
+}
+
+MER_FILIR_H
+{
+	HFLI_SBR44
+	begin
+	end
+}
+
+MER_VANILMIRTH
+{
+	HVAN_CAPRICE
+	begin
+	end
+
+	HVAN_CHAOTIC
+	begin
+		HVAN_CAPRICE	3
+	end
+
+	HVAN_INSTRUCT
+	begin
+		HVAN_CAPRICE	5
+	end
+}
+
+MER_VANILMIRTH_H
+{
+	HVAN_EXPLOSION
+	begin
+	end
+}
+
+MER_SERA
+{
+	MH_NEEDLE_OF_PARALYZE
+	begin
+		LEVEL	105
+	end
+	
+	MH_PAIN_KILLER
+	begin
+		LEVEL	123
+	end
+	
+	MH_POISON_MIST
+	begin
+		LEVEL	116
+	end
+		
+	MH_SUMMON_LEGION
+	begin
+		LEVEL	132
+	end
+}
+
+MER_EIRA
+{
+	MH_LIGHT_OF_REGENE
+	begin
+		LEVEL	128
+	end
+	
+	MH_OVERED_BOOST
+	begin
+		LEVEL	114
+	end
+	
+	MH_ERASER_CUTTER
+	begin
+		LEVEL	106
+	end
+	
+	MH_XENO_SLASHER
+	begin
+		LEVEL	121
+	end
+	
+	MH_SILENT_BREEZE
+	begin
+		LEVEL	137
+	end	
+}
+
+MER_ELEANOR
+{
+	MH_STYLE_CHANGE
+	begin
+		LEVEL	100
+	end
+	
+	MH_SONIC_CLAW
+	begin
+		LEVEL	100
+	end
+	
+	MH_SILVERVEIN_RUSH
+	begin
+		LEVEL	114
+	end
+	
+	MH_MIDNIGHT_FRENZY
+	begin
+		LEVEL	128
+	end	
+	
+	MH_TINDER_BREAKER
+	begin
+		LEVEL	100
+	end
+	
+	MH_CBC
+	begin
+		LEVEL	112
+	end
+	
+	MH_EQC
+	begin
+		LEVEL	133	
+	end
+}
+
+MER_BAYERI
+{
+	MH_STAHL_HORN
+	begin
+		LEVEL	105
+	end
+	
+	MH_GOLDENE_FERSE
+	begin
+		LEVEL	112
+	end
+	
+	MH_STEINWAND
+	begin
+		LEVEL	121
+	end
+	
+	MH_HEILIGE_STANGE
+	begin
+		LEVEL	138
+	end
+	
+	MH_ANGRIFFS_MODUS
+	begin
+		LEVEL	130
+	end
+}
+
+MER_DIETER
+
+
+{
+	MH_MAGMA_FLOW
+	begin
+		LEVEL	122
+	end
+
+	MH_GRANITIC_ARMOR
+	begin
+		LEVEL	116
+	end
+
+	MH_LAVA_SLIDE
+	begin
+		LEVEL	109
+	end
+
+	MH_PYROCLASTIC
+	begin
+		LEVEL	131
+	end
+
+	MH_VOLCANIC_ASH
+	begin
+		LEVEL	102
+	end
+
+}
+			
+
+
+inherit		MER_LIF_H			MER_LIF
+inherit		MER_AMISTR_H		MER_AMISTR
+inherit		MER_FILIR_H			MER_FILIR
+inherit		MER_VANILMIRTH_H	MER_VANILMIRTH

@@ -1,8 +1,8 @@
 [ODBC]
 DRIVER=SQL Server
-UID=script
+UID=ipinfo
 Address=127.0.0.1,1433
 Network=DBMSSOCN
-DATABASE=Script
+DATABASE=IpInfo
 APP=Microsoft Data Access Components
 SERVER=127.0.0.1

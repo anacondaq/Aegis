@@ -1,0 +1,701 @@
+// 프로그램 처리를 위한 코드 					
+
+define		ENUM			0
+
+declare     SET				n?		ENUM++ // 직업코드에 직업들을 설정한다.
+declare		SetJC_EXN		n		ENUM++ // 노비스 계얼을 제외하는 직업코드를 설정한다. 
+declare		SetJC_ALL		n		ENUM++ // 모든 직업이 가능한 직업코드를 설정한다. 
+declare     SetGroup        n?      ENUM++ // 계열을 설정한다.   						
+declare     SET2            n?      ENUM++ // 직업코드에 계열들을 설정한다. 						
+
+
+//===================================================================================				
+// 기존 디비에 설정된 직업 집합 코드				
+//		  JOB CODE		EQUIP
+				
+define	JC_000		0	//쓰여지고 있지 않음/추구 구현예정#
+define	JC_001		1	//노비스계열
+define	JC_002		64	//도둑전용
+define	JC_003		512	//헌터계열
+define	JC_004		4096	//어세신계열
+define	JC_005		8192	//크루세이더계열
+define	JC_006		8320	//나이트계열/크루세이더계열
+define	JC_007		8322	//검사계열
+define	JC_008		16640	//위저드계열/세이지계열/소울링커
+define	JC_009		16644	//마법사계열/소울링커
+define	JC_010		17408	//프리스트계열/세이지계열/권성
+define	JC_011		32768	//바드 전용
+define	JC_012		65536	//댄서 전용
+define	JC_013		98816	//헌터계열/바드계열/댄서계열
+define	JC_014		98824	//궁수계열
+define	JC_015		132096	//프리스트계열/몽크계열
+define	JC_016		132112	//복사계열
+define	JC_017		148756	//마법사계열/복사계열/소울링커
+define	JC_018		148757	//노비스계열/마법사계열/복사계열/소울링커
+define	JC_019		262144	//알케미스트계열
+define	JC_020		264192	//블랙스미스계열/알케미스트계열
+define	JC_021		264224	//상인계열
+define	JC_022		270464	//#중복삭제#
+define	JC_023		272546	//검사계열/상인계열
+define	JC_024		396336	//복사계열/상인계열
+define	JC_025		421302	//검사계열/마법사계열/복사계열/상인계열/소울링커
+define	JC_026		524864	//도둑/헌터계열/로그계열
+define	JC_027		528448	//도둑계열/닌자계열
+define	JC_028		623112	//궁수계열/로그계열
+define	JC_029		623176	//궁수계열/도둑/로그계열
+define	JC_030		800994	//검사계열/상인계열/도둑계열
+define	JC_031		800995	//노비스/검사계열/상인계열/도둑계열
+define	JC_032		899818	//검사계열/궁수계열/상인계열/도둑계열
+define	JC_033		916462	//검사계열/마법사계열/궁수계열/상인계열/도둑계열/소울링커/닌자
+define	JC_034		916463	//노비스/검사계열/마법사계열/궁수계열/상인계열/도둑계열/소울링커/닌자
+define	JC_035		933106	//검사계열/복사계열/상인계열/도둑계열
+define	JC_036		933107	//#안쓰임#
+define	JC_037		1031410	//검사계열/복사계열/상인계열/도둑계열,바드,댄서
+define	JC_038		1048448	//2차직업이상/권성/소울링커, 카게로우, 오보로 추가
+define	JC_039		276643	//노비스/검사계열/상인계열/어쌔신
+define	JC_040		404658	//검사계열/복사계열/상인계열
+define	JC_041		404659	//노비스/검사계열/복사계열/상인계열
+				
+define	JC_EXN		1048574	//노비스를 제외한 전직업
+define	JC_ALL		1048575	//전직업
+				
+//-----------------------------------------------------------------------------------------	
+// 새로 추가되는 집합 코드. 기존 디비값과  중복되지 않도록 한다. 	
+				
+define	JC_065	65		//#중복삭제#
+define	JC_066	66		// 검사계열/권성
+define	JC_067	67		// 검사계열/상인계열/도둑계열/태권계열
+define	JC_068	68		// 검사계열/상인계열/도둑계열/궁수계열/태권계열/건너
+define	JC_069	69		// 검사계열/복사계열/상인계열/도둑계열/태권계열
+define	JC_070	70		// 검사계열/상인계열/태권계열
+define	JC_071	71		// 프리스트/어쌔신/하이프리스트/하이어쌔신
+define	JC_072	72		// 전승 2차 직업
+define	JC_073	73		// 건슬링거
+define	JC_074	74		// 닌자계열
+define	JC_075	75		// 노비스를 제외한 모든 전승직업군
+define	JC_076	76		//#중복삭제#
+define	JC_077	77		//#중복삭제#
+define	JC_078	78		//#중복삭제#
+define	JC_079	79		//#중복삭제#
+define	JC_080	80		// 전승 검사계열 
+define	JC_081	81		// 전승 상인계열
+define	JC_082	82		// 전승 도둑계열
+define	JC_083	83		// 전승 마법사계열
+define	JC_084	84		// 전승 복사계열
+define	JC_085	85		// 전승 궁수계열
+define	JC_086	86		// 전승 마법사/복사계열
+define	JC_087	87		// 전승 검사/상인/도둑 계열
+define	JC_088	88		// 전승 마법사/복사/궁수 계열
+define	JC_089	89		// 전승 검사/상인 계열
+define	JC_090	90		// 전승 검사/상인/복사 계열
+define	JC_091	91		// 전승 검사/상인/도둑/궁수/마법사 계열
+define	JC_092	92		// 스토커/전승 궁수 계열
+define	JC_093	93		// 하이프리스트/프로페서
+define	JC_094	94		// 하이프리스트/챔피온
+define	JC_095	95		// 로드나이트
+define	JC_096	96		// 팔라딘
+define	JC_097	97		// 화이트스미스
+define	JC_098	98		// 크리에이터
+define	JC_099	99		// 하이위자드
+define	JC_100	100		// 프로페서
+define	JC_101	101		// 스나이퍼
+define	JC_102	102		// 어쌔신 크로스
+define	JC_103	103		// 크로운
+define	JC_104	104		// 집시
+define	JC_105	105		// 하이프리스트
+define	JC_106	106		// 챔피온
+define	JC_107	107		// 스토커
+define	JC_108	108		// 복사계열/궁수계열/마법사계열/소울링커
+define	JC_109	109		// 검사계열/상인계열/도둑계열/태권계열/닌자계열
+define	JC_110	110		// 3차직업군전용 (방어구)
+define	JC_111	111		// 룬나이트
+define	JC_112	112		// 로얄가드
+define	JC_113	113		// 아크비숍/소서러
+define	JC_114	114		// 길로틴크로스
+define	JC_115	115		// 미케닉
+define	JC_116	116		// 레인저
+define	JC_117	117		// 제네릭
+define	JC_118	118		// 워록
+define	JC_119	119		// 소서러
+define	JC_120	120		// 민스트렐
+define	JC_121	121		// 원더러
+define	JC_122	122		// 아크비숍
+define	JC_123	123		// 수라
+define	JC_124	124		// 새도우체이서
+define	JC_125	125		// 3차 검사계열
+define	JC_126	126		// 3차 마법사/복사계열
+define	JC_127	127		// 3차 검사/상인/복사계열
+define	JC_128	128		// 3차 궁수계열
+define	JC_129	129		// 소서러/제네릭
+define	JC_130	130		// 태권/권성
+define	JC_131	131		// 닌자계열/건슬링거
+define	JC_132	132		// 워록/아크비숍
+define	JC_133	133		// 검사계열/상인계열/도둑계열/궁수계열/태권/권성/건너/닌자계열
+define	JC_134	134		// 2차직업이상/권성/소울링커, 카게로우, 오보로
+define	JC_135	135		// 원더러/민스트렐
+define	JC_136	136		// 3차 마법사계열
+define	JC_137	137		// 3차 상인계열
+define	JC_138	138		// 3차 복사계열
+define	JC_139	139		// 3차 도둑계열
+define	JC_140	140		// 전승 궁수/도둑 계열
+
+===========================================================================================
+// [직업 영문명 분류]				
+
+//--------------------- 전직 과정별 ----------------------------				
+// NOVICE				
+
+// 1차 직업 				
+// SWORDMAN	MAGICIAN ARCHER	ACOLYTE MERCHANT THIEF
+
+// 2-1		
+// KNIGHT PRIEST WIZARD BLACKSMITH HUNTER ASSASSIN		
+
+// 2-2		
+// CRUSADER MONK SAGE ROGUE ALCHEMIST BARD DANCER 		
+
+// SUPERNOVICE		
+
+// NOVICE_H		
+
+// 전승 1차 		
+// SWORDMAN_H MAGICIAN_H ARCHER_H ACOLYTE_H MERCHANT_H THIEF_H		
+
+// 전승 2-1		
+// KNIGHT_H PRIEST_H WIZARD_H BLACKSMITH_H HUNTER_H ASSASSIN_H								
+
+// 전승 2-2								
+// CRUSADER_H MONK_H SAGE_H  ROGUE_H ALCHEMIST_H BARD_H DANCER_H								
+
+// 3-1								
+// RUNE_KNIGHT WARLOCK RANGER ARCHBISHOP MECHANIC GUILLOTINE_CROSS								
+								
+// 전승 3-1								
+// RUNE_KNIGHT_H WARLOCK_H RANGER_H ARCHBISHOP_H MECHANIC_H GUILLOTINE_CROSS_H								
+								
+// 3-2								
+// ROYAL_GUARD SORCERER MINSTREL WANDERER SURA GENETIC SHADOW_CHASER								
+								
+// 전승 3-2								
+// ROYAL_GUARD_H SORCERER_H MINSTREL_H WANDERER_H SURA_H GENETIC_H SHADOW_CHASER_H 								
+
+// SUPERNOVICE_B
+ 
+// NOVICE_B
+
+// 아기 1차 
+// SWORDMAN_B MAGICIAN_B ARCHER_B ACOLYTE_B MERCHANT_B THIEF_B
+
+// 아기 2-1
+// KNIGHT_B PRIEST_B WIZARD_B BLACKSMITH_B HUNTER_B ASSASSIN_B
+
+// 아기 2-2
+// CRUSADER_B MONK_B SAGE_B ROGUE_B ALCHEMIST_B BARD_B DANCER_B
+
+ 
+// TAEKWON
+// STAR
+// LINKER
+// NINJA KAGEROU OBORO
+// GUNSLINGER
+
+//------------------------ 계열별 --------------------------------
+
+// 노비스 계열
+// NOVICE SUPERNOVICE NOVICE_H NOVICE_B SUPERNOVICE_B SUPERNOVICE2 SUPERNOVICE2_B
+
+// 검사 계열 
+// SWORDMAN KNIGHT CRUSADER SWORDMAN_H KNIGHT_H CRUSADER_H SWORDMAN_B KNIGHT_B CRUSADER_B RUNE_KNIGHT RUNE_KNIGHT_H ROYAL_GUARD ROYAL_GUARD_H 
+
+// 상인 계열 
+// MERCHANT BLACKSMITH ALCHEMIST MERCHANT_H BLACKSMITH_H ALCHEMIST_H MERCHANT_B BLACKSMITH_B ALCHEMIST_B MECHANIC MECHANIC_H GENETIC GENETIC_H 
+
+// 마법사 계열 
+// MAGICIAN WIZARD SAGE MAGICIAN_H WIZARD_H SAGE_H MAGICIAN_B WIZARD_B SAGE_B WARLOCK WARLOCK_H SORCERER SORCERER_H 
+
+// 궁수 계열 
+// ARCHER HUNTER BARD DANCER ARCHER_H HUNTER_H BARD_H DANCER_H ARCHER_B HUNTER_B BARD_B DANCER_B RANGER RANGER_H MINSTREL WANDERER MINSTREL_H WANDERER_H 
+
+// 복사 계열 
+// ACOLYTE PRIEST MONK ACOLYTE_H PRIEST_H MONK_H ACOLYTE_B PRIEST_B MONK_B ARCHBISHOP ARCHBISHOP_H SURA SURA_H 
+
+// 도둑 게열 
+// THIEF ASSASSIN ROGUE THIEF_H ASSASSIN_H ROGUE_H THIEF_B ASSASSIN_B ROGUE_B GUILLOTINE_CROSS GUILLOTINE_CROSS_H SHADOW_CHASER SHADOW_CHASER_H 
+
+// 태권계열 ( 링커는 위저드와 동일 )
+// TAEKWON, STAR
+
+// 닌자계열
+// NINJA KAGEROU OBORO
+
+//====================================================================================================
+// [계열별 그룹 설정]
+
+define    ENUM   0
+define    NOVICE_GR     ENUM++  // 노비스 계열
+define    SWORDMAN_GR   ENUM++  // 검사 계열
+define    MERCHANT_GR   ENUM++  // 상인 계열
+define    MAGICIAN_GR   ENUM++  // 마법사 계열
+define    ARCHER_GR     ENUM++  // 궁수 계열
+define    ACOLYTE_GR    ENUM++  // 복사 계열
+define    THIEF_GR      ENUM++  // 도둑 계열
+define    TAEKWON_GR    ENUM++  // 태권계열
+
+define    2NDJOB_GR     ENUM++  // 2차직업군 계열(일반)
+define    3RDJOB_GR     ENUM++  // 3차직업군 계열(일반)
+
+define    1STJOB_H_GR     ENUM++  // 1차직업군 계열(전승)
+define    2NDJOB_H_GR     ENUM++  // 2차직업군 계열(전승)
+define    3RDJOB_H_GR     ENUM++  // 3차직업군 계열(전승)
+
+define    1STBABY_GR     ENUM++  // 1차베이비 계열
+define    2NDBABY_GR     ENUM++  // 2차베이비 계열
+define    3RDBABY_GR     ENUM++  // 3차베이비 계열
+
+define    KNIGHT_GR     ENUM++  // 나이트 계열(2차검사)
+define    CRUSADER_GR     ENUM++  // 크루세이더 계열(2차검사)
+define    BLACKSMITH_GR     ENUM++  // 블랙스미스 계열(2차상인)
+define    ALCEMIST_GR     ENUM++  // 알케미스트 계열(2차상인)
+define    ASSASSIN_GR     ENUM++  // 어새신 계열(2차도둑)
+define    ROGUE_GR     ENUM++  // 로그 계열(2차도둑)
+define    WIZARD_GR     ENUM++  // 위저드 계열(2차마법)
+define    SAGE_GR     ENUM++  // 세이지 계열(2차마법)
+define    PRIEST_GR     ENUM++  // 프리스트 계열(2차복사)
+define    MONK_GR     ENUM++  // 몽크 계열(2차복사)
+define    HUNTER_GR     ENUM++  // 헌터 계열(2차궁수)
+define    BARD_GR     ENUM++  // 바드 계열(2차궁수)
+define    DANCER_GR     ENUM++  // 댄서 계열(2차궁수)
+
+define    KNIGHT_H_GR     ENUM++  // 2차 로드나이트 계열(전승검사)
+define    CRUSADER_H_GR     ENUM++  // 2차 팔라딘 계열(전승검사)
+define    BLACKSMITH_H_GR     ENUM++  // 2차 화이트스미스 계열(전승상인)
+define    ALCEMIST_H_GR     ENUM++  // 2차 크리에이터 계열(전승상인)
+define    ASSASSIN_H_GR     ENUM++  // 2차 어새신크로스 계열(전승도둑)
+define    ROGUE_H_GR     ENUM++  // 2차 스토커 계열(전승도둑)
+define    WIZARD_H_GR     ENUM++  // 2차 하이위자드 계열(전승마법)
+define    SAGE_H_GR     ENUM++  // 2차 프로페서 계열(전승마법)
+define    PRIEST_H_GR     ENUM++  // 2차 하이프리스트 계열(전승복사)
+define    MONK_H_GR     ENUM++  // 2차 챔피온 계열(전승복사)
+define    HUNTER_H_GR     ENUM++  // 2차 스나이퍼 계열(전승궁수)
+define    BARD_H_GR     ENUM++  // 2차 크로운 계열(전승궁수)
+define    DANCER_H_GR     ENUM++  // 2차 집시 계열(전승궁수)
+
+define    RUNE_KNIGHT_GR     ENUM++  // 3차 룬나이트 계열
+define    ROYAL_GUARD_GR     ENUM++  // 3차 로얄가드 계열
+define    MECHANIC_GR     ENUM++  // 3차 미케닉 계열
+define    GENETIC_GR     ENUM++  // 3차 제네릭 계열
+define    GUILLOTINE_CROSS_GR     ENUM++  // 3차 길로틴크로스 계열
+define    SHADOW_CHASER_GR     ENUM++  // 3차 새도우체이서 계열
+define    WARLOCK_GR     ENUM++  // 3차 워록 계열
+define    SORCERER_GR     ENUM++  // 3차 소서러 계열
+define    ARCHBISHOP_GR     ENUM++  // 3차 아크비숍 계열
+define    SURA_GR     ENUM++  // 3차 수라 계열
+define    RANGER_GR     ENUM++  // 3차 레인저 계열
+define    MINSTREL_GR     ENUM++  // 3차 민스트럴 계열
+define    WANDERER_GR     ENUM++  // 3차 원더러 계열
+
+define    NINJA_GR     ENUM++  // 닌자 계열
+// 닌자계열
+// GUNSLINGER REBELLION
+define    GUNSLINGER_GR     ENUM++  // 건너 계열
+
+// 노비스 계열		
+SetGroup	NOVICE_GR	NOVICE SUPERNOVICE NOVICE_H NOVICE_B SUPERNOVICE_B SUPERNOVICE2 SUPERNOVICE2_B
+		
+// 검사 계열		
+SetGroup	SWORDMAN_GR	SWORDMAN KNIGHT CRUSADER SWORDMAN_H KNIGHT_H CRUSADER_H SWORDMAN_B KNIGHT_B CRUSADER_B RUNE_KNIGHT RUNE_KNIGHT_H ROYAL_GUARD ROYAL_GUARD_H RUNE_KNIGHT_B ROYAL_GUARD_B
+		
+// 상인 계열		
+SetGroup	MERCHANT_GR	MERCHANT BLACKSMITH ALCHEMIST MERCHANT_H BLACKSMITH_H ALCHEMIST_H MERCHANT_B BLACKSMITH_B ALCHEMIST_B MECHANIC MECHANIC_H MECHANIC_B GENETIC GENETIC_H GENETIC_B
+		
+// 마법사 계열		
+SetGroup 	MAGICIAN_GR	MAGICIAN WIZARD SAGE MAGICIAN_H WIZARD_H SAGE_H MAGICIAN_B WIZARD_B SAGE_B WARLOCK WARLOCK_H WARLOCK_B SORCERER SORCERER_H SORCERER_B
+		
+// 궁수 계열		
+SetGroup	ARCHER_GR	ARCHER HUNTER BARD DANCER ARCHER_H HUNTER_H BARD_H DANCER_H ARCHER_B HUNTER_B BARD_B DANCER_B RANGER RANGER_H RANGER_B MINSTREL WANDERER MINSTREL_H MINSTREL_B WANDERER_H WANDERER_B
+		
+// 복사 계열		
+SetGroup	ACOLYTE_GR	ACOLYTE PRIEST MONK ACOLYTE_H PRIEST_H MONK_H ACOLYTE_B PRIEST_B MONK_B ARCHBISHOP ARCHBISHOP_H SURA SURA_H ARCHBISHOP_B SURA_B
+		
+// 도둑 계열		
+SetGroup	THIEF_GR	THIEF ASSASSIN ROGUE THIEF_H ASSASSIN_H ROGUE_H THIEF_B ASSASSIN_B ROGUE_B GUILLOTINE_CROSS GUILLOTINE_CROSS_H SHADOW_CHASER SHADOW_CHASER_H GUILLOTINE_CROSS_B SHADOW_CHASER_B
+		
+// 태권계열		
+SetGroup	TAEKWON_GR	TAEKWON STAR
+
+// 닌자계열
+SetGroup	NINJA_GR	NINJA KAGEROU OBORO
+
+		
+// 2차직업군 계열(일반)		
+SetGroup	2NDJOB_GR	KNIGHT CRUSADER BLACKSMITH ALCHEMIST WIZARD SAGE HUNTER BARD DANCER PRIEST MONK ASSASSIN ROGUE
+		
+// 1차직업군 계열(전승)		
+SetGroup	1STJOB_H_GR	SWORDMAN_H MERCHANT_H MAGICIAN_H ARCHER_H ACOLYTE_H THIEF_H
+		
+// 2차직업군 계열(전승)		
+SetGroup	2NDJOB_H_GR	KNIGHT_H CRUSADER_H BLACKSMITH_H ALCHEMIST_H WIZARD_H SAGE_H HUNTER_H BARD_H DANCER_H PRIEST_H MONK_H ASSASSIN_H ROGUE_H
+		
+// 3차직업군 계열(일반)		
+SetGroup	3RDJOB_GR	RUNE_KNIGHT ROYAL_GUARD MECHANIC GENETIC WARLOCK SORCERER RANGER MINSTREL WANDERER ARCHBISHOP SURA GUILLOTINE_CROSS SHADOW_CHASER
+		
+// 3차직업군 계열(전승)		
+SetGroup	3RDJOB_H_GR	RUNE_KNIGHT_H ROYAL_GUARD_H MECHANIC_H GENETIC_H WARLOCK_H SORCERER_H RANGER_H MINSTREL_H WANDERER_H ARCHBISHOP_H SURA_H GUILLOTINE_CROSS_H SHADOW_CHASER_H 
+
+
+		
+// 1차베이비 계열(아기)		
+SetGroup	1STBABY_GR	SWORDMAN_B MAGICIAN_B ARCHER_B ACOLYTE_B MERCHANT_B THIEF_B
+		
+// 2차베이비 계열(아기)		
+SetGroup	2NDBABY_GR	KNIGHT_B PRIEST_B WIZARD_B BLACKSMITH_B HUNTER_B ASSASSIN_B CRUSADER_B MONK_B SAGE_B ROGUE_B ALCHEMIST_B BARD_B DANCER_B
+		
+// 3차베이비 계열(아기)		
+SetGroup	3RDBABY_GR	RUNE_KNIGHT_B ROYAL_GUARD_B MECHANIC_B GENETIC_B WARLOCK_B SORCERER_B RANGER_B MINSTREL_B WANDERER_B ARCHBISHOP_B SURA_B GUILLOTINE_CROSS_B SHADOW_CHASER_B
+
+
+		
+// 2차 기사 계열(검사)		
+SetGroup	KNIGHT_GR	KNIGHT KNIGHT_H KNIGHT_B RUNE_KNIGHT RUNE_KNIGHT_H RUNE_KNIGHT_B
+		
+// 2차 크루세이더 계열(검사)		
+SetGroup	CRUSADER_GR	CRUSADER CRUSADER_H CRUSADER_B ROYAL_GUARD ROYAL_GUARD_H ROYAL_GUARD_B
+		
+// 2차 블랙스미스 계열(상인)		
+SetGroup	BLACKSMITH_GR	BLACKSMITH BLACKSMITH_H BLACKSMITH_B MECHANIC MECHANIC_H MECHANIC_B
+		
+// 2차 알케미스트 계열(상인)		
+SetGroup	ALCEMIST_GR	ALCHEMIST ALCHEMIST_H ALCHEMIST_B GENETIC GENETIC_H GENETIC_B
+		
+// 2차 어새신 계열(도둑)		
+SetGroup	ASSASSIN_GR	ASSASSIN ASSASSIN_H ASSASSIN_B GUILLOTINE_CROSS GUILLOTINE_CROSS_H GUILLOTINE_CROSS_B
+		
+// 2차 로그 계열(도둑)		
+SetGroup	ROGUE_GR	ROGUE ROGUE_H ROGUE_B SHADOW_CHASER SHADOW_CHASER_H SHADOW_CHASER_B
+		
+// 2차 위자드 계열(마법)		
+SetGroup	WIZARD_GR	WIZARD WIZARD_H WIZARD_B WARLOCK WARLOCK_H WARLOCK_B
+		
+// 2차 세이지 계열(마법)		
+SetGroup	SAGE_GR	SAGE SAGE_H SAGE_B SORCERER SORCERER_H SORCERER_B
+		
+// 2차 프리스트 계열(복사)		
+SetGroup	PRIEST_GR	PRIEST PRIEST_H PRIEST_B ARCHBISHOP ARCHBISHOP_H ARCHBISHOP_B
+		
+// 2차 몽크 계열(복사)		
+SetGroup	MONK_GR	MONK MONK_H MONK_B SURA SURA_H SURA_B
+		
+// 2차 헌터 계열(궁수)		
+SetGroup	HUNTER_GR	HUNTER HUNTER_H HUNTER_B RANGER RANGER_H RANGER_B
+		
+// 2차 바드 계열(궁수)		
+SetGroup	BARD_GR	BARD BARD_H BARD_B MINSTREL MINSTREL_H MINSTREL_B
+		
+// 2차 댄서 계열(궁수)		
+SetGroup	DANCER_GR	DANCER DANCER_H DANCER_B WANDERER WANDERER_H WANDERER_B
+
+
+		
+// 2차 로드나이트 계열(전승검사)		
+SetGroup	KNIGHT_H_GR	KNIGHT_H RUNE_KNIGHT RUNE_KNIGHT_H RUNE_KNIGHT_B
+		
+// 2차 팔라딘 계열(전승검사)		
+SetGroup	CRUSADER_H_GR	CRUSADER_H ROYAL_GUARD ROYAL_GUARD_H ROYAL_GUARD_B
+		
+// 2차 화이트스미스 계열(전승상인)		
+SetGroup	BLACKSMITH_H_GR	BLACKSMITH_H MECHANIC MECHANIC_H MECHANIC_B
+		
+// 2차 크리에이터 계열(전승상인)		
+SetGroup	ALCEMIST_H_GR	ALCHEMIST_H GENETIC GENETIC_H GENETIC_B
+		
+// 2차 어새신크로스 계열(전승도둑)		
+SetGroup	ASSASSIN_H_GR	ASSASSIN_H GUILLOTINE_CROSS GUILLOTINE_CROSS_H GUILLOTINE_CROSS_B
+		
+// 2차 스토커 계열(전승도둑)		
+SetGroup	ROGUE_H_GR	ROGUE_H SHADOW_CHASER SHADOW_CHASER_H SHADOW_CHASER_B
+		
+// 2차 하이위자드 계열(전승마법)		
+SetGroup	WIZARD_H_GR	WIZARD_H WARLOCK WARLOCK_H WARLOCK_B
+		
+// 2차 프로페서 계열(전승마법)		
+SetGroup	SAGE_H_GR	SAGE_H SORCERER SORCERER_H SORCERER_B
+		
+// 2차 하이프리스트 계열(전승복사)		
+SetGroup	PRIEST_H_GR	PRIEST_H ARCHBISHOP ARCHBISHOP_H ARCHBISHOP_B
+		
+// 2차 챔피온 계열(전승복사)		
+SetGroup	MONK_H_GR	MONK_H SURA SURA_H SURA_B
+		
+// 2차 스나이퍼 계열(전승궁수)		
+SetGroup	HUNTER_H_GR	HUNTER_H RANGER RANGER_H RANGER_B
+		
+// 2차 크로운 계열(전승궁수)		
+SetGroup	BARD_H_GR	BARD_H MINSTREL MINSTREL_H MINSTREL_B
+		
+// 2차 집시 계열(전승궁수)		
+SetGroup	DANCER_H_GR	DANCER_H WANDERER WANDERER_H WANDERER_B
+
+
+		
+// 3차 룬나이트 계열		
+SetGroup	RUNE_KNIGHT_GR	RUNE_KNIGHT RUNE_KNIGHT_H RUNE_KNIGHT_B
+		
+// 3차 로얄가드 계열		
+SetGroup	ROYAL_GUARD_GR	ROYAL_GUARD ROYAL_GUARD_H ROYAL_GUARD_B
+		
+// 3차 미케닉 계열		
+SetGroup	MECHANIC_GR	MECHANIC MECHANIC_H MECHANIC_B
+		
+// 3차 제네릭 계열		
+SetGroup	GENETIC_GR	GENETIC GENETIC_H GENETIC_B
+		
+// 3차 길로틴크로스 계열		
+SetGroup	GUILLOTINE_CROSS_GR	GUILLOTINE_CROSS GUILLOTINE_CROSS_H GUILLOTINE_CROSS_B
+		
+// 3차 새도우체이서 계열		
+SetGroup	SHADOW_CHASER_GR	SHADOW_CHASER SHADOW_CHASER_H SHADOW_CHASER_B
+		
+// 3차 워록 계열		
+SetGroup	WARLOCK_GR	WARLOCK WARLOCK_H WARLOCK_B
+		
+// 3차 소서러 계열		
+SetGroup	SORCERER_GR	SORCERER SORCERER_H SORCERER_B
+		
+// 3차 아크비숍 계열		
+SetGroup	ARCHBISHOP_GR	ARCHBISHOP ARCHBISHOP_H ARCHBISHOP_B
+		
+// 3차 수라 계열		
+SetGroup	SURA_GR	SURA SURA_H SURA_B
+		
+// 3차 레인저 계열		
+SetGroup	RANGER_GR	RANGER RANGER_H RANGER_B
+		
+// 3차 민스트럴 계열		
+SetGroup	MINSTREL_GR	MINSTREL MINSTREL_H MINSTREL_B
+		
+// 3차 원더러 계열		
+SetGroup	WANDERER_GR	WANDERER WANDERER_H WANDERER_B
+			
+// 건너계열
+SetGroup	GUNSLINGER_GR	GUNSLINGER REBELLION
+
+
+//================================================================================================================================			
+
+[특별한 직업코드 입력]			
+
+SetJC_EXN		JC_EXN	//노비스를 제외한 전직업 사용가능
+SetJC_ALL		JC_ALL	//전직업 사용가능
+
+[직업코드에 직업들 설정]				
+
+//		직업코드 장착가능 직업군		
+//      JC_000  #쓰여지고 있지 않음/추구 구현예정#				
+SET2	JC_001	NOVICE_GR		//노비스 계열
+SET	JC_002	THIEF THIEF_H THIEF_B		//도둑 전용
+SET2	JC_003	HUNTER_GR		//헌터 계열
+SET2	JC_004	ASSASSIN_GR		//어세신 계열
+SET2	JC_005	CRUSADER_GR		//크루세이더 계열
+SET2	JC_006	KNIGHT_GR CRUSADER_GR		//나이트, 크루세이더 계열	
+SET2	JC_007	SWORDMAN_GR		//검사계열
+
+SET2	JC_008	WIZARD_GR SAGE_GR		//위저드계열,세이지계열,소울링커
+SET	JC_008	LINKER
+
+SET2	JC_009	MAGICIAN_GR		//마법사계열, 링커 사용가능	
+SET	JC_009	LINKER
+
+SET2	JC_010	PRIEST_GR SAGE_GR		//프리스트계열, 세이지계열, 권성(책)
+SET	JC_010	STAR
+
+SET2	JC_011	BARD_GR		//바드계열
+SET2	JC_012	DANCER_GR		//댄서계열
+SET2	JC_013	HUNTER_GR BARD_GR DANCER_GR		//헌터계열,바드계열,댄서계열
+SET2	JC_014	ARCHER_GR		//궁수계열
+SET2	JC_015	PRIEST_GR MONK_GR		//프리스트계열, 몽크계열
+SET2	JC_016	ACOLYTE_GR		//복사계열 전용
+
+SET2	JC_017	MAGICIAN_GR ACOLYTE_GR		//마법사계열,복사계열,소울링커
+SET	JC_017	LINKER
+
+SET2	JC_018	NOVICE_GR MAGICIAN_GR ACOLYTE_GR		//노비스계열,마법사계열,복사계열,소울링커
+SET	JC_018	LINKER
+
+SET2	JC_019	ALCEMIST_GR		//알케미스트계열
+SET2	JC_020	BLACKSMITH_GR ALCEMIST_GR		//블랙스미스계열,알케미스트계열
+SET2	JC_021	MERCHANT_GR		//상인계열 전용
+
+//SET	JC_022	#중복삭제#
+SET2	JC_023	SWORDMAN_GR MERCHANT_GR		//검사계열,상인계열
+SET2	JC_024	ACOLYTE_GR MERCHANT_GR		//복사계열,상인계열
+
+SET2	JC_025	SWORDMAN_GR MAGICIAN_GR ACOLYTE_GR MERCHANT_GR		//검사계열,마법사계열,복사계열,상인계열,소울링커
+SET	JC_025	LINKER
+
+SET2	JC_026	HUNTER_GR ROGUE_GR		//도둑,헌터계열,로그계열
+SET	JC_026	THIEF THIEF_H THIEF_B		
+
+SET2	JC_027	THIEF_GR NINJA_GR		//도둑계열,닌자계열
+
+SET2	JC_028	ARCHER_GR ROGUE_GR		//궁수계열,로그계열
+
+SET2	JC_029	ARCHER_GR ROGUE_GR		//도둑,궁수계열,로그계열
+SET	JC_029	THIEF THIEF_H THIEF_B
+
+SET2	JC_030	SWORDMAN_GR MERCHANT_GR THIEF_GR		//검사계열,상인계열,도둑계열(한손검전반)
+
+SET2	JC_031	NOVICE_GR SWORDMAN_GR MERCHANT_GR THIEF_GR		//노비스계열,검사계열,상인계열,도둑계열
+
+SET2	JC_032	SWORDMAN_GR ARCHER_GR MERCHANT_GR THIEF_GR		//검사계열,궁수계열,상인계열,도둑계열(캡,고글)
+
+SET2	JC_033	SWORDMAN_GR MAGICIAN_GR ARCHER_GR MERCHANT_GR THIEF_GR NINJA_GR
+SET	JC_033	LINKER		//검,상,도,마,궁계열,소울링커,닌자(단검전반:고레벨)
+
+SET2	JC_034	NOVICE_GR SWORDMAN_GR MAGICIAN_GR ARCHER_GR MERCHANT_GR THIEF_GR NINJA_GR
+SET	JC_034	LINKER		//노비스계열,검,상,도,마,궁계열,소울링커,닌자(단검전반:저레벨)
+
+SET2	JC_035	SWORDMAN_GR ACOLYTE_GR MERCHANT_GR THIEF_GR		//검사계열,복사계열,상인계열,도둑계열(광산헬멧)
+//SET	JC_036	#쓰여지고 있지 않음#
+SET2	JC_037	SWORDMAN_GR ACOLYTE_GR MERCHANT_GR THIEF_GR BARD_GR DANCER_GR		//검사계열,복사계열,상인계열,도둑계열,바드계열,댄서계열(버클러)
+
+SET2	JC_038	2NDJOB_GR 2NDJOB_H_GR 3RDJOB_GR 3RDJOB_H_GR 2NDBABY_GR 3RDBABY_GR		//2차직업이상,권성,소울링커(태양신의모자 등)
+SET	JC_038  STAR LINKER
+
+SET2	JC_039	NOVICE_GR SWORDMAN_GR MERCHANT_GR ASSASSIN_GR		//노비스계열,검사계열,상인계열,어쌔신계열(한손도끼:저랩)
+SET2	JC_040	SWORDMAN_GR ACOLYTE_GR MERCHANT_GR		//검사계열,복사계열,상인계열(둔기:중렙)
+SET2	JC_041	SWORDMAN_GR ACOLYTE_GR MERCHANT_GR NOVICE_GR		//검사계열,복사계열,상인계열,노비스계열(둔기:저렙)
+
+
+
+
+//----------------------- 새로 추가되는 직업 코드는 여기부터  작성해 주세요 ------------------------------				
+
+
+//SET	JC_065	#중복삭제#
+SET2	JC_066	SWORDMAN_GR		// 검사계열,권성
+SET	JC_066	STAR                                                            		
+
+SET2	JC_067	SWORDMAN_GR MERCHANT_GR THIEF_GR TAEKWON_GR		// 검사계열,상인계열,도둑계열,태권계열(망토)
+
+SET2	JC_068	SWORDMAN_GR MERCHANT_GR THIEF_GR ARCHER_GR TAEKWON_GR GUNSLINGER_GR		// 검사계열,상인계열,도둑계열,궁수계열,태권계열,건너계열(부츠)
+SET	JC_068	GUNSLINGER
+
+SET2	JC_069	SWORDMAN_GR ACOLYTE_GR MERCHANT_GR THIEF_GR TAEKWON_GR		// 검사계열,복사계열,상인계열,도둑계열,태권계열(샤프)
+SET2	JC_070	SWORDMAN_GR MERCHANT_GR TAEKWON_GR		// 검사계열,상인계열,태권계열(마제)
+SET2	JC_071	PRIEST_GR ASSASSIN_GR		// 프리스트계열,어쌔신계열
+SET2	JC_072	2NDJOB_H_GR 3RDJOB_GR 3RDJOB_H_GR 3RDBABY_GR		// 2차이상의 모든 전승직업군
+SET	JC_073	GUNSLINGER		// 건슬링거
+SET2	JC_073	GUNSLINGER_GR		// 건너계열
+SET2	JC_074	NINJA_GR		// 닌자계열
+SET2	JC_075	1STJOB_H_GR 2NDJOB_H_GR 3RDJOB_GR 3RDJOB_H_GR 3RDBABY_GR		// 노비스를 제외한 모든 전승직업군
+//SET	JC_076	#중복삭제#
+//SET2	JC_077	#중복삭제#
+//SET2	JC_078	#중복삭제#
+//SET2	JC_079	#중복삭제#
+
+SET2	JC_080	KNIGHT_H_GR CRUSADER_H_GR	// 전승 검사계열
+SET	JC_080	SWORDMAN_H
+
+SET2	JC_081	BLACKSMITH_H_GR ALCEMIST_H_GR	// 전승 상인계열
+SET	JC_081	MERCHANT_H
+
+SET2	JC_082	ASSASSIN_H_GR ROGUE_H_GR	// 전승 도둑계열
+SET	JC_082	THIEF_H
+
+SET2	JC_083	WIZARD_H_GR SAGE_H_GR	// 전승 마법사계열
+SET	JC_083	MAGICIAN_H
+	
+SET2	JC_084	PRIEST_H_GR MONK_H_GR	// 전승 복사계열
+SET	JC_084	ACOLYTE_H
+
+SET2	JC_085	HUNTER_H_GR BARD_H_GR DANCER_H_GR	// 전승 궁수계열
+SET	JC_085	ARCHER_H
+	
+SET2	JC_086	WIZARD_H_GR SAGE_H_GR PRIEST_H_GR MONK_H_GR	// 전승 마법사,복사계열
+SET	JC_086	MAGICIAN_H ACOLYTE_H
+
+SET2	JC_087	KNIGHT_H_GR CRUSADER_H_GR BLACKSMITH_H_GR ALCEMIST_H_GR ASSASSIN_H_GR ROGUE_H_GR	// 전승 검사,상인,도둑 계열
+SET	JC_087	SWORDMAN_H MERCHANT_H THIEF_H
+
+SET2	JC_088	WIZARD_H_GR SAGE_H_GR PRIEST_H_GR MONK_H_GR HUNTER_H_GR BARD_H_GR DANCER_H_GR	// 전승 마법사,복사,궁수 계열
+SET	JC_088	MAGICIAN_H ACOLYTE_H ARCHER_H
+
+SET2	JC_089	KNIGHT_H_GR CRUSADER_H_GR BLACKSMITH_H_GR ALCEMIST_H_GR	// 전승 검사,상인 계열
+SET	JC_089	SWORDMAN_H MERCHANT_H
+
+SET2	JC_090	KNIGHT_H_GR CRUSADER_H_GR BLACKSMITH_H_GR ALCEMIST_H_GR PRIEST_H_GR MONK_H_GR	// 전승 검사,상인,복사 계열
+SET	JC_090	SWORDMAN_H MERCHANT_H ACOLYTE_H
+
+SET2	JC_091	KNIGHT_H_GR CRUSADER_H_GR BLACKSMITH_H_GR ALCEMIST_H_GR ASSASSIN_H_GR ROGUE_H_GR HUNTER_H_GR BARD_H_GR DANCER_H_GR WIZARD_H_GR SAGE_H_GR
+SET	JC_091	SWORDMAN_H MERCHANT_H THIEF_H ARCHER_H MAGICIAN_H	// 전승 검사,상인,도둑,궁수,마법사 계열
+
+SET2	JC_092	ROGUE_H_GR HUNTER_H_GR BARD_H_GR DANCER_H_GR	// 스토커 계열,전승 궁수 계열
+SET	JC_092	ARCHER_H	
+
+
+SET2	JC_093	PRIEST_H_GR SAGE_H_GR	// 하이프리스트계열, 프로페서계열
+SET2	JC_094	PRIEST_H_GR MONK_H_GR	// 하이프리스트계열, 챔피온계열
+SET2	JC_095	KNIGHT_H_GR	// 로드나이트계열
+SET2	JC_096	CRUSADER_H_GR	// 팔라딘계열
+SET2	JC_097	BLACKSMITH_H_GR	// 화이트스미스계열
+SET2	JC_098	ALCEMIST_H_GR	// 크리에이터계열
+SET2	JC_099	WIZARD_H_GR	// 하이위자드계열
+SET2	JC_100	SAGE_H_GR	// 프로페서계열
+SET2	JC_101	HUNTER_H_GR	// 스나이퍼계열
+SET2	JC_102	ASSASSIN_H_GR	// 어쌔신 크로스계열
+SET2	JC_103	BARD_H_GR	// 크로운계열
+SET2	JC_104	DANCER_H_GR	// 집시계열
+SET2	JC_105	PRIEST_H_GR	// 하이프리스트계열
+SET2	JC_106	MONK_H_GR	// 챔피온계열
+SET2	JC_107	ROGUE_H_GR	// 스토커계열
+
+SET2	JC_108	MAGICIAN_GR ACOLYTE_GR ARCHER_GR 		// 마법사계열,복사계열,궁수계열,소울링커
+SET	JC_108	LINKER 		
+
+SET2	JC_109	SWORDMAN_GR MERCHANT_GR THIEF_GR TAEKWON_GR NINJA_GR		// 검사계열,상인계열,도둑계열,태권계열,닌자계열
+
+SET2	JC_110	3RDJOB_GR 3RDJOB_H_GR 3RDBABY_GR	// 3차직업군전용 (방어구)
+			
+SET2	JC_111	RUNE_KNIGHT_GR	// 룬나이트
+SET2	JC_112	ROYAL_GUARD_GR	// 로얄가드
+SET2	JC_113	ARCHBISHOP_GR SORCERER_GR	// 아크비숍, 소서러 (책)
+SET2	JC_114	GUILLOTINE_CROSS_GR	// 길로틴크로스 전용 (카타르)
+SET2	JC_115	MECHANIC_GR	// 미케닉 전용
+SET2	JC_116	RANGER_GR	// 레인저 전용
+SET2	JC_117	GENETIC_GR	// 제네릭 전용
+SET2	JC_118	WARLOCK_GR	// 워록 전용
+SET2	JC_119	SORCERER_GR	// 소서러 전용
+SET2	JC_120	MINSTREL_GR	// 민스트렐 전용
+SET2	JC_121	WANDERER_GR	// 원더러 전용
+SET2	JC_122	ARCHBISHOP_GR	// 아크비숍 전용
+SET2	JC_123	SURA_GR	// 수라 전용
+SET2	JC_124	SHADOW_CHASER_GR	// 새도우체이서 전용
+
+SET2	JC_125	RUNE_KNIGHT_GR ROYAL_GUARD_GR	// 3차 검사계열
+SET2	JC_126  WARLOCK_GR SORCERER_GR ARCHBISHOP_GR SURA_GR	// 3차 마법사, 복사계열
+SET2	JC_127  RUNE_KNIGHT_GR ROYAL_GUARD_GR MECHANIC_GR GENETIC_GR ARCHBISHOP_GR SURA_GR	// 3차 검사, 상인, 복사계열
+
+SET2	JC_128  RANGER_GR MINSTREL_GR WANDERER_GR	// 3차 궁수계열
+SET2	JC_129	SORCERER_GR GENETIC_GR	// 소서러,제네릭 계열
+
+SET2	JC_130	TAEKWON_GR		// 태권
+
+SET2	JC_131	NINJA_GR GUNSLINGER_GR		// 건너계열, 닌자계열
+SET	JC_131	GUNSLINGER
+
+SET2	JC_132	WARLOCK_GR ARCHBISHOP_GR	// 워록,아크비숍
+SET2	JC_133	SWORDMAN_GR MERCHANT_GR THIEF_GR ARCHER_GR TAEKWON_GR NINJA_GR GUNSLINGER_GR		// 검사계열,상인계열,도둑계열,궁수계열,태권,권성,건너계열,닌자계열
+SET	JC_133	GUNSLINGER
+
+SET2	JC_134	2NDJOB_GR 2NDJOB_H_GR 3RDJOB_GR 3RDJOB_H_GR 2NDBABY_GR 3RDBABY_GR		//2차직업이상,권성,소울링커, 카게로우, 오보로
+SET	JC_134  STAR LINKER KAGEROU OBORO REBELLION
+
+SET2	JC_135  MINSTREL_GR WANDERER_GR		//원더러, 민스트렐계열
+
+SET2	JC_136  WARLOCK_GR SORCERER_GR		//3차 마법사계열
+SET2	JC_137	MECHANIC_GR GENETIC_GR		// 3차 상인계열
+SET2	JC_138	ARCHBISHOP_GR SURA_GR		// 3차 복사계열
+SET2	JC_139	GUILLOTINE_CROSS_GR SHADOW_CHASER_GR		// 3차 도둑계열
+
+SET2	JC_140	HUNTER_H_GR BARD_H_GR DANCER_H_GR ASSASSIN_H_GR ROGUE_H_GR		// 전승 궁수/도둑 계열
+SET	JC_140	ARCHER_H THIEF_H
