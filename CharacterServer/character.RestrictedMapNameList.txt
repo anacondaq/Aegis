@@ -1,0 +1,69 @@
+//공성전시 악의 적 유저를 차단하기 위해
+// 캐릭터 존 진입시 
+// charinfo 테이블의mapname 이
+//아래 맵리스트에 존재하는 경우
+// charinfo 테이블의 restartmapname 으로
+// 강제 로그인 시키며
+// charinfo 테이블의 mapname 을 restartmapname 으로 업데이트 한다.
+//맵이름은 . 를 포함하여 23자(영문기준)를 넘어서는 안됨.
+
+//아래 sp 를 캐릭터 디비에 반드시 추가할 것.
+//CREATE PROCEDURE [UpdateMapName]
+//@GID		int
+//	,	@MapName		varchar(24)
+//	AS
+//	update charinfo with (rowlock)  set mapname =@MapName where GID = @GID
+//	GO
+
+//공성 지역
+/*
+aldeg_cas01.gat
+aldeg_cas02.gat
+aldeg_cas03.gat
+aldeg_cas04.gat
+aldeg_cas05.gat
+
+gefg_cas01.gat
+gefg_cas02.gat
+gefg_cas03.gat
+gefg_cas04.gat
+gefg_cas05.gat
+
+payg_cas01.gat
+payg_cas02.gat
+payg_cas03.gat
+payg_cas04.gat
+payg_cas05.gat
+
+prtg_cas01.gat
+prtg_cas02.gat
+prtg_cas03.gat
+prtg_cas04.gat
+prtg_cas05.gat
+*/
+
+//공성 SE 지역
+arug_cas01.gat
+arug_cas02.gat
+arug_cas03.gat
+arug_cas04.gat
+arug_cas05.gat
+
+schg_cas01.gat
+schg_cas02.gat
+schg_cas03.gat
+schg_cas04.gat
+schg_cas05.gat
+
+//공성 TE 지역
+te_prtcas01.gat
+te_prtcas02.gat
+te_prtcas03.gat
+te_prtcas04.gat
+te_prtcas05.gat
+
+te_aldecas1.gat
+te_aldecas2.gat
+te_aldecas3.gat
+te_aldecas4.gat
+te_aldecas5.gat

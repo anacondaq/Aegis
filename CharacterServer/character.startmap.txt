@@ -1,0 +1,6 @@
+START 97 90 iz_int.gat 97 90 iz_int.gat
+START1 97 90 iz_int01.gat 97 90 iz_int01.gat
+START2 97 90 iz_int02.gat 97 90 iz_int02.gat
+START3 97 90 iz_int03.gat 97 90 iz_int03.gat
+START4 97 90 iz_int04.gat 97 90 iz_int04.gat
+

@@ -1,0 +1,3650 @@
+NOVICE
+{
+	NV_BASIC
+	begin
+	end
+}
+
+SWORDMAN
+{
+	SM_SWORD
+	begin
+	end
+
+	SM_RECOVERY
+	begin
+	end
+
+	SM_BASH
+	begin
+	end
+
+	SM_PROVOKE
+	begin
+	end
+
+	SM_TWOHAND
+	begin
+		SM_SWORD	1
+	end
+
+	SM_MAGNUM
+	begin
+		SM_BASH		5
+	end
+
+	SM_ENDURE
+	begin
+		SM_PROVOKE	5
+	end
+}
+
+MAGICIAN
+{
+	MG_SRECOVERY
+	begin
+	end
+
+	MG_NAPALMBEAT
+	begin
+	end
+
+	MG_FIREBOLT
+	begin
+	end
+
+	MG_COLDBOLT
+	begin
+	end
+
+	MG_LIGHTNINGBOLT
+	begin
+	end
+
+	MG_STONECURSE
+	begin
+	end
+
+	MG_SIGHT
+	begin
+	end
+
+	MG_SOULSTRIKE
+	begin
+		MG_NAPALMBEAT	4
+	end
+
+	MG_SAFETYWALL
+	begin
+		MG_NAPALMBEAT	7
+		MG_SOULSTRIKE	5
+	end
+
+	MG_FIREBALL
+	begin
+		MG_FIREBOLT	4
+	end
+
+	MG_FIREWALL
+	begin
+		MG_SIGHT	1
+		MG_FIREBOLT	4
+		MG_FIREBALL	5
+	end
+
+	MG_FROSTDIVER
+	begin
+		MG_COLDBOLT	5
+	end
+
+	MG_THUNDERSTORM
+	begin
+		MG_LIGHTNINGBOLT	4
+	end
+}
+
+ARCHER
+{
+	AC_OWL
+	begin
+	end
+
+	AC_DOUBLE
+	begin
+	end
+
+	AC_VULTURE
+	begin
+		AC_OWL		3
+	end
+
+	AC_CONCENTRATION
+	begin
+		AC_VULTURE	1
+	end
+
+	AC_SHOWER
+	begin
+		AC_DOUBLE	5
+	end
+}
+
+MERCHANT
+{
+	MC_INCCARRY
+	begin
+	end
+
+	MC_MAMMONITE
+	begin
+	end
+
+	MC_IDENTIFY
+	begin
+	end
+
+	MC_DISCOUNT
+	begin
+		MC_INCCARRY	3
+	end
+
+	MC_PUSHCART
+	begin
+		MC_INCCARRY	5
+	end
+
+	MC_OVERCHARGE
+	begin
+		MC_DISCOUNT	3
+	end
+
+	MC_VENDING
+	begin
+		MC_PUSHCART	3
+	end
+}
+
+THIEF
+{
+	TF_DOUBLE
+	begin
+	end
+
+	TF_MISS
+	begin
+	end
+
+	TF_STEAL
+	begin
+	end
+
+	TF_POISON
+	begin
+	end
+
+	TF_HIDING
+	begin
+		TF_STEAL	5
+	end
+
+	TF_DETOXIFY
+	begin
+		TF_POISON	3
+	end
+}
+
+ACOLYTE
+{
+	AL_DP
+	begin
+	end
+
+	AL_HEAL
+	begin
+	end
+
+	AL_HOLYWATER
+	begin
+	end
+
+	AL_RUWACH
+	begin
+	end
+
+	AL_DEMONBANE
+	begin
+		AL_DP		3
+	end
+
+	AL_CRUCIS
+	begin
+		AL_DEMONBANE	3
+	end
+
+	AL_ANGELUS
+	begin
+		AL_DP		3
+	end
+
+	AL_BLESSING
+	begin
+		AL_DP		5
+	end
+
+	AL_CURE
+	begin
+		AL_HEAL		2
+	end
+
+	AL_INCAGI
+	begin
+		AL_HEAL		3
+	end
+
+	AL_DECAGI
+	begin
+		AL_INCAGI	1
+	end
+
+	AL_TELEPORT
+	begin
+		AL_RUWACH	1
+	end
+
+	AL_WARP
+	begin
+		AL_TELEPORT	2
+	end
+
+	AL_PNEUMA
+	begin
+		AL_WARP		4
+	end
+}
+
+SUPERNOVICE
+{
+	SM_SWORD
+	begin
+	end
+
+	SM_RECOVERY
+	begin
+	end
+
+	SM_BASH
+	begin
+	end
+
+	SM_PROVOKE
+	begin
+	end
+
+	SM_MAGNUM
+	begin
+		SM_BASH		5
+	end
+
+	SM_ENDURE
+	begin
+		SM_PROVOKE	5
+	end
+
+	AC_OWL
+	begin
+	end
+
+	AC_VULTURE
+	begin
+		AC_OWL		3
+	end
+
+	AC_CONCENTRATION
+	begin
+		AC_VULTURE	1
+	end
+}
+
+KNIGHT
+{
+	KN_SPEARMASTERY		
+	begin
+	end
+
+	KN_PIERCE
+	begin
+		KN_SPEARMASTERY		1
+	end
+
+	KN_SPEARSTAB
+	begin
+		KN_PIERCE	5
+	end
+
+	KN_SPEARBOOMERANG
+	begin
+		KN_PIERCE	3
+	end
+
+	KN_RIDING
+	begin
+		SM_ENDURE	1
+	end
+
+	KN_CAVALIERMASTERY
+	begin
+		KN_RIDING	1
+	end
+
+	KN_BRANDISHSPEAR
+	begin
+		KN_RIDING	1
+		KN_SPEARSTAB	3
+	end
+
+	KN_AUTOCOUNTER
+	begin
+		SM_TWOHAND	1
+	end
+
+	KN_TWOHANDQUICKEN
+	begin
+		SM_TWOHAND	1
+	end
+
+	KN_BOWLINGBASH
+	begin
+		KN_AUTOCOUNTER		5
+		KN_TWOHANDQUICKEN	10
+		SM_TWOHAND		5
+		SM_BASH			10
+		SM_MAGNUM		3
+	end
+}
+
+WIZARD
+{
+	WZ_ESTIMATION
+	begin
+	end
+
+	WZ_EARTHSPIKE
+	begin
+		MG_STONECURSE	1
+	end
+
+	WZ_HEAVENDRIVE
+	begin
+		WZ_EARTHSPIKE	3
+	end
+
+	WZ_QUAGMIRE
+	begin
+		WZ_HEAVENDRIVE	1	
+	end
+
+	WZ_ICEWALL
+	begin
+		MG_STONECURSE	1
+		MG_FROSTDIVER	1
+	end
+
+	WZ_FROSTNOVA
+	begin
+		WZ_ICEWALL	1
+	end
+
+	WZ_SIGHTRASHER
+	begin
+		MG_SIGHT		1
+		MG_LIGHTNINGBOLT	1
+	end
+
+	WZ_METEOR
+	begin
+		WZ_SIGHTRASHER	2
+		MG_THUNDERSTORM	1
+	end
+
+	WZ_JUPITEL
+	begin
+		MG_NAPALMBEAT		1
+		MG_LIGHTNINGBOLT	1
+	end
+
+	WZ_VERMILION
+	begin
+		WZ_JUPITEL	5
+		MG_THUNDERSTORM	1
+	end
+
+	WZ_STORMGUST
+	begin
+		MG_FROSTDIVER	1
+		WZ_JUPITEL	3	
+	end
+
+	WZ_FIREPILLAR
+	begin
+		MG_FIREWALL	1
+	end
+
+	WZ_WATERBALL
+	begin
+		MG_COLDBOLT		1
+		MG_LIGHTNINGBOLT	1
+	end
+}
+
+HUNTER
+{
+	HT_SKIDTRAP
+	begin
+	end
+
+	HT_LANDMINE	
+	begin
+	end
+
+	HT_BEASTBANE	
+	begin
+	end
+
+	HT_FLASHER
+	begin
+		HT_SKIDTRAP	1
+	end
+
+	HT_FREEZINGTRAP
+	begin
+		HT_FLASHER	1
+	end
+
+	HT_SANDMAN
+	begin
+		HT_FLASHER	1
+	end
+
+	HT_BLASTMINE
+	begin
+		HT_SANDMAN	1
+		HT_FREEZINGTRAP	1
+		HT_LANDMINE	1
+	end
+
+	HT_REMOVETRAP
+	begin
+		HT_LANDMINE	1
+	end
+
+	HT_ANKLESNARE
+	begin
+		HT_SKIDTRAP	1
+	end
+
+	HT_SHOCKWAVE
+	begin
+		HT_ANKLESNARE	1
+	end
+
+	HT_TALKIEBOX
+	begin
+		HT_SHOCKWAVE	1
+		HT_REMOVETRAP	1
+	end
+
+	HT_CLAYMORETRAP
+	begin
+		HT_SHOCKWAVE	1
+		HT_BLASTMINE	1	
+	end
+
+	HT_FALCON
+	begin
+		HT_BEASTBANE	1
+	end
+
+	HT_SPRINGTRAP
+	begin
+		HT_FALCON	1
+		HT_REMOVETRAP	1
+	end
+
+	HT_DETECTING
+	begin
+		AC_CONCENTRATION	1
+		HT_FALCON		1
+	end
+
+	HT_BLITZBEAT
+	begin
+		HT_FALCON	1
+	end
+
+	HT_STEELCROW
+	begin
+		HT_BLITZBEAT	5
+	end
+}
+
+BLACKSMITH
+{
+	BS_DAGGER	
+	begin
+	end
+
+	BS_IRON		
+	begin
+	end
+
+	BS_HILTBINDING	
+	begin
+	end
+
+	BS_HAMMERFALL	
+	begin
+	end
+
+	BS_SKINTEMPER
+	begin
+	end
+
+	BS_SWORD
+	begin
+		BS_DAGGER	1
+	end
+
+	BS_TWOHANDSWORD
+	begin
+		BS_SWORD	1
+	end
+
+	BS_AXE
+	begin
+		BS_SWORD	2
+	end
+
+	BS_KNUCKLE
+	begin
+		BS_DAGGER	1
+	end
+
+	BS_MACE
+	begin
+		BS_KNUCKLE	1
+	end
+
+	BS_SPEAR
+	begin
+		BS_DAGGER	2
+	end
+
+	BS_ENCHANTEDSTONE
+	begin
+		BS_IRON		1
+	end
+
+	BS_STEEL
+	begin
+		BS_IRON		1
+	end
+
+	BS_ORIDEOCON
+	begin
+		BS_ENCHANTEDSTONE	1
+	end
+
+	BS_FINDINGORE
+	begin
+		BS_HILTBINDING	1
+		BS_STEEL	1
+	end
+
+	BS_WEAPONRESEARCH
+	begin
+		BS_HILTBINDING	1
+	end
+
+	BS_REPAIRWEAPON
+	begin
+		BS_WEAPONRESEARCH	1
+	end
+
+	BS_ADRENALINE
+	begin
+		BS_HAMMERFALL	2
+	end
+
+	BS_WEAPONPERFECT
+	begin
+		BS_ADRENALINE		2
+		BS_WEAPONRESEARCH	2
+	end
+
+	BS_OVERTHRUST
+	begin
+		BS_ADRENALINE	3
+	end
+
+	BS_MAXIMIZE
+	begin
+		BS_WEAPONPERFECT	3
+		BS_OVERTHRUST		2
+	end
+}
+
+ASSASSIN
+{
+	AS_RIGHT	
+	begin
+	end
+
+	AS_KATAR	
+	begin
+	end
+
+	AS_LEFT
+	begin
+		AS_RIGHT	2
+	end
+
+	AS_SONICBLOW
+	begin
+		AS_KATAR	4
+	end
+
+	AS_CLOAKING
+	begin
+		TF_HIDING	2
+	end
+
+	AS_GRIMTOOTH
+	begin
+		AS_SONICBLOW	5
+		AS_CLOAKING	2
+	end
+
+	AS_ENCHANTPOISON
+	begin
+		TF_POISON	1
+	end
+
+	AS_POISONREACT
+	begin
+		AS_ENCHANTPOISON	3
+	end
+
+	AS_VENOMDUST
+	begin
+		AS_ENCHANTPOISON	5
+	end
+
+	AS_SPLASHER
+	begin
+		AS_POISONREACT	5
+		AS_VENOMDUST	5
+	end
+}
+
+PRIEST
+{
+	PR_MACEMASTERY
+	begin
+	end
+
+	MG_SRECOVERY	
+	begin
+	end
+	
+	PR_STRECOVERY	
+	begin
+	end
+
+	PR_MAGNIFICAT	
+	begin
+	end
+
+	PR_IMPOSITIO	
+	begin
+	end
+
+	PR_SLOWPOISON
+	begin
+	end
+
+	ALL_RESURRECTION
+	begin
+		PR_STRECOVERY	1
+		MG_SRECOVERY	4
+	end
+
+	PR_LEXDIVINA
+	begin
+		AL_RUWACH	1
+	end
+
+	PR_TURNUNDEAD
+	begin
+		PR_LEXDIVINA		3
+		ALL_RESURRECTION	1
+	end
+
+	PR_LEXAETERNA
+	begin
+		PR_LEXDIVINA	5
+	end
+
+	PR_KYRIE
+	begin
+		AL_ANGELUS	2
+	end
+
+	PR_GLORIA
+	begin
+		PR_KYRIE	4
+		PR_MAGNIFICAT	3
+	end
+
+	PR_SUFFRAGIUM
+	begin
+		PR_IMPOSITIO	2
+	end
+
+	PR_ASPERSIO
+	begin
+		AL_HOLYWATER	1
+		PR_IMPOSITIO	3
+	end
+
+	PR_BENEDICTIO
+	begin
+		PR_ASPERSIO	5
+		PR_GLORIA	3
+	end
+
+	PR_SANCTUARY
+	begin
+		AL_HEAL		1
+	end
+
+	MG_SAFETYWALL
+	begin
+		PR_ASPERSIO	4
+		PR_SANCTUARY	3
+	end
+
+	PR_MAGNUS
+	begin
+		PR_TURNUNDEAD	3
+		PR_LEXAETERNA	1
+		MG_SAFETYWALL	1
+	end
+}
+
+CRUSADER
+{
+	CR_TRUST	
+	begin
+	end
+	
+	CR_AUTOGUARD	
+	begin
+	end
+
+	KN_SPEARMASTERY	
+	begin
+	end
+	
+	AL_CURE
+	begin
+		CR_TRUST	5
+	end
+
+	AL_DP
+	begin
+		AL_CURE		1
+	end
+
+	AL_DEMONBANE
+	begin
+		AL_DP	3
+	end
+
+	AL_HEAL
+	begin
+		CR_TRUST	10
+		AL_DEMONBANE	5
+	end
+
+	CR_PROVIDENCE
+	begin
+		AL_DP	5
+		AL_HEAL	5
+	end
+
+	CR_HOLYCROSS
+	begin
+		CR_TRUST	7
+	end
+
+	CR_GRANDCROSS
+	begin
+		CR_TRUST	10
+		CR_HOLYCROSS	6
+	end
+
+	CR_SHIELDCHARGE
+	begin
+		CR_AUTOGUARD	5
+	end
+
+	CR_SHIELDBOOMERANG
+	begin
+		CR_SHIELDCHARGE	3
+	end
+
+	CR_REFLECTSHIELD
+	begin
+		CR_SHIELDBOOMERANG	3
+	end
+
+	CR_DEVOTION
+	begin
+		CR_GRANDCROSS		4
+		CR_REFLECTSHIELD	5
+	end
+
+	CR_DEFENDER
+	begin
+		CR_SHIELDBOOMERANG	1
+	end
+
+	CR_SPEARQUICKEN
+	begin
+		KN_SPEARMASTERY	10
+	end
+
+	KN_RIDING
+	begin
+		SM_ENDURE	1
+	end
+
+	KN_CAVALIERMASTERY
+	begin
+		KN_RIDING	1
+	end
+}
+
+SAGE
+{
+	WZ_ESTIMATION
+	begin
+	end
+
+	SA_ADVANCEDBOOK	
+	begin
+	end
+
+	SA_DRAGONOLOGY
+	begin
+		SA_ADVANCEDBOOK	9
+	end
+
+	SA_CASTCANCEL
+	begin
+		SA_ADVANCEDBOOK	2
+	end
+
+	SA_FREECAST
+	begin
+		SA_CASTCANCEL	1
+	end
+
+	SA_AUTOSPELL
+	begin
+		SA_FREECAST	4
+	end
+
+	SA_MAGICROD
+	begin
+		SA_ADVANCEDBOOK	4
+	end
+
+	SA_SPELLBREAKER
+	begin
+		SA_MAGICROD	1
+	end
+
+	SA_DISPELL
+	begin
+		SA_SPELLBREAKER	3
+	end
+
+	SA_FLAMELAUNCHER
+	begin
+		SA_ADVANCEDBOOK	5
+		MG_FIREBOLT	1
+	end
+
+	SA_VOLCANO
+	begin
+		SA_FLAMELAUNCHER	2
+	end
+
+	SA_FROSTWEAPON
+	begin
+		SA_ADVANCEDBOOK	5
+		MG_COLDBOLT	1
+	end
+
+	SA_DELUGE
+	begin
+		SA_FROSTWEAPON	2
+	end
+
+	SA_LIGHTNINGLOADER
+	begin
+		SA_ADVANCEDBOOK		5
+		MG_LIGHTNINGBOLT	1
+	end
+
+	SA_VIOLENTGALE
+	begin
+		SA_LIGHTNINGLOADER	2
+	end
+
+	SA_LANDPROTECTOR
+	begin
+		SA_VOLCANO	3
+		SA_DELUGE	3
+		SA_VIOLENTGALE	3	
+	end
+
+	SA_ABRACADABRA
+	begin
+		SA_AUTOSPELL		5
+		SA_DISPELL		1
+		SA_LANDPROTECTOR	1
+	end
+
+	SA_SEISMICWEAPON
+	begin
+		SA_ADVANCEDBOOK		5
+		MG_STONECURSE		1
+	end
+
+	WZ_EARTHSPIKE
+	begin
+		SA_SEISMICWEAPON	1
+	end
+
+	WZ_HEAVENDRIVE
+	begin
+		WZ_EARTHSPIKE	1
+	end
+}
+
+BARD
+{
+	BD_ADAPTATION	
+	begin
+	end
+
+	BA_MUSICALLESSON	
+	begin
+	end
+
+	BD_ENCORE
+	begin
+		BD_ADAPTATION	1
+	end
+
+	BA_FROSTJOKER
+	begin
+		BD_ENCORE	1
+	end
+
+	BA_DISSONANCE
+	begin
+		BD_ADAPTATION		1
+		BA_MUSICALLESSON	1
+	end
+
+	BA_MUSICALSTRIKE
+	begin
+		BA_MUSICALLESSON	3
+	end
+
+	BA_WHISTLE
+	begin
+		BA_DISSONANCE	3
+	end
+
+	BA_ASSASSINCROSS
+	begin
+		BA_DISSONANCE	3
+	end
+
+	BA_POEMBRAGI
+	begin
+		BA_DISSONANCE	3
+	end
+
+	BA_APPLEIDUN
+	begin
+		BA_DISSONANCE	3
+	end
+	
+	BD_LULLABY
+	begin
+		BA_WHISTLE	10
+	end
+
+	BD_INTOABYSS
+	begin
+		BD_LULLABY	1
+	end
+
+	BD_ROKISWEIL
+	begin
+		BA_ASSASSINCROSS	10
+	end
+
+	BD_ETERNALCHAOS
+	begin
+		BD_ROKISWEIL	1
+	end
+	
+	BD_SIEGFRIED
+	begin
+		BA_POEMBRAGI	10
+	end
+
+	BD_RICHMANKIM
+	begin
+		BD_SIEGFRIED	3
+	end
+	
+	BD_DRUMBATTLEFIELD
+	begin
+		BA_APPLEIDUN	10
+	end
+
+	BD_RINGNIBELUNGEN
+	begin
+		BD_DRUMBATTLEFIELD	3
+	end
+}
+
+DANCER
+{
+	BD_ADAPTATION	
+	begin
+	end
+
+	DC_DANCINGLESSON	
+	begin
+	end
+
+	BD_ENCORE
+	begin
+		BD_ADAPTATION	1
+	end
+
+	DC_SCREAM
+	begin
+		BD_ENCORE	1
+	end
+
+	DC_UGLYDANCE
+	begin
+		BD_ADAPTATION		1
+		DC_DANCINGLESSON	1
+	end
+
+	DC_THROWARROW
+	begin
+		DC_DANCINGLESSON	3
+	end
+
+	DC_HUMMING
+	begin
+		DC_UGLYDANCE	3
+	end
+
+	DC_DONTFORGETME
+	begin
+		DC_UGLYDANCE	3
+	end
+
+	DC_FORTUNEKISS
+	begin
+		DC_UGLYDANCE	3
+	end
+
+	DC_SERVICEFORYOU
+	begin
+		DC_UGLYDANCE	3
+	end
+
+	BD_LULLABY
+	begin
+		DC_HUMMING	10
+	end
+
+	BD_INTOABYSS
+	begin
+		BD_LULLABY	1
+	end
+
+	BD_ROKISWEIL
+	begin
+		DC_DONTFORGETME	10
+	end
+
+	BD_ETERNALCHAOS
+	begin
+		BD_ROKISWEIL	1
+	end
+	
+	BD_SIEGFRIED
+	begin
+		DC_FORTUNEKISS	10
+	end
+
+	BD_RICHMANKIM
+	begin
+		BD_SIEGFRIED	3
+	end
+	
+	BD_DRUMBATTLEFIELD
+	begin
+		DC_SERVICEFORYOU	10
+	end
+
+	BD_RINGNIBELUNGEN
+	begin
+		BD_DRUMBATTLEFIELD	3
+	end
+}
+
+ALCHEMIST
+{
+	AM_AXEMASTERY
+	begin
+	end
+
+	AM_LEARNINGPOTION	
+	begin
+	end
+
+	AM_PHARMACY	
+	begin
+		AM_LEARNINGPOTION	5
+	end
+
+	AM_SPHEREMINE
+	begin
+		AM_PHARMACY	2
+	end
+
+	AM_POTIONPITCHER
+	begin
+		AM_PHARMACY	3
+	end
+
+	AM_DEMONSTRATION
+	begin
+		AM_PHARMACY	4
+	end
+
+	AM_ACIDTERROR
+	begin
+		AM_PHARMACY	5
+	end
+
+	AM_CANNIBALIZE
+	begin
+		AM_PHARMACY	6
+	end
+
+	AM_CP_HELM
+	begin
+		AM_PHARMACY	2
+	end
+
+	AM_CP_SHIELD
+	begin
+		AM_CP_HELM	3
+	end
+
+	AM_CP_ARMOR
+	begin
+		AM_CP_SHIELD	3
+	end
+
+	AM_CP_WEAPON
+	begin
+		AM_CP_ARMOR	3
+	end
+
+//	AM_BIOETHICS
+//	begin
+//	end
+
+//	AM_BIOTECHNOLOGY
+//	begin
+//		AM_BIOETHICS	1
+//	end
+
+//	AM_CREATECREATURE
+//	begin
+//		AM_BIOTECHNOLOGY	7
+//	end
+
+//	AM_CULTIVATION
+//	begin
+//		AM_CREATECREATURE	3
+//	end
+
+//	AM_FLAMECONTROL
+//	begin
+//		AM_BIOTECHNOLOGY	3
+//	end
+
+	AM_CALLHOMUN
+	begin
+		AM_REST	1
+	end
+
+//	AM_REST
+//	begin
+//		AM_BIOTECHNOLOGY	5
+//	end
+
+	AM_REST
+	begin
+		AM_BIOETHICS	1
+	end
+
+//	AM_DRILLMASTER
+//	begin
+//		AM_HEALHOMUN	3
+//	end
+
+//	AM_HEALHOMUN
+//	begin
+//		AM_CULTIVATION	5
+//	end
+	
+	AM_RESURRECTHOMUN
+	begin
+		AM_CALLHOMUN	1
+	end
+}
+
+ROGUE
+{
+	SM_SWORD	
+	begin
+	end
+
+	AC_VULTURE	
+	begin
+	end
+
+	RG_SNATCHER
+	begin
+		TF_STEAL	1
+	end
+
+	RG_TUNNELDRIVE
+	begin
+		TF_HIDING	1
+	end
+
+	RG_STEALCOIN
+	begin
+		RG_SNATCHER	4
+	end
+
+	RG_BACKSTAP
+	begin
+		RG_STEALCOIN	4
+	end
+
+	RG_RAID
+	begin
+		RG_TUNNELDRIVE	2
+		RG_BACKSTAP	2
+	end
+
+	RG_INTIMIDATE
+	begin
+		RG_RAID		5
+		RG_BACKSTAP	4
+	end
+
+	RG_PLAGIARISM
+	begin
+		RG_INTIMIDATE	5
+	end
+
+	RG_STRIPHELM
+	begin
+		RG_STEALCOIN	2
+	end
+
+	RG_STRIPSHIELD
+	begin
+		RG_STRIPHELM	5
+	end
+
+	RG_STRIPARMOR
+	begin
+		RG_STRIPSHIELD	5
+	end
+
+	RG_STRIPWEAPON
+	begin
+		RG_STRIPARMOR	5
+	end
+
+	RG_GANGSTER
+	begin
+		RG_STRIPSHIELD	3
+	end
+
+	RG_CLEANER
+	begin
+		RG_GANGSTER	1
+	end
+
+	RG_FLAGGRAFFITI
+	begin
+		RG_CLEANER	1
+	end
+
+	RG_GRAFFITI
+	begin
+		RG_FLAGGRAFFITI	5
+	end
+
+	RG_COMPULSION
+	begin
+		RG_GANGSTER	1
+	end
+
+	AC_DOUBLE
+	begin
+		AC_VULTURE	10
+	end
+
+	HT_REMOVETRAP
+	begin
+		AC_DOUBLE	5
+	end
+}
+
+MONK
+{
+	MO_IRONHAND
+	begin
+		AL_DP		10
+		AL_DEMONBANE	10
+	end
+
+	MO_CALLSPIRITS
+	begin
+		MO_IRONHAND	2
+	end
+
+	MO_ABSORBSPIRITS
+	begin
+		MO_CALLSPIRITS	5
+	end
+
+	MO_EXPLOSIONSPIRITS
+	begin
+		MO_ABSORBSPIRITS	1
+	end
+
+	MO_INVESTIGATE
+	begin
+		MO_CALLSPIRITS	5
+	end
+
+	MO_FINGEROFFENSIVE
+	begin	
+		MO_INVESTIGATE	3
+	end
+
+	MO_DODGE
+	begin
+		MO_IRONHAND	5
+		MO_CALLSPIRITS	5
+	end
+
+	MO_BLADESTOP
+	begin
+		MO_DODGE	5
+	end
+
+	MO_SPIRITSRECOVERY
+	begin
+		MO_BLADESTOP	2
+	end
+
+	MO_TRIPLEATTACK
+	begin
+		MO_DODGE	5
+	end
+
+	MO_CHAINCOMBO
+	begin
+		MO_TRIPLEATTACK	5
+	end
+
+	MO_COMBOFINISH
+	begin
+		MO_CHAINCOMBO	3
+	end
+
+	MO_STEELBODY
+	begin
+		MO_COMBOFINISH	3
+	end
+
+	MO_EXTREMITYFIST
+	begin
+		MO_EXPLOSIONSPIRITS	3
+		MO_FINGEROFFENSIVE	3
+	end
+
+	MO_BODYRELOCATION
+	begin
+		MO_EXTREMITYFIST	3
+		MO_SPIRITSRECOVERY	2
+		MO_STEELBODY	3
+	end
+}
+
+KNIGHT_H
+{
+	LK_AURABLADE
+	begin
+		SM_BASH		5
+		SM_MAGNUM	5
+		SM_TWOHAND	5
+	end
+
+	LK_PARRYING
+	begin
+		SM_TWOHAND		10
+		SM_PROVOKE		5
+		KN_TWOHANDQUICKEN	3
+	end
+
+	LK_CONCENTRATION
+	begin
+		KN_SPEARMASTERY		5
+		KN_RIDING		1
+		SM_RECOVERY		5
+	end
+
+	LK_TENSIONRELAX
+	begin
+		SM_PROVOKE		5
+		SM_RECOVERY		10
+		SM_ENDURE		3
+	end
+
+	LK_BERSERK
+	begin
+		JOBLEVEL		50
+	end
+
+	LK_SPIRALPIERCE
+	begin
+		KN_SPEARMASTERY	5
+		KN_PIERCE		5
+		KN_RIDING		1
+		KN_SPEARSTAB	5
+	end
+
+	LK_HEADCRUSH
+	begin
+		KN_SPEARMASTERY	9
+		KN_RIDING	1
+	end
+
+	LK_JOINTBEAT
+	begin
+		KN_SPEARMASTERY	9
+		KN_RIDING	1
+		KN_CAVALIERMASTERY	3
+		LK_HEADCRUSH	3
+	end
+}
+
+PRIEST_H
+{
+	HP_ASSUMPTIO
+	begin
+		AL_ANGELUS	1
+		MG_SRECOVERY	3
+		PR_IMPOSITIO	3
+	end
+
+	HP_BASILICA
+	begin
+		PR_GLORIA	2
+		MG_SRECOVERY	1
+		PR_KYRIE	3	
+	end
+
+	HP_MEDITATIO
+	begin
+		MG_SRECOVERY	5
+		PR_LEXDIVINA	5
+		PR_ASPERSIO	3
+	end	
+
+	HP_MANARECHARGE
+	begin
+		PR_MACEMASTERY	10
+		AL_DEMONBANE		10
+	end
+}
+
+WIZARD_H
+{
+	HW_SOULDRAIN
+	begin
+		MG_SRECOVERY	5
+		MG_SOULSTRIKE	7
+	end
+
+	HW_MAGICCRASHER
+	begin
+		MG_SRECOVERY	1
+	end
+
+	HW_MAGICPOWER
+	begin
+	end
+
+	HW_NAPALMVULCAN
+	begin
+		MG_NAPALMBEAT	5
+	end
+
+	HW_GANBANTEIN
+	begin
+		WZ_ESTIMATION	1
+		WZ_ICEWALL	1
+	end
+
+	HW_GRAVITATION
+	begin
+		HW_MAGICCRASHER	1
+		HW_MAGICPOWER	10
+		WZ_QUAGMIRE	1
+	end
+}
+
+CRUSADER_H
+{
+	PA_PRESSURE
+	begin
+		SM_ENDURE		5
+		CR_TRUST		5
+		CR_SHIELDCHARGE		2
+	end	
+
+	PA_SACRIFICE
+	begin
+		SM_ENDURE	1
+		CR_TRUST	5
+		CR_DEVOTION	3
+	end
+
+	PA_GOSPEL
+	begin
+		CR_TRUST	8
+		AL_DP		3
+		AL_DEMONBANE	5
+	end
+
+	PA_SHIELDCHAIN
+	begin
+		CR_SHIELDBOOMERANG	5
+	end
+}
+
+MONK_H
+{
+	CH_PALMSTRIKE
+	begin
+		MO_IRONHAND	7
+		MO_CALLSPIRITS	5
+	end
+
+	CH_TIGERFIST
+	begin
+		MO_IRONHAND	5
+		MO_TRIPLEATTACK	5
+		MO_CALLSPIRITS	5
+		MO_COMBOFINISH	3
+	end
+
+	CH_CHAINCRUSH
+	begin
+		MO_IRONHAND	5
+		MO_CALLSPIRITS	5
+		CH_TIGERFIST	2
+	end
+
+	CH_SOULCOLLECT
+	begin
+		MO_CALLSPIRITS	5
+		MO_ABSORBSPIRITS	1
+		MO_EXPLOSIONSPIRITS	5		
+	end
+}
+
+SAGE_H
+{
+	PF_HPCONVERSION
+	begin
+		MG_SRECOVERY	1
+		SA_MAGICROD	1
+	end
+
+	PF_SOULCHANGE
+	begin
+		SA_MAGICROD		3
+		SA_SPELLBREAKER		2
+	end
+
+	PF_SOULBURN
+	begin
+		SA_CASTCANCEL	5
+		SA_MAGICROD	3
+		SA_DISPELL	3
+	end
+
+	PF_MINDBREAKER
+	begin
+		MG_SRECOVERY	3
+		PF_SOULBURN		2
+	end
+
+	PF_MEMORIZE
+	begin
+		SA_ADVANCEDBOOK	5
+		SA_FREECAST		5
+		SA_AUTOSPELL	1
+	end
+
+	PF_FOGWALL
+	begin
+		SA_VIOLENTGALE	2
+		SA_DELUGE	2	
+	end
+
+	PF_SPIDERWEB
+	begin
+		SA_DRAGONOLOGY	4
+	end
+
+	PF_DOUBLECASTING
+	begin
+		SA_AUTOSPELL	1
+	end
+}
+
+ASSASSIN_H
+{
+	ASC_KATAR
+	begin
+		TF_DOUBLE	5
+		AS_KATAR	7
+	end
+
+	ASC_BREAKER
+	begin
+		TF_DOUBLE			5
+		TF_POISON			5
+		AS_CLOAKING			3
+		AS_ENCHANTPOISON	6
+	end
+
+	ASC_EDP
+	begin
+		ASC_CDP		1
+	end
+
+	ASC_CDP
+	begin
+		TF_POISON			10
+		TF_DETOXIFY			1
+		AS_ENCHANTPOISON	5
+	end
+
+	ASC_METEORASSAULT
+	begin
+		AS_KATAR		5
+		AS_RIGHT		3
+		AS_SONICBLOW	5
+		ASC_BREAKER		1
+	end
+}
+
+HUNTER_H
+{
+	SN_SIGHT
+	begin
+		AC_CONCENTRATION	10
+		AC_VULTURE			10
+		AC_OWL				10
+		HT_FALCON			1
+	end
+
+	SN_FALCONASSAULT
+	begin
+		AC_VULTURE		5
+		HT_FALCON		1
+		HT_BLITZBEAT	5
+		HT_STEELCROW	3
+	end
+
+	SN_SHARPSHOOTING
+	begin
+		AC_DOUBLE			5
+		AC_CONCENTRATION	10
+	end
+
+	SN_WINDWALK
+	begin
+		AC_CONCENTRATION	9
+	end
+}
+
+BLACKSMITH_H
+{
+	WS_MELTDOWN
+	begin
+		BS_SKINTEMPER		3
+		BS_HILTBINDING		1
+		BS_WEAPONRESEARCH	5
+		BS_OVERTHRUST		3
+	end
+
+//	WS_CREATECOIN
+//	begin
+//		BS_IRON				5
+//		BS_STEEL			5
+//		BS_ENCHANTEDSTONE	3
+//		BS_ORIDEOCON		2
+//	end
+
+//	WS_CREATENUGGET
+//	begin
+//		BS_ORIDEOCON		3
+//		BS_FINDINGORE		1
+//		BS_WEAPONRESEARCH	5
+//	end
+
+	WS_CARTBOOST
+	begin
+		MC_PUSHCART			5
+		MC_CARTREVOLUTION	1
+		MC_CHANGECART		1
+		BS_HILTBINDING		1
+	end
+
+//	WS_SYSTEMCREATE
+//	begin
+//		BS_WEAPONRESEARCH	10
+//		BS_WEAPONPERFECT	3
+//	end
+
+	WS_WEAPONREFINE
+	begin
+		BS_WEAPONRESEARCH	10
+	end
+
+	WS_CARTTERMINATION
+	begin
+		MC_MAMMONITE		10
+		BS_HAMMERFALL		5
+		WS_CARTBOOST		1
+	end
+
+	WS_OVERTHRUSTMAX
+	begin
+		BS_OVERTHRUST		5
+	end
+}
+
+ROGUE_H
+{
+	ST_CHASEWALK
+	begin
+		TF_HIDING		5
+		RG_TUNNELDRIVE	3
+	end
+
+	ST_REJECTSWORD
+	begin
+	end
+
+	ST_PRESERVE
+	begin
+		RG_PLAGIARISM	10
+	end
+
+	ST_FULLSTRIP
+	begin
+		RG_STRIPARMOR	5
+		RG_STRIPHELM	5
+		RG_STRIPSHIELD	5
+		RG_STRIPWEAPON	5
+	end
+}
+
+BARD_H
+{
+	CG_ARROWVULCAN
+	begin
+		AC_DOUBLE			5
+		AC_SHOWER			5
+		BA_MUSICALSTRIKE	1
+	end
+
+	CG_MOONLIT
+	begin
+		AC_CONCENTRATION	5
+		BA_MUSICALLESSON	7
+	end
+
+	CG_MARIONETTE
+	begin
+		AC_CONCENTRATION	10
+		BA_MUSICALLESSON	5
+	end
+
+	CG_LONGINGFREEDOM
+	begin
+		BA_DISSONANCE		3
+		BA_MUSICALLESSON	10
+		CG_MARIONETTE		1
+	end
+
+	CG_HERMODE
+	begin
+		AC_CONCENTRATION	10
+		BA_MUSICALLESSON	10
+	end
+
+	CG_TAROTCARD
+	begin
+		AC_CONCENTRATION	10
+		BA_DISSONANCE		3
+	end
+}
+
+DANCER_H
+{
+	CG_ARROWVULCAN
+	begin
+		AC_DOUBLE			5
+		AC_SHOWER			5
+		DC_THROWARROW		1
+	end
+
+	CG_MOONLIT
+	begin
+		AC_CONCENTRATION	5
+		DC_DANCINGLESSON	7
+	end
+
+	CG_MARIONETTE
+	begin
+		AC_CONCENTRATION	10
+		DC_DANCINGLESSON	5
+	end
+
+	CG_LONGINGFREEDOM
+	begin
+		DC_UGLYDANCE		3
+		DC_DANCINGLESSON	10
+		CG_MARIONETTE		1
+	end
+
+	CG_HERMODE
+	begin
+		AC_CONCENTRATION	10
+		DC_DANCINGLESSON	10
+	end
+
+	CG_TAROTCARD
+	begin
+		AC_CONCENTRATION	10
+		DC_UGLYDANCE		3
+	end
+}
+
+ALCHEMIST_H
+{
+	CR_SLIMPITCHER
+	begin
+		AM_POTIONPITCHER	5
+	end
+
+	CR_FULLPROTECTION
+	begin
+		AM_CP_HELM		5
+		AM_CP_SHIELD	5
+		AM_CP_ARMOR		5
+		AM_CP_WEAPON	5
+	end
+
+	CR_ACIDDEMONSTRATION
+	begin
+		AM_DEMONSTRATION	5
+		AM_ACIDTERROR		5
+	end
+
+	CR_CULTIVATION
+	begin
+	end
+}
+
+TAEKWON
+{
+	TK_RUN
+	begin
+	end
+
+	TK_HIGHJUMP
+	begin
+	end
+
+	TK_STORMKICK
+	begin
+	end
+
+	TK_READYSTORM
+	begin
+		TK_STORMKICK	1
+	end
+
+	TK_DOWNKICK
+	begin
+	end
+
+	TK_READYDOWN
+	begin
+		TK_DOWNKICK		1
+	end
+
+	TK_TURNKICK
+	begin
+	end
+
+	TK_READYTURN
+	begin
+		TK_TURNKICK		1
+	end
+
+	TK_COUNTER
+	begin
+	end
+
+	TK_READYCOUNTER
+	begin
+		TK_COUNTER		1
+	end
+
+	TK_JUMPKICK
+	begin
+	end
+
+	TK_DODGE
+	begin
+		TK_JUMPKICK		7
+	end
+
+	TK_HPTIME
+	begin
+	end
+
+	TK_SPTIME
+	begin
+	end
+
+	TK_POWER
+	begin
+	end
+
+	TK_SEVENWIND
+	begin
+		TK_HPTIME	5
+		TK_SPTIME	5
+		TK_POWER	5
+	end
+
+	TK_MISSION
+	begin
+		TK_POWER	5
+	end
+}
+
+STAR
+{
+	SG_FEEL
+	begin
+	end
+
+	SG_SUN_WARM
+	begin
+		SG_FEEL	1
+	end
+
+	SG_MOON_WARM
+	begin
+		SG_FEEL	2
+	end
+
+	SG_STAR_WARM
+	begin
+		SG_FEEL	3
+	end
+
+	SG_HATE
+	begin
+	end
+
+	SG_SUN_ANGER
+	begin
+		SG_HATE	1
+	end
+
+	SG_MOON_ANGER
+	begin
+		SG_HATE	2
+	end
+
+	SG_STAR_ANGER
+	begin
+		SG_HATE	3
+	end
+
+	SG_SUN_COMFORT
+	begin
+		SG_FEEL	1
+	end
+
+	SG_MOON_COMFORT
+	begin
+		SG_FEEL	2
+	end
+
+	SG_STAR_COMFORT
+	begin
+		SG_FEEL	3
+	end
+
+	SG_SUN_BLESS
+	begin
+		SG_HATE	1
+		SG_FEEL	1
+	end
+
+	SG_MOON_BLESS
+	begin
+		SG_HATE	2
+		SG_FEEL	2
+	end
+
+	SG_STAR_BLESS
+	begin
+		SG_HATE	3
+		SG_FEEL	3
+	end
+
+	SG_DEVIL
+	begin
+	end
+
+	SG_FRIEND
+	begin
+	end
+
+	SG_KNOWLEDGE
+	begin
+	end
+
+}
+
+LINKER
+{
+	SL_ALCHEMIST
+	begin
+	end
+
+	SL_MONK
+	begin
+	end
+
+	SL_STAR
+	begin
+	end
+
+	SL_SAGE
+	begin
+	end
+
+	SL_CRUSADER
+	begin
+	end
+
+	SL_SUPERNOVICE
+	begin
+	end
+
+	SL_KNIGHT
+	begin
+		SL_CRUSADER	1
+	end
+
+	SL_WIZARD
+	begin
+		SL_SAGE 1
+	end
+
+	SL_PRIEST
+	begin
+		SL_MONK 1
+	end
+
+	SL_BARDDANCER
+	begin
+	end
+
+	SL_ROGUE
+	begin
+		SL_ASSASIN 1
+	end
+
+	SL_ASSASIN
+	begin
+	end
+
+	SL_BLACKSMITH
+	begin
+		SL_ALCHEMIST 1
+	end
+
+	SL_HUNTER
+	begin
+		SL_BARDDANCER 1
+	end
+
+	SL_SOULLINKER
+	begin
+		SL_STAR	1
+	end
+
+	SL_HIGH
+	begin
+		SL_SUPERNOVICE 5
+	end
+
+	SL_DEATHKNIGHT
+	begin
+		SL_STAR 5
+	end
+
+	SL_COLLECTOR
+	begin
+		SL_SOULLINKER 5
+	end
+
+	SL_NINJA
+	begin
+		SL_HIGH 5
+	end
+
+	SL_GUNNER
+	begin
+		SL_HUNTER 5
+	end
+
+	SL_KAIZEL
+	begin
+		SL_PRIEST 1
+	end
+
+	SL_KAAHI
+	begin
+		SL_PRIEST 1
+		SL_MONK 1
+		SL_CRUSADER 1
+	end
+
+	SL_KAUPE
+	begin
+		SL_ASSASIN 1
+		SL_ROGUE 1
+	end
+
+	SL_KAITE
+	begin
+		SL_WIZARD 1
+		SL_SAGE 1
+	end
+
+	SL_KAINA
+	begin
+		TK_SPTIME 1
+	end
+
+	SL_STIN
+	begin
+		SL_WIZARD 1
+	end
+
+	SL_STUN
+	begin
+		SL_WIZARD 1
+	end
+
+	SL_SMA
+	begin
+		SL_STIN 7
+		SL_STUN 7
+	end
+
+	SL_SWOO
+	begin
+		SL_PRIEST 1
+	end
+
+	SL_SKE
+	begin
+		SL_KNIGHT 1
+	end
+
+	SL_SKA
+	begin
+		SL_MONK 1
+	end
+}
+
+GANGSI
+{
+	MB_FIGHTING
+	begin
+	end
+
+	MB_NEUTRAL
+	begin
+		MB_FIGHTING 1
+	end
+	
+	MB_TAIMING_PUTI
+	begin
+		MB_PETPITCHER 1
+	end
+
+	MB_CARDPITCHER
+	begin
+		MB_PETPITCHER 1
+	end
+
+	MB_PETPITCHER
+	begin
+		MB_FIGHTING 1
+	end
+
+	MB_BODYSTUDY
+	begin
+		MB_PETPITCHER 1
+	end
+
+	MB_BODYALTER
+	begin
+		MB_BODYSTUDY 9
+	end
+
+	MB_PETMEMORY
+	begin
+		MB_PETPITCHER 1
+	end
+
+	MB_M_TELEPORT
+	begin
+		MB_FIGHTING 1
+	end
+
+	MB_B_GAIN
+	begin
+		MB_M_TELEPORT 1
+	end
+
+	MB_M_GAIN
+	begin
+		MB_M_TELEPORT 1
+	end
+
+	MB_MISSION
+	begin
+		MB_FIGHTING 5
+	end
+
+	MB_MUNAKBALL
+	begin
+		MB_PETMEMORY 1
+	end
+
+	MB_SCROLL
+	begin
+		MB_MUNAKBALL 10
+		JOBLEVEL 40
+	end
+
+	MB_B_GATHERING
+	begin
+		MB_B_DRIFT 1
+	end
+
+	MB_M_GATHERING
+	begin
+		MB_B_GATHERING 5
+	end
+
+	MB_B_EXCLUDE
+	begin
+		MB_B_DRIFT 1
+	end
+
+	MB_B_DRIFT
+	begin
+		MB_FIGHTING 1
+	end
+
+	MB_B_WALLRUSH
+	begin
+		MB_B_DRIFT 1
+	end
+
+	MB_M_WALLRUSH
+	begin
+		MB_B_DRIFT 1
+	end
+
+	MB_B_WALLSHIFT
+	begin
+		MB_B_WALLRUSH 7
+	end
+
+	MB_M_WALLCRASH
+	begin
+		MB_M_WALLRUSH 7
+	end
+
+	MB_M_REINCARNATION
+	begin
+		MB_B_DRIFT 1
+	end
+
+	MB_B_EQUIP
+	begin
+		MB_BODYALTER 1
+		MB_B_WALLSHIFT 5
+		MB_M_WALLCRASH 7
+		MB_B_EXCLUDE 5
+		MB_M_REINCARNATION 5
+		MB_PETPITCHER 10
+	end
+}
+
+DEATHKNIGHT
+{
+	DE_PASSIVE
+	begin		
+	end
+
+	DE_PATTACK
+	begin
+		DE_PASSIVE 1
+	end
+
+	DE_PSPEED
+	begin
+		DE_PASSIVE 1
+	end
+
+	DE_PDEFENSE
+	begin
+		DE_PASSIVE 1
+	end
+
+	DE_PCRITICAL
+	begin
+		DE_PASSIVE 1
+	end
+
+	DE_PHP
+	begin
+		DE_PASSIVE 1
+	end
+
+	DE_PSP
+	begin
+		DE_PASSIVE 1
+	end
+
+	DE_RESET
+	begin
+		DE_PTRIPLE 1
+	end
+
+	DE_RANKING
+	begin
+		DE_PASSIVE 1
+	end
+
+	DE_PTRIPLE
+	begin
+		DE_PATTACK 1
+		DE_PSPEED 1
+		DE_PDEFENSE 1
+		DE_PCRITICAL 1
+		DE_PHP 1
+		DE_PSP 1
+	end
+
+	DE_ENERGY
+	begin
+	end
+
+	DE_NIGHTMARE
+	begin
+		DE_ENERGY 3
+	end
+
+	DE_SLASH
+	begin
+		DE_ENERGY 5
+	end
+
+	DE_COIL
+	begin
+		DE_ENERGY 3
+	end
+
+	DE_WAVE
+	begin
+		DE_ENERGY 3
+	end
+
+	DE_REBIRTH
+	begin
+		DE_ENERGY 5
+	end
+
+	DE_AURA
+	begin
+		DE_ENERGY 3
+	end
+
+	DE_FREEZER
+	begin
+		DE_ENERGY 5
+	end
+
+	DE_CHANGEATTACK
+	begin
+		DE_ENERGY 5
+	end
+
+	DE_POISON
+	begin
+		DE_ENERGY 5
+	end
+
+	DE_INSTANT
+	begin
+		DE_CHANGEATTACK 1
+	end
+
+	DE_WARNING
+	begin
+		DE_INSTANT 5
+	end
+
+	DE_RANKEDKNIFE
+	begin
+		DE_ENERGY 5
+	end
+
+	DE_RANKEDGRADIUS
+	begin
+		DE_RANKEDKNIFE 5
+	end
+
+	DE_GAUGE
+	begin
+	end
+
+	DE_GTIME
+	begin
+		DE_GAUGE 1
+	end
+
+	DE_GPAIN
+	begin
+		DE_GAUGE 1
+	end
+
+	DE_GSKILL
+	begin
+		DE_GAUGE 1
+	end
+
+	DE_GKILL
+	begin
+		DE_GAUGE 1
+	end
+
+	DE_ACCEL
+	begin
+		DE_GAUGE 1
+	end
+
+	DE_BLOCKDOUBLE
+	begin
+		DE_ACCEL 5
+	end
+
+	DE_BLOCKMELEE
+	begin
+		DE_BLOCKDOUBLE 1
+	end
+
+	DE_BLOCKFAR
+	begin
+		DE_BLOCKDOUBLE 1
+	end
+
+	DE_FRONTATTACK
+	begin
+		DE_GAUGE 1
+	end
+
+	DE_DANGERATTACK
+	begin
+		DE_GAUGE 1
+	end
+
+	DE_TWINATTACK
+	begin
+		DE_GAUGE 1
+	end
+
+	DE_WINDATTACK
+	begin
+		DE_GAUGE 1
+	end
+
+	DE_WATERATTACK
+	begin
+		DE_GAUGE 1
+	end
+}
+
+COLLECTOR
+{
+	DA_ENERGY
+	begin		
+	end
+
+	DA_CLOUD
+	begin	
+		DA_ENERGY 5
+	end
+
+	DA_FIRSTSLOT
+	begin	
+		DA_ENERGY 5	
+	end
+
+	DA_HEADDEF
+	begin
+		DA_ENERGY 5
+	end
+
+	DA_SPACE
+	begin
+		DA_ENERGY 5
+	end
+
+	DA_TRANSFORM
+	begin
+		DA_ENERGY 5
+	end
+
+	DA_EXPLOSION
+	begin	
+		DA_TRANSFORM 1
+	end
+
+	DA_REWARD
+	begin		
+		DA_TRANSFORM 1
+	end
+
+	DA_CRUSH
+	begin
+		DA_TRANSFORM 1
+	end
+
+	DA_ITEMREBUILD
+	begin
+		DA_TRANSFORM 1
+	end
+
+	DA_ILLUSION
+	begin
+		DA_REVENGE 1
+	end
+
+	DA_NUETRALIZE
+	begin
+		DA_REVENGE 1
+	end
+
+	DA_RUNNER
+	begin
+		DA_ENERGY 5
+	end
+
+	DA_TRANSFER
+	begin
+		DA_ENERGY 5
+	end
+
+	DA_WALL
+	begin
+		DA_REVENGE 1
+	end
+
+	DA_REVENGE
+	begin
+		DA_ENERGY 5
+	end
+
+	DA_EARPLUG
+	begin
+		DA_REVENGE 1
+	end
+
+	DA_CONTRACT
+	begin
+		DA_MAGICCART 5
+	end
+
+	DA_BLACK
+	begin
+		DA_CONTRACT 1	
+	end
+
+	DA_DREAM
+	begin
+		DA_CONTRACT 1	
+	end
+
+	DA_MAGICCART
+	begin
+	end
+
+	DA_COPY
+	begin
+		DA_MAGICCART 5
+	end
+
+	DA_CRYSTAL
+	begin
+		DA_MAGICCART 5
+	end
+
+	DA_EXP
+	begin
+		DA_MAGICCART 5
+	end
+
+	DA_REBUILD
+	begin
+		DA_MAGICCART 5
+	end
+
+	DA_EDARKNESS
+	begin
+		DA_MAGICCART 5	
+	end
+
+	DA_EGUARDIAN
+	begin		
+		DA_MAGICCART 5
+	end
+
+	DA_TIMEOUT
+	begin
+		DA_MAGICCART 5
+	end
+
+	DA_ZENYRANK
+	begin
+		DA_MAGICCART 5
+	end
+
+	DA_CARTSWING
+	begin
+		DA_MAGICCART 5		
+	end
+}
+
+GUNSLINGER
+{
+	GS_GLITTERING
+	begin
+
+	end
+
+	GS_FLING
+	begin
+		GS_GLITTERING	1
+	end
+
+	GS_TRIPLEACTION
+	begin
+		GS_GLITTERING	1
+		GS_CHAINACTION	10
+	end
+
+	GS_BULLSEYE
+	begin
+		GS_GLITTERING	5
+		GS_TRACKING		10	
+	end
+
+	GS_MADNESSCANCEL
+	begin
+		GS_GLITTERING	4
+		GS_GATLINGFEVER	10
+	end
+
+	GS_ADJUSTMENT
+	begin
+		GS_GLITTERING	4
+		GS_DISARM		5
+	end
+
+	GS_INCREASING
+	begin
+		GS_GLITTERING	2
+		GS_SNAKEEYE		10
+	end
+
+	GS_MAGICALBULLET
+	begin
+		GS_GLITTERING	1
+	end
+
+	GS_CRACKER
+	begin
+		GS_GLITTERING	1
+	end
+
+	GS_SINGLEACTION
+	begin
+	end
+
+	GS_SNAKEEYE
+	begin
+	end
+
+	GS_CHAINACTION
+	begin
+		GS_SINGLEACTION	1
+	end
+
+	GS_TRACKING
+	begin
+		GS_SINGLEACTION	5
+	end
+
+	GS_DISARM
+	begin
+		GS_TRACKING	7
+	end
+
+	GS_PIERCINGSHOT
+	begin
+		GS_TRACKING	5
+	end
+
+	GS_RAPIDSHOWER
+	begin
+		GS_CHAINACTION	3
+	end
+
+	GS_DESPERADO
+	begin
+		GS_RAPIDSHOWER	5
+	end
+
+	GS_GATLINGFEVER
+	begin
+		GS_RAPIDSHOWER	7
+		GS_DESPERADO	5
+	end
+
+	GS_DUST
+	begin
+		GS_SINGLEACTION	5
+	end
+
+	GS_FULLBUSTER
+	begin
+		GS_DUST	3
+	end
+
+	GS_SPREADATTACK
+	begin
+		GS_FULLBUSTER	5
+	end
+
+	GS_GROUNDDRIFT
+	begin
+		GS_FULLBUSTER	5
+		GS_SPREADATTACK	7
+	end
+}
+
+NINJA
+{
+	NJ_TOBIDOUGU
+	begin
+	end
+
+	NJ_SYURIKEN
+	begin
+		NJ_TOBIDOUGU	1
+	end
+
+	NJ_KUNAI
+	begin
+		NJ_SYURIKEN		5
+	end
+
+	NJ_HUUMA
+	begin
+		NJ_TOBIDOUGU	5
+		NJ_KUNAI		5
+	end
+
+	NJ_ZENYNAGE
+	begin
+		NJ_TOBIDOUGU	10
+		NJ_HUUMA		5
+	end
+
+	NJ_TATAMIGAESHI
+	begin
+	end
+
+	NJ_KASUMIKIRI
+	begin
+		NJ_SHADOWJUMP 1
+	end
+
+	NJ_SHADOWJUMP
+	begin
+		NJ_TATAMIGAESHI	1
+	end
+
+	NJ_KIRIKAGE
+	begin
+		NJ_KASUMIKIRI	5
+	end
+
+	NJ_UTSUSEMI
+	begin
+		NJ_SHADOWJUMP	5
+	end
+
+	NJ_BUNSINJYUTSU
+	begin
+		NJ_NEN			1
+		NJ_UTSUSEMI		4
+		NJ_KIRIKAGE		3
+	end
+
+	NJ_NINPOU
+	begin
+	end
+
+	NJ_KOUENKA
+	begin
+		NJ_NINPOU		1
+	end
+
+	NJ_KAENSIN
+	begin
+		NJ_KOUENKA		5
+	end
+
+	NJ_BAKUENRYU
+	begin
+		NJ_NINPOU		10
+		NJ_KAENSIN		7
+	end
+
+	NJ_HYOUSENSOU
+	begin
+		NJ_NINPOU		1
+	end
+
+	NJ_SUITON
+	begin
+		NJ_HYOUSENSOU	5
+	end
+
+	NJ_HYOUSYOURAKU
+	begin
+		NJ_NINPOU		10
+		NJ_SUITON		7
+	end
+
+	NJ_RAIGEKISAI
+	begin
+		NJ_HUUJIN		5	
+	end
+
+	NJ_HUUJIN
+	begin
+		NJ_NINPOU	1
+	end
+
+	NJ_KAMAITACHI
+	begin
+		NJ_NINPOU		10
+		NJ_RAIGEKISAI	5
+	end
+
+	NJ_ISSEN
+	begin
+		NJ_TOBIDOUGU		7
+		NJ_NEN			1
+		NJ_KIRIKAGE		5
+	end
+
+	NJ_NEN
+	begin
+		NJ_NINPOU		5
+	end
+}
+
+SUPERNOVICE2
+{
+
+WZ_EARTHSPIKE
+	begin
+		MG_STONECURSE	1
+	end
+
+
+WZ_HEAVENDRIVE
+	begin
+		WZ_EARTHSPIKE	3
+	end
+
+
+WZ_QUAGMIRE
+	begin
+		WZ_HEAVENDRIVE	1	
+	end
+
+
+WZ_ICEWALL
+	begin
+		MG_STONECURSE	1
+		MG_FROSTDIVER	1
+	end
+
+WZ_FROSTNOVA
+	begin
+		WZ_ICEWALL	1
+	end
+
+
+WZ_SIGHTRASHER
+	begin
+		MG_SIGHT		1
+		MG_LIGHTNINGBOLT	1
+	end
+
+WZ_JUPITEL
+	begin
+		MG_NAPALMBEAT		1
+		MG_LIGHTNINGBOLT	1
+	end
+
+WZ_FIREPILLAR
+	begin
+		MG_FIREWALL	1
+	end
+
+WZ_WATERBALL
+	begin
+		MG_COLDBOLT		1
+		MG_LIGHTNINGBOLT	1
+	end
+
+
+HW_MAGICCRASHER
+	begin
+		MG_SRECOVERY	1
+	end
+
+
+HT_SKIDTRAP
+	begin
+	end
+
+
+HT_FLASHER
+	begin
+		HT_SKIDTRAP	1
+	end
+
+HT_SANDMAN
+	begin
+		HT_FLASHER	1
+	end
+
+
+
+	HT_FREEZINGTRAP
+	begin
+		HT_FLASHER	1
+	end
+
+
+BS_HILTBINDING	
+	begin
+	end
+
+
+BS_WEAPONRESEARCH
+	begin
+		BS_HILTBINDING	1
+	end
+
+
+AS_ENCHANTPOISON
+	begin
+		TF_POISON	1
+	end
+
+
+PR_SANCTUARY
+	begin
+		AL_HEAL		1
+	end
+
+
+PR_STRECOVERY	
+	begin
+	end
+
+PR_IMPOSITIO	
+	begin
+	end
+
+
+PR_GLORIA
+	begin
+		PR_SANCTUARY	7
+	end
+
+
+CR_TRUST	
+	begin
+	end
+
+
+CR_HOLYCROSS
+	begin
+		CR_TRUST	7
+	end
+
+AM_AXEMASTERY
+	begin
+	end
+
+
+RG_TUNNELDRIVE
+	begin
+		TF_HIDING	1
+	end
+
+
+MO_IRONHAND
+	begin
+		AL_DP		10
+		AL_DEMONBANE	10
+	end
+
+
+MO_CALLSPIRITS
+	begin
+		MO_IRONHAND	2
+	end
+
+
+MO_ABSORBSPIRITS
+	begin
+		MO_CALLSPIRITS	5
+	end
+WZ_ESTIMATION
+	begin
+	end
+
+}
+
+
+KAGEROU
+{
+	KO_YAMIKUMO
+		begin
+			NJ_KIRIKAGE 5
+		end
+
+	KO_RIGHT
+		begin
+		end
+
+	KO_LEFT
+		begin
+		end
+
+	KO_JYUMONJIKIRI
+		begin
+			KO_YAMIKUMO 1
+		end
+
+	KO_SETSUDAN
+		begin
+			KO_JYUMONJIKIRI 2
+		end
+
+	KO_BAKURETSU
+		begin
+			NJ_KUNAI 5
+		end
+
+	KO_HAPPOKUNAI
+		begin
+			KO_BAKURETSU 1
+		end
+
+	KO_MUCHANAGE
+		begin
+			KO_MAKIBISHI 3
+		end
+
+	KO_HUUMARANKA
+		begin
+			NJ_HUUMA 5
+		end
+
+	KO_MAKIBISHI
+		begin
+			NJ_ZENYNAGE 1
+		end
+
+	KO_MEIKYOUSISUI
+		begin
+			NJ_NINPOU 10
+		end
+
+	KO_ZANZOU
+		begin
+			NJ_UTSUSEMI 1
+		end
+
+	KO_KYOUGAKU
+		begin
+			KO_GENWAKU 2
+		end
+
+	KO_JYUSATSU
+		begin
+			KO_KYOUGAKU 3
+		end
+
+	KO_GENWAKU
+		begin
+			NJ_UTSUSEMI 1
+		end
+
+	KO_IZAYOI
+		begin
+			NJ_NINPOU 5
+		end
+
+	KO_KAHU_ENTEN
+		begin
+		end
+
+	KO_HYOUHU_HUBUKI
+		begin
+		end
+
+	KO_KAZEHU_SEIRAN
+		begin
+		end
+
+	KO_DOHU_KOUKAI
+		begin
+		end
+
+	KO_KAIHOU
+		begin
+			KO_KAHU_ENTEN 1
+			KO_HYOUHU_HUBUKI 1
+			KO_KAZEHU_SEIRAN 1
+			KO_DOHU_KOUKAI 1
+		end
+
+	KO_ZENKAI
+		begin
+			KO_KAIHOU 1
+			KO_IZAYOI 1
+		end
+
+	KG_KAGEHUMI
+		begin
+			KO_ZANZOU 1
+		end
+
+	KG_KYOMU
+		begin
+			KG_KAGEHUMI 2
+		end
+
+	KG_KAGEMUSYA
+		begin
+			KG_KYOMU 3
+		end
+
+
+}
+
+
+OBORO
+{
+	KO_YAMIKUMO
+		begin
+			NJ_KIRIKAGE 5
+		end
+
+	KO_RIGHT
+		begin
+		end
+
+	KO_LEFT
+		begin
+		end
+
+	KO_JYUMONJIKIRI
+		begin
+			KO_YAMIKUMO 1
+		end
+
+	KO_SETSUDAN
+		begin
+			KO_JYUMONJIKIRI 2
+		end
+
+	KO_BAKURETSU
+		begin
+			NJ_KUNAI 5
+		end
+
+	KO_HAPPOKUNAI
+		begin
+			KO_BAKURETSU 1
+		end
+
+	KO_MUCHANAGE
+		begin
+			KO_MAKIBISHI 3
+		end
+
+	KO_HUUMARANKA
+		begin
+			NJ_HUUMA 5
+		end
+
+	KO_MAKIBISHI
+		begin
+			NJ_ZENYNAGE 1
+		end
+
+	KO_MEIKYOUSISUI
+		begin
+			NJ_NINPOU 10
+		end
+
+	KO_ZANZOU
+		begin
+			NJ_UTSUSEMI 1
+		end
+
+	KO_KYOUGAKU
+		begin
+			KO_GENWAKU 2
+		end
+
+	KO_JYUSATSU
+		begin
+			KO_KYOUGAKU 3
+		end
+
+	KO_GENWAKU
+		begin
+			NJ_UTSUSEMI 1
+		end
+
+	KO_IZAYOI
+		begin
+			NJ_NINPOU 5
+		end
+
+	KO_KAHU_ENTEN
+		begin
+		end
+
+	KO_HYOUHU_HUBUKI
+		begin
+		end
+
+	KO_KAZEHU_SEIRAN
+		begin
+		end
+
+	KO_DOHU_KOUKAI
+		begin
+		end
+
+	KO_KAIHOU
+		begin
+			KO_KAHU_ENTEN 1
+			KO_HYOUHU_HUBUKI 1
+			KO_KAZEHU_SEIRAN 1
+			KO_DOHU_KOUKAI 1
+		end
+
+	KO_ZENKAI
+		begin
+			KO_KAIHOU 1
+			KO_IZAYOI 1
+		end
+
+	OB_ZANGETSU
+		begin
+			KO_GENWAKU 1
+		end
+
+	OB_AKAITSUKI
+		begin
+			OB_ZANGETSU 2
+		end
+
+
+	OB_OBOROGENSOU
+		begin
+			OB_AKAITSUKI 3
+		end
+}
+REBELLION
+{
+
+	RL_D_TAIL
+		begin
+			RL_C_MARKER 1
+			RL_H_MINE 3
+		end
+
+
+	RL_R_TRIP	
+		begin	
+			RL_FIRE_RAIN 1
+		end
+
+
+	RL_RICHS_COIN
+		begin
+			GS_GLITTERING 5
+		end
+
+	
+	RL_MASS_SPIRAL
+		begin
+			GS_PIERCINGSHOT 1
+		end
+
+
+	RL_B_TRAP	
+		begin
+		end
+
+
+	RL_BANISHING_BUSTER
+		begin
+			RL_S_STORM 1
+		end
+
+
+	RL_S_STORM
+		begin
+			GS_DISARM 1
+			GS_DUST 1
+		end
+
+
+	RL_SLUGSHOT
+		begin	
+			RL_BANISHING_BUSTER 3
+		end
+
+
+	RL_AM_BLAST
+		begin
+			RL_MASS_SPIRAL 1
+		end
+
+	
+	RL_E_CHAIN
+		begin
+			GS_CHAINACTION 10
+		end
+
+
+	RL_QD_SHOT
+		begin
+			RL_E_CHAIN 1
+		end
+
+
+	RL_C_MARKER
+		begin
+			GS_INCREASING 1
+		end
+
+	
+	RL_FIREDANCE
+		begin
+			RL_FALLEN_ANGEL 1
+		end
+
+	
+	RL_FIRE_RAIN
+		begin
+			GS_GATLINGFEVER 1
+		end
+
+
+	RL_FALLEN_ANGEL
+		begin
+			GS_DESPERADO 10
+		end
+
+
+	RL_P_ALTER
+		begin
+		end
+
+	
+	RL_FLICKER
+		begin
+			GS_FLING 1
+		end
+
+
+	RL_H_MINE
+		begin
+			GS_SPREADATTACK 1
+		end
+
+	
+	RL_HAMMER_OF_GOD
+		begin
+			RL_AM_BLAST 3
+		end
+
+	
+	RL_HEAT_BARREL
+		begin
+			RL_FIREDANCE 2
+		end
+			
+}
+
+
+Inherit		NOVICE_H	NOVICE
+
+Inherit		SUPERNOVICE	NOVICE
+//Inherit		SUPERNOVICE	SWORDMAN
+Inherit		SUPERNOVICE	ACOLYTE
+Inherit		SUPERNOVICE	MAGICIAN
+Inherit		SUPERNOVICE	MERCHANT
+//Inherit		SUPERNOVICE	ARCHER
+Inherit		SUPERNOVICE	THIEF
+
+Inherit		SWORDMAN	NOVICE
+Inherit		ACOLYTE		NOVICE
+Inherit		MAGICIAN	NOVICE
+Inherit		MERCHANT	NOVICE
+Inherit		ARCHER		NOVICE
+Inherit		THIEF		NOVICE
+
+Inherit		GUNSLINGER	NOVICE
+Inherit		NINJA		NOVICE
+
+Inherit		KNIGHT		SWORDMAN
+Inherit		CRUSADER	SWORDMAN
+Inherit		SWORDMAN_H	SWORDMAN
+Inherit		KNIGHT_H	KNIGHT		
+Inherit		CRUSADER_H	CRUSADER		
+
+Inherit		PRIEST		ACOLYTE
+Inherit		MONK		ACOLYTE
+Inherit		ACOLYTE_H	ACOLYTE
+Inherit		PRIEST_H	PRIEST		
+Inherit		MONK_H		MONK			
+
+Inherit		WIZARD		MAGICIAN
+Inherit		SAGE		MAGICIAN
+Inherit		MAGICIAN_H	MAGICIAN
+Inherit		WIZARD_H	WIZARD	
+Inherit		SAGE_H		SAGE	
+
+Inherit		BLACKSMITH	MERCHANT
+Inherit		ALCHEMIST	MERCHANT
+Inherit		MERCHANT_H	MERCHANT
+Inherit		BLACKSMITH_H	BLACKSMITH		
+Inherit		ALCHEMIST_H	ALCHEMIST		
+
+Inherit		HUNTER		ARCHER
+Inherit		BARD		ARCHER
+Inherit		DANCER		ARCHER
+Inherit		ARCHER_H	ARCHER
+Inherit		HUNTER_H	HUNTER		
+Inherit		BARD_H		BARD			
+Inherit		DANCER_H	DANCER		
+
+Inherit		ASSASSIN	THIEF
+Inherit		ROGUE		THIEF
+Inherit		THIEF_H		THIEF
+Inherit		ASSASSIN_H	ASSASSIN		
+Inherit		ROGUE_H		ROGUE		
+
+Inherit		NOVICE_B	NOVICE
+Inherit		SWORDMAN_B	SWORDMAN
+Inherit		ACOLYTE_B	ACOLYTE
+Inherit		MAGICIAN_B	MAGICIAN
+Inherit		MERCHANT_B	MERCHANT
+Inherit		ARCHER_B	ARCHER
+Inherit		THIEF_B		THIEF
+Inherit		KNIGHT_B	KNIGHT
+Inherit		CRUSADER_B	CRUSADER
+Inherit		PRIEST_B	PRIEST
+Inherit		MONK_B		MONK
+Inherit		WIZARD_B	WIZARD
+Inherit		SAGE_B		SAGE
+Inherit		BLACKSMITH_B	BLACKSMITH
+Inherit		ALCHEMIST_B	ALCHEMIST
+Inherit		HUNTER_B	HUNTER
+Inherit		BARD_B		BARD
+Inherit		DANCER_B	DANCER
+Inherit		ASSASSIN_B	ASSASSIN
+Inherit		ROGUE_B		ROGUE
+Inherit		SUPERNOVICE_B	SUPERNOVICE
+
+Inherit		TAEKWON		NOVICE
+Inherit		STAR		TAEKWON
+Inherit		LINKER		TAEKWON
+
+Inherit		GANGSI		NOVICE
+Inherit		DEATHKNIGHT	GANGSI
+Inherit		COLLECTOR	GANGSI
+
+// 슈퍼노비스2 추가 (2010.12.06) / Inherit 대문자로 쓸 것. 
+Inherit		SUPERNOVICE2	SUPERNOVICE
+Inherit		SUPERNOVICE2_B	SUPERNOVICE2
+
+//닌자 (2011.7.7)
+Inherit 	KAGEROU		NINJA
+Inherit 	OBORO		NINJA
+//리벨리온
+Inherit		REBELLION	GUNSLINGER
+
+#END

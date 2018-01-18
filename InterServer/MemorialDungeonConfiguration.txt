@@ -1,0 +1,111 @@
+//¸Ş¸ğ¸®¾ó´øÁ¯ ¼³Á¤ ÆÄÀÏ ÀÔ´Ï´Ù.
+//¿ë¾î Á¤ÀÇ
+// ¸ÊÀÇ´ëÇ¥¸í : ¸Ş¸ğ¸®¾ó´øÁ¯Àº ¿©·¯°³ÀÇ ¸ÊÀÌ ÇÏ³ªÀÇ ´øÁ¯À¸·Î ±¸¼ºµÉ¼ö ÀÖÀ¸¹Ç·Î ´ëÇ¥°ªÀÌ ÇÊ¿äÇÑ´Ù.
+// ÁÖ¼®Àº ¶óÀÎÁÖ¼® //°ú ºí·°ÁÖ¼® /* */ µÑ´Ù »ç¿ë°¡´ÉÇÕ´Ï´Ù.
+//Çü½ÄÀº ¾Æ·¡¿Í °°½À´Ï´Ù.
+//		"¸ÊÀÇ´ëÇ¥¸í"{
+//			map = "¸ÊÆÄÀÏ1ÀÇ ÀÌ¸§",¸ÊÀÇÅ¸ÀÔ¹øÈ£
+//			map = "¸ÊÆÄÀÏ2ÀÇ ÀÌ¸§",¸ÊÀÇÅ¸ÀÔ¹øÈ£
+//			live_time_minute = ºĞ´ÜÀ§ÀÇ À¯Áö½Ã°£
+//			//ÁöÁ¤ÇÑ ¸ÊÀÌ ·ÎµùµÇ¾î ÀÖ´Â Á¸¼­¹ö¿¡ ¸Ş¸ğ¸®¾ó´øÁ¯À» ¸¸µé¾î¶ó.
+//			place_with_map = "¸Ş¸ğ¸®¾ó´øÁ¯ÀÌ ¾Æ´Ï ÀÏ¹İ¸ÊÆÄÀÏ¸í" 
+//			enter = "ÀÔÀåÇÒ¸ÊÆÄÀÏÀÌ¸§",xÁÂÇ¥,yÁÂÇ¥
+//		}
+
+
+
+"Endless Tower"{
+	map = "1@tower.gat",20
+	map = "2@tower.gat",20
+	map = "3@tower.gat",20
+	map = "4@tower.gat",20
+	map = "5@tower.gat",20
+	map = "6@tower.gat",20
+	live_time_minute = 240
+	enter = "1@tower.gat",50,355
+}	
+
+"Sealed Catacom"{
+	map = "1@cata.gat",21
+	map = "2@cata.gat",21
+	live_time_minute = 120
+	enter = "1@cata.gat",100,224
+}
+
+"Orc's Memory"{
+	map = "1@orcs.gat",20
+	map = "2@orcs.gat",20
+	live_time_minute = 120
+	enter = "1@orcs.gat", 179, 15
+}
+
+"Nydhorg's nest"{
+	map = "1@nyd.gat",20
+	map = "2@nyd.gat",20
+	live_time_minute = 240
+	enter = "1@nyd.gat",32,36
+}
+
+"¦a¤U±Æ¤ô·¾"{
+	map = "1@pump.gat",20
+	map = "2@pump.gat",20
+	live_time_minute = 60
+	enter = "1@pump.gat",63,98
+}
+
+"³¹³½¬}¥Ş"{
+	map = "1@cash.gat",20
+	live_time_minute = 60
+	enter = "1@cash.gat",199,99
+}
+
+"«OÃ¹¨ó¤Ò¬ã¨s«Ç"{
+	map = "1@lhz.gat",20
+	live_time_minute = 240
+	enter = "1@lhz.gat",45,148
+}
+
+//EP14.1 ??
+
+"ÃúªL°g®c"{
+	map = "1@mist.gat",20
+	live_time_minute = 120
+	enter = "1@mist.gat",89,29
+}
+
+"Culvert"{
+	map = "1@pump.gat",20
+	map = "2@pump.gat",20
+	live_time_minute = 60
+	enter = "1@pump.gat",63,98
+}
+
+"Octopus Cave"{
+	map = "1@cash.gat",20
+	live_time_minute = 60
+	enter = "1@cash.gat",199,99
+}
+
+"Wolfchev's Lab"{
+	map = "1@lhz.gat",20
+	live_time_minute = 240
+	enter = "1@lhz.gat",45,148
+}
+
+"Bangungot Hospital 2F"{
+	map = "1@ma_h.gat",20
+	live_time_minute = 60
+	enter = "1@ma_h.gat",40,157
+}
+
+"Bakonawa Lake"{
+	map = "1@ma_b.gat",20
+	live_time_minute = 120
+	enter = "1@ma_b.gat",64,51
+}
+
+"Buwaya Cave"{
+	map = "1@ma_c.gat",20
+	live_time_minute = 60
+	enter = "1@ma_c.gat",35,57
+}

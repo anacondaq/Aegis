@@ -1,0 +1,34 @@
+[VERSION]
+NATION = TAIWAN
+
+[ETC]
+DB = GF1GNCGFA
+LOG = 0
+CRITICAL_LOG = 1
+USERCOUNTER = 1 // 0: /w NOT_USE  1: /w USE
+
+[SETTING]
+GUILD_WAR = 1
+SLEEP = 0
+database log work thread number = 4
+
+[MAXVALUE]
+MAXUSER = 1000
+MAXPARTY = 1000
+MAXGUILD = 1000
+
+[MEMORIAL DUNGEON]
+enter limit minute = 5 
+database log output = 1 
+subscription minimum delay second = 60 
+open = 1
+
+[INSTANT MAP]
+destroy wait second = 30 
+create wait second from zone server = 60 
+open = 1
+
+[STATISTIC]
+report per minute  = 60
+zone server report = 0 
+map report = 0
