@@ -1,0 +1,432 @@
+//  0 - 로컬방송
+//  1 - 전체방송
+//  2 - 캐릭 강제 종료
+//  3 - 전체 캐릭 강제 종료
+//  4 - 아이템생성
+//  5 - 몬스터생성
+//  6 - 맵무브
+//  7 - 리셋 스킬,스텟
+//  8 - 셀 On/Off
+//  9 - 하이딩
+//  10- 채팅/스킬 금지
+//  11- 리무브 (유저가 있는 곳으로 이동)
+//  12- 리콜 (어카운트로 유저를 불러옴)
+//  13- 서몬 (캐릭터 이름 사용 불러오기)
+//  14- 시프트 (캐릭터 이름 사용 이동)
+
+
+// * OUTER_SERVER
+[0] ::	
+	usera544cto
+	usernef457
+	userkh2134
+	usermyu108
+	userksh97
+	usern253gjc
+	userP254zzo
+	userB1454ye
+	userw255mzh
+	user729lc
+	usero929caa
+	usera221wcq
+	userz930xvn
+	userm3678wy
+	userq3679jo
+	userkj984or
+	userget987
+	usergld218
+	usere453grk
+	user0929caa
+	userZ930xvn
+	userp6214to
+	userk317ilv
+	usere812xty
+	userd817fus
+	userm599sni
+	userv313wus
+	usera7428vs
+	user778abg
+	userbth424cd
+	userbth4cos2
+	userj692geq
+	userz213hjr
+	userv745fdc
+	userc14d63d
+	userr296cjf
+
+	
+[1] ::	
+	usera544cto
+	usernef457
+	userkh2134
+	usermyu108
+	userksh97
+	userkj984or
+	userget987
+	usergld218
+	usere453grk
+	usern253gjc
+	userP254zzo
+	userB1454ye
+	userw255mzh
+	user729lc
+	usero929caa
+	usera221wcq
+	userz930xvn
+	user0929caa
+	userZ930xvn
+	userm3678wy
+	userq3679jo
+	userp6214to
+	userk317ilv
+	usere812xty
+	userd817fus
+	userm599sni
+	userv313wus
+	usera7428vs
+	user778abg
+	userbth424cd
+	userbth4cos2
+	userj692geq
+	userz213hjr
+	userv745fdc
+	userc14d63d
+	userr296cjf
+	userL2959pr
+
+[2] ::	
+	usera544cto
+	usernef457
+	userkh2134
+	usermyu108
+	userksh97
+	userp6214to
+	userbth75
+	usere812xty
+	userm599sni
+	userv313wus
+	user778abg
+	userv745fdc
+	userc14d63d
+	userj692geq
+	userbth424cd
+	userL2959pr
+	
+
+[3] ::	
+	usergrv75
+	userkh2134
+
+[4] ::	
+	userkj984or
+	userget987
+	usergld218
+	usere453grk
+	userbth75
+	userk317ilv
+	userd817fus
+	userkh2134
+	userr296cjf
+	
+[5] ::	
+	userkj984or
+	userget987
+	usergld218
+	usere453grk
+	userbth75
+	
+	userk317ilv
+	userd817fus
+	
+	userkh2134
+	userr296cjf
+
+[6] ::	
+	userbth75
+	
+	usern253gjc
+	userP254zzo
+	userB1454ye
+	userw255mzh
+	user729lc
+	usero929caa
+	usera221wcq
+	userz930xvn
+	user0929caa
+	userZ930xvn
+	userm3678wy
+	userq3679jo
+	userkj984or
+	userget987
+	usergld218
+	usere453grk
+	userk317ilv
+	userk541gi
+	usert543er
+	usero544iy
+	userb545tz
+	usera544cto
+	usernef457
+	userkh2134
+	usermyu108
+	userksh97
+	userp6214to
+	usere812xty
+	userd817fus
+	
+	userm599sni
+	userv313wus
+	user778abg
+	userbth424cd
+	userbth4cos2
+	userj692geq
+	userz213hjr
+	
+	userv745fdc
+	userc14d63d
+	
+	userr296cjf
+
+[7] ::	
+	usermyu108
+	userkh2134
+	usergld218
+
+[8] ::	
+	usermyu108
+	userkh2134
+	usergld218
+
+[9] ::	
+	usergrv75
+	userbth75
+	
+	usern253gjc
+	userP254zzo
+	userB1454ye
+	userw255mzh
+	user729lc
+	usero929caa
+	usera221wcq
+	userz930xvn
+	user0929caa
+	userZ930xvn
+	userm3678wy
+	userq3679jo
+	userkj984or
+	userget987
+	usergld218
+	usere453grk
+	userk317ilv
+	userk541gi
+	usert543er
+	usero544iy
+	userb545tz
+	usera544cto
+	usere812xty
+	usernef457
+	userkh2134
+	usermyu108
+	userksh97
+	userp6214to
+	userd817fus
+	
+	userm599sni
+	userv313wus
+	userz184pll
+	userb890gyc
+	userc9404pv
+	user778abg
+	userbth424cd
+	userbth4cos2
+	userj692geq
+	userz213hjr
+	
+	userv745fdc
+	userc14d63d
+	userr296cjf
+
+[10] ::	
+	userbth75
+	
+	usera544cto
+	usernef457
+	userkh2134
+	usermyu108
+	userksh97
+	userp6214to
+	userp6214to
+	usere812xty
+	
+	userm599sni
+	userv313wus
+	user778abg
+	userbth424cd
+	userbth4cos2
+	userj692geq
+	userz213hjr
+	
+	userv745fdc
+	userc14d63d
+
+[11] ::	
+	userbth75
+	
+	usern253gjc
+	userP254zzo
+	userB1454ye
+	userw255mzh
+	user729lc
+	usero929caa
+	usera221wcq
+	userz930xvn
+	user0929caa
+	userZ930xvn
+	userm3678wy
+	userq3679jo
+	userkj984or
+	userget987
+	usergld218
+	usere453grk
+	userk317ilv
+	usera544cto
+	usere812xty
+	usernef457
+	userkh2134
+	usermyu108
+	userksh97
+	userp6214to
+	userd817fus
+	
+	userm599sni
+	userv313wus
+	user778abg
+	userbth424cd
+	userbth4cos2
+	userj692geq
+	userz213hjr
+	
+	userv745fdc
+	userc14d63d
+	userr296cjf
+
+[12] ::	
+	userbth75
+	
+	userkj984or
+	userget987
+	usergld218
+	usere453grk
+	userk317ilv
+	usere812xty
+	usera544cto
+	usernef457
+	userkh2134
+	usermyu108
+	userksh97
+	userp6214to
+	userd817fus
+	
+	userm599sni
+	userv313wus
+	user778abg
+	userbth424cd
+	userbth4cos2
+	userj692geq
+	userz213hjr
+	
+	userv745fdc
+	userc14d63d
+	userr296cjf
+
+[13] ::	
+	userbth75
+	
+	usern253gjc
+	userP254zzo
+	userB1454ye
+	userw255mzh
+	user729lc
+	usero929caa
+	usera221wcq
+	userz930xvn
+	user0929caa
+	userZ930xvn
+	userm3678wy
+	userq3679jo
+	userkj984or
+	userget987
+	usergld218
+	usere453grk
+	userk317ilv
+	userk541gi
+	usert543er
+	usero544iy
+	userb545tz
+	usere812xty
+	usera544cto
+	usernef457
+	userkh2134
+	usermyu108
+	userksh97
+	userp6214to
+	userd817fus
+	
+	userm599sni
+	userv313wus
+	user778abg
+	userbth424cd
+	userbth4cos2
+	userj692geq
+	userz213hjr
+	
+	userv745fdc
+	userc14d63d
+	userr296cjf
+
+[14] :: 
+	userbth75
+	
+	usern253gjc
+	userP254zzo
+	userB1454ye
+	userw255mzh
+	user729lc
+	usero929caa
+	usera221wcq
+	userz930xvn
+	user0929caa
+	userZ930xvn
+	userm3678wy
+	userq3679jo
+	userkj984or
+	userget987
+	usergld218
+	usere453grk
+	userk317ilv
+	userk541gi
+	usert543er
+	usero544iy
+	userb545tz
+	usera544cto
+	usernef457
+	userkh2134
+	usermyu108
+	userksh97
+	userp6214to
+	usere812xty
+	userd817fus
+	
+	userm599sni
+	userv313wus
+	user778abg
+	userbth424cd
+	userbth4cos2
+	userj692geq
+	userz213hjr
+	
+	userv745fdc
+	userc14d63d
+	userr296cjf
+
+

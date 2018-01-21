@@ -1,0 +1,200 @@
+//2009.10.28 Sandra-san
+
+20060921
+
+//------------ First Conso Shop ----------------------
+
+
+
+//"FIRST" "Butterfly_Wing_Ear" 70
+//"FIRST" "Yellow_Hat"   70
+//"FIRST" "Bf_Recruiter_Hat" 70
+//"FIRST" "Gf_Recruiter_Hat" 70
+//"FIRST" "Friend_Recruiter_Hat" 70
+//"FIRST" "Guildsman_Recruiter" 70
+//"FIRST" "Party_Recruiter_Hat" 70
+//"FIRST" "Notice_Board" 100
+
+
+
+"FIRST" "STR_Biscuit_Stick_Box"	720
+"FIRST" "VIT_Biscuit_Stick_Box"	720
+"FIRST" "AGI_Biscuit_Stick_Box"	720
+"FIRST" "INT_Biscuit_Stick_Box"	720
+"FIRST" "DEX_Biscuit_Stick_Box"	720
+"FIRST" "LUK_Biscuit_Stick_Box"	720
+"FIRST" "Internet_Cafe2"	1600
+"FIRST" "Internet_Cafe1"	360
+"FIRST" "Insurance_Package"	240
+"FIRST" "Dun_Tele_Scroll3_Box"	240
+
+
+
+
+
+
+
+
+
+//=== Promotion 11/09/2014
+//"FIRST"	"STR_Biscuit_Stick_Box"	720
+//"FIRST"	"VIT_Biscuit_Stick_Box"	720
+//"FIRST" "AGI_Biscuit_Stick_Box"	720
+//"FIRST" "INT_Biscuit_Stick_Box"	720
+//"FIRST" "DEX_Biscuit_Stick_Box"	720
+//"FIRST" "LUK_Biscuit_Stick_Box"	720
+//"FIRST" "Internet_Cafe2"	1600
+//"FIRST" "Internet_Cafe1"	360
+//"FIRST" "Insurance_Package"	240
+//"FIRST" "Dun_Tele_Scroll3_Box"	240
+
+//=== Promotion 06/03/2014
+//"FIRST"	"Bubble_Gum_Low_Box"	400
+//"FIRST"	"Lucky_Clip_Box"		240
+//"FIRST"	"Bubble_Light_Magic_Box"		720
+//"FIRST"	"Bubble_Gum_Medium_Box"		960
+//"FIRST"	"Lucky_Clip_Medium_Box"		960
+//"FIRST"	"HD_Oridecon_50_Box"		1080
+//"FIRST"	"Internet_Cafe2"		1600
+//"FIRST"	"HD_Elunium_50_Box"		1080
+//"FIRST"	"Bubble_Gum_Light_Box"		80
+//"FIRST"	"Bubble_Gum_Sweet_Box"		240
+
+
+//"FIRST"	"Aspersio_5_Scroll_Box"		100
+//"FIRST"	"Assumptio_5_Scroll_Box"	150
+//"FIRST"	"Blessing_10_Scroll_Box"	100
+//"FIRST"	"Luk_Dish_Box"			180
+//"FIRST"	"Int_Dish_Box"			180
+//"FIRST"	"Dun_Tele_Scroll1_Box"		100
+//"FIRST"	"Dun_Tele_Scroll3_Box"		300
+//"FIRST"	"Enriched_Elunium_Box"		1400
+//"FIRST"	"Enriched_Oridecon_Box"		1500
+//"FIRST"	"Giant_Fly_Wing_Box"		100
+//"FIRST"	"Glass_Of_Illusion_Box10"	100
+//"FIRST"	"Greed_Box30"			50
+//"FIRST"	"Dex_Dish_Box"			180
+//"FIRST"	"Vit_Dish_Box"			180
+//"FIRST"	"Inc_Agi_10_Scroll_Box"		100
+//"FIRST"	"Insurance_Package"		400
+//"FIRST"	"Kafra_Card_Box"		120
+//"FIRST"	"Med_Life_Potion_Box"		100
+//"FIRST"	"Regeneration_Box10"		100
+//"FIRST"	"Agi_Dish_Box"			180
+//"FIRST"	"Str_Dish_Box"			180
+//"FIRST"	"Token_Of_Siegfried_Box"	200
+//"FIRST"	"Dex_Dish_Box30"		500
+//"FIRST"	"Int_Dish_Box30"		500
+
+
+
+//------------- Second Conso Shop ---------------------------
+
+
+
+
+
+"SECOND" "Blue_Card_M"		100
+"SECOND" "Fuukoku_Houin"	370
+"SECOND" "GR_Shiki_Fuujin"	360
+"SECOND" "Silver_Box"	400
+"SECOND" "Anniversary_Ticket"	400
+"SECOND" "Souseki_Fuuin"	400
+"SECOND" "Gold_Box"	500
+"SECOND" "Blue_Card_Nt"	300
+"SECOND" "Blue_Card_Q"	400
+"SECOND" "Heart_Box"	500
+"SECOND" "XMAS_Coupon"	400
+"SECOND" "Fuuinka_Koui"	350
+"SECOND" "Sanbou_Kyuukai"	355
+"SECOND" "Shikoku_Mujin"	390
+"SECOND" "Blue_Card_Sary"	500
+"SECOND" "Blue_Card_Annyver"	500
+"SECOND" "BlueCard_G"		400
+"SECOND" "Blue_Card_7"		500
+"SECOND" "BlueCard_E"		400
+
+
+//"SECOND"	"Battle_Manual"			100
+//"SECOND"	"Battle_Manual_Box"		1000
+//"SECOND"	"Bubble_Gum_Light_Box"		100
+//"SECOND"	"Bubble_Gum_Low_Box"		500
+//"SECOND"	"Bubble_Gum_Sweet_Box"		300
+//"SECOND"	"Lucky_Clip_Box"		300
+//"SECOND"	"Lucky_Clip_Light_Box"		100
+//"SECOND"	"Lucky_Clip_Medium_Box"		1500
+//"SECOND"	"Lucky_Clip_Magic_Box"		3600
+//"SECOND"	"Demi_Magic_Box"		4480
+//"SECOND"	"Bubble_Light_Magic_Box"	1000
+//"SECOND"	"Bubble_Gum_Medium_Box"		1500
+//"SECOND"	"Bubble_Gum_Magic_Box"		4800
+
+
+
+//------------- Third Conso Shop ---------------------------
+
+
+//"THIRD"	"Satanic_Chain_P"		1000
+//"THIRD"	"Gang_Scarf"			600
+//"THIRD"	"Antique_Pipe"			650
+//"THIRD"	"Robo_Eye"			600
+//"THIRD"	"Scarlet_Rose"			800
+//"THIRD"	"Aquarius_Crown"		500
+//"THIRD"	"Aquarius_Diadem"		500
+//"THIRD"	"Snake_Head"			700
+//"THIRD"	"Pecopeco_Hairband"		450
+//"THIRD"	"Whikebain_Ears"		500
+//"THIRD"	"Sigrun's_Wing"			400
+//"THIRD"	"Red_Deviruchi_Cap"		500
+//"THIRD"	"Leaf_Cat_Hat"			300
+//"THIRD"	"Drooping_White_Kitty"		500
+//"THIRD"	"Fish_In_Mouth"			200
+//"THIRD"	"Majestic_Evil_Horn"		500
+//"THIRD"	"Observer"			350
+//"THIRD"	"J_Captain_Hat"			500
+//"THIRD"	"Antique_Pipe_J"		500
+//"THIRD"	"Scuba_Mask"			300
+//"THIRD"	"Helm_Of_Dragoon"		700
+//"THIRD"	"Jaguar_Hat"			500
+//"THIRD"	"Hunting_Cap"			500
+//"THIRD"	"Hockey_Mask"			500
+//"THIRD"	"Sloth_Hat"			500
+//"THIRD"	"Dress_Hat"			750
+//"THIRD"	"Yoyo_Hat"			450
+//"THIRD"	"Bullock_Helm"			350
+//"THIRD"	"Gemini_Crown"			500
+//"THIRD"	"Gemini_Diadem"			500
+
+//------------- FourthConso Shop ---------------------------
+
+
+//"FOURTH"	"Clothing_Dye_Coupon"	400
+//"FOURTH"	"Hair_Dye_Coupon"	200
+//"FOURTH"	"Hair_Style_Coupon"	300
+//"FOURTH"	"Max_Weight_Up_Scroll"	50
+//"FOURTH"	"Str_Dish10_"		20
+//"FOURTH"	"Agi_Dish10_"		20
+//"FOURTH"	"Vit_Dish10_"		20
+//"FOURTH"	"Int_Dish10_"		20
+//"FOURTH"	"Dex_Dish10_"		20
+//"FOURTH"	"Luk_Dish10_"		20
+//"FOURTH"	"Enriched_Elunium"	150
+//"FOURTH"	"Enriched_Oridecon"	150
+//"FOURTH"	"Megaphone_"		300
+//"FOURTH"	"Neuralizer_Ishop"	1501
+//"FOURTH"	"Blue_Card_M"		100
+//"FOURTH"	"Blue_Card_Ven"		50
+//"FOURTH"	"Internet_Cafe1"	450
+//"FOURTH"	"Internet_Cafe2"	2000
+
+//------------- fifthConso Shop ---------------------------
+
+//"FIFTH"		"Blue_Card_V"		30
+
+//------------- sixthConso Shop ---------------------------
+
+//"SIXTH"	"Gemini_Crown"		500
+//"SIXTH"	"Gemini_Diadem"		500
+//"SIXTH"	"Blue_Card_Ven"		50
+//"SIXTH"	"Internet_Cafe1"	450
+//"SIXTH"	"Internet_Cafe2"	2000

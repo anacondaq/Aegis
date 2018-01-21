@@ -1,0 +1,2143 @@
+//------------------------------------------------------------//					
+// [ 이 MapTypeProperty.txt는 일반서버(비PK서버)의 맵타입을 설정하는 파일입니다. ]
+//------------------------------------------------------------//	
+// [ 주석 ]
+//	라인주석은 // 로 시작합니다. 
+//	블럭주석은 /*  주석내용 */ 을 사용할수 있습니다.
+//------------------------------------------------------------//					
+// [ 설정 형식 ]
+//	MAPTYPE 맵타입번호
+//	{
+//		ADD_BLOCK_SKILL(AL_TELEPORT,PLAYER | MONSTER | HOMUN | MERCENARY);
+//
+//		// 소비 아이템 사용 불가.
+//		// ( 지정한 아이템을 소비하려 하면 "이 맵에서는 사용할 수 없는 아이템입니다"라는 안내 문구를 출력)
+//			ADD_BLOCK_ITEM("빨간포션");
+//
+//		//PK
+//		//TRUE: PK가 가능해진다.
+//			ADD_PROPERTY(PK, FALSE);			
+//
+//		//텔레포트
+//		//TRUE: 텔레포트가 되는 아이템과 스킬들의 사용을 허락한다.(아이템 [파리의날개], 스킬 [텔레포트,인티머데이트])
+//			ADD_PROPERTY(TELEPORT, TRUE);			
+//
+//		//기억
+//		//TRUE: '/기억' 매크로를 사용할 수 있다. 복사 계열의 스킬 [텔레포트]의 워프 포인트를 저장할 수 있게된다.
+//			ADD_PROPERTY(NOTREMEMBER, TRUE);
+//
+//		//아이템드롭
+//		//TRUE: 플레이어가 죽을 때 소지하고 있는 아이템 중 일부를 떨어트린다.
+//			ADD_PROPERTY(ITEMDROP, FALSE);
+//
+//		//경험치유실
+//		//TRUE: 플레이어가 죽을 때 1%의 경험치를 떨어트린다.
+//			ADD_PROPERTY(EXP, FALSE);	
+//
+//		// 접속종료시기억금지 
+//		//TRUE: 플레이어가 접속을 종료하면 부활 장소로 지정된 곳으로 이동한다.
+//			ADD_PROPERTY(DISCONNECT_NOTREMEMBER, FALSE);	
+//
+//		//고목나무사용가능
+//		//TRUE: 아이템[고목나무가지]를 사용할 수 있다.
+//			ADD_PROPERTY(CALLMONSTER, FALSE);		
+//
+//		//같은파티PK불가 
+//			ADD_PROPERTY(PARTY, FALSE);			
+//
+//		//같은길드PK불가 
+//			ADD_PROPERTY(GUILD, FALSE);
+
+//		//시즈모드
+//		//08년 07월 16일: SIEGE 속성의 일부 기능을 대체할 수 있는 속성이 추가. SIEGE 속성의 기능은 축소되어 사용됨. 
+//		// SIEGE 속성의 기능
+//			EFST_ASSUMPTIO - 데미지 2/3
+//			SKID_NJ_ISSEN	- 데미지 1/3
+//			회피율, 공성시 20% 감소
+//			PK서버에서 PK포인트 안준다
+//			SKID_TK_JUMPKICK - EFST_PRESERVE없고,소울 링커가 아닌 PC가 타겟이면 
+//			EFST_SOULLINK,EFST_ADRENALINE2,EFST_KAITE,EFST_KAAHI,EFST_ONEHANDQUICKEN,EFST_ATTHASTE_POTION3 해제
+//			SKID_TK_HIGHJUMP - 공성과 텔 가능 지역에서만 이동가능
+//			SKID_ST_CHASEWALK - EPISODE_VER 9 이상의 버전에서는 (defined(REBALANCE)) 효과가 5배
+//			SKID_CG_HERMODE - 공성,전장에서만 가능
+//			SKID_AS_SONICBLOW - 어쌔신의영혼 효과시 공격력 1.25배
+//			SKID_PF_SOULCHANGE - 모든 PC에 사용가능
+//			EFST_KAIZEL - 공성,전장이 아닐경우 죽었을때 효과발동
+//			Wing_Of_Butterfly - EPISODE_VER  9 이하의 버전에서는 텔레포트 불가지역 중 공성,전장에서만 사용가능
+//				 EPISODE_VER  9 이상의 버전에서는 텔레포트 불가지역에서도 사용가능
+//			길드스킬은 공성모드에서만 사용가능
+//
+//		//TRUE: 공성전 모드를 사용한다.
+//			ADD_PROPERTY(SIEGE, FALSE);
+//
+//		//PK Server Added by savageox
+//			ADD_PROPERTY(PKSERVER FALSE);
+//
+//		//PVP Server Added by savageox
+//			ADD_PROPERTY(PVPSERVER, FALSE);
+//
+//		//Skill 금지 Added by savageox
+//		//TRUE: 플레이어의 액티브 스킬의 사용을 금지한다.
+//			ADD_PROPERTY(DENYSKILL, FALSE);
+//
+//		//터보 트랙용 맵속성
+//  	        //08년 07월 16일: 터보 트랙용 맵속성은 더 이상 사용하지 않음. 대체 속성들을 추가. 
+//		//TRUE: 스킬 [아이스월, 인듀어, 워프포탈, 인티머데이트, 하이딩, 클로킹, 체이스워크]의 사용을 금지한다.
+//			ADD_PROPERTY(TURBOTRACK, FALSE);			
+//
+//		//나비날개 사용금지
+//		//TRUE: 아이템 [Wing_Of_Butterfly]의 사용을 금지한다.
+//			ADD_PROPERTY(DENY_BUTTERFLY, FALSE);
+//
+//		//PK 카운팅
+//		//TRUE:PK카운팅을 작동한다.
+//			ADD_PROPERTY(COUNT_PK, TRUE);
+//
+//		//데미지 감춤
+//		//TRUE:데미지를 표시하지 않는다.
+//			ADD_PROPERTY(HIDING_DAMAGE, TRUE);
+//
+//		//이펙트 간략화
+//		//TRUE:간략화된 이펙트를 사용한다.
+//			ADD_PROPERTY(USE_SIMPLE_EFFECT, TRUE);
+//
+//		//무적 상태
+//		//TRUE:워프 이동 후 10초간 무적 상태가 된다.
+//			ADD_PROPERTY(LONG_INSUPERABLE_TIME, TRUE);
+//
+//		//락 온 모드
+//		//TRUE:락 온 모드 off(Shift를 누르지 않아도 PK가 가능)
+//			ADD_PROPERTY(DISABLE_LOCKON, TRUE);		//락온 모드를 사용하지 않는다.
+//
+//		//넉백
+//		//TRUE:넉백 효과가 작동하지 않음.
+//			ADD_PROPERTY(DISABLE_KNOCKBACK, TRUE);
+//
+//		//물리 데미지
+//		//value:물리 공격의 최종 데미지를 퍼센트 단위로 조정
+//			ADD_PROPERTY_VALUE(NORMAL_DAMAGE, 60); 		// 물리 대미지를 60%로
+//
+//		//원거리 물리 데미지
+//		//value:원거리 물리 공격의 최종 데미지를 퍼센트 단위로 조정
+//			ADD_PROPERTY_VALUE(RANGE_DAMAGE, 60); 		// 원거리 물리 대미지를 60%로
+//
+//		//스킬 공격 데미지
+//		//value:스킬 공격의 최종 데미지를 퍼센트 단위로 조정
+//			ADD_PROPERTY_VALUE(ALL_SKILL_DAMAGE, 60); 	// 모든 스킬 대미지를 60%로
+//
+//		//마을로 이동
+//		//value:설정된 횟수 만큼 죽었다면 마을로 강제 이동
+//			ADD_PROPERTY_VALUE(GOTOTOWN, 1); 		// 죽으면 바로 마을로 이동
+//
+//		//캐릭터를 죽이면 캐릭터의 이름이 새겨진 특정 아이템(item)을 얻음.
+//		//value: 이름이 새겨질 아이템 DB번호
+//			ADD_PROPERTY_VALUE(NAMED_BOOTY, 7773);		//PK를 성공하면 죽은 캐릭터의 이름이 새겨진 전투 휘장를 얻습니다.
+//
+//		//설정된 시간 동안 공성 모드를 발동 시킨다.
+//		//value: 1 - 공성 1, 15 - 공성 1.5
+//			ADD_PROPERTY_VALUE(SIEGETIME_VERSION, 1);
+//			ADD_PROPERTY_VALUE(SIEGETIME_VERSION, 15);
+//
+//		//장착 아이템 효능 작동 불가 (장비 아이템의 special.sc 를 무시한다.)
+//		//value: 아이템 이름
+//			ADD_BLOCK_EQUIPITEM("Phen_Card");	
+//
+//		//지정한 버프(buff) 효과가 작동하지 않음.
+//		//value: 버프 이름
+//			ADD_BLOCK_BUFF("EFST_ENDURE");
+//
+//		//지정한 퍼센트만큼 설치형 스킬의 지속 시간을 퍼센트(percect)로 조정한다.
+//		//value: 트렙이름, 지속 시간(퍼센트)
+//                      ADJUST_TRAP_DURATION (HT_LANDMINE, 400); 
+//
+//		//지정한 스킬(SKILL)의 최종 데미지를 퍼센트 단위(percect)로 조정한다
+//		//ADJUST_SKILL_DAMAGE로 조정하지 되지 않은 스킬은 ADD_PROPERTY_VALUE(ALL_SKILL_DAMAGE, percent);의 설정을 따릅니다.
+//			ADJUST_SKILL_DAMAGE(SKILL, PERCENT);
+//
+//		//코스츔 아이템의 사용 여부 설정
+//		//TRUE: 코스츔 아이템을 장착해도 일반 아이템을 장착한 것으로 보임.
+//              //FALSE: 코스츔 아이템을 장착해도 일반 아이템을 장착한 것으로 보임.
+//		//설정: PK가 되는 맵에서는 코스츔 아이템을 사용할 수 없도록 함.
+//		//적용 날짜: 사크라이 - 2010년 06월 30일
+//                      ADD_PROPERTY(DISABLE_COSTUMEITEM,TRUE);
+//	}
+//
+//		활성:TRUE, 비활성:FALSE (기본 세팅은 FALSE입니다.)
+//
+//------------------------------------------------------------//					
+// [ 주의 사항 ]
+//	1. 속성을 설정하지 많으면 FALSE로 설정됨.
+//	2. 철자를 정확히 입력, 대소문자를 구분함(명령어들은 대문자로 입력!).
+//	3. 끝에는 항상 세미콜론(;)를 붙인다.
+//  4. 맵 타입은 최대 30개까지 만들 수 있음. 추가로 맵 타입이 필요하다면 프로그램팀(김진규 과장님)에 문의!
+//------------------------------------------------------------//					
+// [ 수정 사항 ]
+//	2007년 11월 28일 - 사크라이 서버에 적용
+//	2007년 12월 12일 - 본 서버에 적용
+//	2008년 06월 11일 - [전 서버]텔레포트 금지 구역에서 초보자 파리의 날개 사용 금지
+//	2008년 07월 16일 - [사크라이 서버] 맵 속성 세분화 
+//	2008년 08월 06일 - [본 서버] 맵 속성 세분화 
+//	2008년 08월 13일 - [전 서버] 세팅 오류 수정
+//	2008년 11월 17일 - [전 서버] 이계 마을 타입 추가
+//	2009년 01월 07일 - [전 서버] 세팅 오류 수정
+//  수정 1. 맵 타입 7, 8, 18, 19 - 아이템 "오를리앙의 제복", "혈호첩카드" 효과를 발동 -> 막음
+//  수정 2. 맵 타입 7, 8, 18, 19 - 스킬 "CG_MARIONETTE(마리오네트)" 사용 불가 -> 가능
+//  수정 3. 맵 타입 7, 8, 18, 19 - 스킬 "LK_FURY(퓨리)" 사용 불가 -> 삭제. 기획으로만 만들고 삭제된 스킬임.
+//  수정 4. 맵 타입 7, 8, 18 - 원거리 물리데미지 60% -> 80%
+//  수정 5. 맵 타입 19 - 원거리 물리데미지 85% -> 75%
+//  수정 6. 주석 추가, 수정
+//------------------------------------------------------------//	
+//	2009년 02월 25일 - [테스트용 추가] 
+//     4 번타입 외에는 전직용 룬 스톤을사용 금지시킨다.
+//	ADD_BLOCK_ITEM("Runstone_Crush");
+//	ADD_BLOCK_ITEM("Runstone_Storm");
+//	ADD_BLOCK_ITEM("Runstone_Millennium");
+//------------------------------------------------------------//	
+//	2009년 03월 11일 - [사크라이R] 
+//  수정 1. GC_DARKILLUSION스킬을 공성전에서 막음
+//------------------------------------------------------------//	
+//	2009년 06월 02일 - [사크라이R] 
+//  수정 1. 텔레포트 금지맵에서 SC_DIMENSIONDOOR 스킬을 사용을 막음
+//------------------------------------------------------------//	
+//	2009년 07월 01일 - [사크라이R] 
+//  수정 1. PK가 안되는 맵에서는 WM_LULLABY_DEEPSLEEP, WM_SATURDAY_NIGHT_FEVER 스킬을 사용할 수 없도록 설정.
+//------------------------------------------------------------//	
+//	2009년 07월 15일 - [사크라이R, 본서버, 부분 유료] 
+//  수정 1. 마을(1,23번 타입)에서 아이템 "Greed_Scroll" 사용 불가능하도록 함
+//  수정 2. 마을(1,23번 타입)이외의 곳에서 아이템 "Neuralizer" 사용 불가능하도록 함
+//------------------------------------------------------------//	
+//	2009년 10월 14일 - [본 서버] 
+//  수정 1. 텔레포트 금지맵에서 SC_DIMENSIONDOOR 스킬을 사용을 막음
+//  수정 2. PK가 안되는 맵에서는 WM_LULLABY_DEEPSLEEP, WM_SATURDAY_NIGHT_FEVER 스킬을 사용할 수 없도록 설정.
+//  수정 3. SO_ARRULLO 스킬을 PK 불가능 지역에서 사용할 수 없도록 함.
+//  수정 4. 공성 맵타입[8번]에서 GN_THORNS_TRAP스킬을 사용할 수 없도록 설정함.
+//  수정 5. 마을[0번]에서 SC_MANHOLE스킬을 사용할 수 없도록 설정함.
+//------------------------------------------------------------//	
+//	2009년 10월 28일 - [본 서버] 
+//  수정 1. 텔레포트 금지맵에서 SC_FATALMENACE 스킬을 사용을 막음
+//------------------------------------------------------------//	
+//	2009년 11월 10일 - [본 서버] 
+//  수정 1. 터보트랙 맵에서 WS_CARTBOOST, GN_CARTBOOST 스킬의 사용을 막음
+//------------------------------------------------------------//	
+//	2009년 12월 02일 - [본 서버] 
+//  수정 1.마을에서 GN_WALLOFTHORN, WM_POEMOFNETHERWORLD 스킬의 사용을 막음
+//------------------------------------------------------------//	
+//	2009년 12월 16일 - [본 서버] 
+// 수정 1. PK 불가능 맵에서는 WM_SIRCLEOFNATURE 스킬의 사용을 막음
+//------------------------------------------------------------//	
+//	2010년 02월 24일 - [본 서버] 
+// 수정 1. 마을에서 몬스터를 소환하는 스킬, 아이템의 사용의 사용을 막음.
+//         스킬 - 바이오 캐니벌라이즈, 스피어 마인, 식물 재배
+//        아이템 - 피묻은나무가지, 묘한나뭇가지
+//------------------------------------------------------------//	
+//	2010년 05월 19일 - [사크라이, 본 서버] 
+// 수정 1. 퀘스트 맵(4번 타입)에서 몬스터를  죽일 때 아이템을 얻을 수 있는 장비들을  막음.
+//        일부 퀘스트 맵은 특정 지점에서 몬스터가 계속 리젠되기 때문에 악용의 소지가 있음. 
+//------------------------------------------------------------//	
+//	2010년 06월 03일 - [사크라이, 본 서버] 
+// 수정 1. 퀘스트 맵(4번 타입)에서 몬스터를  죽일 때 아이템을 얻을 수 있는 장비들을  추가로 막음.
+//         대상: 도깨비뿔, 제니나이프
+//------------------------------------------------------------//	
+//	2010년 08월 18일 - [본 서버] 
+// 수정 1. 마을(maptype: 0) 이외 맵에서는 아이템 "만능카탈로그실버", "만능카탈로그골드", "만능카탈로그브론즈"를 사용할 수 없도록 함.
+//------------------------------------------------------------//	
+//	2010년 10월 20일 - [본 서버] 
+// 수정 1. 퀘스트 맵(4번 타입)에서 아이템 아조스를 못쓰게 막음
+//------------------------------------------------------------//	
+//	2010년 10월 29일 - [본 서버] (임시점검) 
+// 문제 발생: 구.신공성용 맵(7,8,18번 타입)에서 스킬 "날라차기"를 이용해서 깃발로 이동하는 사람을 쫓아가는 현상 발생.
+// 
+// 초기 해결 방안: 공성용 맵 타입에서 스킬 "날라 차기"의 사용을 막음.
+// 해결 방안 결론: 스킬을 수정하는 방향으로 해결.
+//
+// 결론: 맵타입에서 수정되는 것은 아무 것도 없음..!
+//------------------------------------------------------------//	
+//	2010년 11월 24일 - [본 서버] 
+// 수정 1. 코스츔 아이템 사용 금지 맵 속성 추가
+// 수정 2. PK(5,6,7,8,9,11,14,17,18,19) 맵에서는 코스츔 아이템을 사용할 수 없도록 함.
+// 수정 3. 마을에서 아이템 "F탐욕스크롤", "EF탐욕스크롤", "탐욕스크롤_C" 사용을 막음.
+//------------------------------------------------------------//	
+//	2010년 12월 15일 - [본 서버] 
+// 수정 1. 실내(1번 타입)에서 몬스터를 소환하는 스킬, 아이템의 사용의 사용을 막음.
+//        스킬 - 바이오 캐니벌라이즈, 스피어 마인, 식물 재배
+//        아이템 - 피묻은나무가지, 묘한나뭇가지
+//------------------------------------------------------------//	
+//	2011년 04월 13일 - [본 서버] 
+//  수정 1. 공성 맵타입[8번]에서 GN_THORNS_TRAP스킬을 사용할 수 있도록 변경함.
+//  수정 2. GC_DARKILLUSION스킬을 사용할 수 있도록 변경함.
+//------------------------------------------------------------//	
+//	2011년 06월 29일 - [본 서버] 
+//  수정 1. PK가 안되는 맵에서는 아래의 장비아이템의 효과가 발동되지 않도록 함.
+//		(Siege_Greave, Siege_Boots, Siege_Shoes, Siege_Manteau, Siege_Muffler, Siege_Plate, Siege_Suits, Siege_Robe,
+//		Siege_Arrow_S, Siege_Arrow_A, Velum_Jamadhar,	Velum_Scare, Velum_Buster, Velum_Glaive,
+//		Velum_Arc_Wand, Velum_Claymore, Velum_Katzbalger, Velum_Arbalest, Velum_CrossBow, Velum_Bible
+//		Velum_Encyclopedia, Mental_Destroyer, Velum_Claw, Velum_Damascus, Velum_Stunner, Velum_Flail)
+//  수정 2. PK가 안되는 맵에서는 소비 아이템 "Woe_Violet_Potion"를 사용할 수 없도록 함.
+//------------------------------------------------------------//	
+//	2011년 06월 29일 - [본 서버 ] 
+//  수정 1. PK가 안되는 맵에서는 아래의 장비아이템의 효과가 발동되지 않도록 함.
+//          (Velum_Spear, Velum_Guillotine)
+//  수정 2. PK가 안되는 맵에서는 소비 아이템 "Woe_White_Potion,Woe_Blue_Potion"를 사용할 수 없도록 함.
+//------------------------------------------------------------//	
+//	2011년 06월 29일 - [사크라이,본 서버] 
+//  수정 1. 일부 맵에서 소비 아이템 "보물상자소환서"의 사용을 막음 
+//	(기준: 고목나무 가지를 사용할 수 있는 곳에서 사용할 수 있도록 함.)
+//  수정 2. 마을(타입 1, 23)에서 소비 아이템 "Woe_White_Potion,Woe_Blue_Potion,Woe_Violet_Potion"을 사용할 수 있도록 함.
+//
+//------------------------------------------------------------//	
+//	2011년 07월 13일 - [전 서버] 
+//  수정 1. 아이템 "Mental_Destroyer"가 모든 맵에서 사용 가능 하도록 설정 변경 (기존: PK 가능 지역에서만 발동)
+//------------------------------------------------------------//	
+//	2011년 08월 31일 - [본 서버] 
+//  수정 1. PK 불가능 맵 - WM_SOUND_OF_DESTRUCTION 스킬의 사용을 막음
+//  수정 2. PK 불가능 맵 - SC_MANHOLE 스킬의 사용을 막음
+//  수정 3. PK 불가능 맵 - SC_BLOODYLUST 스킬의 사용을 막음
+//  수정 4. PK 불가능 맵 - WM_SIRCLEOFNATURE 스킬의 사용할 수 없는 설정을 삭제함.(WM_SIRCLEOFNATURE 스킬의 사용 가능)
+//  수정 5. PK 불가능 맵 - WM_LULLABY_DEEPSLEEP 스킬의 사용할 수 없는 설정을 삭제함.(WM_LULLABY_DEEPSLEEP 스킬의 사용 가능)
+//------------------------------------------------------------//	
+//	2011년 11월 02일 - [사크라이, 본 서버] 
+//  수정 1. 초보자맵 타입(24번) 생성
+//          실내 맵 타입에 아래의 아이템을 사용할 수 없는 설정을 추가함.
+//          (던전이동스크롤,거대한파리날개,공성맵텔스크롤,고목나무가지,피묻은나무가지,묘한나뭇가지,하이로조이스트카드,아조스,초보나비의날개,카프라명함,말랑도특산통조림,뒤집어진셔츠)
+//  수정 2. 존 서버 실행 시 오류가 발생하여 COMBIITEM_ 아이템들을 주석 처리함.
+
+MAPTYPE 0  // 마을
+{
+	ADD_PROPERTY(TELEPORT, TRUE);//텔레포트
+	ADD_PROPERTY(NOTREMEMBER, TRUE);//기억
+	ADD_PROPERTY(PARTY, FALSE);		//같은파티PK불가 
+	ADD_PROPERTY(GUILD, FALSE);		//같은길드PK불가 
+
+	ADD_BLOCK_ITEM("Runstone_Crush");
+	ADD_BLOCK_ITEM("Runstone_Storm");
+	ADD_BLOCK_ITEM("Runstone_Millennium");
+	ADD_BLOCK_ITEM("Greed_Scroll");
+	ADD_BLOCK_SKILL(WM_LULLABY_DEEPSLEEP,PLAYER);
+	ADD_BLOCK_SKILL(WM_SATURDAY_NIGHT_FEVER,PLAYER);
+	ADD_BLOCK_SKILL(SO_ARRULLO,PLAYER);
+	ADD_BLOCK_SKILL(SC_MANHOLE,PLAYER);	
+	ADD_BLOCK_SKILL(GN_WALLOFTHORN,PLAYER);	
+	ADD_BLOCK_SKILL(WM_POEMOFNETHERWORLD,PLAYER);
+	ADD_BLOCK_SKILL(WM_SIRCLEOFNATURE,PLAYER);
+
+	ADD_BLOCK_SKILL(AM_CANNIBALIZE,PLAYER);
+	ADD_BLOCK_SKILL(AM_SPHEREMINE,PLAYER);
+	ADD_BLOCK_SKILL(CR_CULTIVATION,PLAYER);
+	ADD_BLOCK_ITEM("Bloody_Dead_Branch");
+	ADD_BLOCK_ITEM("Mystic_Tree_Branch");
+
+	ADD_BLOCK_EQUIPITEM("Siege_Greave");
+	ADD_BLOCK_EQUIPITEM("Siege_Boots");
+	ADD_BLOCK_EQUIPITEM("Siege_Shoes");
+	ADD_BLOCK_EQUIPITEM("Siege_Manteau");
+	ADD_BLOCK_EQUIPITEM("Siege_Muffler");
+	ADD_BLOCK_EQUIPITEM("Siege_Plate");
+	ADD_BLOCK_EQUIPITEM("Siege_Suits");
+	ADD_BLOCK_EQUIPITEM("Siege_Robe");
+	ADD_BLOCK_EQUIPITEM("Siege_Arrow_S");
+	ADD_BLOCK_EQUIPITEM("Siege_Arrow_A");
+	ADD_BLOCK_EQUIPITEM("Velum_Jamadhar");
+	ADD_BLOCK_EQUIPITEM("Velum_Scare");
+	ADD_BLOCK_EQUIPITEM("Velum_Buster");
+	ADD_BLOCK_EQUIPITEM("Velum_Glaive");
+	ADD_BLOCK_EQUIPITEM("Velum_Arc_Wand");
+	ADD_BLOCK_EQUIPITEM("Velum_Claymore");
+	ADD_BLOCK_EQUIPITEM("Velum_Katzbalger");
+	ADD_BLOCK_EQUIPITEM("Velum_Arbalest");
+	ADD_BLOCK_EQUIPITEM("Velum_CrossBow");
+	ADD_BLOCK_EQUIPITEM("Velum_Bible");
+	ADD_BLOCK_EQUIPITEM("Velum_Encyclopedia");
+	ADD_BLOCK_EQUIPITEM("Velum_Claw");
+	ADD_BLOCK_EQUIPITEM("Velum_Damascus");
+	ADD_BLOCK_EQUIPITEM("Velum_Stunner");
+	ADD_BLOCK_EQUIPITEM("Velum_Flail");
+//	ADD_BLOCK_EQUIPITEM("COMBIITEM_Velum_Claw_S"); 
+//	ADD_BLOCK_EQUIPITEM("COMBIITEM_Velum_Claw_A"); 
+//	ADD_BLOCK_EQUIPITEM("COMBIITEM_Siege_Plate");
+//	ADD_BLOCK_EQUIPITEM("COMBIITEM_Siege_Suits");
+//	ADD_BLOCK_EQUIPITEM("COMBIITEM_Siege_Robe");
+	ADD_BLOCK_EQUIPITEM("Velum_Spear");
+	ADD_BLOCK_EQUIPITEM("Velum_Guillotine");
+	ADD_BLOCK_ITEM("Treasure_Box_Scroll");	
+}
+
+MAPTYPE 1  // 실내
+{
+	ADD_PROPERTY(PK, FALSE);		//PK
+	ADD_PROPERTY(TELEPORT, FALSE);		//텔레포트	
+	ADD_BLOCK_ITEM("N_Fly_Wing");		//N_Fly_Wing금지
+	ADD_BLOCK_SKILL(SC_FATALMENACE,PLAYER); //페이탈 메나스	
+	ADD_PROPERTY(NOTREMEMBER, FALSE);	//기억
+	ADD_PROPERTY(ITEMDROP, FALSE);		//아이템드롭
+	ADD_PROPERTY(EXP, FALSE);		//경험치유실
+	ADD_PROPERTY(DISCONNECT_NOTREMEMBER, FALSE);// 접속종료시기억금지    
+	ADD_PROPERTY(CALLMONSTER, FALSE);	//고목나무사용가능
+	ADD_PROPERTY(PARTY, FALSE);		//같은파티PK불가 
+	ADD_PROPERTY(GUILD, FALSE);		//같은길드PK불가 
+	ADD_PROPERTY(SIEGE, FALSE);		//시즈모드 
+	ADD_PROPERTY(PKSERVER, FALSE);		//PK Server Added by savageox
+	ADD_PROPERTY(PVPSERVER, FALSE);	//PVP Server Added by savageox
+	ADD_PROPERTY(DENYSKILL, FALSE);		//Skill 금지 Added by savageox
+	ADD_PROPERTY(TURBOTRACK, FALSE);	//터보 트랙용 맵속성
+	ADD_PROPERTY(DENY_BUTTERFLY, FALSE);	//나비날개 사용금지
+	ADD_BLOCK_SKILL(WZ_ICEWALL,PLAYER);			//아이스 월
+	ADD_BLOCK_ITEM("Runstone_Crush");
+	ADD_BLOCK_ITEM("Runstone_Storm");
+	ADD_BLOCK_ITEM("Runstone_Millennium");
+	ADD_BLOCK_ITEM("Neuralizer");
+	ADD_BLOCK_SKILL(SC_DIMENSIONDOOR,PLAYER);			// 디멘션 도어	
+	ADD_BLOCK_SKILL(WM_LULLABY_DEEPSLEEP,PLAYER);
+	ADD_BLOCK_SKILL(WM_SATURDAY_NIGHT_FEVER,PLAYER);
+	ADD_BLOCK_SKILL(SO_ARRULLO,PLAYER);
+	ADD_BLOCK_SKILL(WM_SIRCLEOFNATURE,PLAYER);
+	ADD_BLOCK_ITEM("Vending_Search_Scroll");
+	ADD_BLOCK_ITEM("Vending_Search_Scroll2");
+	ADD_BLOCK_ITEM("Uni_Catalog_Bz");
+
+	ADD_BLOCK_EQUIPITEM("Siege_Greave");
+	ADD_BLOCK_EQUIPITEM("Siege_Boots");
+	ADD_BLOCK_EQUIPITEM("Siege_Shoes");
+	ADD_BLOCK_EQUIPITEM("Siege_Manteau");
+	ADD_BLOCK_EQUIPITEM("Siege_Muffler");
+	ADD_BLOCK_EQUIPITEM("Siege_Plate");
+	ADD_BLOCK_EQUIPITEM("Siege_Suits");
+	ADD_BLOCK_EQUIPITEM("Siege_Robe");
+	ADD_BLOCK_EQUIPITEM("Siege_Arrow_S");
+	ADD_BLOCK_EQUIPITEM("Siege_Arrow_A");
+	ADD_BLOCK_EQUIPITEM("Velum_Jamadhar");
+	ADD_BLOCK_EQUIPITEM("Velum_Scare");
+	ADD_BLOCK_EQUIPITEM("Velum_Buster");
+	ADD_BLOCK_EQUIPITEM("Velum_Glaive");
+	ADD_BLOCK_EQUIPITEM("Velum_Arc_Wand");
+	ADD_BLOCK_EQUIPITEM("Velum_Claymore");
+	ADD_BLOCK_EQUIPITEM("Velum_Katzbalger");
+	ADD_BLOCK_EQUIPITEM("Velum_Arbalest");
+	ADD_BLOCK_EQUIPITEM("Velum_CrossBow");
+	ADD_BLOCK_EQUIPITEM("Velum_Bible");
+	ADD_BLOCK_EQUIPITEM("Velum_Encyclopedia");
+	ADD_BLOCK_EQUIPITEM("Velum_Claw");
+	ADD_BLOCK_EQUIPITEM("Velum_Damascus");
+	ADD_BLOCK_EQUIPITEM("Velum_Stunner");
+	ADD_BLOCK_EQUIPITEM("Velum_Flail");
+//	ADD_BLOCK_EQUIPITEM("COMBIITEM_Velum_Claw_S"); 
+//	ADD_BLOCK_EQUIPITEM("COMBIITEM_Velum_Claw_A"); 
+//	ADD_BLOCK_EQUIPITEM("COMBIITEM_Siege_Plate");
+//	ADD_BLOCK_EQUIPITEM("COMBIITEM_Siege_Suits");
+//	ADD_BLOCK_EQUIPITEM("COMBIITEM_Siege_Robe");
+	ADD_BLOCK_EQUIPITEM("Velum_Spear");
+	ADD_BLOCK_EQUIPITEM("Velum_Guillotine");
+	ADD_BLOCK_ITEM("Woe_White_Potion");
+	ADD_BLOCK_ITEM("Woe_Blue_Potion");
+	ADD_BLOCK_ITEM("Woe_Violet_Potion");	
+	ADD_BLOCK_ITEM("Treasure_Box_Scroll");	
+}
+
+MAPTYPE 2  // 필드
+{
+	ADD_PROPERTY(TELEPORT, TRUE);		//텔레포트
+	ADD_PROPERTY(NOTREMEMBER, TRUE);	//기억
+	ADD_PROPERTY(EXP, TRUE);		//경험치유실
+	ADD_PROPERTY(CALLMONSTER, TRUE);	//고목나무사용가능
+	ADD_BLOCK_ITEM("Runstone_Crush");
+	ADD_BLOCK_ITEM("Runstone_Storm");
+	ADD_BLOCK_ITEM("Runstone_Millennium");
+	ADD_BLOCK_ITEM("Neuralizer");
+	ADD_BLOCK_SKILL(WM_LULLABY_DEEPSLEEP,PLAYER);
+	ADD_BLOCK_SKILL(WM_SATURDAY_NIGHT_FEVER,PLAYER);
+	ADD_BLOCK_SKILL(SO_ARRULLO,PLAYER);
+	ADD_BLOCK_SKILL(WM_SIRCLEOFNATURE,PLAYER);
+	ADD_BLOCK_ITEM("Vending_Search_Scroll");
+	ADD_BLOCK_ITEM("Vending_Search_Scroll2");
+	ADD_BLOCK_ITEM("Uni_Catalog_Bz");	
+	
+	ADD_BLOCK_EQUIPITEM("Siege_Greave");
+	ADD_BLOCK_EQUIPITEM("Siege_Boots");
+	ADD_BLOCK_EQUIPITEM("Siege_Shoes");
+	ADD_BLOCK_EQUIPITEM("Siege_Manteau");
+	ADD_BLOCK_EQUIPITEM("Siege_Muffler");
+	ADD_BLOCK_EQUIPITEM("Siege_Plate");
+	ADD_BLOCK_EQUIPITEM("Siege_Suits");
+	ADD_BLOCK_EQUIPITEM("Siege_Robe");
+	ADD_BLOCK_EQUIPITEM("Siege_Arrow_S");
+	ADD_BLOCK_EQUIPITEM("Siege_Arrow_A");
+	ADD_BLOCK_EQUIPITEM("Velum_Jamadhar");
+	ADD_BLOCK_EQUIPITEM("Velum_Scare");
+	ADD_BLOCK_EQUIPITEM("Velum_Buster");
+	ADD_BLOCK_EQUIPITEM("Velum_Glaive");
+	ADD_BLOCK_EQUIPITEM("Velum_Arc_Wand");
+	ADD_BLOCK_EQUIPITEM("Velum_Claymore");
+	ADD_BLOCK_EQUIPITEM("Velum_Katzbalger");
+	ADD_BLOCK_EQUIPITEM("Velum_Arbalest");
+	ADD_BLOCK_EQUIPITEM("Velum_CrossBow");
+	ADD_BLOCK_EQUIPITEM("Velum_Bible");
+	ADD_BLOCK_EQUIPITEM("Velum_Encyclopedia");
+	ADD_BLOCK_EQUIPITEM("Velum_Claw");
+	ADD_BLOCK_EQUIPITEM("Velum_Damascus");
+	ADD_BLOCK_EQUIPITEM("Velum_Stunner");
+	ADD_BLOCK_EQUIPITEM("Velum_Flail");
+//	ADD_BLOCK_EQUIPITEM("COMBIITEM_Velum_Claw_S"); 
+//	ADD_BLOCK_EQUIPITEM("COMBIITEM_Velum_Claw_A"); 
+//	ADD_BLOCK_EQUIPITEM("COMBIITEM_Siege_Plate");
+//	ADD_BLOCK_EQUIPITEM("COMBIITEM_Siege_Suits");
+//	ADD_BLOCK_EQUIPITEM("COMBIITEM_Siege_Robe");
+	ADD_BLOCK_EQUIPITEM("Velum_Spear");
+	ADD_BLOCK_EQUIPITEM("Velum_Guillotine");
+	ADD_BLOCK_ITEM("Woe_White_Potion");
+	ADD_BLOCK_ITEM("Woe_Blue_Potion");
+	ADD_BLOCK_ITEM("Woe_Violet_Potion");	
+}
+
+MAPTYPE 3  // 던전
+{
+	ADD_PROPERTY(TELEPORT, TRUE);		//텔레포트
+	ADD_PROPERTY(EXP, TRUE);		//경험치유실
+	ADD_PROPERTY(CALLMONSTER, TRUE);	//고목나무사용가능
+	ADD_BLOCK_ITEM("Runstone_Crush");
+	ADD_BLOCK_ITEM("Runstone_Storm");
+	ADD_BLOCK_ITEM("Runstone_Millennium");
+	ADD_BLOCK_ITEM("Neuralizer");
+	ADD_BLOCK_SKILL(WM_LULLABY_DEEPSLEEP,PLAYER);
+	ADD_BLOCK_SKILL(WM_SATURDAY_NIGHT_FEVER,PLAYER);
+	ADD_BLOCK_SKILL(SO_ARRULLO,PLAYER);
+	ADD_BLOCK_SKILL(WM_SIRCLEOFNATURE,PLAYER);
+	ADD_BLOCK_ITEM("Vending_Search_Scroll");
+	ADD_BLOCK_ITEM("Vending_Search_Scroll2");
+	ADD_BLOCK_ITEM("Uni_Catalog_Bz");	
+	
+	ADD_BLOCK_EQUIPITEM("Siege_Greave");
+	ADD_BLOCK_EQUIPITEM("Siege_Boots");
+	ADD_BLOCK_EQUIPITEM("Siege_Shoes");
+	ADD_BLOCK_EQUIPITEM("Siege_Manteau");
+	ADD_BLOCK_EQUIPITEM("Siege_Muffler");
+	ADD_BLOCK_EQUIPITEM("Siege_Plate");
+	ADD_BLOCK_EQUIPITEM("Siege_Suits");
+	ADD_BLOCK_EQUIPITEM("Siege_Robe");
+	ADD_BLOCK_EQUIPITEM("Siege_Arrow_S");
+	ADD_BLOCK_EQUIPITEM("Siege_Arrow_A");
+	ADD_BLOCK_EQUIPITEM("Velum_Jamadhar");
+	ADD_BLOCK_EQUIPITEM("Velum_Scare");
+	ADD_BLOCK_EQUIPITEM("Velum_Buster");
+	ADD_BLOCK_EQUIPITEM("Velum_Glaive");
+	ADD_BLOCK_EQUIPITEM("Velum_Arc_Wand");
+	ADD_BLOCK_EQUIPITEM("Velum_Claymore");
+	ADD_BLOCK_EQUIPITEM("Velum_Katzbalger");
+	ADD_BLOCK_EQUIPITEM("Velum_Arbalest");
+	ADD_BLOCK_EQUIPITEM("Velum_CrossBow");
+	ADD_BLOCK_EQUIPITEM("Velum_Bible");
+	ADD_BLOCK_EQUIPITEM("Velum_Encyclopedia");
+	ADD_BLOCK_EQUIPITEM("Velum_Claw");
+	ADD_BLOCK_EQUIPITEM("Velum_Damascus");
+	ADD_BLOCK_EQUIPITEM("Velum_Stunner");
+	ADD_BLOCK_EQUIPITEM("Velum_Flail");
+//	ADD_BLOCK_EQUIPITEM("COMBIITEM_Velum_Claw_S"); 
+//	ADD_BLOCK_EQUIPITEM("COMBIITEM_Velum_Claw_A"); 
+//	ADD_BLOCK_EQUIPITEM("COMBIITEM_Siege_Plate");
+//	ADD_BLOCK_EQUIPITEM("COMBIITEM_Siege_Suits");
+//	ADD_BLOCK_EQUIPITEM("COMBIITEM_Siege_Robe");
+	ADD_BLOCK_EQUIPITEM("Velum_Spear");
+	ADD_BLOCK_EQUIPITEM("Velum_Guillotine");
+	ADD_BLOCK_ITEM("Woe_White_Potion");
+	ADD_BLOCK_ITEM("Woe_Blue_Potion");
+	ADD_BLOCK_ITEM("Woe_Violet_Potion");
+}
+
+MAPTYPE 4  // 퀘스트
+{
+	ADD_PROPERTY(DISCONNECT_NOTREMEMBER, TRUE);// 접속종료시기억금지    
+	ADD_BLOCK_ITEM("N_Fly_Wing");		//N_Fly_Wing금지
+	ADD_BLOCK_SKILL(SC_FATALMENACE,PLAYER); //페이탈 메나스
+	ADD_BLOCK_ITEM("Neuralizer");
+	ADD_BLOCK_SKILL(SC_DIMENSIONDOOR,PLAYER);			// 디멘션 도어	
+	ADD_BLOCK_SKILL(WM_LULLABY_DEEPSLEEP,PLAYER);
+	ADD_BLOCK_SKILL(WM_SATURDAY_NIGHT_FEVER,PLAYER);
+	ADD_BLOCK_SKILL(SO_ARRULLO,PLAYER);
+	ADD_BLOCK_SKILL(WM_SIRCLEOFNATURE,PLAYER);
+
+	ADD_BLOCK_EQUIPITEM("Azoth");	
+	ADD_BLOCK_EQUIPITEM("Marin_Card");	
+	ADD_BLOCK_EQUIPITEM("Mimic_Card");	
+	ADD_BLOCK_EQUIPITEM("COMBIITEM_Swordman");	
+	ADD_BLOCK_EQUIPITEM("Mystcase_Card");	
+	ADD_BLOCK_EQUIPITEM("COMBIITEM_Merchant");	
+	ADD_BLOCK_EQUIPITEM("Sageworm_Card");	
+	ADD_BLOCK_EQUIPITEM("Galapago_Cap");	
+	ADD_BLOCK_EQUIPITEM("Lady_Tanee_Card");	
+	ADD_BLOCK_EQUIPITEM("Plasma_Card");	
+	ADD_BLOCK_EQUIPITEM("COMBIITEM_Sage");	
+	ADD_BLOCK_EQUIPITEM("Event_Pierrot_Nose");	
+	ADD_BLOCK_EQUIPITEM("Santa's_Hat_");	
+	ADD_BLOCK_EQUIPITEM("Event_Cake");		
+	ADD_BLOCK_EQUIPITEM("Orc_Archer_Bow");	
+	ADD_BLOCK_EQUIPITEM("Snowier_Card");	
+	ADD_BLOCK_EQUIPITEM("Toast_C");	
+	ADD_BLOCK_EQUIPITEM("Santa_Hat_1");	
+	ADD_BLOCK_EQUIPITEM("Red_Square_Bag");	
+	ADD_BLOCK_EQUIPITEM("Weird_Pumpkin_Hat");	
+	ADD_BLOCK_EQUIPITEM("Spare_Card");
+	ADD_BLOCK_EQUIPITEM("Snowman_Hat");	
+	ADD_BLOCK_EQUIPITEM("Radar_Ring1");	
+	ADD_BLOCK_EQUIPITEM("Radar_Ring2");	
+	ADD_BLOCK_EQUIPITEM("Radar_Ring3");	
+	ADD_BLOCK_EQUIPITEM("Magical_Stone");	
+	ADD_BLOCK_EQUIPITEM("Magical_Stone_");	
+	ADD_BLOCK_EQUIPITEM("Mama's_Knife");	
+	ADD_BLOCK_EQUIPITEM("Cleaver");	
+	ADD_BLOCK_EQUIPITEM("Sasimi");	
+	ADD_BLOCK_EQUIPITEM("Leib_Olmai_Card");	
+	ADD_BLOCK_EQUIPITEM("Giant_Honet_Card");	
+	ADD_BLOCK_EQUIPITEM("Galapago_Card");	
+	ADD_BLOCK_EQUIPITEM("Rice_Cake_Boy_Card");	
+	ADD_BLOCK_EQUIPITEM("Spring_Rabbit_Card");	
+	ADD_BLOCK_EQUIPITEM("Wild_Ginseng_Card");	
+	ADD_BLOCK_EQUIPITEM("Leaf_Cat_Card");	
+	ADD_BLOCK_EQUIPITEM("See_Otter_Card");	
+	ADD_BLOCK_EQUIPITEM("COMBIITEM_Kawibawibo");	
+	ADD_BLOCK_EQUIPITEM("Dryad_Card");	
+	ADD_BLOCK_EQUIPITEM("Raydric_Archer_Card");	
+	ADD_BLOCK_EQUIPITEM("Stem_Worm_Card");	
+	ADD_BLOCK_EQUIPITEM("Sleeper_Card");	
+	ADD_BLOCK_EQUIPITEM("Evil_Cloud_Hermit_Card");	
+	ADD_BLOCK_EQUIPITEM("Orc_Archer_Card");	
+	ADD_BLOCK_EQUIPITEM("Wraith_Card");	
+	ADD_BLOCK_EQUIPITEM("Li_Me_Mang_Ryang_Card");	
+	ADD_BLOCK_EQUIPITEM("Gargoyle_Card");	
+	ADD_BLOCK_EQUIPITEM("Dragon_Wing");	
+	ADD_BLOCK_EQUIPITEM("Anopheles_Card");	
+	ADD_BLOCK_EQUIPITEM("Armaia_Card");	
+	ADD_BLOCK_EQUIPITEM("Gremlin_Card");	
+	ADD_BLOCK_EQUIPITEM("Green_Iguana_Card");	
+	ADD_BLOCK_EQUIPITEM("Dragon_Egg_Card");	
+	ADD_BLOCK_EQUIPITEM("Retribution_Card");	
+	ADD_BLOCK_EQUIPITEM("Hunting_Spear");	
+	ADD_BLOCK_EQUIPITEM("Knocker_Card");	
+	ADD_BLOCK_EQUIPITEM("Lunakaligo");	
+	ADD_BLOCK_EQUIPITEM("Bogy_Horn");	
+	ADD_BLOCK_EQUIPITEM("Zeny_Knife");
+	ADD_BLOCK_ITEM("Vending_Search_Scroll");
+	ADD_BLOCK_ITEM("Vending_Search_Scroll2");
+	ADD_BLOCK_ITEM("Uni_Catalog_Bz");	
+	
+	ADD_BLOCK_EQUIPITEM("Siege_Greave");
+	ADD_BLOCK_EQUIPITEM("Siege_Boots");
+	ADD_BLOCK_EQUIPITEM("Siege_Shoes");
+	ADD_BLOCK_EQUIPITEM("Siege_Manteau");
+	ADD_BLOCK_EQUIPITEM("Siege_Muffler");
+	ADD_BLOCK_EQUIPITEM("Siege_Plate");
+	ADD_BLOCK_EQUIPITEM("Siege_Suits");
+	ADD_BLOCK_EQUIPITEM("Siege_Robe");
+	ADD_BLOCK_EQUIPITEM("Siege_Arrow_S");
+	ADD_BLOCK_EQUIPITEM("Siege_Arrow_A");
+	ADD_BLOCK_EQUIPITEM("Velum_Jamadhar");
+	ADD_BLOCK_EQUIPITEM("Velum_Scare");
+	ADD_BLOCK_EQUIPITEM("Velum_Buster");
+	ADD_BLOCK_EQUIPITEM("Velum_Glaive");
+	ADD_BLOCK_EQUIPITEM("Velum_Arc_Wand");
+	ADD_BLOCK_EQUIPITEM("Velum_Claymore");
+	ADD_BLOCK_EQUIPITEM("Velum_Katzbalger");
+	ADD_BLOCK_EQUIPITEM("Velum_Arbalest");
+	ADD_BLOCK_EQUIPITEM("Velum_CrossBow");
+	ADD_BLOCK_EQUIPITEM("Velum_Bible");
+	ADD_BLOCK_EQUIPITEM("Velum_Encyclopedia");
+	ADD_BLOCK_EQUIPITEM("Velum_Claw");
+	ADD_BLOCK_EQUIPITEM("Velum_Damascus");
+	ADD_BLOCK_EQUIPITEM("Velum_Stunner");
+	ADD_BLOCK_EQUIPITEM("Velum_Flail");
+//	ADD_BLOCK_EQUIPITEM("COMBIITEM_Velum_Claw_S"); 
+//	ADD_BLOCK_EQUIPITEM("COMBIITEM_Velum_Claw_A"); 
+//	ADD_BLOCK_EQUIPITEM("COMBIITEM_Siege_Plate");
+//	ADD_BLOCK_EQUIPITEM("COMBIITEM_Siege_Suits");
+//	ADD_BLOCK_EQUIPITEM("COMBIITEM_Siege_Robe");
+	ADD_BLOCK_EQUIPITEM("Velum_Spear");
+	ADD_BLOCK_EQUIPITEM("Velum_Guillotine");
+	ADD_BLOCK_ITEM("Woe_White_Potion");
+	ADD_BLOCK_ITEM("Woe_Blue_Potion");
+	ADD_BLOCK_ITEM("Woe_Violet_Potion");
+	ADD_BLOCK_ITEM("Treasure_Box_Scroll");
+}
+
+MAPTYPE 5 // 패널티 PVP
+{
+	ADD_PROPERTY(PK, TRUE);			//PK
+	ADD_PROPERTY(TELEPORT, TRUE);		//텔레포트
+	ADD_PROPERTY(ITEMDROP, TRUE);		//아이템드롭
+	ADD_PROPERTY(EXP, TRUE);		//경험치유실
+	ADD_PROPERTY(DISCONNECT_NOTREMEMBER, TRUE);	// 접속종료시기억금지    
+	ADD_PROPERTY(CALLMONSTER, TRUE);	//고목나무사용가능
+	ADD_PROPERTY(PARTY, TRUE);		//같은파티PK불가 
+
+	// 08년 07월 16일 맵속성 세분화 사크라이 테스트 ---------------------------------
+	// 기존 5번 맵타입에 있던 기능이 속성으로 변경.
+	ADD_PROPERTY(COUNT_PK, TRUE);
+	ADD_PROPERTY_VALUE(GOTOTOWN, 2);
+	ADD_BLOCK_ITEM("Runstone_Crush");
+	ADD_BLOCK_ITEM("Runstone_Storm");
+	ADD_BLOCK_ITEM("Runstone_Millennium");
+	ADD_BLOCK_ITEM("Neuralizer");
+	ADD_BLOCK_ITEM("Vending_Search_Scroll");
+	ADD_BLOCK_ITEM("Vending_Search_Scroll2");
+	ADD_BLOCK_ITEM("Uni_Catalog_Bz");
+	
+	// 10년 11월 24일 코스츔 아이템 사용 불가 적용
+	//ADD_PROPERTY(DISABLE_COSTUMEITEM,TRUE);
+}
+MAPTYPE 6 // 노 패널티 PVP
+{
+	ADD_PROPERTY(PK, TRUE);			//PK
+	ADD_PROPERTY(DISCONNECT_NOTREMEMBER, TRUE);// 접속종료시기억금지    
+	ADD_PROPERTY(CALLMONSTER, TRUE);	//고목나무사용가능
+	ADD_PROPERTY(PARTY, TRUE);		//같은파티PK불가 
+	ADD_BLOCK_ITEM("N_Fly_Wing");		//N_Fly_Wing금지
+	ADD_BLOCK_SKILL(SC_FATALMENACE,PLAYER); //페이탈 메나스	
+	ADD_BLOCK_SKILL(SC_DIMENSIONDOOR,PLAYER);			// 디멘션 도어	
+	
+
+
+	// 08년 07월 16일 맵속성 세분화 사크라이 테스트 ---------------------------------
+	// 기존 6번 맵타입에 있던 기능이 속성으로 변경.
+	ADD_PROPERTY(COUNT_PK, TRUE);
+	ADD_PROPERTY_VALUE(GOTOTOWN, 2);
+	ADD_BLOCK_ITEM("Runstone_Crush");
+	ADD_BLOCK_ITEM("Runstone_Storm");
+	ADD_BLOCK_ITEM("Runstone_Millennium");
+	ADD_BLOCK_ITEM("Neuralizer");
+	ADD_BLOCK_ITEM("Vending_Search_Scroll");
+	ADD_BLOCK_ITEM("Vending_Search_Scroll2");
+	ADD_BLOCK_ITEM("Uni_Catalog_Bz");
+
+	// 10년 11월 24일 코스츔 아이템 사용 불가 적용
+	//ADD_PROPERTY(DISABLE_COSTUMEITEM,TRUE);
+}
+
+MAPTYPE 7 // 길드 대전 이벤트용
+{
+	ADD_PROPERTY(PK, TRUE);			//PK
+	ADD_PROPERTY(DISCONNECT_NOTREMEMBER, TRUE);// 접속종료시기억금지    
+	ADD_PROPERTY(GUILD, TRUE);		//같은길드PK불가 
+	ADD_PROPERTY(SIEGE, TRUE);		//시즈모드 
+	ADD_BLOCK_ITEM("N_Fly_Wing");		//N_Fly_Wing금지
+	ADD_BLOCK_SKILL(SC_FATALMENACE,PLAYER); //페이탈 메나스	
+	ADD_BLOCK_SKILL(SC_DIMENSIONDOOR,PLAYER);			// 디멘션 도어	
+
+	// 08년 07월 16일 맵속성 세분화 사크라이 테스트 ---------------------------------
+
+	// 기존 SIEGE 속성을 더욱 세분화한 맵 속성으로 교체
+	ADD_PROPERTY(HIDING_DAMAGE, TRUE);			// 데미지를 표지하지 않습니다. 
+	ADD_PROPERTY(USE_SIMPLE_EFFECT, TRUE);		// 이펙트 간략화.
+	ADD_PROPERTY(LONG_INSUPERABLE_TIME, TRUE);	// 워프 이동 후 10초간 무적 상태가 된다.
+	ADD_PROPERTY(DISABLE_LOCKON, TRUE);		// 락온 모드를 사용하지 않는다.
+	ADD_PROPERTY(DISABLE_KNOCKBACK, TRUE);		// 넉백 효과를 사용하지 않는다.
+
+	ADD_PROPERTY_VALUE(RANGE_DAMAGE, 80); 		// 원거리 물리 대미지를 80%로 보정
+	ADD_PROPERTY_VALUE(ALL_SKILL_DAMAGE, 60); 	// 스킬 대미지를 60%로 보정
+	ADD_PROPERTY_VALUE(GOTOTOWN, 1); 			// 죽으면 바로 마을로 이동
+
+	//효능을 막은 장착 아이템
+	ADD_BLOCK_EQUIPITEM("Phen_Card");				// Phen_Card 사용 불가
+	ADD_BLOCK_EQUIPITEM("Orleans_Gown");			// Orleans_Gown 사용 불가
+	ADD_BLOCK_EQUIPITEM("Blood_Butterfly_Card");			// Blood_Butterfly_Card 사용 불가
+
+	//사용 금지된 스킬
+	ADD_BLOCK_ITEM("Anodyne");				// 안티페인먼트(인듀어) 사용 금지
+	ADD_BLOCK_ITEM("Assumptio_5_Scroll");				// Assumptio_5_Scroll 사용 금지
+	ADD_BLOCK_ITEM("Pty_Assumptio_Scroll");				// 파티아숨 사용 금지
+
+	// 사용 금지된 버프
+	ADD_BLOCK_BUFF("EFST_ENDURE");				// 인듀어 버프 비활성
+
+	// 사용 금지된 스킬
+	ADD_BLOCK_SKILL(TF_BACKSLIDING,PLAYER);		//백 슬라이딩
+	ADD_BLOCK_SKILL(AL_WARP,PLAYER);			//워프 포탈
+	ADD_BLOCK_SKILL(WZ_ICEWALL,PLAYER);			//아이스 월
+	//ADD_BLOCK_SKILL(SM_ENDURE,PLAYER);			// 해외에서는 인듀어 스킬 사용 금지(주석을 제거해 주세요), 국내는 사용 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	ADD_BLOCK_SKILL(WE_CALLPARTNER,PLAYER);		// 당신이 보고싶어요
+	ADD_BLOCK_SKILL(WE_CALLBABY,PLAYER);		// 아가야 이리오렴
+	ADD_BLOCK_SKILL(WE_CALLPARENT,PLAYER);		// 엄마 아빠 보고 싶어요
+	ADD_BLOCK_SKILL(HP_ASSUMPTIO,PLAYER);		// 아숨프티오
+	ADD_BLOCK_SKILL(HP_BASILICA,PLAYER);			// 바실리카
+	ADD_BLOCK_SKILL(CR_CULTIVATION,PLAYER);		// 식물 재배
+	ADD_BLOCK_SKILL(CG_MOONLIT,PLAYER);			// 달빛 물레방앗간에 떨어지는 꽃잎
+	ADD_BLOCK_SKILL(NJ_KIRIKAGE,PLAYER);			// 그림자 베기
+
+	//EPISODE_VER 9 이하의 버전에서 금지 (defined(REBALANCE))
+	//ADD_BLOCK_SKILL(LK_BERSERK,PLAYER);			// 버서크
+	//ADD_BLOCK_SKILL(ST_CHASEWALK,PLAYER);		// 체이스 워크
+	//ADD_BLOCK_SKILL(CG_MARIONETTE,PLAYER);		// 마리오네트 컨트롤
+
+	//트렙들의 지속 시간이 4배
+	ADJUST_TRAP_DURATION (HT_LANDMINE, 400); 		// 랜드마인
+	ADJUST_TRAP_DURATION (HT_BLASTMINE, 400); 	// 블래스트 마인
+	ADJUST_TRAP_DURATION (HT_SANDMAN, 400); 		//샌드맨
+	ADJUST_TRAP_DURATION (HT_SHOCKWAVE, 400); 	//쇼크웨이브트랩
+	ADJUST_TRAP_DURATION (HT_SKIDTRAP, 400); 		//스키드트랩
+	ADJUST_TRAP_DURATION (HT_ANKLESNARE, 400); 	//앵클스네어
+	ADJUST_TRAP_DURATION (HT_CLAYMORETRAP, 400); //크레모어 트랩
+	ADJUST_TRAP_DURATION (HT_TALKIEBOX, 400); 	// 토키 박스
+	ADJUST_TRAP_DURATION (HT_FREEZINGTRAP, 400); 	//프리징_트랩
+	ADJUST_TRAP_DURATION (HT_FLASHER, 400); 		//플래셔
+
+	ADD_BLOCK_ITEM("Runstone_Crush");
+	ADD_BLOCK_ITEM("Runstone_Storm");
+	ADD_BLOCK_ITEM("Runstone_Millennium");
+	ADD_BLOCK_ITEM("Neuralizer");
+
+	ADD_BLOCK_SKILL(GC_DARKILLUSION,PLAYER);			// 다크 일루젼	
+	ADD_BLOCK_ITEM("Vending_Search_Scroll");
+	ADD_BLOCK_ITEM("Vending_Search_Scroll2");
+	ADD_BLOCK_ITEM("Uni_Catalog_Bz");
+
+	// 10년 11월 24일 코스츔 아이템 사용 불가 적용
+	// ADD_PROPERTY(DISABLE_COSTUMEITEM,TRUE);
+	ADD_BLOCK_ITEM("Treasure_Box_Scroll");	
+}
+
+MAPTYPE 8 // 길드 아지트 (Agit DB에서도 설정을 해야함)
+{
+	ADD_PROPERTY(PK, TRUE);			//PK
+	ADD_PROPERTY(DISCONNECT_NOTREMEMBER, TRUE);// 접속종료시기억금지    
+	ADD_PROPERTY(GUILD, TRUE);		//같은길드PK불가 
+	ADD_PROPERTY(SIEGE, TRUE);		//시즈모드 
+	ADD_BLOCK_ITEM("N_Fly_Wing");		//N_Fly_Wing금지
+	ADD_BLOCK_SKILL(SC_FATALMENACE,PLAYER); //페이탈 메나스	
+	ADD_BLOCK_SKILL(SC_DIMENSIONDOOR,PLAYER);			// 디멘션 도어	
+
+	// 08년 07월 16일 맵속성 세분화 사크라이 테스트 ---------------------------------
+
+	// 기존 SIEGE 속성의 일부 기능을 신규 맵 속성으로 교체
+	ADD_PROPERTY(HIDING_DAMAGE, TRUE);			// 데미지를 표지하지 않습니다. 
+	ADD_PROPERTY(USE_SIMPLE_EFFECT, TRUE);		// 이펙트 간략화.
+	ADD_PROPERTY(LONG_INSUPERABLE_TIME, TRUE);	// 워프 이동 후 10초간 무적 상태가 된다.
+	ADD_PROPERTY(DISABLE_LOCKON, TRUE);		//락온 모드를 사용하지 않는다.
+	ADD_PROPERTY(DISABLE_KNOCKBACK, TRUE);		// 넉백 효과를 사용하지 않는다.
+
+	ADD_PROPERTY_VALUE(RANGE_DAMAGE, 80); 		// 원거리 물리 대미지를 80%로 보정
+	ADD_PROPERTY_VALUE(ALL_SKILL_DAMAGE, 60); 	// 스킬 대미지를 60%로 보정
+	ADD_PROPERTY_VALUE(GOTOTOWN, 1); 			// 죽으면 바로 마을로 이동
+
+	//효능을 막은 장착 아이템
+	ADD_BLOCK_EQUIPITEM("Phen_Card");				// Phen_Card 사용 불가
+	ADD_BLOCK_EQUIPITEM("Orleans_Gown");			// Orleans_Gown 사용 불가
+	ADD_BLOCK_EQUIPITEM("Blood_Butterfly_Card");			// Blood_Butterfly_Card 사용 불가
+
+	//사용 금지된 스킬
+	ADD_BLOCK_ITEM("Anodyne");				// 안티페인먼트(인듀어) 사용 금지
+	ADD_BLOCK_ITEM("Assumptio_5_Scroll");				// Assumptio_5_Scroll 사용 금지
+	ADD_BLOCK_ITEM("Pty_Assumptio_Scroll");				// 파티아숨 사용 금지
+
+	// 사용 금지된 버프
+	ADD_BLOCK_BUFF("EFST_ENDURE");				// 인듀어 버프 비활성
+
+	// 사용 금지된 스킬
+	ADD_BLOCK_SKILL(TF_BACKSLIDING,PLAYER);		//백 슬라이딩
+	ADD_BLOCK_SKILL(AL_WARP,PLAYER);			//워프 포탈
+	ADD_BLOCK_SKILL(WZ_ICEWALL,PLAYER);			//아이스 월
+	//ADD_BLOCK_SKILL(SM_ENDURE,PLAYER);			// 해외에서는 인듀어 스킬 사용 금지(주석을 제거해 주세요), 국내는 사용 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	ADD_BLOCK_SKILL(WE_CALLPARTNER,PLAYER);		// 당신이 보고싶어요
+	ADD_BLOCK_SKILL(WE_CALLBABY,PLAYER);		// 아가야 이리오렴
+	ADD_BLOCK_SKILL(WE_CALLPARENT,PLAYER);		// 엄마 아빠 보고 싶어요
+	ADD_BLOCK_SKILL(HP_ASSUMPTIO,PLAYER);		// 아숨프티오
+	ADD_BLOCK_SKILL(HP_BASILICA,PLAYER);			// 바실리카
+	ADD_BLOCK_SKILL(CR_CULTIVATION,PLAYER);		// 식물 재배
+	ADD_BLOCK_SKILL(CG_MOONLIT,PLAYER);			// 달빛 물레방앗간에 떨어지는 꽃잎
+	ADD_BLOCK_SKILL(NJ_KIRIKAGE,PLAYER);			// 그림자 베기
+	ADD_BLOCK_SKILL(GN_WALLOFTHORN,PLAYER);
+
+	//EPISODE_VER 9 이하의 버전에서 금지 (defined(REBALANCE))
+	//ADD_BLOCK_SKILL(LK_BERSERK,PLAYER);			// 버서크
+	//ADD_BLOCK_SKILL(ST_CHASEWALK,PLAYER);		// 체이스 워크
+	//ADD_BLOCK_SKILL(CG_MARIONETTE,PLAYER);		// 마리오네트 컨트롤
+
+	//트렙들의 지속 시간이 4배
+	ADJUST_TRAP_DURATION (HT_LANDMINE, 400); 		// 랜드마인
+	ADJUST_TRAP_DURATION (HT_BLASTMINE, 400); 	// 블래스트 마인
+	ADJUST_TRAP_DURATION (HT_SANDMAN, 400); 		//샌드맨
+	ADJUST_TRAP_DURATION (HT_SHOCKWAVE, 400); 	//쇼크웨이브트랩
+	ADJUST_TRAP_DURATION (HT_SKIDTRAP, 400); 		//스키드트랩
+	ADJUST_TRAP_DURATION (HT_ANKLESNARE, 400); 	//앵클스네어
+	ADJUST_TRAP_DURATION (HT_CLAYMORETRAP, 400); //크레모어 트랩
+	ADJUST_TRAP_DURATION (HT_TALKIEBOX, 400); 	// 토키 박스
+	ADJUST_TRAP_DURATION (HT_FREEZINGTRAP, 400); 	//프리징_트랩
+	ADJUST_TRAP_DURATION (HT_FLASHER, 400); 		//플래셔
+
+	// 기존 8번 맵타입에 있던 기능이 속성으로 변경.
+	ADD_PROPERTY_VALUE(SIEGETIME_VERSION, 1);
+
+	ADD_BLOCK_ITEM("Runstone_Crush");
+	ADD_BLOCK_ITEM("Runstone_Storm");
+	ADD_BLOCK_ITEM("Runstone_Millennium");
+	ADD_BLOCK_ITEM("Neuralizer");
+
+	ADD_BLOCK_SKILL(GC_DARKILLUSION,PLAYER);			// 다크 일루젼	
+	ADD_BLOCK_SKILL(GN_THORNS_TRAP,PLAYER);			// 가시나무 덫	
+	ADD_BLOCK_ITEM("Vending_Search_Scroll");
+	ADD_BLOCK_ITEM("Vending_Search_Scroll2");
+	ADD_BLOCK_ITEM("Uni_Catalog_Bz");
+	
+	// 10년 11월 24일 코스츔 아이템 사용 불가 적용
+	// ADD_PROPERTY(DISABLE_COSTUMEITEM,TRUE);
+	ADD_BLOCK_ITEM("Treasure_Box_Scroll");
+}
+
+MAPTYPE 9 // 길드 던전 - PK 가능 (길드는 예외)
+{
+	ADD_PROPERTY(PK, TRUE);			//PK
+	ADD_PROPERTY(TELEPORT, TRUE);		//텔레포트
+	ADD_PROPERTY(EXP, TRUE);		//경험치유실
+	ADD_PROPERTY(DISCONNECT_NOTREMEMBER, TRUE);	// 접속종료시기억금지    
+	ADD_PROPERTY(CALLMONSTER, TRUE);	//고목나무사용가능
+	ADD_PROPERTY(GUILD, TRUE);		//같은길드PK불가 
+
+	ADD_BLOCK_ITEM("Runstone_Crush");
+	ADD_BLOCK_ITEM("Runstone_Storm");
+	ADD_BLOCK_ITEM("Runstone_Millennium");
+	ADD_BLOCK_ITEM("Neuralizer");
+	ADD_BLOCK_ITEM("Vending_Search_Scroll");
+	ADD_BLOCK_ITEM("Vending_Search_Scroll2");
+	ADD_BLOCK_ITEM("Uni_Catalog_Bz");
+	
+	// 10년 11월 24일 코스츔 아이템 사용 불가 적용
+	//ADD_PROPERTY(DISABLE_COSTUMEITEM,TRUE);
+}
+
+MAPTYPE 10 // 던전 - 텔레포트 금지
+{
+	ADD_PROPERTY(EXP, TRUE);		//경험치유실
+	ADD_PROPERTY(CALLMONSTER, TRUE);	//고목나무사용가능
+	ADD_BLOCK_ITEM("N_Fly_Wing");		//N_Fly_Wing금지
+	ADD_BLOCK_SKILL(SC_FATALMENACE,PLAYER); //페이탈 메나스	
+	ADD_BLOCK_SKILL(SC_DIMENSIONDOOR,PLAYER);			// 디멘션 도어	
+
+	ADD_BLOCK_ITEM("Runstone_Crush");
+	ADD_BLOCK_ITEM("Runstone_Storm");
+	ADD_BLOCK_ITEM("Runstone_Millennium");
+	ADD_BLOCK_ITEM("Neuralizer");
+	ADD_BLOCK_SKILL(WM_LULLABY_DEEPSLEEP,PLAYER);
+	ADD_BLOCK_SKILL(WM_SATURDAY_NIGHT_FEVER,PLAYER);
+	ADD_BLOCK_SKILL(SO_ARRULLO,PLAYER);
+	ADD_BLOCK_SKILL(WM_SIRCLEOFNATURE,PLAYER);	
+	ADD_BLOCK_ITEM("Vending_Search_Scroll");
+	ADD_BLOCK_ITEM("Vending_Search_Scroll2");
+	ADD_BLOCK_ITEM("Uni_Catalog_Bz");
+	
+	ADD_BLOCK_EQUIPITEM("Siege_Greave");
+	ADD_BLOCK_EQUIPITEM("Siege_Boots");
+	ADD_BLOCK_EQUIPITEM("Siege_Shoes");
+	ADD_BLOCK_EQUIPITEM("Siege_Manteau");
+	ADD_BLOCK_EQUIPITEM("Siege_Muffler");
+	ADD_BLOCK_EQUIPITEM("Siege_Plate");
+	ADD_BLOCK_EQUIPITEM("Siege_Suits");
+	ADD_BLOCK_EQUIPITEM("Siege_Robe");
+	ADD_BLOCK_EQUIPITEM("Siege_Arrow_S");
+	ADD_BLOCK_EQUIPITEM("Siege_Arrow_A");
+	ADD_BLOCK_EQUIPITEM("Velum_Jamadhar");
+	ADD_BLOCK_EQUIPITEM("Velum_Scare");
+	ADD_BLOCK_EQUIPITEM("Velum_Buster");
+	ADD_BLOCK_EQUIPITEM("Velum_Glaive");
+	ADD_BLOCK_EQUIPITEM("Velum_Arc_Wand");
+	ADD_BLOCK_EQUIPITEM("Velum_Claymore");
+	ADD_BLOCK_EQUIPITEM("Velum_Katzbalger");
+	ADD_BLOCK_EQUIPITEM("Velum_Arbalest");
+	ADD_BLOCK_EQUIPITEM("Velum_CrossBow");
+	ADD_BLOCK_EQUIPITEM("Velum_Bible");
+	ADD_BLOCK_EQUIPITEM("Velum_Encyclopedia");
+	ADD_BLOCK_EQUIPITEM("Velum_Claw");
+	ADD_BLOCK_EQUIPITEM("Velum_Damascus");
+	ADD_BLOCK_EQUIPITEM("Velum_Stunner");
+	ADD_BLOCK_EQUIPITEM("Velum_Flail");
+//	ADD_BLOCK_EQUIPITEM("COMBIITEM_Velum_Claw_S"); 
+//	ADD_BLOCK_EQUIPITEM("COMBIITEM_Velum_Claw_A"); 
+//	ADD_BLOCK_EQUIPITEM("COMBIITEM_Siege_Plate");
+//	ADD_BLOCK_EQUIPITEM("COMBIITEM_Siege_Suits");
+//	ADD_BLOCK_EQUIPITEM("COMBIITEM_Siege_Robe");
+	ADD_BLOCK_EQUIPITEM("Velum_Spear");
+	ADD_BLOCK_EQUIPITEM("Velum_Guillotine");
+	ADD_BLOCK_ITEM("Woe_White_Potion");
+	ADD_BLOCK_ITEM("Woe_Blue_Potion");
+	ADD_BLOCK_ITEM("Woe_Violet_Potion");
+}
+
+MAPTYPE 11 // PKServer용(국내섭)
+{
+	ADD_PROPERTY(PK, TRUE);			//PK
+	ADD_PROPERTY(TELEPORT, TRUE);		//텔레포트
+	ADD_PROPERTY(NOTREMEMBER, TRUE);	//기억
+	ADD_PROPERTY(EXP, TRUE);		//경험치유실
+	ADD_PROPERTY(CALLMONSTER, TRUE);	//고목나무사용가능
+
+	ADD_BLOCK_ITEM("Runstone_Crush");
+	ADD_BLOCK_ITEM("Runstone_Storm");
+	ADD_BLOCK_ITEM("Runstone_Millennium");
+	ADD_BLOCK_ITEM("Neuralizer");
+	ADD_BLOCK_ITEM("Vending_Search_Scroll");
+	ADD_BLOCK_ITEM("Vending_Search_Scroll2");
+	ADD_BLOCK_ITEM("Uni_Catalog_Bz");
+	
+	// 10년 11월 24일 코스츔 아이템 사용 불가 적용
+	//ADD_PROPERTY(DISABLE_COSTUMEITEM,TRUE);
+
+}
+
+MAPTYPE 12  // 터보트랙
+{
+	ADD_PROPERTY(DISCONNECT_NOTREMEMBER, TRUE);// 접속종료시기억금지    
+
+	// 기존 TURBOTRACK 속성 주석 처리	
+	//ADD_PROPERTY(TURBOTRACK, TRUE);	//터보 트랙용 맵속성
+
+	// 기존 TURBOTRACK 속성의 기능을 신규 맵 속성으로 교체
+	ADD_PROPERTY(DISABLE_KNOCKBACK, TRUE);		//넉백 효과를 사용하지 않는다.
+
+	ADD_PROPERTY_VALUE(GOTOTOWN, 1); 			// 죽으면 바로 마을로 이동
+	ADD_PROPERTY_VALUE(RANGE_DAMAGE, 80); 		// 원거리 물리 대미지를 80%로 보정
+	ADD_PROPERTY_VALUE(ALL_SKILL_DAMAGE, 60); 	// 스킬 대미지를 60%로 보정
+
+	ADD_BLOCK_SKILL(SM_ENDURE,PLAYER);			//인듀어
+	ADD_BLOCK_SKILL(WZ_ICEWALL,PLAYER);			//아이스 월
+	ADD_BLOCK_SKILL(AL_WARP,PLAYER);			//워프 포탈
+	ADD_BLOCK_SKILL(TF_HIDING,PLAYER);			//하이딩
+	ADD_BLOCK_SKILL(AS_CLOAKING,PLAYER);		//클로킹
+	ADD_BLOCK_SKILL(ST_CHASEWALK,PLAYER);		//체이스 워크
+	ADD_BLOCK_SKILL(MO_BODYRELOCATION,PLAYER);	//궁신탄영
+	ADD_BLOCK_SKILL(LK_CONCENTRATION,PLAYER);	//컨센트레이션
+	ADD_BLOCK_SKILL(LK_BERSERK,PLAYER);			//버서크
+	ADD_BLOCK_SKILL(AL_CURE,PLAYER);			//큐어
+	ADD_BLOCK_SKILL(HP_BASILICA,PLAYER);			//바실리카
+	ADD_BLOCK_SKILL(CG_MOONLIT,PLAYER);			//달빛 물레방앗간에 떨어지는 꽃잎
+	ADD_BLOCK_ITEM("Speed_Up_Potion");
+	ADD_BLOCK_ITEM("Box_Of_Thunder");
+	ADD_BLOCK_ITEM("Guyak_Pudding");
+	ADD_BLOCK_ITEM("Inspector_Certificate");
+	ADD_BLOCK_SKILL(AL_INCAGI,PLAYER);
+
+	ADD_BLOCK_ITEM("Anodyne");
+	ADD_BLOCK_ITEM("Green_Potion");
+	ADD_BLOCK_ITEM("Panacea");
+	ADD_BLOCK_ITEM("N_Fly_Wing");		//N_Fly_Wing금지
+	ADD_BLOCK_SKILL(SC_FATALMENACE,PLAYER); //페이탈 메나스	
+	ADD_BLOCK_SKILL(SC_DIMENSIONDOOR,PLAYER);			// 디멘션 도어	
+
+	ADD_BLOCK_ITEM("Runstone_Crush");
+	ADD_BLOCK_ITEM("Runstone_Storm");
+	ADD_BLOCK_ITEM("Runstone_Millennium");
+	ADD_BLOCK_ITEM("Neuralizer");
+	ADD_BLOCK_SKILL(WM_LULLABY_DEEPSLEEP,PLAYER);
+	ADD_BLOCK_SKILL(WM_SATURDAY_NIGHT_FEVER,PLAYER);
+	ADD_BLOCK_SKILL(SO_ARRULLO,PLAYER);
+	ADD_BLOCK_SKILL(WS_CARTBOOST,PLAYER);
+	ADD_BLOCK_SKILL(GN_CARTBOOST,PLAYER);	
+	ADD_BLOCK_SKILL(WM_SIRCLEOFNATURE,PLAYER);
+	ADD_BLOCK_ITEM("Vending_Search_Scroll");
+	ADD_BLOCK_ITEM("Vending_Search_Scroll2");
+	ADD_BLOCK_ITEM("Uni_Catalog_Bz");	
+	
+	ADD_BLOCK_EQUIPITEM("Siege_Greave");
+	ADD_BLOCK_EQUIPITEM("Siege_Boots");
+	ADD_BLOCK_EQUIPITEM("Siege_Shoes");
+	ADD_BLOCK_EQUIPITEM("Siege_Manteau");
+	ADD_BLOCK_EQUIPITEM("Siege_Muffler");
+	ADD_BLOCK_EQUIPITEM("Siege_Plate");
+	ADD_BLOCK_EQUIPITEM("Siege_Suits");
+	ADD_BLOCK_EQUIPITEM("Siege_Robe");
+	ADD_BLOCK_EQUIPITEM("Siege_Arrow_S");
+	ADD_BLOCK_EQUIPITEM("Siege_Arrow_A");
+	ADD_BLOCK_EQUIPITEM("Velum_Jamadhar");
+	ADD_BLOCK_EQUIPITEM("Velum_Scare");
+	ADD_BLOCK_EQUIPITEM("Velum_Buster");
+	ADD_BLOCK_EQUIPITEM("Velum_Glaive");
+	ADD_BLOCK_EQUIPITEM("Velum_Arc_Wand");
+	ADD_BLOCK_EQUIPITEM("Velum_Claymore");
+	ADD_BLOCK_EQUIPITEM("Velum_Katzbalger");
+	ADD_BLOCK_EQUIPITEM("Velum_Arbalest");
+	ADD_BLOCK_EQUIPITEM("Velum_CrossBow");
+	ADD_BLOCK_EQUIPITEM("Velum_Bible");
+	ADD_BLOCK_EQUIPITEM("Velum_Encyclopedia");
+	ADD_BLOCK_EQUIPITEM("Velum_Claw");
+	ADD_BLOCK_EQUIPITEM("Velum_Damascus");
+	ADD_BLOCK_EQUIPITEM("Velum_Stunner");
+	ADD_BLOCK_EQUIPITEM("Velum_Flail");
+//	ADD_BLOCK_EQUIPITEM("COMBIITEM_Velum_Claw_S"); 
+//	ADD_BLOCK_EQUIPITEM("COMBIITEM_Velum_Claw_A"); 
+//	ADD_BLOCK_EQUIPITEM("COMBIITEM_Siege_Plate");
+//	ADD_BLOCK_EQUIPITEM("COMBIITEM_Siege_Suits");
+//	ADD_BLOCK_EQUIPITEM("COMBIITEM_Siege_Robe");
+	ADD_BLOCK_EQUIPITEM("Velum_Spear");
+	ADD_BLOCK_EQUIPITEM("Velum_Guillotine");	
+	ADD_BLOCK_ITEM("Woe_White_Potion");
+	ADD_BLOCK_ITEM("Woe_Blue_Potion");
+	ADD_BLOCK_ITEM("Woe_Violet_Potion");
+	ADD_BLOCK_ITEM("Treasure_Box_Scroll");	
+}
+MAPTYPE 13 // 스킬금지용 (국내 기획팀 퀴즈 이벤트 사용및 기타용)
+{
+	ADD_PROPERTY(DISCONNECT_NOTREMEMBER, TRUE);// 접속종료시기억금지    
+	ADD_PROPERTY(DENYSKILL, TRUE);		//Skill 금지 Added by savageox
+	ADD_BLOCK_ITEM("Wing_Of_Butterfly");
+	ADD_BLOCK_SKILL(AL_WARP,PLAYER);
+	ADD_PROPERTY(DENY_BUTTERFLY, TRUE);	//나비날개 사용금지
+
+	ADD_BLOCK_ITEM("N_Fly_Wing");		//N_Fly_Wing금지
+	ADD_BLOCK_SKILL(SC_FATALMENACE,PLAYER); //페이탈 메나스	
+	ADD_BLOCK_SKILL(SC_DIMENSIONDOOR,PLAYER);			// 디멘션 도어	
+
+	ADD_BLOCK_ITEM("Runstone_Crush");
+	ADD_BLOCK_ITEM("Runstone_Storm");
+	ADD_BLOCK_ITEM("Runstone_Millennium");
+	ADD_BLOCK_ITEM("Neuralizer");
+	ADD_BLOCK_SKILL(WM_LULLABY_DEEPSLEEP,PLAYER);
+	ADD_BLOCK_SKILL(WM_SATURDAY_NIGHT_FEVER,PLAYER);
+	ADD_BLOCK_SKILL(WM_SIRCLEOFNATURE,PLAYER);
+	ADD_BLOCK_ITEM("Vending_Search_Scroll");
+	ADD_BLOCK_ITEM("Vending_Search_Scroll2");
+	ADD_BLOCK_ITEM("Uni_Catalog_Bz");	
+	
+	ADD_BLOCK_EQUIPITEM("Siege_Greave");
+	ADD_BLOCK_EQUIPITEM("Siege_Boots");
+	ADD_BLOCK_EQUIPITEM("Siege_Shoes");
+	ADD_BLOCK_EQUIPITEM("Siege_Manteau");
+	ADD_BLOCK_EQUIPITEM("Siege_Muffler");
+	ADD_BLOCK_EQUIPITEM("Siege_Plate");
+	ADD_BLOCK_EQUIPITEM("Siege_Suits");
+	ADD_BLOCK_EQUIPITEM("Siege_Robe");
+	ADD_BLOCK_EQUIPITEM("Siege_Arrow_S");
+	ADD_BLOCK_EQUIPITEM("Siege_Arrow_A");
+	ADD_BLOCK_EQUIPITEM("Velum_Jamadhar");
+	ADD_BLOCK_EQUIPITEM("Velum_Scare");
+	ADD_BLOCK_EQUIPITEM("Velum_Buster");
+	ADD_BLOCK_EQUIPITEM("Velum_Glaive");
+	ADD_BLOCK_EQUIPITEM("Velum_Arc_Wand");
+	ADD_BLOCK_EQUIPITEM("Velum_Claymore");
+	ADD_BLOCK_EQUIPITEM("Velum_Katzbalger");
+	ADD_BLOCK_EQUIPITEM("Velum_Arbalest");
+	ADD_BLOCK_EQUIPITEM("Velum_CrossBow");
+	ADD_BLOCK_EQUIPITEM("Velum_Bible");
+	ADD_BLOCK_EQUIPITEM("Velum_Encyclopedia");
+	ADD_BLOCK_EQUIPITEM("Velum_Claw");
+	ADD_BLOCK_EQUIPITEM("Velum_Damascus");
+	ADD_BLOCK_EQUIPITEM("Velum_Stunner");
+	ADD_BLOCK_EQUIPITEM("Velum_Flail");
+//	ADD_BLOCK_EQUIPITEM("COMBIITEM_Velum_Claw_S"); 
+//	ADD_BLOCK_EQUIPITEM("COMBIITEM_Velum_Claw_A"); 
+//	ADD_BLOCK_EQUIPITEM("COMBIITEM_Siege_Plate");
+//	ADD_BLOCK_EQUIPITEM("COMBIITEM_Siege_Suits");
+//	ADD_BLOCK_EQUIPITEM("COMBIITEM_Siege_Robe");
+	ADD_BLOCK_EQUIPITEM("Velum_Spear");
+	ADD_BLOCK_EQUIPITEM("Velum_Guillotine");
+	ADD_BLOCK_ITEM("Woe_White_Potion");
+	ADD_BLOCK_ITEM("Woe_Blue_Potion");
+	ADD_BLOCK_ITEM("Woe_Violet_Potion");
+	ADD_BLOCK_ITEM("Treasure_Box_Scroll");	
+}
+
+MAPTYPE 14 // 터보트랙(PK)
+{
+	ADD_PROPERTY(PK, TRUE);			//PK
+	ADD_PROPERTY(DISCONNECT_NOTREMEMBER, TRUE);// 접속종료시기억금지
+
+	// 기존 TURBOTRACK 속성 주석 처리	
+	//ADD_PROPERTY(TURBOTRACK, TRUE);	//터보 트랙용 맵속성
+
+	// 기존 TURBOTRACK 속성의 기능을 신규 맵 속성으로 교체
+	ADD_PROPERTY(DISABLE_KNOCKBACK, TRUE);		//넉백 효과를 사용하지 않는다.
+
+	ADD_PROPERTY_VALUE(GOTOTOWN, 1); 			// 죽으면 바로 마을로 이동
+	ADD_PROPERTY_VALUE(RANGE_DAMAGE, 80); 		// 원거리 물리 대미지를 80%로 보정
+	ADD_PROPERTY_VALUE(ALL_SKILL_DAMAGE, 60); 	// 스킬 대미지를  60%로 보정
+
+	ADD_BLOCK_SKILL(SM_ENDURE,PLAYER);			//인듀어
+	ADD_BLOCK_SKILL(WZ_ICEWALL,PLAYER);			//아이스 월
+	ADD_BLOCK_SKILL(AL_WARP,PLAYER);			//워프 포탈
+	ADD_BLOCK_SKILL(TF_HIDING,PLAYER);			//하이딩
+	ADD_BLOCK_SKILL(AS_CLOAKING,PLAYER);		//클로킹
+	ADD_BLOCK_SKILL(ST_CHASEWALK,PLAYER);		//체이스 워크
+	ADD_BLOCK_SKILL(MO_BODYRELOCATION,PLAYER);	//궁신탄영
+	ADD_BLOCK_SKILL(LK_CONCENTRATION,PLAYER);	//컨센트레이션
+	ADD_BLOCK_SKILL(LK_BERSERK,PLAYER);			//버서크
+	ADD_BLOCK_SKILL(AL_CURE,PLAYER);			//큐어
+	ADD_BLOCK_SKILL(HP_BASILICA,PLAYER);			//바실리카
+	ADD_BLOCK_SKILL(CG_MOONLIT,PLAYER);			//달빛 물레방앗간에 떨어지는 꽃잎
+
+	ADD_BLOCK_ITEM("Anodyne");
+	ADD_BLOCK_ITEM("Green_Potion");
+	ADD_BLOCK_ITEM("Panacea");
+	ADD_BLOCK_ITEM("N_Fly_Wing");		//N_Fly_Wing금지
+	ADD_BLOCK_SKILL(SC_FATALMENACE,PLAYER); //페이탈 메나스	
+	ADD_BLOCK_SKILL(SC_DIMENSIONDOOR,PLAYER);			// 디멘션 도어	
+
+	ADD_BLOCK_ITEM("Runstone_Crush");
+	ADD_BLOCK_ITEM("Runstone_Storm");
+	ADD_BLOCK_ITEM("Runstone_Millennium");
+	ADD_BLOCK_ITEM("Neuralizer");
+	ADD_BLOCK_SKILL(WM_LULLABY_DEEPSLEEP,PLAYER);
+	ADD_BLOCK_SKILL(WM_SATURDAY_NIGHT_FEVER,PLAYER);
+	ADD_BLOCK_SKILL(WS_CARTBOOST,PLAYER);
+	ADD_BLOCK_SKILL(GN_CARTBOOST,PLAYER);	
+	ADD_BLOCK_ITEM("Vending_Search_Scroll");
+	ADD_BLOCK_ITEM("Vending_Search_Scroll2");
+	ADD_BLOCK_ITEM("Uni_Catalog_Bz");
+	
+	// 10년 11월 24일 코스츔 아이템 사용 불가 적용
+	//ADD_PROPERTY(DISABLE_COSTUMEITEM,TRUE);
+	ADD_BLOCK_ITEM("Treasure_Box_Scroll");	
+}
+MAPTYPE 15 // 감옥
+{
+	ADD_BLOCK_ITEM("Wing_Of_Butterfly");
+	ADD_BLOCK_SKILL(AL_WARP,PLAYER);
+	ADD_PROPERTY(DENY_BUTTERFLY, TRUE);	//나비날개 사용금지
+	ADD_BLOCK_ITEM("N_Fly_Wing");		//N_Fly_Wing금지
+	ADD_BLOCK_ITEM("Kafra_Card");		//N_Fly_Wing금지
+	ADD_BLOCK_SKILL(SC_FATALMENACE,PLAYER); //페이탈 메나스	
+	ADD_BLOCK_SKILL(SC_DIMENSIONDOOR,PLAYER);			// 디멘션 도어	
+
+	ADD_BLOCK_ITEM("Runstone_Crush");
+	ADD_BLOCK_ITEM("Runstone_Storm");
+	ADD_BLOCK_ITEM("Runstone_Millennium");
+	ADD_BLOCK_ITEM("Neuralizer");
+	ADD_BLOCK_SKILL(WM_LULLABY_DEEPSLEEP,PLAYER);
+	ADD_BLOCK_SKILL(WM_SATURDAY_NIGHT_FEVER,PLAYER);
+	ADD_BLOCK_SKILL(SO_ARRULLO,PLAYER);
+	ADD_BLOCK_SKILL(WM_SIRCLEOFNATURE,PLAYER);
+	ADD_BLOCK_ITEM("Vending_Search_Scroll");
+	ADD_BLOCK_ITEM("Vending_Search_Scroll2");
+	ADD_BLOCK_ITEM("Uni_Catalog_Bz");
+	
+	ADD_PROPERTY(PREVENT_PARTY_MAKE,TRUE);
+	ADD_PROPERTY(PREVENT_PARTY_JOIN,TRUE);
+	ADD_PROPERTY(PREVENT_PARTY_LEAVE,TRUE);
+	ADD_PROPERTY(PREVENT_PARTY_EXPEL,TRUE);
+
+	ADD_BLOCK_EQUIPITEM("Siege_Greave");
+	ADD_BLOCK_EQUIPITEM("Siege_Boots");
+	ADD_BLOCK_EQUIPITEM("Siege_Shoes");
+	ADD_BLOCK_EQUIPITEM("Siege_Manteau");
+	ADD_BLOCK_EQUIPITEM("Siege_Muffler");
+	ADD_BLOCK_EQUIPITEM("Siege_Plate");
+	ADD_BLOCK_EQUIPITEM("Siege_Suits");
+	ADD_BLOCK_EQUIPITEM("Siege_Robe");
+	ADD_BLOCK_EQUIPITEM("Siege_Arrow_S");
+	ADD_BLOCK_EQUIPITEM("Siege_Arrow_A");
+	ADD_BLOCK_EQUIPITEM("Velum_Jamadhar");
+	ADD_BLOCK_EQUIPITEM("Velum_Scare");
+	ADD_BLOCK_EQUIPITEM("Velum_Buster");
+	ADD_BLOCK_EQUIPITEM("Velum_Glaive");
+	ADD_BLOCK_EQUIPITEM("Velum_Arc_Wand");
+	ADD_BLOCK_EQUIPITEM("Velum_Claymore");
+	ADD_BLOCK_EQUIPITEM("Velum_Katzbalger");
+	ADD_BLOCK_EQUIPITEM("Velum_Arbalest");
+	ADD_BLOCK_EQUIPITEM("Velum_CrossBow");
+	ADD_BLOCK_EQUIPITEM("Velum_Bible");
+	ADD_BLOCK_EQUIPITEM("Velum_Encyclopedia");
+	ADD_BLOCK_EQUIPITEM("Velum_Claw");
+	ADD_BLOCK_EQUIPITEM("Velum_Damascus");
+	ADD_BLOCK_EQUIPITEM("Velum_Stunner");
+	ADD_BLOCK_EQUIPITEM("Velum_Flail");
+//	ADD_BLOCK_EQUIPITEM("COMBIITEM_Velum_Claw_S"); 
+//	ADD_BLOCK_EQUIPITEM("COMBIITEM_Velum_Claw_A"); 
+//	ADD_BLOCK_EQUIPITEM("COMBIITEM_Siege_Plate");
+//	ADD_BLOCK_EQUIPITEM("COMBIITEM_Siege_Suits");
+//	ADD_BLOCK_EQUIPITEM("COMBIITEM_Siege_Robe");
+	ADD_BLOCK_EQUIPITEM("Velum_Spear");
+	ADD_BLOCK_EQUIPITEM("Velum_Guillotine");
+	ADD_BLOCK_ITEM("Woe_White_Potion");
+	ADD_BLOCK_ITEM("Woe_Blue_Potion");
+	ADD_BLOCK_ITEM("Woe_Violet_Potion");
+	ADD_BLOCK_ITEM("Treasure_Box_Scroll");
+}
+
+MAPTYPE 16 //보스
+{
+	ADD_PROPERTY(TELEPORT, TRUE);		//텔레포트
+	ADD_PROPERTY(EXP, TRUE);		//경험치유실
+	ADD_PROPERTY(DISCONNECT_NOTREMEMBER, TRUE);// 접속종료시기억금지
+	ADD_PROPERTY(CALLMONSTER, TRUE);	//고목나무사용가능
+
+	ADD_BLOCK_ITEM("Runstone_Crush");
+	ADD_BLOCK_ITEM("Runstone_Storm");
+	ADD_BLOCK_ITEM("Runstone_Millennium");
+	ADD_BLOCK_ITEM("Neuralizer");
+	ADD_BLOCK_SKILL(WM_LULLABY_DEEPSLEEP,PLAYER);
+	ADD_BLOCK_SKILL(WM_SATURDAY_NIGHT_FEVER,PLAYER);
+	ADD_BLOCK_SKILL(SO_ARRULLO,PLAYER);
+	ADD_BLOCK_SKILL(WM_SIRCLEOFNATURE,PLAYER);
+	ADD_BLOCK_ITEM("Vending_Search_Scroll");
+	ADD_BLOCK_ITEM("Vending_Search_Scroll2");
+	ADD_BLOCK_ITEM("Uni_Catalog_Bz");	
+	
+	ADD_BLOCK_EQUIPITEM("Siege_Greave");
+	ADD_BLOCK_EQUIPITEM("Siege_Boots");
+	ADD_BLOCK_EQUIPITEM("Siege_Shoes");
+	ADD_BLOCK_EQUIPITEM("Siege_Manteau");
+	ADD_BLOCK_EQUIPITEM("Siege_Muffler");
+	ADD_BLOCK_EQUIPITEM("Siege_Plate");
+	ADD_BLOCK_EQUIPITEM("Siege_Suits");
+	ADD_BLOCK_EQUIPITEM("Siege_Robe");
+	ADD_BLOCK_EQUIPITEM("Siege_Arrow_S");
+	ADD_BLOCK_EQUIPITEM("Siege_Arrow_A");
+	ADD_BLOCK_EQUIPITEM("Velum_Jamadhar");
+	ADD_BLOCK_EQUIPITEM("Velum_Scare");
+	ADD_BLOCK_EQUIPITEM("Velum_Buster");
+	ADD_BLOCK_EQUIPITEM("Velum_Glaive");
+	ADD_BLOCK_EQUIPITEM("Velum_Arc_Wand");
+	ADD_BLOCK_EQUIPITEM("Velum_Claymore");
+	ADD_BLOCK_EQUIPITEM("Velum_Katzbalger");
+	ADD_BLOCK_EQUIPITEM("Velum_Arbalest");
+	ADD_BLOCK_EQUIPITEM("Velum_CrossBow");
+	ADD_BLOCK_EQUIPITEM("Velum_Bible");
+	ADD_BLOCK_EQUIPITEM("Velum_Encyclopedia");
+	ADD_BLOCK_EQUIPITEM("Velum_Claw");
+	ADD_BLOCK_EQUIPITEM("Velum_Damascus");
+	ADD_BLOCK_EQUIPITEM("Velum_Stunner");
+	ADD_BLOCK_EQUIPITEM("Velum_Flail");
+//	ADD_BLOCK_EQUIPITEM("COMBIITEM_Velum_Claw_S"); 
+//	ADD_BLOCK_EQUIPITEM("COMBIITEM_Velum_Claw_A"); 
+//	ADD_BLOCK_EQUIPITEM("COMBIITEM_Siege_Plate");
+//	ADD_BLOCK_EQUIPITEM("COMBIITEM_Siege_Suits");
+//	ADD_BLOCK_EQUIPITEM("COMBIITEM_Siege_Robe");
+	ADD_BLOCK_EQUIPITEM("Velum_Spear");
+	ADD_BLOCK_EQUIPITEM("Velum_Guillotine");
+	ADD_BLOCK_ITEM("Woe_White_Potion");
+	ADD_BLOCK_ITEM("Woe_Blue_Potion");
+	ADD_BLOCK_ITEM("Woe_Violet_Potion");
+}
+MAPTYPE 17 // 몬스터 트랙용
+{
+	ADD_PROPERTY(PK, TRUE);			//PK
+	ADD_PROPERTY(DISCONNECT_NOTREMEMBER, TRUE);// 접속종료시기억금지
+
+	// 기존 TURBOTRACK 속성 주석 처리	
+	//ADD_PROPERTY(TURBOTRACK, TRUE);	//터보 트랙용 맵속성
+
+	// 기존 TURBOTRACK 속성의 기능을 신규 맵 속성으로 교체
+	ADD_PROPERTY(DISABLE_KNOCKBACK, TRUE);		//넉백 효과를 사용하지 않는다.
+
+	ADD_PROPERTY_VALUE(RANGE_DAMAGE, 80); 		// 원거리 물리 대미지를 80%로 보정
+	ADD_PROPERTY_VALUE(ALL_SKILL_DAMAGE, 60); 	// 스킬 대미지를 60%로 보정
+
+	ADD_BLOCK_SKILL(SM_ENDURE,PLAYER);			//인듀어
+	ADD_BLOCK_SKILL(WZ_ICEWALL,PLAYER);			//아이스 월
+	ADD_BLOCK_SKILL(AL_WARP,PLAYER);			//워프 포탈
+	ADD_BLOCK_SKILL(TF_HIDING,PLAYER);			//하이딩
+	ADD_BLOCK_SKILL(AS_CLOAKING,PLAYER);		//클로킹
+	ADD_BLOCK_SKILL(ST_CHASEWALK,PLAYER);		//체이스 워크
+	ADD_BLOCK_SKILL(MO_BODYRELOCATION,PLAYER);	//궁신탄영
+	ADD_BLOCK_SKILL(LK_CONCENTRATION,PLAYER);	//컨센트레이션
+	ADD_BLOCK_SKILL(LK_BERSERK,PLAYER);			//버서크
+	ADD_BLOCK_SKILL(AL_CURE,PLAYER);			//큐어
+	ADD_BLOCK_SKILL(HP_BASILICA,PLAYER);			//바실리카
+	ADD_BLOCK_SKILL(CG_MOONLIT,PLAYER);			//달빛 물레방앗간에 떨어지는 꽃잎
+
+	ADD_BLOCK_ITEM("Anodyne");
+	ADD_BLOCK_ITEM("Green_Potion");
+	ADD_BLOCK_ITEM("Panacea");
+
+	// 기존 17번 맵 타입의 기능을 맵 속성으로 변경	
+	ADD_BLOCK_ITEM("Wing_Of_Butterfly");
+	ADD_PROPERTY(PARTY, TRUE);		//같은파티PK불가 
+	ADD_PROPERTY_VALUE(NAMED_BOOTY, 7773);		//PK를 성공하면 죽은 캐릭터의 이름이 새겨진 전투 휘장를 얻습니다.
+	ADD_BLOCK_ITEM("N_Fly_Wing");		//N_Fly_Wing금지
+	ADD_BLOCK_SKILL(SC_FATALMENACE,PLAYER); //페이탈 메나스	
+	ADD_BLOCK_SKILL(SC_DIMENSIONDOOR,PLAYER);			// 디멘션 도어	
+
+	ADD_BLOCK_ITEM("Runstone_Crush");
+	ADD_BLOCK_ITEM("Runstone_Storm");
+	ADD_BLOCK_ITEM("Runstone_Millennium");
+	ADD_BLOCK_ITEM("Neuralizer");
+	ADD_BLOCK_ITEM("Vending_Search_Scroll");
+	ADD_BLOCK_ITEM("Vending_Search_Scroll2");
+	ADD_BLOCK_ITEM("Uni_Catalog_Bz");
+	
+	// 10년 11월 24일 코스츔 아이템 사용 불가 적용
+	//ADD_PROPERTY(DISABLE_COSTUMEITEM,TRUE);
+	ADD_BLOCK_ITEM("Treasure_Box_Scroll");
+}
+MAPTYPE 18 // 공성 1.5 (길드 아지트 와 동일.)
+{
+	ADD_PROPERTY(PK, TRUE);		//PK
+	ADD_PROPERTY(DISCONNECT_NOTREMEMBER, TRUE);// 접속종료시기억금지
+	ADD_PROPERTY(GUILD, TRUE);		//같은길드PK불가 	
+
+	 ADD_PROPERTY(SIEGE, TRUE);				// 시즈모드 
+
+	// 기존 SIEGE 속성의 일부 기능을 신규 맵 속성으로 교체
+	ADD_PROPERTY(HIDING_DAMAGE, TRUE);			// 데미지를 표지하지 않습니다. 
+	ADD_PROPERTY(USE_SIMPLE_EFFECT, TRUE);		// 이펙트 간략화.
+	ADD_PROPERTY(LONG_INSUPERABLE_TIME, TRUE);	// 워프 이동 후 10초간 무적 상태가 된다.
+	ADD_PROPERTY(DISABLE_LOCKON, TRUE);		//락온 모드를 사용하지 않는다.
+	ADD_PROPERTY(DISABLE_KNOCKBACK, TRUE);		// 넉백 효과를 사용하지 않는다.
+
+	ADD_PROPERTY_VALUE(RANGE_DAMAGE, 80); 		// 원거리 물리 대미지를 80%로 보정
+	ADD_PROPERTY_VALUE(ALL_SKILL_DAMAGE, 60); 	// 스킬 대미지를 60%로 보정
+	ADD_PROPERTY_VALUE(GOTOTOWN, 1); 			// 죽으면 바로 마을로 이동
+
+	//효능을 막은 장착 아이템
+	ADD_BLOCK_EQUIPITEM("Phen_Card");				// Phen_Card 사용 불가
+	ADD_BLOCK_EQUIPITEM("Orleans_Gown");			// Orleans_Gown 사용 불가
+	ADD_BLOCK_EQUIPITEM("Blood_Butterfly_Card");			// Blood_Butterfly_Card 사용 불가
+
+	//사용 금지된 스킬
+	ADD_BLOCK_ITEM("Anodyne");				// 안티페인먼트(인듀어) 사용 금지
+	ADD_BLOCK_ITEM("Assumptio_5_Scroll");				// Assumptio_5_Scroll 사용 금지
+	ADD_BLOCK_ITEM("Pty_Assumptio_Scroll");				// 파티아숨 사용 금지
+
+	// 사용 금지된 버프
+	ADD_BLOCK_BUFF("EFST_ENDURE");				// 인듀어 버프 비활성
+
+	// 사용 금지된 스킬
+	ADD_BLOCK_SKILL(TF_BACKSLIDING,PLAYER);		//백 슬라이딩
+	ADD_BLOCK_SKILL(AL_WARP,PLAYER);			//워프 포탈
+	ADD_BLOCK_SKILL(WZ_ICEWALL,PLAYER);			//아이스 월
+	//ADD_BLOCK_SKILL(SM_ENDURE,PLAYER);		// 해외에서는 인듀어 스킬 사용 금지(주석을 제거해 주세요), 국내는 사용 ---------!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	ADD_BLOCK_SKILL(WE_CALLPARTNER,PLAYER);		// 당신이 보고싶어요
+	ADD_BLOCK_SKILL(WE_CALLBABY,PLAYER);		// 아가야 이리오렴
+	ADD_BLOCK_SKILL(WE_CALLPARENT,PLAYER);		// 엄마 아빠 보고 싶어요
+	ADD_BLOCK_SKILL(HP_ASSUMPTIO,PLAYER);		// 아숨프티오
+	ADD_BLOCK_SKILL(HP_BASILICA,PLAYER);			// 바실리카
+	ADD_BLOCK_SKILL(CR_CULTIVATION,PLAYER);		// 식물 재배
+	ADD_BLOCK_SKILL(CG_MOONLIT,PLAYER);			// 달빛 물레방앗간에 떨어지는 꽃잎
+	ADD_BLOCK_SKILL(NJ_KIRIKAGE,PLAYER);			// 그림자 베기
+	ADD_BLOCK_SKILL(GN_WALLOFTHORN,PLAYER);
+
+	//EPISODE_VER 9 이하의 버전에서 금지 (defined(REBALANCE))
+	//ADD_BLOCK_SKILL(LK_BERSERK,PLAYER);			// 버서크
+	//ADD_BLOCK_SKILL(ST_CHASEWALK,PLAYER);		// 체이스 워크
+	//ADD_BLOCK_SKILL(CG_MARIONETTE,PLAYER);		// 마리오네트 컨트롤
+
+	//트렙들의 지속 시간이 4배
+	ADJUST_TRAP_DURATION (HT_LANDMINE, 400); 		// 랜드마인
+	ADJUST_TRAP_DURATION (HT_BLASTMINE, 400); 	// 블래스트 마인
+	ADJUST_TRAP_DURATION (HT_SANDMAN, 400); 		//샌드맨
+	ADJUST_TRAP_DURATION (HT_SHOCKWAVE, 400); 	//쇼크웨이브트랩
+	ADJUST_TRAP_DURATION (HT_SKIDTRAP, 400); 		//스키드트랩
+	ADJUST_TRAP_DURATION (HT_ANKLESNARE, 400); 	//앵클스네어
+	ADJUST_TRAP_DURATION (HT_CLAYMORETRAP, 400); //크레모어 트랩
+	ADJUST_TRAP_DURATION (HT_TALKIEBOX, 400); 	// 토키 박스
+	ADJUST_TRAP_DURATION (HT_FREEZINGTRAP, 400); 	//프리징_트랩
+	ADJUST_TRAP_DURATION (HT_FLASHER, 400); 		//플래셔
+
+	// 18번 맵 타입의 기능을 맵 속성으로 변경
+	ADD_PROPERTY_VALUE(SIEGETIME_VERSION, 15);
+	ADD_BLOCK_SKILL(TK_HIGHJUMP,PLAYER);
+	ADD_BLOCK_ITEM("N_Fly_Wing");		//N_Fly_Wing금지
+	ADD_BLOCK_SKILL(SC_FATALMENACE,PLAYER); //페이탈 메나스	
+	ADD_BLOCK_SKILL(SC_DIMENSIONDOOR,PLAYER);			// 디멘션 도어	
+
+	ADD_BLOCK_ITEM("Runstone_Crush");
+	ADD_BLOCK_ITEM("Runstone_Storm");
+	ADD_BLOCK_ITEM("Runstone_Millennium");
+	ADD_BLOCK_ITEM("Neuralizer");
+
+	ADD_BLOCK_SKILL(GC_DARKILLUSION,PLAYER);			// 다크 일루젼	
+	ADD_BLOCK_ITEM("Vending_Search_Scroll");
+	ADD_BLOCK_ITEM("Vending_Search_Scroll2");
+	ADD_BLOCK_ITEM("Uni_Catalog_Bz");
+	
+	// 10년 11월 24일 코스츔 아이템 사용 불가 적용
+	// ADD_PROPERTY(DISABLE_COSTUMEITEM,TRUE);
+	ADD_BLOCK_ITEM("Treasure_Box_Scroll");	
+}
+
+MAPTYPE 19 // 전장 (길드 아지트와 거의 비슷)
+{
+	ADD_PROPERTY(PK, TRUE);		//PK
+	ADD_PROPERTY(DISCONNECT_NOTREMEMBER, TRUE);// 접속종료시기억금지
+	ADD_BLOCK_ITEM("N_Fly_Wing");		//N_Fly_Wing금지
+	ADD_BLOCK_SKILL(SC_FATALMENACE,PLAYER); //페이탈 메나스	
+	ADD_BLOCK_SKILL(SC_DIMENSIONDOOR,PLAYER);			// 디멘션 도어	
+
+	ADD_PROPERTY(SIEGE, TRUE);				// 시즈모드 
+
+	// 19번 맵 타입의 기능을 맵 속성으로 변경
+	ADD_PROPERTY_VALUE(RANGE_DAMAGE, 75);		// 원거리 물리 대미지 25%
+	ADD_PROPERTY_VALUE(ALL_SKILL_DAMAGE, 70);	// 스킬 대미지 30% 감소
+
+	ADD_PROPERTY(DISABLE_LOCKON, TRUE);		// 락온 모드를 사용하지 않는다.
+	ADD_PROPERTY(DISABLE_KNOCKBACK, TRUE);		// 넉백 효과를 사용하지 않는다.
+	ADD_PROPERTY (BATTLEFIELD, TRUE); 
+
+	ADD_BLOCK_EQUIPITEM("Phen_Card");				// Phen_Card 사용 불가
+	ADD_BLOCK_EQUIPITEM("Orleans_Gown");			// Orleans_Gown 사용 불가
+	ADD_BLOCK_EQUIPITEM("Blood_Butterfly_Card");			// Blood_Butterfly_Card 사용 불가
+
+	ADD_BLOCK_ITEM("Anodyne");				// 안티페인먼트(인듀어) 사용 금지
+	ADD_BLOCK_ITEM("Assumptio_5_Scroll");				// Assumptio_5_Scroll 사용 금지
+	ADD_BLOCK_ITEM("Pty_Assumptio_Scroll");				// 파티아숨 사용 금지
+
+	// 사용 금지된 버프
+	ADD_BLOCK_BUFF("EFST_ENDURE");				// 인듀어 버프 비활성
+
+	// 사용 금지된 스킬
+	ADD_BLOCK_SKILL(TF_BACKSLIDING,PLAYER);		//백 슬라이딩
+	ADD_BLOCK_SKILL(AL_WARP,PLAYER);			//워프 포탈
+	ADD_BLOCK_SKILL(WZ_ICEWALL,PLAYER);			//아이스 월
+	//ADD_BLOCK_SKILL(SM_ENDURE,PLAYER);			// 해외에서는 인듀어 스킬 사용 금지(주석을 제거해 주세요), 국내는 사용 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	ADD_BLOCK_SKILL(WE_CALLPARTNER,PLAYER);		// 당신이 보고싶어요
+	ADD_BLOCK_SKILL(WE_CALLBABY,PLAYER);		// 아가야 이리오렴
+	ADD_BLOCK_SKILL(WE_CALLPARENT,PLAYER);		// 엄마 아빠 보고 싶어요
+	ADD_BLOCK_SKILL(HP_ASSUMPTIO,PLAYER);		// 아숨프티오
+	ADD_BLOCK_SKILL(HP_BASILICA,PLAYER);			// 바실리카
+	ADD_BLOCK_SKILL(CR_CULTIVATION,PLAYER);		// 식물 재배
+	ADD_BLOCK_SKILL(CG_MOONLIT,PLAYER);			// 달빛 물레방앗간에 떨어지는 꽃잎
+	ADD_BLOCK_SKILL(NJ_KIRIKAGE,PLAYER);			// 그림자 베기
+
+	//EPISODE_VER 9 이하의 버전에서 금지 (defined(REBALANCE))
+	//ADD_BLOCK_SKILL(LK_BERSERK,PLAYER);			// 버서크
+	//ADD_BLOCK_SKILL(ST_CHASEWALK,PLAYER);		// 체이스 워크
+	//ADD_BLOCK_SKILL(CG_MARIONETTE,PLAYER);		// 마리오네트 컨트롤
+
+	ADD_BLOCK_SKILL(MO_BODYRELOCATION,PLAYER);	//궁신탄영
+	ADD_BLOCK_SKILL(SG_FEEL,PLAYER);			//태양과 달과 별의 느낌
+	ADD_BLOCK_SKILL(TK_RUN,PLAYER);				//달리기
+	ADD_BLOCK_SKILL(TK_HIGHJUMP,PLAYER);		//높이뛰기
+
+	//트렙들의 지속 시간이 4배
+	ADJUST_TRAP_DURATION (HT_LANDMINE, 400); 		// 랜드마인
+	ADJUST_TRAP_DURATION (HT_BLASTMINE, 400); 	// 블래스트 마인
+	ADJUST_TRAP_DURATION (HT_SANDMAN, 400); 		//샌드맨
+	ADJUST_TRAP_DURATION (HT_SHOCKWAVE, 400); 	//쇼크웨이브트랩
+	ADJUST_TRAP_DURATION (HT_SKIDTRAP, 400); 		//스키드트랩
+	ADJUST_TRAP_DURATION (HT_ANKLESNARE, 400); 	//앵클스네어
+	ADJUST_TRAP_DURATION (HT_CLAYMORETRAP, 400); //크레모어 트랩
+	ADJUST_TRAP_DURATION (HT_TALKIEBOX, 400); 	// 토키 박스
+	ADJUST_TRAP_DURATION (HT_FREEZINGTRAP, 400); 	//프리징_트랩
+	ADJUST_TRAP_DURATION (HT_FLASHER, 400); 		//플래셔
+
+	ADD_BLOCK_ITEM("Runstone_Crush");
+	ADD_BLOCK_ITEM("Runstone_Storm");
+	ADD_BLOCK_ITEM("Runstone_Millennium");
+	ADD_BLOCK_ITEM("Neuralizer");
+	ADD_BLOCK_ITEM("Vending_Search_Scroll");
+	ADD_BLOCK_ITEM("Vending_Search_Scroll2");
+	ADD_BLOCK_ITEM("Uni_Catalog_Bz");
+
+	// 10년 11월 24일 코스츔 아이템 사용 불가 적용
+	// ADD_PROPERTY(DISABLE_COSTUMEITEM,TRUE);
+	ADD_BLOCK_ITEM("Treasure_Box_Scroll");	
+}
+
+
+MAPTYPE 20 // 메모리얼 던전: Endless Tower
+{
+	ADD_BLOCK_SKILL(AL_TELEPORT,PLAYER | MONSTER | HOMUN | MERCENARY);
+	ADD_BLOCK_SKILL(WZ_ICEWALL,PLAYER);   // 아이스 월 사용 불가
+	ADD_BLOCK_SKILL(PF_SPIDERWEB,PLAYER); // 스파이더 웹 사용 불가
+	ADD_BLOCK_SKILL(RG_INTIMIDATE,PLAYER | MONSTER); // 인티머데이트 사용 불가
+	ADD_BLOCK_SKILL(NPC_EXPULSION,MONSTER);           // 추방 사용 불가
+
+	ADD_PROPERTY(EXP, TRUE);//경험치유실
+	ADD_PROPERTY(DISCONNECT_NOTREMEMBER, TRUE);// 접속종료시기억금지
+	ADD_BLOCK_ITEM("N_Fly_Wing");		//N_Fly_Wing금지
+	ADD_BLOCK_SKILL(SC_FATALMENACE,PLAYER); //페이탈 메나스	
+	ADD_BLOCK_SKILL(SC_DIMENSIONDOOR,PLAYER);			// 디멘션 도어	
+
+	ADD_BLOCK_ITEM("Runstone_Crush");
+	ADD_BLOCK_ITEM("Runstone_Storm");
+	ADD_BLOCK_ITEM("Runstone_Millennium");
+	ADD_BLOCK_SKILL(WM_LULLABY_DEEPSLEEP,PLAYER);
+	ADD_BLOCK_SKILL(WM_SATURDAY_NIGHT_FEVER,PLAYER);
+	ADD_BLOCK_SKILL(SO_ARRULLO,PLAYER);
+	ADD_BLOCK_SKILL(WM_SIRCLEOFNATURE,PLAYER);	
+	ADD_BLOCK_ITEM("Vending_Search_Scroll");
+	ADD_BLOCK_ITEM("Vending_Search_Scroll2");
+	ADD_BLOCK_ITEM("Uni_Catalog_Bz");
+	
+	ADD_BLOCK_SKILL(SC_MANHOLE,PLAYER);
+	
+	ADD_BLOCK_EQUIPITEM("Siege_Greave");
+	ADD_BLOCK_EQUIPITEM("Siege_Boots");
+	ADD_BLOCK_EQUIPITEM("Siege_Shoes");
+	ADD_BLOCK_EQUIPITEM("Siege_Manteau");
+	ADD_BLOCK_EQUIPITEM("Siege_Muffler");
+	ADD_BLOCK_EQUIPITEM("Siege_Plate");
+	ADD_BLOCK_EQUIPITEM("Siege_Suits");
+	ADD_BLOCK_EQUIPITEM("Siege_Robe");
+	ADD_BLOCK_EQUIPITEM("Siege_Arrow_S");
+	ADD_BLOCK_EQUIPITEM("Siege_Arrow_A");
+	ADD_BLOCK_EQUIPITEM("Velum_Jamadhar");
+	ADD_BLOCK_EQUIPITEM("Velum_Scare");
+	ADD_BLOCK_EQUIPITEM("Velum_Buster");
+	ADD_BLOCK_EQUIPITEM("Velum_Glaive");
+	ADD_BLOCK_EQUIPITEM("Velum_Arc_Wand");
+	ADD_BLOCK_EQUIPITEM("Velum_Claymore");
+	ADD_BLOCK_EQUIPITEM("Velum_Katzbalger");
+	ADD_BLOCK_EQUIPITEM("Velum_Arbalest");
+	ADD_BLOCK_EQUIPITEM("Velum_CrossBow");
+	ADD_BLOCK_EQUIPITEM("Velum_Bible");
+	ADD_BLOCK_EQUIPITEM("Velum_Encyclopedia");
+	ADD_BLOCK_EQUIPITEM("Velum_Claw");
+	ADD_BLOCK_EQUIPITEM("Velum_Damascus");
+	ADD_BLOCK_EQUIPITEM("Velum_Stunner");
+	ADD_BLOCK_EQUIPITEM("Velum_Flail");
+//	ADD_BLOCK_EQUIPITEM("COMBIITEM_Velum_Claw_S"); 
+//	ADD_BLOCK_EQUIPITEM("COMBIITEM_Velum_Claw_A"); 
+//	ADD_BLOCK_EQUIPITEM("COMBIITEM_Siege_Plate");
+//	ADD_BLOCK_EQUIPITEM("COMBIITEM_Siege_Suits");
+//	ADD_BLOCK_EQUIPITEM("COMBIITEM_Siege_Robe");
+	ADD_BLOCK_EQUIPITEM("Velum_Spear");
+	ADD_BLOCK_EQUIPITEM("Velum_Guillotine");
+	ADD_BLOCK_ITEM("Woe_White_Potion");
+	ADD_BLOCK_ITEM("Woe_Blue_Potion");
+	ADD_BLOCK_ITEM("Woe_Violet_Potion");
+	ADD_BLOCK_ITEM("Treasure_Box_Scroll");
+}
+
+
+MAPTYPE 21 // 메모리얼 던전: 봉인의 신전
+{
+	ADD_BLOCK_SKILL(AL_TELEPORT,PLAYER | MONSTER | HOMUN | MERCENARY);
+	ADD_BLOCK_SKILL(HP_ASSUMPTIO,PLAYER);  // 아숨프티오 사용 불가
+	ADD_BLOCK_SKILL(MG_SAFETYWALL,PLAYER); // 세이프티 월 사용 불가
+
+	ADD_PROPERTY(EXP, TRUE);//경험치유실
+	ADD_PROPERTY(DISCONNECT_NOTREMEMBER, TRUE);// 접속종료시기억금지
+	ADD_BLOCK_ITEM("N_Fly_Wing");		//N_Fly_Wing금지
+	ADD_BLOCK_SKILL(SC_FATALMENACE,PLAYER); //페이탈 메나스	
+	ADD_BLOCK_SKILL(SC_DIMENSIONDOOR,PLAYER);			// 디멘션 도어	
+
+	ADD_BLOCK_ITEM("Runstone_Crush");
+	ADD_BLOCK_ITEM("Runstone_Storm");
+	ADD_BLOCK_ITEM("Runstone_Millennium");
+	ADD_BLOCK_ITEM("Neuralizer");
+	ADD_BLOCK_SKILL(WM_LULLABY_DEEPSLEEP,PLAYER);
+	ADD_BLOCK_SKILL(WM_SATURDAY_NIGHT_FEVER,PLAYER);
+	ADD_BLOCK_SKILL(SO_ARRULLO,PLAYER);
+	ADD_BLOCK_SKILL(WM_SIRCLEOFNATURE,PLAYER);
+	ADD_BLOCK_ITEM("Vending_Search_Scroll");
+	ADD_BLOCK_ITEM("Vending_Search_Scroll2");
+	ADD_BLOCK_ITEM("Uni_Catalog_Bz");	
+	
+	ADD_BLOCK_EQUIPITEM("Siege_Greave");
+	ADD_BLOCK_EQUIPITEM("Siege_Boots");
+	ADD_BLOCK_EQUIPITEM("Siege_Shoes");
+	ADD_BLOCK_EQUIPITEM("Siege_Manteau");
+	ADD_BLOCK_EQUIPITEM("Siege_Muffler");
+	ADD_BLOCK_EQUIPITEM("Siege_Plate");
+	ADD_BLOCK_EQUIPITEM("Siege_Suits");
+	ADD_BLOCK_EQUIPITEM("Siege_Robe");
+	ADD_BLOCK_EQUIPITEM("Siege_Arrow_S");
+	ADD_BLOCK_EQUIPITEM("Siege_Arrow_A");
+	ADD_BLOCK_EQUIPITEM("Velum_Jamadhar");
+	ADD_BLOCK_EQUIPITEM("Velum_Scare");
+	ADD_BLOCK_EQUIPITEM("Velum_Buster");
+	ADD_BLOCK_EQUIPITEM("Velum_Glaive");
+	ADD_BLOCK_EQUIPITEM("Velum_Arc_Wand");
+	ADD_BLOCK_EQUIPITEM("Velum_Claymore");
+	ADD_BLOCK_EQUIPITEM("Velum_Katzbalger");
+	ADD_BLOCK_EQUIPITEM("Velum_Arbalest");
+	ADD_BLOCK_EQUIPITEM("Velum_CrossBow");
+	ADD_BLOCK_EQUIPITEM("Velum_Bible");
+	ADD_BLOCK_EQUIPITEM("Velum_Encyclopedia");
+	ADD_BLOCK_EQUIPITEM("Velum_Claw");
+	ADD_BLOCK_EQUIPITEM("Velum_Damascus");
+	ADD_BLOCK_EQUIPITEM("Velum_Stunner");
+	ADD_BLOCK_EQUIPITEM("Velum_Flail");
+//	ADD_BLOCK_EQUIPITEM("COMBIITEM_Velum_Claw_S"); 
+//	ADD_BLOCK_EQUIPITEM("COMBIITEM_Velum_Claw_A"); 
+//	ADD_BLOCK_EQUIPITEM("COMBIITEM_Siege_Plate");
+//	ADD_BLOCK_EQUIPITEM("COMBIITEM_Siege_Suits");
+//	ADD_BLOCK_EQUIPITEM("COMBIITEM_Siege_Robe");
+	ADD_BLOCK_EQUIPITEM("Velum_Spear");
+	ADD_BLOCK_EQUIPITEM("Velum_Guillotine");
+	ADD_BLOCK_ITEM("Woe_White_Potion");
+	ADD_BLOCK_ITEM("Woe_Blue_Potion");
+	ADD_BLOCK_ITEM("Woe_Violet_Potion");
+	ADD_BLOCK_ITEM("Treasure_Box_Scroll");	
+
+}
+
+
+MAPTYPE 22 // 프랑스풍 PVP 
+{
+
+	ADD_PROPERTY(PK, TRUE);			//PK
+	ADD_PROPERTY(DISCONNECT_NOTREMEMBER, TRUE);// 접속종료시기억금지    
+
+	ADD_PROPERTY(NO_PARTY_FORMATION, TRUE);	//파티 결성 불가
+	ADD_PROPERTY(COUNT_PK, TRUE);				//PK카운트
+//	ADD_PROPERTY_VALUE(NAMED_BOOTY, 7773);		//PK를 성공하면 죽은 캐릭터의 이름이 새겨진 전투 휘장를 얻습니다.
+
+	ADD_PROPERTY_VALUE(RANGE_DAMAGE, 60); 		// 원거리 물리 대미지를 60%로 보정
+	ADD_PROPERTY_VALUE(ALL_SKILL_DAMAGE, 60); 	// 스킬 대미지를 60%로 보정
+	ADD_PROPERTY_VALUE(GOTOTOWN, 1); 			// 죽으면 바로 마을로 이동
+
+	ADD_PROPERTY(HIDING_DAMAGE, TRUE);			// 데미지를 표지하지 않습니다. 
+	ADD_PROPERTY(USE_SIMPLE_EFFECT, TRUE);		// 이펙트 간략화.
+	ADD_PROPERTY(LONG_INSUPERABLE_TIME, TRUE);	// 워프 이동 후 10초간 무적 상태가 된다.
+	ADD_PROPERTY(DISABLE_LOCKON, TRUE);		// 락온 모드를 사용하지 않는다.
+	ADD_PROPERTY(DISABLE_KNOCKBACK, TRUE);		// 넉백 효과를 사용하지 않는다.
+
+	//효능을 막은 장착 아이템
+	ADD_BLOCK_EQUIPITEM("Phen_Card");				// Phen_Card 사용 불가
+
+	//사용 금지된 스킬
+	ADD_BLOCK_ITEM("Anodyne");				// 안티페인먼트(인듀어) 사용 금지
+	ADD_BLOCK_ITEM("Pty_Assumptio_Scroll");				// 파티아숨 사용 금지
+
+	// 사용 금지된 버프
+	ADD_BLOCK_BUFF("EFST_ENDURE");				// 인듀어 버프 비활성
+
+	// 사용 금지된 스킬
+	ADD_BLOCK_SKILL(TF_BACKSLIDING,PLAYER);		//백 슬라이딩
+	ADD_BLOCK_SKILL(AL_WARP,PLAYER);			//워프 포탈
+	ADD_BLOCK_SKILL(WZ_ICEWALL,PLAYER);			//아이스 월
+	ADD_BLOCK_SKILL(SM_ENDURE,PLAYER);			// 인듀어 스킬 사용 금지
+	ADD_BLOCK_SKILL(WE_CALLPARTNER,PLAYER);		// 당신이 보고싶어요
+	ADD_BLOCK_SKILL(WE_CALLBABY,PLAYER);		// 아가야 이리오렴
+	ADD_BLOCK_SKILL(WE_CALLPARENT,PLAYER);		// 엄마 아빠 보고 싶어요
+	ADD_BLOCK_SKILL(HP_ASSUMPTIO,PLAYER);		// 아숨프티오
+	ADD_BLOCK_SKILL(HP_BASILICA,PLAYER);			// 바실리카
+	ADD_BLOCK_SKILL(CR_CULTIVATION,PLAYER);		// 식물 재배
+	ADD_BLOCK_SKILL(CG_MOONLIT,PLAYER);			// 달빛 물레방앗간에 떨어지는 꽃잎
+	ADD_BLOCK_SKILL(NJ_KIRIKAGE,PLAYER);			// 그림자 베기
+
+	ADD_BLOCK_SKILL(LK_BERSERK,PLAYER);			// 버서크
+	ADD_BLOCK_SKILL(ST_CHASEWALK,PLAYER);		// 체이스 워크
+	ADD_BLOCK_SKILL(CG_MARIONETTE,PLAYER);		// 마리오네트 컨트롤
+
+	ADD_BLOCK_ITEM("Runstone_Crush");
+	ADD_BLOCK_ITEM("Runstone_Storm");
+	ADD_BLOCK_ITEM("Runstone_Millennium");
+	ADD_BLOCK_ITEM("Neuralizer");
+
+	ADD_BLOCK_SKILL(GC_DARKILLUSION,PLAYER);			// 다크 일루젼	
+	ADD_BLOCK_ITEM("Vending_Search_Scroll");
+	ADD_BLOCK_ITEM("Vending_Search_Scroll2");
+	ADD_BLOCK_ITEM("Uni_Catalog_Bz");
+	
+	ADD_BLOCK_EQUIPITEM("Siege_Greave");
+	ADD_BLOCK_EQUIPITEM("Siege_Boots");
+	ADD_BLOCK_EQUIPITEM("Siege_Shoes");
+	ADD_BLOCK_EQUIPITEM("Siege_Manteau");
+	ADD_BLOCK_EQUIPITEM("Siege_Muffler");
+	ADD_BLOCK_EQUIPITEM("Siege_Plate");
+	ADD_BLOCK_EQUIPITEM("Siege_Suits");
+	ADD_BLOCK_EQUIPITEM("Siege_Robe");
+	ADD_BLOCK_EQUIPITEM("Siege_Arrow_S");
+	ADD_BLOCK_EQUIPITEM("Siege_Arrow_A");
+	ADD_BLOCK_EQUIPITEM("Velum_Jamadhar");
+	ADD_BLOCK_EQUIPITEM("Velum_Scare");
+	ADD_BLOCK_EQUIPITEM("Velum_Buster");
+	ADD_BLOCK_EQUIPITEM("Velum_Glaive");
+	ADD_BLOCK_EQUIPITEM("Velum_Arc_Wand");
+	ADD_BLOCK_EQUIPITEM("Velum_Claymore");
+	ADD_BLOCK_EQUIPITEM("Velum_Katzbalger");
+	ADD_BLOCK_EQUIPITEM("Velum_Arbalest");
+	ADD_BLOCK_EQUIPITEM("Velum_CrossBow");
+	ADD_BLOCK_EQUIPITEM("Velum_Bible");
+	ADD_BLOCK_EQUIPITEM("Velum_Encyclopedia");
+	ADD_BLOCK_EQUIPITEM("Velum_Claw");
+	ADD_BLOCK_EQUIPITEM("Velum_Damascus");
+	ADD_BLOCK_EQUIPITEM("Velum_Stunner");
+	ADD_BLOCK_EQUIPITEM("Velum_Flail");
+//	ADD_BLOCK_EQUIPITEM("COMBIITEM_Velum_Claw_S"); 
+//	ADD_BLOCK_EQUIPITEM("COMBIITEM_Velum_Claw_A"); 
+//	ADD_BLOCK_EQUIPITEM("COMBIITEM_Siege_Plate");
+//	ADD_BLOCK_EQUIPITEM("COMBIITEM_Siege_Suits");
+//	ADD_BLOCK_EQUIPITEM("COMBIITEM_Siege_Robe");
+	ADD_BLOCK_EQUIPITEM("Velum_Spear");
+	ADD_BLOCK_EQUIPITEM("Velum_Guillotine");
+	ADD_BLOCK_ITEM("Woe_White_Potion");
+	ADD_BLOCK_ITEM("Woe_Blue_Potion");
+	ADD_BLOCK_ITEM("Woe_Violet_Potion");
+
+
+	ADD_BLOCK_ITEM("Dun_Tele_Scroll1"); 
+	ADD_BLOCK_ITEM("Dun_Tele_Scroll2");
+	ADD_BLOCK_ITEM("Dun_Tele_Scroll3"); 
+//	ADD_BLOCK_ITEM("FDun_Tele_Scroll1"); 
+//	ADD_BLOCK_ITEM("EFDun_Tele_Scroll1"); 
+
+	ADD_BLOCK_ITEM("Giant_Fly_Wing");
+//	ADD_BLOCK_ITEM("F_Giant_Fly_Wing");
+//	ADD_BLOCK_ITEM("E_Giant_Fly_Wing");
+
+	ADD_BLOCK_ITEM("Siege_Teleport_Scroll");
+	ADD_BLOCK_ITEM("Siege_Teleport_Scroll2");
+//	ADD_BLOCK_ITEM("F_Siege_Teleport_Scroll");
+//	ADD_BLOCK_ITEM("E_Siege_Teleport_Scroll");
+
+	ADD_BLOCK_ITEM("Branch_Of_Dead_Tree");
+	ADD_BLOCK_ITEM("Bloody_Dead_Branch");
+	ADD_BLOCK_ITEM("Mystic_Tree_Branch");
+
+	ADD_BLOCK_EQUIPITEM("Hylozoist_Card");
+	ADD_BLOCK_EQUIPITEM("Azoth");	
+	ADD_BLOCK_ITEM("N_Butterfly_Wing");
+
+	ADD_BLOCK_ITEM("Kafra_Card");
+//	ADD_BLOCK_ITEM("FKafra_Card");
+//	ADD_BLOCK_ITEM("EFKafra_Card");
+
+	ADD_BLOCK_ITEM("Malang_Sp_Can");
+	ADD_BLOCK_ITEM("Insideout_Shirt");
+
+}
+MAPTYPE 23  // 이계 마을
+{
+	ADD_PROPERTY(TELEPORT, TRUE);//텔레포트
+
+	ADD_BLOCK_ITEM("Runstone_Crush");
+	ADD_BLOCK_ITEM("Runstone_Storm");
+	ADD_BLOCK_ITEM("Runstone_Millennium");
+	ADD_BLOCK_ITEM("Greed_Scroll");
+	ADD_BLOCK_SKILL(WM_LULLABY_DEEPSLEEP,PLAYER);
+	ADD_BLOCK_SKILL(WM_SATURDAY_NIGHT_FEVER,PLAYER);
+	ADD_BLOCK_SKILL(SO_ARRULLO,PLAYER);
+	ADD_BLOCK_SKILL(WM_SIRCLEOFNATURE,PLAYER);
+	ADD_BLOCK_ITEM("Vending_Search_Scroll");
+	ADD_BLOCK_ITEM("Vending_Search_Scroll2");
+	ADD_BLOCK_ITEM("Uni_Catalog_Bz");	
+	
+	ADD_BLOCK_EQUIPITEM("Siege_Greave");
+	ADD_BLOCK_EQUIPITEM("Siege_Boots");
+	ADD_BLOCK_EQUIPITEM("Siege_Shoes");
+	ADD_BLOCK_EQUIPITEM("Siege_Manteau");
+	ADD_BLOCK_EQUIPITEM("Siege_Muffler");
+	ADD_BLOCK_EQUIPITEM("Siege_Plate");
+	ADD_BLOCK_EQUIPITEM("Siege_Suits");
+	ADD_BLOCK_EQUIPITEM("Siege_Robe");
+	ADD_BLOCK_EQUIPITEM("Siege_Arrow_S");
+	ADD_BLOCK_EQUIPITEM("Siege_Arrow_A");
+	ADD_BLOCK_EQUIPITEM("Velum_Jamadhar");
+	ADD_BLOCK_EQUIPITEM("Velum_Scare");
+	ADD_BLOCK_EQUIPITEM("Velum_Buster");
+	ADD_BLOCK_EQUIPITEM("Velum_Glaive");
+	ADD_BLOCK_EQUIPITEM("Velum_Arc_Wand");
+	ADD_BLOCK_EQUIPITEM("Velum_Claymore");
+	ADD_BLOCK_EQUIPITEM("Velum_Katzbalger");
+	ADD_BLOCK_EQUIPITEM("Velum_Arbalest");
+	ADD_BLOCK_EQUIPITEM("Velum_CrossBow");
+	ADD_BLOCK_EQUIPITEM("Velum_Bible");
+	ADD_BLOCK_EQUIPITEM("Velum_Encyclopedia");
+	ADD_BLOCK_EQUIPITEM("Velum_Claw");
+	ADD_BLOCK_EQUIPITEM("Velum_Damascus");
+	ADD_BLOCK_EQUIPITEM("Velum_Stunner");
+	ADD_BLOCK_EQUIPITEM("Velum_Flail");
+//	ADD_BLOCK_EQUIPITEM("COMBIITEM_Velum_Claw_S"); 
+//	ADD_BLOCK_EQUIPITEM("COMBIITEM_Velum_Claw_A"); 
+//	ADD_BLOCK_EQUIPITEM("COMBIITEM_Siege_Plate");
+//	ADD_BLOCK_EQUIPITEM("COMBIITEM_Siege_Suits");
+//	ADD_BLOCK_EQUIPITEM("COMBIITEM_Siege_Robe");
+	ADD_BLOCK_EQUIPITEM("Velum_Spear");
+	ADD_BLOCK_EQUIPITEM("Velum_Guillotine");
+	ADD_BLOCK_ITEM("Treasure_Box_Scroll");	
+}
+
+MAPTYPE 24 // FACTION
+{
+	ADD_PROPERTY(PK, TRUE);		
+	ADD_PROPERTY(DISCONNECT_NOTREMEMBER, TRUE);
+	ADD_BLOCK_ITEM("N_Fly_Wing");		
+	ADD_PROPERTY(EXP, TRUE);
+
+	ADD_PROPERTY(SIEGE, TRUE);				
+
+	ADD_PROPERTY_VALUE(RANGE_DAMAGE, 75);		
+	ADD_PROPERTY_VALUE(ALL_SKILL_DAMAGE, 70);	
+
+	ADD_PROPERTY(DISABLE_LOCKON, TRUE);				
+	ADD_PROPERTY (BATTLEFIELD, TRUE);
+	ADD_PROPERTY(TELEPORT, TRUE); 			
+
+	ADD_BLOCK_ITEM("Anodyne");				
+	ADD_BLOCK_ITEM("Assumptio_5_Scroll");				
+	ADD_BLOCK_ITEM("Pty_Assumptio_Scroll");				
+
+	ADD_BLOCK_BUFF("EFST_ENDURE");				
+
+	ADD_BLOCK_SKILL(TF_BACKSLIDING,PLAYER);		
+	ADD_BLOCK_SKILL(AL_WARP,PLAYER);			
+	ADD_BLOCK_SKILL(WZ_ICEWALL,PLAYER);						
+	ADD_BLOCK_SKILL(WE_CALLPARTNER,PLAYER);		
+	ADD_BLOCK_SKILL(WE_CALLBABY,PLAYER);		
+	ADD_BLOCK_SKILL(WE_CALLPARENT,PLAYER);				
+	ADD_BLOCK_SKILL(HP_BASILICA,PLAYER);			
+	ADD_BLOCK_SKILL(CR_CULTIVATION,PLAYER);		
+	ADD_BLOCK_SKILL(CG_MOONLIT,PLAYER);			
+	ADD_BLOCK_SKILL(NJ_KIRIKAGE,PLAYER);			
+
+	ADD_BLOCK_SKILL(MO_BODYRELOCATION,PLAYER);	
+	ADD_BLOCK_SKILL(SG_FEEL,PLAYER);			
+	ADD_BLOCK_SKILL(TK_RUN,PLAYER);				
+	ADD_BLOCK_SKILL(TK_HIGHJUMP,PLAYER);		
+
+	ADJUST_TRAP_DURATION (HT_LANDMINE, 400); 		
+	ADJUST_TRAP_DURATION (HT_BLASTMINE, 400); 	
+	ADJUST_TRAP_DURATION (HT_SANDMAN, 400); 		
+	ADJUST_TRAP_DURATION (HT_SHOCKWAVE, 400); 	
+	ADJUST_TRAP_DURATION (HT_SKIDTRAP, 400); 		
+	ADJUST_TRAP_DURATION (HT_ANKLESNARE, 400); 	
+	ADJUST_TRAP_DURATION (HT_CLAYMORETRAP, 400);
+	ADJUST_TRAP_DURATION (HT_TALKIEBOX, 400); 	
+	ADJUST_TRAP_DURATION (HT_FREEZINGTRAP, 400); 	
+	ADJUST_TRAP_DURATION (HT_FLASHER, 400); 
+	ADD_BLOCK_ITEM("Vending_Search_Scroll");
+	ADD_BLOCK_ITEM("Vending_Search_Scroll2");
+	ADD_BLOCK_ITEM("Uni_Catalog_Bz");		
+
+	ADD_BLOCK_EQUIPITEM("Siege_Greave");
+	ADD_BLOCK_EQUIPITEM("Siege_Boots");
+	ADD_BLOCK_EQUIPITEM("Siege_Shoes");
+	ADD_BLOCK_EQUIPITEM("Siege_Manteau");
+	ADD_BLOCK_EQUIPITEM("Siege_Muffler");
+	ADD_BLOCK_EQUIPITEM("Siege_Plate");
+	ADD_BLOCK_EQUIPITEM("Siege_Suits");
+	ADD_BLOCK_EQUIPITEM("Siege_Robe");
+	ADD_BLOCK_EQUIPITEM("Siege_Arrow_S");
+	ADD_BLOCK_EQUIPITEM("Siege_Arrow_A");
+	ADD_BLOCK_EQUIPITEM("Velum_Jamadhar");
+	ADD_BLOCK_EQUIPITEM("Velum_Scare");
+	ADD_BLOCK_EQUIPITEM("Velum_Buster");
+	ADD_BLOCK_EQUIPITEM("Velum_Glaive");
+	ADD_BLOCK_EQUIPITEM("Velum_Arc_Wand");
+	ADD_BLOCK_EQUIPITEM("Velum_Claymore");
+	ADD_BLOCK_EQUIPITEM("Velum_Katzbalger");
+	ADD_BLOCK_EQUIPITEM("Velum_Arbalest");
+	ADD_BLOCK_EQUIPITEM("Velum_CrossBow");
+	ADD_BLOCK_EQUIPITEM("Velum_Bible");
+	ADD_BLOCK_EQUIPITEM("Velum_Encyclopedia");
+	ADD_BLOCK_EQUIPITEM("Velum_Claw");
+	ADD_BLOCK_EQUIPITEM("Velum_Damascus");
+	ADD_BLOCK_EQUIPITEM("Velum_Stunner");
+	ADD_BLOCK_EQUIPITEM("Velum_Flail");
+//	ADD_BLOCK_EQUIPITEM("COMBIITEM_Velum_Claw_S"); 
+//	ADD_BLOCK_EQUIPITEM("COMBIITEM_Velum_Claw_A"); 
+//	ADD_BLOCK_EQUIPITEM("COMBIITEM_Siege_Plate");
+//	ADD_BLOCK_EQUIPITEM("COMBIITEM_Siege_Suits");
+//	ADD_BLOCK_EQUIPITEM("COMBIITEM_Siege_Robe");
+	ADD_BLOCK_EQUIPITEM("Velum_Spear");
+	ADD_BLOCK_EQUIPITEM("Velum_Guillotine");
+	ADD_BLOCK_ITEM("Woe_White_Potion");
+	ADD_BLOCK_ITEM("Woe_Blue_Potion");
+	ADD_BLOCK_ITEM("Woe_Violet_Potion");
+	ADD_BLOCK_ITEM("Treasure_Box_Scroll");	
+
+}
+MAPTYPE 25 // FACTION
+{
+	ADD_PROPERTY(PK, TRUE);		
+	ADD_PROPERTY(DISCONNECT_NOTREMEMBER, TRUE);
+	ADD_BLOCK_ITEM("N_Fly_Wing");		
+
+	ADD_PROPERTY(SIEGE, TRUE);				
+
+	ADD_PROPERTY_VALUE(RANGE_DAMAGE, 75);		
+	ADD_PROPERTY_VALUE(ALL_SKILL_DAMAGE, 70);	
+
+	ADD_PROPERTY(DISABLE_LOCKON, TRUE);				
+	ADD_PROPERTY (BATTLEFIELD, TRUE);
+	ADD_PROPERTY(TELEPORT, TRUE); 			
+
+	ADD_BLOCK_ITEM("Anodyne");				
+	ADD_BLOCK_ITEM("Assumptio_5_Scroll");				
+	ADD_BLOCK_ITEM("Pty_Assumptio_Scroll");				
+
+	ADD_BLOCK_BUFF("EFST_ENDURE");				
+
+	ADD_BLOCK_SKILL(TF_BACKSLIDING,PLAYER);		
+	ADD_BLOCK_SKILL(AL_WARP,PLAYER);			
+	ADD_BLOCK_SKILL(WZ_ICEWALL,PLAYER);						
+	ADD_BLOCK_SKILL(WE_CALLPARTNER,PLAYER);		
+	ADD_BLOCK_SKILL(WE_CALLBABY,PLAYER);		
+	ADD_BLOCK_SKILL(WE_CALLPARENT,PLAYER);				
+	ADD_BLOCK_SKILL(HP_BASILICA,PLAYER);			
+	ADD_BLOCK_SKILL(CR_CULTIVATION,PLAYER);		
+	ADD_BLOCK_SKILL(CG_MOONLIT,PLAYER);			
+	ADD_BLOCK_SKILL(NJ_KIRIKAGE,PLAYER);			
+
+	ADD_BLOCK_SKILL(MO_BODYRELOCATION,PLAYER);	
+	ADD_BLOCK_SKILL(SG_FEEL,PLAYER);			
+	ADD_BLOCK_SKILL(TK_RUN,PLAYER);				
+	ADD_BLOCK_SKILL(TK_HIGHJUMP,PLAYER);		
+
+	ADJUST_TRAP_DURATION (HT_LANDMINE, 400); 		
+	ADJUST_TRAP_DURATION (HT_BLASTMINE, 400); 	
+	ADJUST_TRAP_DURATION (HT_SANDMAN, 400); 		
+	ADJUST_TRAP_DURATION (HT_SHOCKWAVE, 400); 	
+	ADJUST_TRAP_DURATION (HT_SKIDTRAP, 400); 		
+	ADJUST_TRAP_DURATION (HT_ANKLESNARE, 400); 	
+	ADJUST_TRAP_DURATION (HT_CLAYMORETRAP, 400);
+	ADJUST_TRAP_DURATION (HT_TALKIEBOX, 400); 	
+	ADJUST_TRAP_DURATION (HT_FREEZINGTRAP, 400); 	
+	ADJUST_TRAP_DURATION (HT_FLASHER, 400); 
+	ADD_BLOCK_ITEM("Vending_Search_Scroll");
+	ADD_BLOCK_ITEM("Vending_Search_Scroll2");
+	ADD_BLOCK_ITEM("Uni_Catalog_Bz");	
+	
+	ADD_BLOCK_EQUIPITEM("Siege_Greave");
+	ADD_BLOCK_EQUIPITEM("Siege_Boots");
+	ADD_BLOCK_EQUIPITEM("Siege_Shoes");
+	ADD_BLOCK_EQUIPITEM("Siege_Manteau");
+	ADD_BLOCK_EQUIPITEM("Siege_Muffler");
+	ADD_BLOCK_EQUIPITEM("Siege_Plate");
+	ADD_BLOCK_EQUIPITEM("Siege_Suits");
+	ADD_BLOCK_EQUIPITEM("Siege_Robe");
+	ADD_BLOCK_EQUIPITEM("Siege_Arrow_S");
+	ADD_BLOCK_EQUIPITEM("Siege_Arrow_A");
+	ADD_BLOCK_EQUIPITEM("Velum_Jamadhar");
+	ADD_BLOCK_EQUIPITEM("Velum_Scare");
+	ADD_BLOCK_EQUIPITEM("Velum_Buster");
+	ADD_BLOCK_EQUIPITEM("Velum_Glaive");
+	ADD_BLOCK_EQUIPITEM("Velum_Arc_Wand");
+	ADD_BLOCK_EQUIPITEM("Velum_Claymore");
+	ADD_BLOCK_EQUIPITEM("Velum_Katzbalger");
+	ADD_BLOCK_EQUIPITEM("Velum_Arbalest");
+	ADD_BLOCK_EQUIPITEM("Velum_CrossBow");
+	ADD_BLOCK_EQUIPITEM("Velum_Bible");
+	ADD_BLOCK_EQUIPITEM("Velum_Encyclopedia");
+	ADD_BLOCK_EQUIPITEM("Velum_Claw");
+	ADD_BLOCK_EQUIPITEM("Velum_Damascus");
+	ADD_BLOCK_EQUIPITEM("Velum_Stunner");
+	ADD_BLOCK_EQUIPITEM("Velum_Flail");
+//	ADD_BLOCK_EQUIPITEM("COMBIITEM_Velum_Claw_S"); 
+//	ADD_BLOCK_EQUIPITEM("COMBIITEM_Velum_Claw_A"); 
+//	ADD_BLOCK_EQUIPITEM("COMBIITEM_Siege_Plate");
+//	ADD_BLOCK_EQUIPITEM("COMBIITEM_Siege_Suits");
+//	ADD_BLOCK_EQUIPITEM("COMBIITEM_Siege_Robe");
+	ADD_BLOCK_EQUIPITEM("Velum_Spear");
+	ADD_BLOCK_EQUIPITEM("Velum_Guillotine");
+
+}
+MAPTYPE 26 // FACTION
+{
+	ADD_PROPERTY(PK, TRUE);		//PK
+	ADD_PROPERTY(DISCONNECT_NOTREMEMBER, TRUE);// 접속종료시기억금지
+	ADD_BLOCK_ITEM("N_Fly_Wing");		//N_Fly_Wing금지
+
+	ADD_PROPERTY(SIEGE, TRUE);				// 시즈모드 
+
+	// 19번 맵 타입의 기능을 맵 속성으로 변경
+	ADD_PROPERTY_VALUE(RANGE_DAMAGE, 75);		// 원거리 물리 대미지 25%
+	ADD_PROPERTY_VALUE(ALL_SKILL_DAMAGE, 70);	// 스킬 대미지 30% 감소
+
+	ADD_PROPERTY(DISABLE_LOCKON, TRUE);		// 락온 모드를 사용하지 않는다.
+	ADD_PROPERTY(DISABLE_KNOCKBACK, TRUE);		// 넉백 효과를 사용하지 않는다.
+	ADD_PROPERTY (BATTLEFIELD, TRUE); 
+
+	ADD_BLOCK_EQUIPITEM("Phen_Card");				// Phen_Card 사용 불가
+	ADD_BLOCK_EQUIPITEM("Orleans_Gown");			// Orleans_Gown 사용 불가
+	ADD_BLOCK_EQUIPITEM("Blood_Butterfly_Card");			// Blood_Butterfly_Card 사용 불가
+
+	ADD_BLOCK_ITEM("Anodyne");				// 안티페인먼트(인듀어) 사용 금지
+	ADD_BLOCK_ITEM("Assumptio_5_Scroll");				// Assumptio_5_Scroll 사용 금지
+	ADD_BLOCK_ITEM("Pty_Assumptio_Scroll");				// 파티아숨 사용 금지
+
+	// 사용 금지된 버프
+	ADD_BLOCK_BUFF("EFST_ENDURE");				// 인듀어 버프 비활성
+
+	// 사용 금지된 스킬
+	ADD_BLOCK_SKILL(TF_BACKSLIDING,PLAYER);		//백 슬라이딩
+	ADD_BLOCK_SKILL(AL_WARP,PLAYER);			//워프 포탈
+	ADD_BLOCK_SKILL(CG_TAROTCARD,PLAYER);
+	ADD_BLOCK_SKILL(PF_SPIDERWEB,PLAYER);
+	ADD_BLOCK_SKILL(WZ_ICEWALL,PLAYER);			//아이스 월
+	//ADD_BLOCK_SKILL(SM_ENDURE,PLAYER);			// 해외에서는 인듀어 스킬 사용 금지(주석을 제거해 주세요), 국내는 사용 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	ADD_BLOCK_SKILL(WE_CALLPARTNER,PLAYER);		// 당신이 보고싶어요
+	ADD_BLOCK_SKILL(WE_CALLBABY,PLAYER);		// 아가야 이리오렴
+	ADD_BLOCK_SKILL(WE_CALLPARENT,PLAYER);		// 엄마 아빠 보고 싶어요
+	ADD_BLOCK_SKILL(HP_ASSUMPTIO,PLAYER);		// 아숨프티오
+	ADD_BLOCK_SKILL(HP_BASILICA,PLAYER);			// 바실리카
+	ADD_BLOCK_SKILL(CR_CULTIVATION,PLAYER);		// 식물 재배
+	ADD_BLOCK_SKILL(CG_MOONLIT,PLAYER);			// 달빛 물레방앗간에 떨어지는 꽃잎
+	ADD_BLOCK_SKILL(NJ_KIRIKAGE,PLAYER);			// 그림자 베기
+
+	//EPISODE_VER 9 이하의 버전에서 금지 (defined(REBALANCE))
+	//ADD_BLOCK_SKILL(LK_BERSERK,PLAYER);			// 버서크
+	//ADD_BLOCK_SKILL(ST_CHASEWALK,PLAYER);		// 체이스 워크
+	//ADD_BLOCK_SKILL(CG_MARIONETTE,PLAYER);		// 마리오네트 컨트롤
+
+	ADD_BLOCK_SKILL(MO_BODYRELOCATION,PLAYER);	//궁신탄영
+	ADD_BLOCK_SKILL(SG_FEEL,PLAYER);			//태양과 달과 별의 느낌
+	ADD_BLOCK_SKILL(TK_RUN,PLAYER);				//달리기
+	ADD_BLOCK_SKILL(TK_HIGHJUMP,PLAYER);		//높이뛰기
+
+	//트렙들의 지속 시간이 4배
+	ADJUST_TRAP_DURATION (HT_LANDMINE, 400); 		// 랜드마인
+	ADJUST_TRAP_DURATION (HT_BLASTMINE, 400); 	// 블래스트 마인
+	ADJUST_TRAP_DURATION (HT_SANDMAN, 400); 		//샌드맨
+	ADJUST_TRAP_DURATION (HT_SHOCKWAVE, 400); 	//쇼크웨이브트랩
+	ADJUST_TRAP_DURATION (HT_SKIDTRAP, 400); 		//스키드트랩
+	ADJUST_TRAP_DURATION (HT_ANKLESNARE, 400); 	//앵클스네어
+	ADJUST_TRAP_DURATION (HT_CLAYMORETRAP, 400); //크레모어 트랩
+	ADJUST_TRAP_DURATION (HT_TALKIEBOX, 400); 	// 토키 박스
+	ADJUST_TRAP_DURATION (HT_FREEZINGTRAP, 400); 	//프리징_트랩
+	ADJUST_TRAP_DURATION (HT_FLASHER, 400); 		//플래셔
+	ADD_BLOCK_ITEM("Vending_Search_Scroll");
+	ADD_BLOCK_ITEM("Vending_Search_Scroll2");
+	ADD_BLOCK_ITEM("Uni_Catalog_Bz");		
+	
+	ADD_BLOCK_EQUIPITEM("Siege_Greave");
+	ADD_BLOCK_EQUIPITEM("Siege_Boots");
+	ADD_BLOCK_EQUIPITEM("Siege_Shoes");
+	ADD_BLOCK_EQUIPITEM("Siege_Manteau");
+	ADD_BLOCK_EQUIPITEM("Siege_Muffler");
+	ADD_BLOCK_EQUIPITEM("Siege_Plate");
+	ADD_BLOCK_EQUIPITEM("Siege_Suits");
+	ADD_BLOCK_EQUIPITEM("Siege_Robe");
+	ADD_BLOCK_EQUIPITEM("Siege_Arrow_S");
+	ADD_BLOCK_EQUIPITEM("Siege_Arrow_A");
+	ADD_BLOCK_EQUIPITEM("Velum_Jamadhar");
+	ADD_BLOCK_EQUIPITEM("Velum_Scare");
+	ADD_BLOCK_EQUIPITEM("Velum_Buster");
+	ADD_BLOCK_EQUIPITEM("Velum_Glaive");
+	ADD_BLOCK_EQUIPITEM("Velum_Arc_Wand");
+	ADD_BLOCK_EQUIPITEM("Velum_Claymore");
+	ADD_BLOCK_EQUIPITEM("Velum_Katzbalger");
+	ADD_BLOCK_EQUIPITEM("Velum_Arbalest");
+	ADD_BLOCK_EQUIPITEM("Velum_CrossBow");
+	ADD_BLOCK_EQUIPITEM("Velum_Bible");
+	ADD_BLOCK_EQUIPITEM("Velum_Encyclopedia");
+	ADD_BLOCK_EQUIPITEM("Velum_Claw");
+	ADD_BLOCK_EQUIPITEM("Velum_Damascus");
+	ADD_BLOCK_EQUIPITEM("Velum_Stunner");
+	ADD_BLOCK_EQUIPITEM("Velum_Flail");
+//	ADD_BLOCK_EQUIPITEM("COMBIITEM_Velum_Claw_S"); 
+//	ADD_BLOCK_EQUIPITEM("COMBIITEM_Velum_Claw_A"); 
+//	ADD_BLOCK_EQUIPITEM("COMBIITEM_Siege_Plate");
+//	ADD_BLOCK_EQUIPITEM("COMBIITEM_Siege_Suits");
+//	ADD_BLOCK_EQUIPITEM("COMBIITEM_Siege_Robe");
+	ADD_BLOCK_EQUIPITEM("Velum_Spear");
+	ADD_BLOCK_EQUIPITEM("Velum_Guillotine");
+
+}
+MAPTYPE 27 // FACTION
+{
+	ADD_BLOCK_ITEM("Wing_Of_Fly");	
+	ADD_PROPERTY(DENYSKILL, TRUE);
+	ADD_PROPERTY(DISCONNECT_NOTREMEMBER, TRUE);
+	ADD_BLOCK_ITEM("Vending_Search_Scroll");
+	ADD_BLOCK_ITEM("Vending_Search_Scroll2");
+	ADD_BLOCK_ITEM("Uni_Catalog_Bz");
+	
+	ADD_BLOCK_EQUIPITEM("Siege_Greave");
+	ADD_BLOCK_EQUIPITEM("Siege_Boots");
+	ADD_BLOCK_EQUIPITEM("Siege_Shoes");
+	ADD_BLOCK_EQUIPITEM("Siege_Manteau");
+	ADD_BLOCK_EQUIPITEM("Siege_Muffler");
+	ADD_BLOCK_EQUIPITEM("Siege_Plate");
+	ADD_BLOCK_EQUIPITEM("Siege_Suits");
+	ADD_BLOCK_EQUIPITEM("Siege_Robe");
+	ADD_BLOCK_EQUIPITEM("Siege_Arrow_S");
+	ADD_BLOCK_EQUIPITEM("Siege_Arrow_A");
+	ADD_BLOCK_EQUIPITEM("Velum_Jamadhar");
+	ADD_BLOCK_EQUIPITEM("Velum_Scare");
+	ADD_BLOCK_EQUIPITEM("Velum_Buster");
+	ADD_BLOCK_EQUIPITEM("Velum_Glaive");
+	ADD_BLOCK_EQUIPITEM("Velum_Arc_Wand");
+	ADD_BLOCK_EQUIPITEM("Velum_Claymore");
+	ADD_BLOCK_EQUIPITEM("Velum_Katzbalger");
+	ADD_BLOCK_EQUIPITEM("Velum_Arbalest");
+	ADD_BLOCK_EQUIPITEM("Velum_CrossBow");
+	ADD_BLOCK_EQUIPITEM("Velum_Bible");
+	ADD_BLOCK_EQUIPITEM("Velum_Encyclopedia");
+	ADD_BLOCK_EQUIPITEM("Velum_Claw");
+	ADD_BLOCK_EQUIPITEM("Velum_Damascus");
+	ADD_BLOCK_EQUIPITEM("Velum_Stunner");
+	ADD_BLOCK_EQUIPITEM("Velum_Flail");
+//	ADD_BLOCK_EQUIPITEM("COMBIITEM_Velum_Claw_S"); 
+//	ADD_BLOCK_EQUIPITEM("COMBIITEM_Velum_Claw_A"); 
+//	ADD_BLOCK_EQUIPITEM("COMBIITEM_Siege_Plate");
+//	ADD_BLOCK_EQUIPITEM("COMBIITEM_Siege_Suits");
+//	ADD_BLOCK_EQUIPITEM("COMBIITEM_Siege_Robe");
+	ADD_BLOCK_EQUIPITEM("Velum_Spear");
+	ADD_BLOCK_EQUIPITEM("Velum_Guillotine");
+
+}

@@ -1,0 +1,42 @@
+
+// ItemID GroupBuffID Time(초)
+// GroupBuffID 는 존서버에 등록되어 있어야하므로, 반드시 프로그래머와 상의해주세요
+
+14538 EFST_REUSE_LIMIT_A 300 	// 환영의술잔,
+14586 EFST_REUSE_LIMIT_B 180    // 톡톡캔디
+12596 EFST_REUSE_LIMIT_B 180    // 매직캔디
+12208 EFST_REUSE_LIMIT_C 60	// 전투교범
+12210 EFST_REUSE_LIMIT_D 60	// 풍선껌
+11522 EFST_REUSE_LIMIT_E 1	// 빨간라플레수액
+11523 EFST_REUSE_LIMIT_E 1	// 노란라플레수액
+11524 EFST_REUSE_LIMIT_E 1	// 하얀라플레수액
+607 EFST_REUSE_LIMIT_F 5	// 이그드라실열매
+608 EFST_REUSE_LIMIT_G 3	// 이그드라실씨앗
+11525 EFST_REUSE_LIMIT_H 2	// 모라힘티
+
+12622 EFST_ALL_RIDING_REUSE_LIMIT 3	// 탑승용 고삐
+
+12727 EFST_REUSE_MILLENNIUMSHIELD 60	// 베르카나 룬 스톤
+12726 EFST_REUSE_CRUSHSTRIKE 30			// 라이도 룬 스톤
+12725 EFST_REUSE_REFRESH 120			// 노씨즈 룬 스톤
+12732 EFST_REUSE_STORMBLAST 1			// 이다 룬 스톤 (이다 -> 페르쓰로 이름이 바뀌었습니다)
+
+12580 EFST_SEARCH_STORE_INFO	0			// 이름 : 만능_카탈로그_실버 (만능카탈로그실버) 
+12581 EFST_SEARCH_STORE_INFO	0			// 이름 : 만능_카탈로그_골드 (만능카탈로그골드)
+12591 EFST_SEARCH_STORE_INFO	0			// 이름 : 만능_카탈로그_브론즈 (만능카탈로그브론즈)
+
+12658 EFST_REUSE_LIMIT_MTF 10		// 변신스크롤_데비루치
+12659 EFST_REUSE_LIMIT_MTF 10		// 변신스크롤_레이드릭아쳐
+12660 EFST_REUSE_LIMIT_MTF 10		// 변신스크롤_마브카
+12661 EFST_REUSE_LIMIT_MTF 10		// 변신스크롤_마르두크
+12662 EFST_REUSE_LIMIT_MTF 10		// 변신스크롤_밴시
+12663 EFST_REUSE_LIMIT_MTF 10		// 변신스크롤_포링
+12664 EFST_REUSE_LIMIT_MTF 10		// 변신스크롤_고렘
+12622 EFST_ALL_RIDING_REUSE_LIMIT 3 // 탑승시스템 재사용 대기 3초								
+
+12812 EFST_REUSE_LIMIT_ECL 5		// ?????
+12813 EFST_REUSE_LIMIT_ECL 5		// ?????
+12814 EFST_REUSE_LIMIT_ECL 5		// ???
+12815 EFST_REUSE_LIMIT_ECL 5		// ??????
+
+12786 EFST_REUSE_LIMIT_E 1	// ??????	
