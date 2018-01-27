@@ -13,7 +13,7 @@ quest {
 }
 
 quest {
-	quest_info (1003, "Job Changes to Acolyte")
+	quest_info (1003, "복사 전직")
 }
 
 quest {
@@ -58,6 +58,522 @@ quest {
 
 quest {
 	quest_info (1014, "검사 전직")
+}
+
+//-- 1100 ~ 1999 박성혁
+// 혼자놀기상자 퀘미션	
+	
+quest {	
+	quest_info (1100, "특훈, 스핑크스 던전에서 혼자 놀기!")
+        hunt("ZEROM", 20)	
+}	
+	
+quest {	
+	quest_info (1101, "특훈, 스핑크스 던전에서 혼자 놀기!")
+        hunt("REQUIEM", 20)	
+}	
+	
+quest {	
+	quest_info (1102, "특훈, 시계탑에서 혼자 놀기!")
+        hunt("ARCLOUSE", 40)	
+}	
+	
+quest {	
+	quest_info (1103, "특훈, 시계탑에서 혼자 놀기!")
+        hunt("HIGH_ORC", 30)	
+}	
+	
+quest {	
+	quest_info (1104, "특훈, 용지성에서 혼자 놀기!")
+        hunt("CHUNG_E", 20)	
+}	
+	
+quest {	
+	quest_info (1105, "특훈, 용지성에서 혼자 놀기!")
+        hunt("CIVIL_SERVANT", 50)	
+}	
+	
+quest {	
+	quest_info (1106, "특훈, 아마쯔 던전에서 혼자 놀기!")
+        hunt("THE_PAPER", 20)	
+}	
+	
+quest {	
+	quest_info (1107, "특훈, 아마쯔 던전에서 혼자 놀기!")
+        hunt("ANTIQUE_FIRELOCK", 40)	
+}	
+	
+quest {	
+	quest_info (1108, "특훈, 용지성에서 혼자 놀기!")
+        hunt("CHUNG_E_", 20)	
+}	
+
+//-- 2010 에피소드 14.1
+quest {
+	quest_info (1109, "로페와 유리디 - 미궁숲의 생존자")
+}
+
+quest {
+	quest_info (1110, "로페와 유리디 - 모두가 피해자")
+}
+
+quest {
+	quest_info (1111, "로페와 유리디 - 미궁숲으로")
+}
+
+quest {
+	quest_info (1112, "로페와 유리디 - 어디든 미궁")
+}
+
+quest {
+	quest_info (1113, "로페와 유리디 - 조각난 약속")
+}
+
+quest {
+	quest_info (1114, "로페와 유리디 - 희생의 대가")
+}
+
+quest {
+	quest_info (1115, "로페와 유리디 - 심연의 노래")
+}
+
+quest {
+	quest_info (1116, "로페와 유리디 - 망자의 노래")
+}
+
+quest {
+	quest_info (1117, "로페와 유리디 - 영원의 약속, 결별의 반지")
+}
+
+quest {
+	quest_info (1118, "동네기사단 - 단서가 궁금해")
+}
+
+quest {
+ 	quest_info (1119, "동네기사단 - 두목의 심부름")
+	time(82800)
+}
+
+//----------추석이벤트-----------------------------
+quest {
+	quest_info (1120, "머나먼 곳, 벨테 말랑의 고향은 그곳! - 이즈루드산 구운 떡")
+}
+quest {
+	quest_info (1121, "머나먼 곳, 벨테 말랑의 고향은 그곳! - 신속배달, 구운 떡")
+}
+quest {
+	quest_info (1122, "머나먼 곳, 벨테 말랑의 고향은 그곳! - 인절미 먹는 원숭이")
+	hunt("YOYO", 50)
+}
+quest {
+	quest_info (1123, "머나먼 곳, 벨테 말랑의 고향은 그곳! - 이제 그만!")
+	time(82800)
+}
+quest {
+	quest_info (1124, "머나먼 곳, 벨테 말랑의 고향은 그곳! - 강강술래 전문가")
+}
+quest {
+	quest_info (1125, "머나먼 곳, 벨테 말랑의 고향은 그곳! - 축제가면 50개")
+}
+quest {
+	quest_info (1126, "머나먼 곳, 벨테 말랑의 고향은 그곳! - 송편 킬러")
+}
+quest {
+	quest_info (1127, "머나먼 곳, 벨테 말랑의 고향은 그곳! - 호랑이석상 낙서")
+}
+quest {
+	quest_info (1128, "머나먼 곳, 벨테 말랑의 고향은 그곳! - 춤추는 청소부")
+}
+quest {
+	quest_info (1129, "머나먼 곳, 벨테 말랑의 고향은 그곳! - 담장소년")
+}
+quest {
+	quest_info (1130, "머나먼 곳, 벨테 말랑의 고향은 그곳! - 춤추는 청소부")
+}
+quest {
+	quest_info (1131, "머나먼 곳, 벨테 말랑의 고향은 그곳! - 고목황소")
+}
+quest {
+	quest_info (1132, "머나먼 곳, 벨테 말랑의 고향은 그곳! - 춤추는 청소부")
+}
+quest {
+	quest_info (1133, "머나먼 곳, 벨테 말랑의 고향은 그곳! - 담벼락 요정")
+}
+quest {
+	quest_info (1134, "머나먼 곳, 벨테 말랑의 고향은 그곳! - 춤추는 청소부")
+}
+quest {
+	quest_info (1135, "머나먼 곳, 벨테 말랑의 고향은 그곳! - 대문 선장")
+}
+quest {
+	quest_info (1136, "머나먼 곳, 벨테 말랑의 고향은 그곳! - 춤추는 청소부")
+}
+quest {
+	quest_info (1137, "머나먼 곳, 벨테 말랑의 고향은 그곳! - 권을 깨달은 자")
+}
+quest {
+	quest_info (1138, "머나먼 곳, 벨테 말랑의 고향은 그곳! - 춤추는 청소부")
+}
+quest {
+	quest_info (1139, "머나먼 곳, 벨테 말랑의 고향은 그곳! - 우정을 위해")
+}
+quest {
+	quest_info (1140, "머나먼 곳, 벨테 말랑의 고향은 그곳! - 고향찾기 종료")
+        time(82800)
+}
+quest {
+	quest_info (1141, "머나먼 곳, 벨테 말랑의 고향은 그곳! - 강강술래 전문가")
+}
+quest {
+	quest_info (1142, "머나먼 곳, 벨테 말랑의 고향은 그곳! - 1차 완료")
+}
+quest {
+	quest_info (1143, "머나먼 곳, 벨테 말랑의 고향은 그곳! - 2차 완료")
+}
+quest {
+	quest_info (1144, "머나먼 곳, 벨테 말랑의 고향은 그곳! - 떡펫 지급")
+}
+
+
+//---------말랑도 일일퀘스트 - 불량 고양이 돕기 --------------------------------
+
+quest {
+	quest_info (1145, "위기에 처한 불량 고양이들을 도와라!")
+}
+quest {
+	quest_info (1146, "위기에 처한 불량 고양이들을 도와라!")
+}
+quest {
+	quest_info (1147, "위기에 처한 불량 고양이들을 도와라!")
+}
+quest {
+	quest_info (1148, "위기에 처한 불량 고양이들을 도와라!")
+}
+quest {
+	quest_info (1149, "위기에 처한 불량 고양이들을 도와라!")
+}
+quest {
+	quest_info (1150, "위기에 처한 불량 고양이들을 도와라!")
+}
+quest {
+	quest_info (1151, "위기에 처한 불량 고양이들을 도와라!")
+}
+quest {
+	quest_info (1152, "위기에 처한 불량 고양이들을 도와라! - 종료")
+        time(82800)
+}
+
+quest {
+	quest_info (1153, "위기에 처한 불량 고양이들을 도와라!")
+}
+quest {
+	quest_info (1154, "위기에 처한 불량 고양이들을 도와라!")
+	hunt("RED_ERUMA", 20)
+}
+quest {
+	quest_info (1155, "위기에 처한 불량 고양이들을 도와라!")
+}
+
+//----------가정의 달 이벤트 '동요하는 동네합창단'
+
+quest {
+	quest_info (1156, "동요하는 동네합창단")
+}
+
+quest {
+	quest_info (1157, "동요하는 동네합창단")
+}
+
+quest {
+	quest_info (1158, "동요하는 동네합창단")
+}
+
+quest {
+	quest_info (1159, "동요하는 동네합창단")
+}
+
+quest {
+	quest_info (1160, "동요하는 동네합창단")
+}
+
+quest {
+	quest_info (1161, "동요하는 동네합창단")
+}
+
+quest {
+	quest_info (1162, "동요하는 동네합창단")
+}
+
+quest {
+	quest_info (1163, "동요하는 동네합창단")
+}
+
+quest {
+	quest_info (1164, "동요하는 동네합창단")
+}
+
+quest {
+	quest_info (1165, "동요하는 동네합창단")
+}
+
+quest {
+	quest_info (1166, "동요하는 동네합창단")
+}
+
+quest {
+	quest_info (1167, "동요하는 동네합창단")
+}
+
+quest {
+	quest_info (1168, "동요하는 동네합창단")
+}
+
+quest {
+	quest_info (1169, "동요하는 동네합창단")
+}
+
+quest {
+	quest_info (1170, "동요하는 동네합창단")
+}
+
+quest {
+	quest_info (1171, "동요하는 동네합창단")
+}
+
+quest {
+	quest_info (1172, "동요하는 동네합창단")
+}
+
+quest {
+	quest_info (1173, "동요하는 동네합창단")
+}
+
+//--포트말라야----필리핀 로컬라이징 바코나와 입장퀘스트
+
+quest {
+	quest_info (1174, "소문과 세월과 전설")
+}
+
+quest {
+	quest_info (1175, "소문과 세월과 전설")
+}
+
+quest {
+	quest_info (1176, "소문과 세월과 전설")
+}
+
+quest {
+	quest_info (1177, "소문과 세월과 전설")
+}
+
+quest {
+	quest_info (1178, "소문과 세월과 전설")
+}
+
+quest {
+	quest_info (1179, "소문과 세월과 전설")
+}
+
+quest {
+	quest_info (1180, "바코나와를 물리쳐라!")
+        qitem("TIYANAK", "Lost_Belongings", 30)
+}
+
+quest {
+	quest_info (1181, "바코나와를 물리쳐라!")
+        qitem("TIYANAK", "Lost_Belongings", 30)
+}
+
+quest {
+	quest_info (1182, "바코나와를 물리쳐라!")
+        qitem("TIYANAK", "Lost_Belongings", 30)
+}
+
+quest {
+	quest_info (1184, "바코나와를 물리쳐라!")
+}
+
+quest {
+	quest_info (1185, "바코나와를 물리쳐라!")
+}
+
+quest {
+	quest_info (1186, "바코나와를 물리쳐라!")
+        hunt("TIKBALANG", 15)
+}
+
+quest {
+	quest_info (1187, "바코나와를 물리쳐라!")
+}
+
+quest {
+	quest_info (1188, "바코나와를 물리쳐라!")
+}
+
+quest {
+	quest_info (1189, "바코나와를 물리쳐라!")
+}
+
+quest {
+	quest_info (1190, "바코나와를 물리쳐라!")
+}
+
+quest {
+	quest_info (1191, "바코나와를 물리쳐라!")
+}
+
+quest {
+	quest_info (1192, "바코나와를 물리쳐라!")
+}
+
+quest {
+	quest_info (1193, "바코나와를 물리쳐라!")
+}
+
+//----------2011 x-mas event
+
+quest {
+	quest_info (1194, "창밖을 보라, 너구리 만세단!")
+}
+
+quest {
+	quest_info (1195, "창밖을 보라, 너구리 만세단!")
+}
+
+quest {
+	quest_info (1196, "창밖을 보라, 너구리 만세단!")
+}
+
+quest {
+	quest_info (1197, "창밖을 보라, 너구리 만세단!")
+}
+
+quest {
+	quest_info (1198, "창밖을 보라, 너구리 만세단!")
+}
+
+quest {
+	quest_info (1199, "창밖을 보라, 너구리 만세단!")
+}
+
+quest {
+	quest_info (1200, "창밖을 보라, 너구리 만세단!")
+}
+
+quest {
+	quest_info (1201, "창밖을 보라, 너구리 만세단!")
+}
+
+quest {
+	quest_info (1202, "창밖을 보라, 너구리 만세단!")
+}
+
+quest {
+	quest_info (1203, "창밖을 보라, 너구리 만세단!")
+}
+
+quest {
+	quest_info (1204, "창밖을 보라, 너구리 만세단!")
+}
+
+quest {
+	quest_info (1205, "창밖을 보라, 너구리 만세단!")
+}
+
+quest {
+	quest_info (1206, "창밖을 보라, 너구리 만세단!")
+}
+
+quest {
+	quest_info (1207, "창밖을 보라, 너구리 만세단!")
+}
+
+quest {
+	quest_info (1208, "창밖을 보라, 너구리 만세단!")
+}
+
+quest {
+	quest_info (1209, "창밖을 보라, 너구리 만세단!")
+}
+
+quest {
+	quest_info (1210, "창밖을 보라, 너구리 만세단!")
+}
+
+quest {
+	quest_info (1211, "창밖을 보라, 너구리 만세단!")
+}
+
+quest {
+	quest_info (1212, "창밖을 보라, 너구리 만세단!")
+}
+
+quest {
+	quest_info (1213, "창밖을 보라, 너구리 만세단!")
+}
+//----------ep14.2
+
+quest {
+	quest_info (1214, "프로페서 웜의 기억 찾기")
+}
+
+quest {
+	quest_info (1215, "프로페서 웜의 기억 찾기")
+}
+
+quest {
+	quest_info (1216, "프로페서 웜의 기억 찾기")
+        qitem("PETAL", "Star_Shape_Mushroom", 30)
+}
+
+quest {
+	quest_info (1217, "프로페서 웜의 기억 찾기")
+}
+
+quest {
+	quest_info (1218, "프로페서 웜의 기억 찾기")
+}
+
+quest {
+	quest_info (1219, "프로페서 웜의 기억 찾기")
+}
+
+quest {
+	quest_info (1220, "프로페서 웜의 기억 찾기")
+}
+
+quest {
+	quest_info (1221, "프로페서 웜의 기억 찾기")
+}
+
+quest {
+	quest_info (1222, "프로페서 웜의 기억 찾기")
+}
+
+quest {
+	quest_info (1223, "프로페서 웜의 기억 찾기")
+}
+
+quest {
+	quest_info (1224, "프로페서 웜의 기억 찾기")
+}
+
+quest {
+	quest_info (1225, "프로페서 웜의 기억 찾기")
+        hunt("LICHTERN_B", 15)
+}
+
+quest {
+	quest_info (1226, "프로페서 웜의 기억 찾기")
+}
+
+quest {
+	quest_info (1227, "프로페서 웜의 기억 찾기")
+        qitem("PETAL", "Star_Shape_Mushroom", 30)
+}
+
+quest {
+	quest_info (1228, "프로페서 웜의 기억 찾기")
 }
 
 // 조미정 
@@ -837,6 +1353,225 @@ quest {
 	quest_info (2225, "새해 인사")
 	time(3600)
 }
+//-- 2010 월드컵 이벤트	
+quest {	
+	quest_info (2226, "월드컵 32강 1승")
+}	
+quest {	
+	quest_info (2227, "월드컵 32강 2승")
+}	
+quest {	
+	quest_info (2228, "월드컵 32강 3승")
+}	
+quest {	
+	quest_info (2229, "월드컵 16강")
+}	
+quest {	
+	quest_info (2230, "월드컵 8강")
+}	
+quest {	
+	quest_info (2231, "월드컵 4강")
+}	
+quest {	
+	quest_info (2232, "월드컵 결승")
+}	
+quest {	
+	quest_info (2233, "월드컵 우승")
+}	
+	
+//quest {
+//	quest_info (2234, "란드그리스")
+//}
+
+quest {
+	quest_info (2234,"신급초기화")
+}
+
+//-------- 2010 성탄 ------------
+quest {
+	quest_info (2235, "장난감 공장과 종횡무진 루달프단!")
+	hunt("G_CRUISER",10)
+}
+quest {
+	quest_info (2236, "장난감 공장과 종횡무진 루달프단!")
+	hunt("G_MYSTCASE",10)
+}
+quest {
+	quest_info (2237, "장난감 공장과 종횡무진 루달프단!")
+	hunt("E_KNIGHT_OF_WINDSTORM",1)
+}
+quest {
+	quest_info (2238, "에토일과 루드비히")
+	hunt("WILOW",2)
+}
+quest {
+	quest_info (2239, "에토일과 루드비히")
+	hunt("ELDER_WILOW",2)
+}
+quest {
+	quest_info (2240, "에토일과 루드비히")
+	hunt("ORK_WARRIOR",2)
+}
+quest {
+	quest_info (2241, "에토일과 루드비히")
+	hunt("ORC_LADY",2)
+}
+quest {
+	quest_info (2242, "에토일과 루드비히")
+	hunt("MUMMY",4)
+}
+quest {
+	quest_info (2243, "에토일과 루드비히")
+	hunt("VERIT",4)
+}
+quest {
+	quest_info (2244, "에토일과 루드비히")
+	hunt("MARC",4)
+}
+
+quest {
+	quest_info (2245, "에토일과 루드비히")
+	hunt("SWORD_FISH",4)
+}
+quest {
+	quest_info (2246, "에토일과 루드비히")
+	hunt("PETIT",4)
+}
+quest {
+	quest_info (2247, "에토일과 루드비히")
+	hunt("PETIT_",4)
+}
+quest {
+	quest_info (2248, "에토일과 루드비히")
+	hunt("SPRING_RABBIT",4)
+}
+quest {
+	quest_info (2249, "에토일과 루드비히")
+	hunt("PEST",4)
+}
+quest {
+	quest_info (2250, "에토일과 루드비히")
+	hunt("DESERT_WOLF",4)
+}
+quest {
+	quest_info (2251, "에토일과 루드비히")
+	hunt("SNOWIER",4)
+}
+quest {
+	quest_info (2252, "에토일과 루드비히")
+	hunt("KOBOLD_3",4)
+}
+quest {
+	quest_info (2253, "에토일과 루드비히")
+	hunt("KOBOLD_2",4)
+}
+quest {
+	quest_info (2254, "에토일과 루드비히")
+	hunt("ANTONIO",1)
+}
+quest {
+	quest_info (2255, "에토일과 루드비히")
+	hunt("CRYSTAL_1",1)
+}
+
+//임시점검용
+quest {
+	quest_info (2270, "러블레앙의 특별한 서비스")
+	time(82800)
+}
+
+//------------ 필리핀 로컬라이징 ------포트말라야--------------
+quest {
+	quest_info (2271, "숲 속의 비밀")
+
+}
+
+quest {
+	quest_info (2272, "숲 속의 비밀")
+
+}
+
+quest {
+	quest_info (2273, "숲 속의 비밀")
+
+}
+
+quest {
+	quest_info (2274, "숲 속의 비밀")
+
+}
+
+quest {
+	quest_info (2275, "숲 속의 비밀")
+
+}
+
+quest {
+	quest_info (2276, "숲 속의 비밀")
+
+}
+
+quest {
+	quest_info (2277, "숲 속의 비밀")
+
+}
+
+quest {
+	quest_info (2278, "숲 속의 비밀")
+
+}
+
+quest {
+	quest_info (2279, "숲 속의 비밀")
+
+}
+
+quest {
+	quest_info (2280, "숲 속의 비밀")
+
+}
+
+quest {
+	quest_info (2281, "부워여 처치")
+	hunt("BUWAYA", 1)
+
+}
+
+//-------피시방이벤트------------------
+quest {
+	quest_info (2282, "곤의 부탁 - 발굴타임!")
+	time(21600)
+
+}
+quest {
+	quest_info (2283, "진의 부탁 - 배송준비")
+	time(21600)
+
+}
+quest {
+	quest_info (2284, "해저동굴의 위험")
+	hunt ("SROPHO", 100)
+	hunt ("SEDORA", 100)
+	hunt ("KING_DRAMOH", 100)
+}
+
+quest {
+	quest_info (2285, "식성 좋은 애완동물")
+}
+
+quest {
+	quest_info (2286, "경품자동응모 완료")
+}
+
+quest {
+	quest_info (2287, "리셋이벤트:초기화완료")
+}
+
+quest {
+	quest_info (2288, "리셋이벤트:초기화완료")
+}
+
+
 
 // 김은동 
 quest {
@@ -1016,10 +1751,6 @@ quest {
 quest {
 	quest_info (3043, "마력깃든 인형의 정체 - 진정한 마제스틱 고우트는?")
 }
-
-quest {		
-	quest_info (3044, "The true Gigantic Magestic Goat?")	
-}	
 
 quest {
 	quest_info (3060, "베인스의 남매 - 동생은 어디에?")
@@ -1301,12 +2032,6 @@ quest {
 quest {
 	quest_info (3135, "세계수의 손상 - 둥지의 안정화")
 	time(259200)
-}
-
-quest {
-	quest_info (3136, "World Tree damaged - The nest stabilization")
-	time(14400)
-//	time(1200)
 }
 
 quest {
@@ -1614,8 +2339,567 @@ quest {
 	time(86400)
 }
 
-//-- 5000 ~ 한덕연
-//- 개구리모자 ~5004 현재 미적용
+
+// 낙원단 등록
+quest {
+	quest_info(4150, "낙원단원 되기")
+}
+
+
+// 호문클루스 연구 종결자 (임시)
+quest {
+	quest_info (4154, "호문클루스 연구 종결자")
+}
+
+quest {
+	quest_info (4155, "호문클루스 S 변이 임무 - 1")
+}
+
+quest {
+	quest_info (4156, "호문클루스 S 변이 임무 - 2")
+}
+
+quest {
+	quest_info (4157, "호문클루스 S 변이 임무 - 3")
+}
+
+quest {
+	quest_info (4158, "호문클루스 S 변이 임무 - 4")
+}
+
+quest {
+	quest_info (4159, "호문클루스 S 변이 임무 - 5")
+}
+
+quest {
+	quest_info (4160, "호문클루스 S 변이 임무 - 6")
+}
+
+//-- 낙원단 튜토리얼
+quest {
+	quest_info (4161, "튜토리얼<달인을 만나라1>")
+}
+
+quest {
+	quest_info (4162, "튜토리얼<달인을 만나라2>")
+}
+
+quest {
+	quest_info (4163, "튜토리얼<달인을 만나라3>")
+}
+
+quest {
+	quest_info (4164, "튜토리얼<달인을 만나라4>")
+}
+
+quest {
+	quest_info (4165, "튜토리얼<달인을 만나라5>")
+}
+
+quest {
+	quest_info (4166, "튜토리얼 걸 에게 보상받기")
+}
+
+// 낙원단 86 ~ 90
+quest {
+	quest_info (4167, "드래곤테일 사냥")
+	hunt("DRAGON_TAIL", 30)
+}
+
+quest {
+	quest_info (4168, "스프링 래빗 사냥")
+	hunt("SPRING_RABBIT", 30)
+}
+
+quest {
+	quest_info (4169, "페스트 사냥")
+	hunt("PEST", 30)
+}
+
+quest {
+	quest_info (4170, "바소리 사냥")
+	hunt("BATHORY", 30)
+}
+
+quest {
+	quest_info (4171, "알람 사냥")
+	hunt("ALARM", 30)
+}
+
+quest {
+	quest_info (4172, "바바야가 사냥")
+	hunt("VAVAYAGA", 30)
+}
+
+quest {
+	quest_info (4173, "혜군 사냥")
+	hunt("HYEGUN", 30)
+}
+
+quest {
+	quest_info (4174, "구식 조총병 사냥")
+	hunt("ANTIQUE_FIRELOCK", 30)
+}
+
+quest {
+	quest_info (4175, "지퍼베어 사냥")
+	hunt("ZIPPER_BEAR", 30)
+}
+
+quest {
+	quest_info (4176, "지상 쁘띠 사냥")
+	hunt("PETIT", 30)
+}
+
+quest {
+	quest_info (4177, "라플레시아 사냥")
+	hunt("RAFFLESIA", 30)
+}
+
+quest {
+	quest_info (4178, "베노머스 사냥")
+	hunt("VENOMOUS", 30)
+}
+
+quest {
+	quest_info (4179, "핏맨 사냥")
+	hunt("PITMAN", 30)
+}
+
+quest {
+	quest_info (4180, "노랑 노버스 사냥")
+	hunt("NOVUS_", 30)
+}
+
+// 낙원단 91 ~ 99
+quest {
+	quest_info (4181, "솔리더 사냥")
+	hunt("SOLIDER", 30)
+}
+
+quest {
+	quest_info (4182, "프리저 사냥")
+	hunt("FREEZER", 30)
+}
+
+quest {
+	quest_info (4183, "힛터 사냥")
+	hunt("HEATER", 30)
+}
+
+quest {
+	quest_info (4184, "인저스티스 사냥")
+	hunt("INJUSTICE", 30)
+}
+
+quest {
+	quest_info (4185, "리비오 사냥")
+	hunt("RYBIO", 30)
+}
+
+quest {
+	quest_info (4186, "다크 프리스트 사냥")
+	hunt("DARK_PRIEST", 30)
+}
+
+quest {
+	quest_info (4187, "스태포 사냥")
+	hunt("STAPO", 30)
+}
+
+quest {
+	quest_info (4188, "로우윈 사냥")
+	hunt("ROWEEN", 30)
+}
+
+quest {
+	quest_info (4189, "시로마 사냥")
+	hunt("SIROMA", 30)
+}
+
+quest {
+	quest_info (4190, "시노비 사냥")
+	hunt("SHINOBI", 30)
+}
+
+quest {
+	quest_info (4191, "요선녀 사냥")
+	hunt("WICKED_NYMPH", 30)
+}
+
+quest {
+	quest_info (4192, "데비루치 사냥")
+	hunt("DEVIRUCHI", 30)
+}
+
+quest {
+	quest_info (4193, "미네랄 사냥")
+	hunt("MINERAL", 30)
+}
+
+quest {
+	quest_info (4194, "카호 사냥")
+	hunt("KAHO", 30)
+}
+
+quest {
+	quest_info (4195, "네레이드 사냥")
+	hunt("NERAID", 30)
+}
+
+quest {
+	quest_info (4196, "디스가이즈 사냥")
+	hunt("DISGUISE", 30)
+}
+
+// 말랑도 문어 던전 //
+quest {
+ quest_info (4197,"지금은청소중")
+	time(3600)
+}
+
+// 낙원단 시간 제한 추가 (86 ~90)
+quest {
+	quest_info (4198, "드래곤테일 처리 - 대기 중")
+	time(10800)
+}
+
+quest {
+	quest_info (4199, "스프링 래빗 처리 - 대기 중")
+	time(10800)
+}
+
+quest {
+	quest_info (4200, "페스트 처리 - 대기 중")
+	time(10800)
+}
+
+quest {
+	quest_info (4201, "바소리 처리 - 대기 중")
+	time(10800)
+}
+
+quest {
+	quest_info (4202, "알람 처리 - 대기 중")
+	time(10800)
+}
+
+quest {
+	quest_info (4203, "바바야가 처리 - 대기 중")
+	time(10800)
+}
+
+quest {
+	quest_info (4204, "혜군 처리 - 대기 중")
+	time(10800)
+}
+
+quest {
+	quest_info (4205, "구식 조총병 처리 - 대기 중")
+	time(10800)
+}
+
+quest {
+	quest_info (4206, "지퍼베어 처리 - 대기 중")
+	time(10800)
+}
+
+quest {
+	quest_info (4207, "지상 쁘띠 처리 - 대기 중")
+	time(10800)
+}
+
+quest {
+	quest_info (4208, "라플레시아 처리 - 대기 중")
+	time(10800)
+}
+
+quest {
+	quest_info (4209, "베노머스 처리 - 대기 중")
+	time(10800)
+}
+
+quest {
+	quest_info (4210, "핏맨 처리 - 대기 중")
+	time(10800)
+}
+
+quest {
+	quest_info (4211, "노랑 노버스 처리 - 대기 중")
+	time(10800)
+}
+
+
+// 낙원단 시간 제한 추가 (91 ~ 99)
+quest {
+	quest_info (4212, "솔리더 처리 - 대기 중")
+	time(10800)
+}
+
+quest {
+	quest_info (4213, "프리저 처리 - 대기 중")
+	time(10800)
+}
+
+quest {
+	quest_info (4214, "힛터 처리 - 대기 중")
+	time(10800)
+}
+
+quest {
+	quest_info (4215, "인저스티스 처리 - 대기 중")
+	time(10800)
+}
+
+quest {
+	quest_info (4216, "리비오 처리 - 대기 중")
+	time(10800)
+}
+
+quest {
+	quest_info (4217, "다크 프리스트 처리 - 대기 중")
+	time(10800)
+}
+
+quest {
+	quest_info (4218, "스태포 처리 - 대기 중")
+	time(10800)
+}
+
+quest {
+	quest_info (4219, "로우윈 처리 - 대기 중")
+	time(10800)
+}
+
+quest {
+	quest_info (4220, "시로마 처리 - 대기 중")
+	time(10800)
+}
+
+quest {
+	quest_info (4221, "시노비 처리 - 대기 중")
+	time(10800)
+}
+
+quest {
+	quest_info (4222, "요선녀 처리 - 대기 중")
+	time(10800)
+}
+
+quest {
+	quest_info (4223, "데비루치 처리 - 대기 중")
+	time(10800)
+}
+
+quest {
+	quest_info (4224, "미네랄 처리 - 대기 중")
+	time(10800)
+}
+
+quest {
+	quest_info (4225, "카호 처리 - 대기 중")
+	time(10800)
+}
+
+quest {
+	quest_info (4226, "네레이드 처리 - 대기 중")
+	time(10800)
+}
+
+quest {
+	quest_info (4227, "디스가이즈 처리 - 대기 중")
+	time(10800)
+}
+
+//-- 이벤트
+quest {
+	quest_info (4228, "존다 이벤트")
+}
+
+//- 포트 말라야
+quest {
+	quest_info (4229, "부워여의 동굴")
+	time(82800)
+}
+
+// -----------------------할로윈 이벤트 2011.11월
+quest {
+	quest_info (4230, "할로윈 데이")
+}
+
+quest {
+	quest_info (4231, "할로윈 데이")
+}
+
+quest {
+	quest_info (4232, "할로윈 데이")
+}
+
+quest {
+	quest_info (4233, "할로윈 데이")
+}
+
+quest {
+	quest_info (4234, "할로윈 데이")
+}
+
+quest {
+	quest_info (4235, "할로윈 데이")
+}
+
+quest {
+	quest_info (4236, "할로윈 데이")
+}
+
+quest {
+	quest_info (4237, "할로윈 데이")
+}
+
+quest {
+	quest_info (4238, "할로윈 데이")
+}
+
+quest {
+	quest_info (4239, "할로윈 데이")
+}
+
+quest {
+	quest_info (4240, "할로윈 데이")
+}
+
+quest {
+	quest_info (4241, "할로윈 데이")
+}
+
+quest {
+	quest_info (4242, "할로윈 데이")
+}
+
+quest {
+	quest_info (4243, "할로윈 데이")
+}
+
+quest {
+	quest_info (4244, "할로윈 데이")
+}
+
+quest {
+	quest_info (4245, "할로윈 데이")
+}
+
+quest {
+	quest_info (4246, "할로윈 데이")
+}
+
+quest {
+	quest_info (4247, "할로윈 데이")
+}
+
+quest {
+	quest_info (4248, "할로윈 데이")
+}
+
+quest {
+	quest_info (4249, "할로윈 데이")
+}
+
+quest {
+	quest_info (4250, "할로윈 데이")
+}
+
+quest {
+	quest_info (4251, "할로윈 데이")
+}
+
+quest {
+	quest_info (4252, "할로윈 데이")
+}
+
+quest {
+	quest_info (4253, "할로윈 데이")
+}
+
+//-ep14.2
+quest {
+	quest_info (4254, "장난꾸러기들")
+}
+
+quest {
+	quest_info (4255, "장난꾸러기들")
+	hunt("MENBLATT", 20)
+}
+
+quest {
+	quest_info (4256, "장난꾸러기들")
+}
+
+quest {
+	quest_info (4257, "장난꾸러기들")
+}
+
+quest {
+	quest_info (4258, "장난꾸러기들")
+}
+
+quest {
+	quest_info (4259, "장난꾸러기들")
+}
+
+quest {
+	quest_info (4260, "장난꾸러기들")
+}
+
+quest {
+	quest_info (4261, "장난꾸러기들")
+}
+
+quest {
+	quest_info (4262, "장난꾸러기들")
+}
+
+quest {
+	quest_info (4263, "장난꾸러기들")
+}
+
+quest {
+	quest_info (4264, "장난꾸러기들")
+}
+
+quest {
+	quest_info (4265, "장난꾸러기들")
+}
+
+quest {
+	quest_info (4266, "스킬초기화 완료")
+}
+
+quest {
+	quest_info (4267, "스탯초기화 완료")
+}
+
+//--------------- 5000 ~ 한덕연-------------------------------------
+//- 개구리모자 ~5004 	
+quest{	
+	quest_info(5000, "멸족위기")
+}	
+	
+quest{	
+	quest_info(5001, "동족의 복수")
+	hunt("SIDE_WINDER", 50)
+}	
+	
+quest{	
+	quest_info(5002, "개구리의 영웅")
+}	
+	
+quest{	
+	quest_info(5003, "개구리은신술")
+}	
+	
+quest{	
+	quest_info(5004, "먹이부족")
+	hunt("ARGIOPE", 50)
+}	
 
 
 //-- 2010년 발렌타인이벤트
@@ -1673,6 +2957,566 @@ quest {
 	quest_info (5015, "모로크 안내요원")
 	time(10800)
 }
+
+//---- 2010년 에피소드 14.1
+
+quest {
+	quest_info (5016, "연구도구를 가져다 줘")
+}
+
+quest {
+	quest_info (5017, "연구원의 복수")
+}
+
+quest {
+	quest_info (5018, "연구원의 복수")
+}
+
+quest {
+	quest_info (5019, "목욕탕 연구 표본 채취")
+}
+
+quest {
+	quest_info (5020, "표본 검사 중")
+	time(86400)
+}
+
+quest {
+	quest_info (5021, "이빨 표본 수집")
+}
+
+quest {
+	quest_info (5022, "비늘 표본 수집")
+}
+
+quest {
+	quest_info (5023, "표본 검사 중")
+	time(21600)
+}
+
+quest {
+	quest_info (5024, "동쪽 웅덩이 조사")
+}
+
+quest {
+	quest_info (5025, "서쪽 웅덩이 조사")
+}
+
+quest {
+	quest_info (5026, "남쪽 웅덩이 조사")
+}
+
+quest {
+	quest_info (5027, "북쪽 웅덩이 조사")
+}
+
+quest {
+	quest_info (5028, "표본 검사 중")
+	time(43200)
+}
+
+quest {
+	quest_info (5029, "미확인 생명체")
+	time(3600)
+}
+
+quest {
+	quest_info (5030, "꼬기의 부탁")
+}
+
+quest {
+	quest_info (5031, "꼬기의 부탁")
+}
+
+quest {
+	quest_info (5032, "꼬기의 부탁")
+}
+
+quest {
+	quest_info (5033, "꼬기의 부탁")
+}
+
+quest {
+	quest_info (5034, "가족의 소식")
+}
+
+//-- 데와타 dewata
+quest {
+	quest_info (5035, "데와타 섬 - 전통음료")
+}
+
+quest {
+	quest_info (5036, "데와타 섬 - 전통음료")
+}
+
+quest {
+	quest_info (5037, "데와타 섬 - 전통음료")
+}
+
+quest {
+	quest_info (5038, "데와타 섬 - 전통음료")
+}
+
+quest {
+	quest_info (5039, "데와타 섬 - 전통음료")
+}
+
+quest {
+	quest_info (5040, "데와타 섬 - 전통음료")
+}
+
+quest {
+	quest_info (5041, "데와타 섬 - 전통음료")
+}
+
+quest {
+	quest_info (5042, "데와타 섬 - 전통음료")
+}
+
+quest {
+	quest_info (5043, "데와타 섬 - 전통음료")
+	time(300)
+}
+
+quest {
+	quest_info (5044, "데와타 섬 - 전통음료")
+	time(86400)
+}
+
+quest {
+	quest_info (5045, "데와타 섬 - 전통음료")
+}
+
+quest {
+	quest_info (5046, "데와타 섬 - 전통음료")
+}
+
+quest {
+	quest_info (5047, "데와타 섬 - 전통음료")
+}
+
+quest {
+	quest_info (5048, "데와타 섬 - 전통음료")
+}
+
+quest {
+	quest_info (5049, "데와타 섬 - 전통음료")
+}
+
+quest {
+	quest_info (5050, "데와타 섬 - 전통음료")
+}
+
+quest {
+	quest_info (5051, "데와타 섬 - 전통음료")
+}
+
+quest {
+	quest_info (5052, "데와타 섬 - 전통무기")
+}
+
+quest {
+	quest_info (5053, "데와타 섬 - 전통무기")
+}
+
+quest {
+	quest_info (5054, "데와타 섬 - 전통무기")
+}
+
+
+//--- 낙원단 퀘스트
+quest {
+	quest_info (5055, "로컬라이징 - 머리없는 말")
+	hunt("HEADLESS_MULE", 15)
+}
+
+quest {
+	quest_info (5056, "로컬라이징 - 탐루안")
+	hunt("TAMRUAN", 15)
+}
+
+quest {
+	quest_info (5057, "로컬라이징 - 축제 가면")
+}
+
+
+//- 말랑도
+quest {
+	quest_info (5058, "냥게이머메인_01")
+}
+
+quest {
+	quest_info (5059, "냥게이머메인_02")
+}
+
+quest {
+	quest_info (5060, "냥게이머메인_03")
+	time(180)
+}
+
+quest {
+	quest_info (5061, "냥게이머메인_04")
+}
+
+quest {
+	quest_info (5062, "냥게이머메인_05")
+}
+
+quest {
+	quest_info (5063, "냥게이머메인_06")
+}
+
+quest {
+	quest_info (5064, "냥게이머메인_07")
+}
+
+quest {
+	quest_info (5065, "냥게이머메인_08")
+}
+
+quest {
+	quest_info (5066, "냥게이머메인_09")
+}
+
+quest {
+	quest_info (5067, "냥게이머메인_10")
+}
+
+quest {
+	quest_info (5068, "냥게이머메인_11")
+	time(72000)
+}
+
+quest {
+	quest_info (5069, "냥게이머메인_12")
+	time(3600)
+}
+
+quest {
+	quest_info (5070, "냥게이머_가위쿨")
+	time(86400)
+}
+
+quest {
+	quest_info (5071, "냥게이머_참참쿨")
+	time(86400)
+}
+
+quest {
+	quest_info (5072, "냥게이머_꽁냥쿨")
+	time(86400)
+}
+
+quest {
+	quest_info (5073, "냥게이머_깃발쿨")
+	time(86400)
+}
+
+quest {
+	quest_info (5074, "냥게이머일일_01")
+	hunt("PHEN", 30)
+}
+
+quest {
+	quest_info (5075, "냥게이머일일_02")
+	hunt("MARSE", 50)
+}
+
+quest {
+	quest_info (5076, "냥게이머일일_03")
+	hunt("KOBOLD_ARCHER", 30)
+}
+
+quest {
+	quest_info (5077, "냥게이머일일_04")
+	hunt("CRAMP", 10)
+}
+
+quest {
+	quest_info (5078, "냥게이머일일_05")
+	hunt("PECOPECO", 50)
+}
+
+quest {
+	quest_info (5079, "냥게이머일일_06")
+}
+
+quest {
+	quest_info (5080, "냥게이머일일_07")
+}
+
+quest {
+	quest_info (5081, "냥게이머일일_08")
+}
+
+quest {
+	quest_info (5082, "냥게이머일일_09")
+}
+
+quest {
+	quest_info (5083, "냥게이머일일_10")
+}
+
+quest {
+	quest_info (5084, "냥게이머일일_11")
+}
+
+quest {
+	quest_info (5085, "냥게이머일일_12")
+}
+
+quest {
+	quest_info (5086, "냥게이머일일_13")
+}
+
+quest {
+	quest_info (5087, "냥게이머일일_14")
+}
+
+quest {
+	quest_info (5088, "냥게이머일일_15")
+}
+
+quest {
+	quest_info (5089, "냥게이머일일_16")
+}
+
+quest {
+	quest_info (5090, "냥게이머일일_17")
+}
+
+quest {
+	quest_info (5091, "말랑도로 출발")
+}
+
+//-------- 노비스 레벨 돌파
+quest {
+	quest_info (5092, "노비스 한계돌파")
+}
+
+quest {
+	quest_info (5093, "노비스 한계돌파")
+}
+
+quest {
+	quest_info (5094, "노비스 한계돌파")
+	hunt("PORING", 1000)
+}
+
+quest {
+	quest_info (5095, "노비스 한계돌파")
+	hunt("LUNATIC", 1000)
+}
+
+quest {
+	quest_info (5096, "노비스 한계돌파")
+	hunt("FABRE", 1000)
+}
+
+quest {
+	quest_info (5097, "노비스 한계돌파")
+	hunt("PICKY", 1000)
+}
+
+quest {
+	quest_info (5098, "노비스 한계돌파")
+}
+
+quest {
+	quest_info (5099, "노비스 한계돌파")
+}
+
+quest {
+	quest_info (5100, "노비스 한계돌파")
+}
+
+//------ 20110209 valentineday----
+quest {
+	quest_info (5101, "천사진영을 선택하셨습니다.")
+}
+
+quest {
+	quest_info (5102, "악마진영을 선택하셨습니다.")
+}
+
+quest {
+	quest_info (5103, "[천사] 기다려주세요!!")
+	time(7200)
+}
+
+quest {
+	quest_info (5104, "[천사진영] 세력확장!!")
+}
+
+quest {
+	quest_info (5105, "[천사진영] 방해공작!!")
+	hunt("E_QUVE", 7)
+}
+
+quest {
+	quest_info (5106, "[악마] 기다려라!!")
+	time(7200)
+}
+
+quest {
+	quest_info (5107, "[악마진영] 세력확장!!")
+}
+
+quest {
+	quest_info (5108, "[악마진영] 방해공작!!")
+	hunt("EVENT_LUDE", 7)
+}
+
+
+//==== 생체던전 4층 퀘스트 5109 - 5125
+quest {
+	quest_info (5109, "생체던전 4층 퀘스트01")
+}
+
+quest {
+	quest_info (5110, "생체던전 4층 퀘스트02")
+}
+
+quest {
+	quest_info (5111, "생체던전 4층 퀘스트03")
+}
+
+quest {
+	quest_info (5112, "생체던전 4층 퀘스트04")
+	time(259200)
+}
+
+quest {
+  quest_info (5113, "생체던전 4층 퀘스트05")
+  hunt("B_SEYREN", 1)
+}
+
+quest {
+  quest_info (5114, "생체던전 4층 퀘스트06")
+  hunt("B_RANDEL", 1)
+}
+
+quest {
+  quest_info (5115, "생체던전 4층 퀘스트07")
+  hunt("B_MAGALETA", 1)
+}
+
+quest {
+  quest_info (5116, "생체던전 4층 퀘스트08")
+  hunt("B_CHEN", 1)
+}
+
+quest {
+  quest_info (5117, "생체던전 4층 퀘스트09")
+  hunt("B_KATRINN", 1)
+}
+
+quest {
+  quest_info (5118, "생체던전 4층 퀘스트10")
+  hunt("B_CELIA", 1)
+}
+
+quest {
+  quest_info (5119, "생체던전 4층 퀘스트11")
+  hunt("B_HARWORD", 1)
+}
+
+quest {
+  quest_info (5120, "생체던전 4층 퀘스트12")
+  hunt("B_FLAMEL", 1)
+}
+
+quest {
+  quest_info (5121, "생체던전 4층 퀘스트13")
+  hunt("B_EREMES", 1)
+}
+
+quest {
+  quest_info (5122, "생체던전 4층 퀘스트14")
+  hunt("B_GERTIE", 1)
+}
+
+quest {
+  quest_info (5123, "생체던전 4층 퀘스트15")
+  hunt("B_SHECIL", 1)
+}
+
+quest {
+  quest_info (5124, "생체던전 4층 퀘스트16")
+  hunt("B_ALPHOCCIO", 1)
+}
+
+quest {
+  quest_info (5125, "생체던전 4층 퀘스트17")
+  hunt("B_TRENTINI", 1)
+}
+
+// 카게로우-오보로 전직 퀘스트
+quest {
+	quest_info (5131, "카게로우-오보로_01")
+}
+
+quest {
+	quest_info (5132, "카게로우-오보로_02")
+}
+
+quest {
+	quest_info (5133, "카게로우-오보로_03")
+}
+
+quest {
+	quest_info (5134, "카게로우-오보로_04")
+}
+
+quest {
+	quest_info (5135, "카게로우-오보로_05")
+}
+
+quest {
+	quest_info (5136, "카게로우-오보로_06")
+}
+
+quest {
+	quest_info (5137, "카게로우-오보로_07")
+}
+
+quest {
+	quest_info (5138, "카게로우-오보로_08")
+}
+
+quest {
+	quest_info (5139, "카게로우-오보로_09")
+}
+
+quest {
+	quest_info (5140, "카게로우-오보로_10")
+}
+
+quest {
+	quest_info (5141, "카게로우-오보로_11")
+	time(120)
+}
+
+quest {
+	quest_info (5142, "카게로우-오보로_12")
+}
+
+quest {
+	quest_info (5143, "카게로우-오보로_13")
+}
+
+quest {
+	quest_info (5144, "카게로우-오보로_14")
+}
+
+quest {
+	quest_info (5145, "카게로우-오보로_15")
+}
+
+quest {
+	quest_info (5146, "카게로우-오보로_16")
+}
+
 
 
 // 권오민 //태권 
@@ -2623,6 +4467,1126 @@ quest {
 	quest_info (7203, "최종보고")
 }
 
+// 2010 꽃놀이	
+quest {	
+	quest_info (7204, "봄이보고싶어요")
+}	
+	
+//-- 2010 에피소드 14.1	
+//--- 체셔의 심부름 2	
+quest {	
+	quest_info (7206, "새로운체셔의일")
+}	
+	
+quest {	
+	quest_info (7207, "새로운체셔의일")
+}	
+	
+quest {	
+	quest_info (7208, "새로운체셔의일")
+	time(86400)
+}	
+	
+quest {	
+	quest_info (7209, "새로운체셔의일")
+}	
+	
+quest {	
+	quest_info (7210, "새로운체셔의일")
+}	
+	
+//------방황하는 수호자	
+quest {	
+	quest_info (7211, "안개숲의거부")
+	time(9000)
+}	
+	
+quest {	
+	quest_info (7212, "방황하는수호자")
+}	
+	
+quest {	
+	quest_info (7213, "방황하는수호자")
+}	
+
+//--- 낙원단 고급 수련 (낙원단 교관 우르)------------------------
+quest {
+	quest_info (7214, "상급훈련 1단계 코모도")
+}
+
+quest {
+	quest_info (7215, "첫번째 토벌")
+	hunt("STALACTIC_GOLEM", 3)
+}
+
+quest {
+	quest_info (7216, "동굴 돌파")
+	hunt("STALACTIC_GOLEM", 30)
+}
+
+quest {
+	quest_info (7217, "필드 정리")
+}
+
+quest {
+	quest_info (7218, "우르에게")
+}
+
+quest {
+	quest_info (7219, "상급훈련 2단계 고성")
+}
+
+quest {
+	quest_info (7220, "고성 첫번째")
+	hunt("WRAITH", 20)
+}
+
+quest {
+	quest_info (7221, "고성 두번째")
+	hunt("EVIL_DRUID", 10)
+}
+
+quest {
+	quest_info (7222, "우르에게")
+}
+
+quest {
+	quest_info (7223, "상급훈련 3단계 아인브로크")
+}
+
+quest {
+	quest_info (7224, "풀셀리오 퇴치")
+	hunt("PORCELLIO", 30)
+}
+
+quest {
+	quest_info (7225, "녹시,베노,곰")
+	hunt("NOXIOUS", 30)
+}
+
+quest {
+	quest_info (7226, "녹시,베노,곰")
+	hunt("VENOMOUS", 30)
+}
+
+quest {
+	quest_info (7227, "녹시,베노,곰")
+	hunt("TEDDY_BEAR", 5)
+}
+
+quest {
+	quest_info (7228, "우르에게")
+}
+
+quest {
+	quest_info (7229, "낙원단 고급수련")
+}
+
+quest {
+	quest_info (7230, "낙원단 고급수련")
+	hunt("SIROMA", 30)
+}
+
+quest {
+	quest_info (7231, "낙원단 고급수련")
+	hunt("SIROMA", 30)
+}
+
+quest {
+	quest_info (7232, "낙원단 고급수련")
+}
+
+quest {
+	quest_info (7233, "낙원단 고급수련")
+}
+
+quest {
+	quest_info (7234, "낙원단 고급수련")
+}
+
+quest {
+	quest_info (7235, "낙원단 고급수련")
+	hunt("NEPENTHES", 1)
+}
+
+quest {
+	quest_info (7236, "낙원단 고급수련")
+	hunt("PINGUICULA", 5)
+}
+
+quest {
+	quest_info (7237, "우르에게")
+}
+
+quest {
+	quest_info (7238, "토른의 심부름 저레벨")
+}
+
+quest {
+	quest_info (7239, "토른의 심부름 고레벨")
+}
+
+quest {
+	quest_info (7240, "장비강화 1회권")
+}
+
+quest {
+	quest_info (7241, "토른의 심부름-내일도")
+	time(86400)
+}
+
+//--- 말랑도 야옹 모험단
+
+quest {
+	quest_info (7242, "냐드벤처-라토의부탁")
+}
+
+quest {
+	quest_info (7243, "냐드벤처-두루두루시작")
+}
+
+quest {
+	quest_info (7244, "냐드벤처-두루두루A")
+	time(180)
+}
+
+quest {
+	quest_info (7245, "냐드벤처-두루두루B")
+	time(180)
+}
+
+quest {
+	quest_info (7246, "냐드벤처-지금만나러")
+}
+
+quest {
+	quest_info (7247, "냐드벤처-쾅돌이")
+}
+
+//-- 7248(사용안함)
+
+quest {
+	quest_info (7249, "냐드벤처-쾅돌이내일")
+	time(86400)
+}
+
+quest {
+	quest_info (7250, "냐드벤처-숨겨진보물")
+}
+
+quest {
+	quest_info (7251, "냐드벤처-그림조각")
+}
+
+quest {
+	quest_info (7252, "냐드벤처-그림조각")
+}
+
+quest {
+	quest_info (7253, "냐드벤처-그림조각")
+}
+
+quest {
+	quest_info (7254, "냐드벤처-그림조각")
+}
+
+quest {
+	quest_info (7255, "냐드벤처-그림조각")
+}
+
+quest {
+	quest_info (7256, "냐드벤처-그림조각")
+}
+
+quest {
+	quest_info (7257, "냐드벤처-달리기내일")
+	time(86400)
+}
+
+quest {
+	quest_info (7258, "냐드벤처-그림조각")
+}
+
+quest {
+	quest_info (7259, "냐드벤처-완성된그림")
+}
+
+
+//------말랑도 고양이건빵
+quest {
+	quest_info (7260, "고양이건빵-벌레발생")
+}
+
+quest {
+	quest_info (7261, "고양이건빵-선장실")
+}
+
+quest {
+	quest_info (7262, "고양이건빵-선실")
+}
+
+quest {
+	quest_info (7263, "고양이건빵-집회실")
+}
+
+quest {
+	quest_info (7264, "조리장냐스에게")
+}
+
+quest {
+	quest_info (7265, "냐스의분노")
+}
+
+quest {
+	quest_info (7266, "냐스의선언")
+}
+
+quest {
+	quest_info (7267, "클리냥과약속")
+	time(86400)
+}
+
+quest {
+	quest_info (7268, "고양이건빵수거")
+}
+
+quest {
+	quest_info (7269, "고양이건빵-수풀")
+}
+
+quest {
+	quest_info (7270, "고양이건빵-수상한모래1")
+}
+
+quest {
+	quest_info (7271, "고양이건빵-계단아래")
+}
+
+quest {
+	quest_info (7272, "고양이건빵-캣타워구석")
+}
+
+quest {
+	quest_info (7273, "고양이건빵-사물함구석")
+}
+
+quest {
+	quest_info (7274, "고양이건빵-캣타워발판")
+}
+
+quest {
+	quest_info (7275, "고양이건빵-수상한모래2")
+}
+
+quest {
+	quest_info (7276, "식재료납품약속")
+	time(86400)
+}
+
+//덱요리
+quest {
+	quest_info (7281, "요리를 가져와")
+}
+
+quest {
+	quest_info (7282, "요리를 가져와")
+}
+
+quest {
+	quest_info (7283, "요리를 가져와")
+}
+
+quest {
+	quest_info (7284, "요리를 가져와")
+}
+
+quest {
+	quest_info (7285, "요리를 가져와")
+}
+
+quest {
+	quest_info (7286, "요리를 가져와")
+}
+
+quest {
+	quest_info (7287, "요리를 가져와")
+}
+
+quest {
+	quest_info (7288, "요리를 가져와")
+}
+
+quest {
+	quest_info (7289, "요리를 가져와")
+}
+
+quest {
+	quest_info (7290, "요리를 가져와")
+}
+
+//힘요리
+quest {
+	quest_info (7291, "요리를 가져와")
+}
+
+quest {
+	quest_info (7292, "요리를 가져와")
+}
+
+quest {
+	quest_info (7293, "요리를 가져와")
+}
+
+quest {
+	quest_info (7294, "요리를 가져와")
+}
+
+quest {
+	quest_info (7295, "요리를 가져와")
+}
+
+quest {
+	quest_info (7296, "요리를 가져와")
+}
+
+quest {
+	quest_info (7297, "요리를 가져와")
+}
+
+quest {
+	quest_info (7298, "요리를 가져와")
+}
+
+quest {
+	quest_info (7299, "요리를 가져와")
+}
+
+quest {
+	quest_info (7300, "요리를 가져와")
+}
+
+//어질요리
+quest {
+	quest_info (7301, "요리를 가져와")
+}
+
+quest {
+	quest_info (7302, "요리를 가져와")
+}
+
+quest {
+	quest_info (7303, "요리를 가져와")
+}
+
+quest {
+	quest_info (7304, "요리를 가져와")
+}
+
+quest {
+	quest_info (7305, "요리를 가져와")
+}
+
+quest {
+	quest_info (7306, "요리를 가져와")
+}
+
+quest {
+	quest_info (7307, "요리를 가져와")
+}
+
+quest {
+	quest_info (7308, "요리를 가져와")
+}
+
+quest {
+	quest_info (7309, "요리를 가져와")
+}
+
+quest {
+	quest_info (7310, "요리를 가져와")
+}
+
+//바탈요리
+quest {
+	quest_info (7311, "요리를 가져와")
+}
+
+quest {
+	quest_info (7312, "요리를 가져와")
+}
+
+quest {
+	quest_info (7313, "요리를 가져와")
+}
+
+quest {
+	quest_info (7314, "요리를 가져와")
+}
+
+quest {
+	quest_info (7315, "요리를 가져와")
+}
+
+quest {
+	quest_info (7316, "요리를 가져와")
+}
+
+quest {
+	quest_info (7317, "요리를 가져와")
+}
+
+quest {
+	quest_info (7318, "요리를 가져와")
+}
+
+quest {
+	quest_info (7319, "요리를 가져와")
+}
+
+quest {
+	quest_info (7320, "요리를 가져와")
+}
+
+//인트요리
+quest {
+	quest_info (7321, "요리를 가져와")
+}
+
+quest {
+	quest_info (7322, "요리를 가져와")
+}
+
+quest {
+	quest_info (7323, "요리를 가져와")
+}
+
+quest {
+	quest_info (7324, "요리를 가져와")
+}
+
+quest {
+	quest_info (7325, "요리를 가져와")
+}
+
+quest {
+	quest_info (7326, "요리를 가져와")
+}
+
+quest {
+	quest_info (7327, "요리를 가져와")
+}
+
+quest {
+	quest_info (7328, "요리를 가져와")
+}
+
+quest {
+	quest_info (7329, "요리를 가져와")
+}
+
+quest {
+	quest_info (7330, "요리를 가져와")
+}
+
+
+//럭요리
+quest {
+	quest_info (7331, "요리를 가져와")
+}
+
+quest {
+	quest_info (7332, "요리를 가져와")
+}
+
+quest {
+	quest_info (7333, "요리를 가져와")
+}
+
+quest {
+	quest_info (7334, "요리를 가져와")
+}
+
+quest {
+	quest_info (7335, "요리를 가져와")
+}
+
+quest {
+	quest_info (7336, "요리를 가져와")
+}
+
+quest {
+	quest_info (7337, "요리를 가져와")
+}
+
+quest {
+	quest_info (7338, "요리를 가져와")
+}
+
+quest {
+	quest_info (7339, "요리를 가져와")
+}
+
+quest {
+	quest_info (7340, "요리를 가져와")
+}
+
+//20요리
+quest {
+	quest_info (7341, "요리를 가져와")
+}
+
+quest {
+	quest_info (7342, "요리를 가져와")
+}
+
+quest {
+	quest_info (7343, "요리를 가져와")
+}
+
+quest {
+	quest_info (7344, "요리를 가져와")
+}
+
+quest {
+	quest_info (7345, "요리를 가져와")
+}
+
+quest {
+	quest_info (7346, "요리를 가져와")
+}
+
+//-- 2011 새해 이벤트 말랑도 문어축제
+quest {
+	quest_info (7347, "맛있는 문어구이")
+	time(1800)
+}
+
+//-- 2011 페르시카
+quest {
+	quest_info (7348, "페르시카")
+}
+
+//--- 아지트 투자전 추가투표
+quest {
+	quest_info (7349, "재투표")
+	time(7200)
+}
+
+//-----------2011 포트말라야 일일퀘 걸작선
+quest {
+	quest_info (7350, "경계하는 마을")
+}
+
+quest {
+	quest_info (7351, "내 낡은 단추보다 좋은 것")
+}
+
+quest {
+	quest_info (7352, "단추라도-선원")
+}
+
+quest {
+	quest_info (7353, "단추라도-노인")
+}
+
+quest {
+	quest_info (7354, "단추라도-판도이")
+}
+
+quest {
+	quest_info (7355, "단추라도-상인")
+}
+
+quest {
+	quest_info (7356, "단추라도-탈라")
+}
+
+quest {
+	quest_info (7357, "단추라도-로멜")
+}
+
+quest {
+	quest_info (7358, "그들이 단추를 원하는 이유")
+}
+
+quest {
+	quest_info (7359, "선원에게 성물전달")
+}
+
+quest {
+	quest_info (7360, "노인에게 성물전달")
+}
+
+quest {
+	quest_info (7361, "판도이에게 성물전달")
+}
+
+quest {
+	quest_info (7362, "상인에게 성물전달")
+}
+
+quest {
+	quest_info (7363, "탈라에게 성물전달")
+}
+
+quest {
+	quest_info (7364, "로멜에게 성물전달")
+}
+
+quest {
+	quest_info (7365, "내 낡은 단추보다 좋은 것2")
+}
+
+quest {
+	quest_info (7366, "수호물과 소녀1")
+}
+
+quest {
+	quest_info (7367, "수호물과 소녀2")
+		time(600)
+}
+
+quest {
+	quest_info (7368, "선원에게 수호물전달")
+}
+
+quest {
+	quest_info (7369, "노인에게 수호물전달")
+}
+
+quest {
+	quest_info (7370, "판도이에게 수호물전달")
+}
+
+quest {
+	quest_info (7371, "상인에게 수호물전달")
+}
+
+quest {
+	quest_info (7372, "탈라에게 수호물전달")
+}
+
+quest {
+	quest_info (7373, "로멜에게 수호물전달")
+}
+
+quest {
+	quest_info (7374, "사랑과 수호물은 모두에게")
+}
+
+quest {
+	quest_info (7375, "사랑과 수호물은 모두에게")
+	time(82800)
+}
+
+quest {
+	quest_info (7376, "노인과 무쇠솥1")
+}
+
+quest {
+	quest_info (7377, "노인과 무쇠솥2")
+}
+
+quest {
+	quest_info (7378, "노인과 무쇠솥-대기")
+	time(82800)
+}
+
+quest {
+	quest_info (7379, "평화전도사")
+}
+
+quest {
+	quest_info (7380, "전통수호물 제작을 위해")
+}
+
+quest {
+	quest_info (7381, "수호물의 재료-대기")
+	time(82800)
+}
+
+quest {
+	quest_info (7382, "선원에게 전달완료")
+}
+
+quest {
+	quest_info (7383, "노인에게 전달완료")
+}
+
+quest {
+	quest_info (7384, "판도이에게 전달완료")
+}
+
+quest {
+	quest_info (7385, "상인에게 전달완료")
+}
+
+quest {
+	quest_info (7386, "탈라에게 전달완료")
+}
+
+quest {
+	quest_info (7387, "로멜에게 전달완료")
+}
+
+quest {
+	quest_info (7388, "마리스의 아이1")
+}
+
+quest {
+	quest_info (7389, "마리스의 아이2")
+}
+
+quest {
+	quest_info (7390, "마리스의 아이-대기")
+	time(82800)
+}
+
+quest {
+	quest_info (7391, "제제제젤로피")
+	qitem("JEJELING", "Jejellopy", 50)
+}
+
+quest {
+	quest_info (7392, "제제제젤로피-대기")
+	time(82800)
+}
+
+quest {
+	quest_info (7393, "반짝반짝 실버블레이드")
+	hunt("TIYANAK", 10)
+	hunt("MANANANGGAL", 10)
+}
+
+quest {
+	quest_info (7394, "내일도 반짝반짝")
+	time(82800)
+}
+
+quest {
+	quest_info (7395, "페리호의 영혼")
+}
+
+quest {
+	quest_info (7396, "페리호의 화내는 영혼")
+}
+
+quest {
+	quest_info (7397, "페리호의 디와타")
+}
+
+quest {
+	quest_info (7398, "페리호의 디와타")
+}
+
+quest {
+	quest_info (7399, "페리호의 디와타")
+}
+
+quest {
+	quest_info (7400, "포트말라야의뭄바키")
+}
+
+quest {
+	quest_info (7401, "페리안정화-대기")
+	time(82800)
+}
+
+quest {
+	quest_info (7402, "디와타와 꽃다발")
+	qitem("ENGKANTO", "Elegant_Flower", 30)
+}
+
+quest {
+	quest_info (7403, "페리호의 디와타")
+}
+
+quest {
+	quest_info (7404, "제젤링 퇴치")
+	hunt("JEJELING", 20)	
+}
+
+quest {
+	quest_info (7405, "제젤링 퇴치-대기")
+	time(82800)
+}
+
+quest {
+ quest_info (7406, "반타이 뼈다귀")
+ qitem("TIKBALANG", "Evil_Bone", 100)
+ qitem("TIYANAK", "Evil_Bone", 100)
+ qitem("BUNGISNGIS", "Evil_Bone", 100)
+}
+
+quest {
+	quest_info (7407, "반타이 뼈다귀")
+}
+
+quest {
+	quest_info (7408, "반타이 뼈다귀-대기")
+	time(82800)
+}
+
+quest {
+	quest_info (7409, "붕이승이스 퇴치")
+	hunt("BUNGISNGIS", 10)	
+}
+
+quest {
+	quest_info (7410, "붕이승이스-내일도")
+	time(82800)
+}
+
+//ep14.2 에클라쥬
+quest {
+	quest_info (7411, "에클라쥬 여행자 포메")
+}
+
+quest {
+	quest_info (7412, "에클라쥬 여행자 리트립")
+}
+
+quest {
+	quest_info (7413, "에클라쥬 여행자 치바")
+}
+
+quest {
+	quest_info (7414, "에클라쥬 가드의 전언")
+}
+
+quest {
+	quest_info (7415, "라피네의 군수참모")
+}
+
+quest {
+	quest_info (7416, "만남을 위한 기다림")
+	time(600)
+}
+
+quest {
+	quest_info (7417, "카르듀이의 제안")
+}
+
+quest {
+	quest_info (7418, "에클라쥬를 위해")
+}
+
+quest {
+	quest_info (7419, "에클라쥬를 위해")
+}
+
+quest {
+	quest_info (7420, "에클라쥬를 위해")
+}
+
+quest {
+	quest_info (7421, "그 정도면 충분해")
+}
+
+quest {
+	quest_info (7422, "카르듀이의 선물")
+}
+
+quest {
+	quest_info (7423, "왕에 대한 소문")
+}
+
+quest {
+	quest_info (7424, "왕에 대한 소문")
+}
+
+quest {
+	quest_info (7425, "왕에 대한 소문")
+}
+
+quest {
+	quest_info (7426, "왕에 대한 소문")
+}
+
+quest {
+	quest_info (7427, "이럴땐 정공법이다!")
+}
+
+quest {
+	quest_info (7428, "야성미 넘치는 야이")
+}
+
+quest {
+	quest_info (7429, "최근의 트랜드는 야성")
+	time(82800)
+}
+
+quest {
+	quest_info (7430, "공간을 달리는 배달부")
+}
+
+quest {
+	quest_info (7431, "우편배달부는 쉬지않아!")
+	time(82800)
+}
+
+quest {
+	quest_info (7432, "꽃이 피어난 대지의 말썽꾼")
+	hunt("MENBLATT", 5)
+	hunt("PETAL", 5)
+}
+
+quest {
+	quest_info (7433, "꾸준한 산책이 필요하다.")
+	time(82800)
+}
+
+//- 형제와 마학자
+quest {
+	quest_info (7434, "쌍둥이와 마학자")
+}
+
+quest {
+	quest_info (7435, "쌍둥이와 마학자")
+	time(180)
+}
+
+quest {
+	quest_info (7436, "쌍둥이와 마학자")
+}
+
+quest {
+	quest_info (7437, "쌍둥이와 마학자")
+}
+
+quest {
+	quest_info (7438, "쌍둥이와 마학자")
+}
+
+quest {
+	quest_info (7439, "쌍둥이와 마학자")
+}
+
+quest {
+	quest_info (7440, "쌍둥이와 마학자")
+}
+
+quest {
+	quest_info (7441, "쌍둥이와 마학자")
+}
+
+quest {
+	quest_info (7442, "쌍둥이와 마학자")
+}
+
+quest {
+	quest_info (7443, "쌍둥이와 마학자")
+}
+
+quest {
+	quest_info (7444, "쌍둥이와 마학자")
+}
+
+//오브
+quest {
+	quest_info (7445, "오브탈취")
+}
+
+quest {
+	quest_info (7446, "오브탈취")
+}
+
+quest {
+	quest_info (7447, "오브탈취")
+}
+
+quest {
+	quest_info (7448, "오브탈취")
+}
+
+quest {
+	quest_info (7449, "오브탈취")
+}
+
+quest {
+	quest_info (7450, "오브탈취")
+}
+
+quest {
+	quest_info (7451, "오브탈취")
+}
+
+quest {
+	quest_info (7452, "오브탈취")
+}
+
+quest {
+	quest_info (7453, "오브탈취")
+}
+
+// 2012 발렌타인화이트 이벤트
+quest {
+	quest_info (7454, "2012발렌타인")
+}
+
+quest {
+	quest_info (7455, "2012발렌타인")
+}
+
+quest {
+	quest_info (7456, "2012발렌타인")
+}
+
+quest {
+	quest_info (7457, "2012발렌타인")
+}
+
+quest {
+	quest_info (7458, "2012발렌타인")
+}
+
+quest {
+	quest_info (7459, "2012발렌타인")
+	time(82800)
+}
+
+quest {
+	quest_info (7460, "2012발렌타인")
+}
+
+quest {
+	quest_info (7461, "2012발렌타인")
+}
+
+quest {
+	quest_info (7462, "2012발렌타인")
+}
+
+quest {
+	quest_info (7463, "2012발렌타인")
+}
+
+quest {
+	quest_info (7464, "2012발렌타인")
+}
+
+quest {
+	quest_info (7465, "2012발렌타인")
+}
+
+quest {
+	quest_info (7466, "2012발렌타인")
+}
+
+quest {
+	quest_info (7467, "2012발렌타인")
+	time(82800)
+}
+
+quest {
+	quest_info (7468, "2012발렌타인")
+}
+
+quest {
+	quest_info (7469, "2012발렌타인")
+	time(82800)
+}
+
 // 이경숙 
 quest {
 	quest_info (8000, "어쌔전직")
@@ -3234,15 +6198,10 @@ quest {
 
 quest {
 	quest_info (8152, "모스코비아 불사신 코쉐이 퀘스트")
-	time (3600)
 }
 
 quest {
 	quest_info (8153, "모스코비아 불사신 코쉐이 퀘스트")
-}
-
-quest {
-	quest_info (8154, "모스코비아 불사신 코쉐이 퀘스트")
 }
 
 quest {
@@ -3825,11 +6784,6 @@ quest {
 	quest_info (9018, "위자드 인증 완료!")
 }
 
-quest { 
-	quest_info (9020,"Cargo Delivery Quest")
- 	time(86400)
-}
-
 // 프론테라 - 아인브로크의 심부름꾼
 
 quest {
@@ -3863,6 +6817,440 @@ quest {
 	time(86400)
 }
 
+//--- 150레벨 달성
+quest {
+	quest_info (9142, "150레벨 달성")
+}
+
+// DEWATA
+
+quest {
+	quest_info (9155, "자티 왕관 제작 재료 구하기")
+}
+
+quest {
+	quest_info (9156, "자티 왕관 제작")
+}
+
+quest {
+	quest_info (9157, "현자 카시아파의 보답")
+}
+
+quest {
+	quest_info (9158, "경사스러운 소식 전하기(1)")
+}
+
+quest {
+	quest_info (9159, "파이코에게 돌아가기")
+}
+
+quest {
+	quest_info (9160, "경사스러운 소식 전하기(2)")
+}
+
+quest {
+	quest_info (9161, "파이코에게 돌아가기")
+}
+
+quest {
+	quest_info (9162, "경사스러운 소식 전하기(3)")
+}
+
+quest {
+	quest_info (9163, "파이코에게 돌아가기")
+}
+
+quest {
+	quest_info (9164, "경사스러운 소식 전하기(4)")
+}
+
+quest {
+	quest_info (9165, "자티왕관의 제작 성공과 파이코의 보답")
+}
+
+
+// 한국 : 튜토리얼 Ver.2 김도연, 2010 (s2piegel@live.com)
+
+quest {
+	quest_info (9167, "튜토리얼<용병 고용하기>")
+}
+
+quest {
+	quest_info (9168, "튜토리얼<퀘스트 창 확인하기>")
+}
+
+quest {
+	quest_info (9169, "튜토리얼<만능 카탈로그 실버 구입하기>")
+}
+
+quest {
+	quest_info (9170, "튜토리얼<노점 검색 사용 하기>")
+}
+
+quest {
+	quest_info (9171, "튜토리얼<재료 구해오기>")
+}
+
+quest {
+	quest_info (9172, "튜토리얼<인챈트 완료 된 장비 구경하기>")
+}
+
+quest {
+	quest_info (9173, "튜토리얼<일일 퀘스트 체험하기>")
+	time(72000)
+}
+
+// -----------------------------------------------------------------------------------------
+// 10년 PC방 일퀘: "이즈루드 던전의 이상현상" Update: 10-11-16
+// -----------------------------------------------------------------------------------------
+
+quest {
+	quest_info (9179, "이즈루드 던전의 이상현상(1)")
+}
+
+quest {
+	quest_info (9180, "이즈루드 던전의 이상현상(2)")
+	hunt ("SROPHO", 30)
+	hunt ("SEDORA", 30)
+	hunt ("POT_DOFLE", 30)
+}
+
+quest {
+	quest_info (9181, "이즈루드 던전의 이상현상(3)")
+}
+
+quest {
+	quest_info (9182, "이즈루드 던전의 이상현상(4)")
+	time(64800)
+}
+
+quest {
+	quest_info (9183, "이상한 지역 탐험")
+}
+
+quest {
+	quest_info (9184, "이상한 지역 탐험 - 대기 중")
+	time(64800)
+}
+
+quest {
+	quest_info (9185, "이상한 지역 탐험 - 진행 1-1")
+}
+
+quest {
+	quest_info (9186, "이상한 지역 탐험 - 진행 1-2")
+}
+
+quest {
+	quest_info (9187, "이상한 지역 탐험 - 진행 2")
+}
+
+// 한국 : 9주년
+
+quest {
+	quest_info (9189, "세계 탄생 9주년<첫 번째 홍보 요원>")
+}
+
+quest {
+	quest_info (9190, "세계 탄생 9주년<이즈루드 홍보>")
+}
+
+quest {
+	quest_info (9191, "세계 탄생 9주년<게펜 홍보>")
+}
+
+quest {
+	quest_info (9192, "세계 탄생 9주년<모로크 홍보>")
+}
+
+quest {
+	quest_info (9193, "세계 탄생 9주년<페이욘 홍보>")
+}
+
+quest {
+	quest_info (9194, "세계 탄생 9주년<알베르타 홍보>")
+}
+
+quest {
+	quest_info (9195, "세계 탄생 9주년<알데바란 홍보>")
+}
+
+quest {
+	quest_info (9196, "세계 탄생 9주년<코모도 홍보>")
+}
+
+quest {
+	quest_info (9197, "세계 탄생 9주년<움발라 홍보>")
+}
+
+quest {
+	quest_info (9198, "세계 탄생 9주년<유노 홍보>")
+}
+
+quest {
+	quest_info (9199, "세계 탄생 9주년<베인스 홍보>")
+}
+
+quest {
+	quest_info (9200, "세계 탄생 9주년<아인브로크 홍보>")
+}
+
+quest {
+	quest_info (9201, "세계 탄생 9주년<리히타르젠 홍보>")
+}
+
+quest {
+	quest_info (9202, "세계 탄생 9주년<니플헤임 홍보>")
+}
+
+quest {
+	quest_info (9203, "세계 탄생 9주년<라헬 홍보>")
+}
+
+quest {
+	quest_info (9204, "세계 탄생 9주년<루티에 홍보>")
+}
+
+quest {
+	quest_info (9205, "세계 탄생 9주년<용지성 홍보>")
+}
+
+quest {
+	quest_info (9206, "세계 탄생 9주년<쿤룬 홍보>")
+}
+
+quest {
+	quest_info (9207, "세계 탄생 9주년<아요타야 홍보>")
+}
+
+quest {
+	quest_info (9208, "세계 탄생 9주년<아마쯔 홍보>")
+}
+
+quest {
+	quest_info (9209, "세계 탄생 9주년<모스코비아 홍보>")
+}
+
+quest {
+	quest_info (9210, "세계 탄생 9주년<브라질리스 홍보>")
+}
+
+quest {
+	quest_info (9211, "세계 탄생 9주년<데와타 홍보>")
+}
+
+quest {
+	quest_info (9212, "세계 탄생 9주년<두 번째 홍보 요원>")
+}
+
+quest {
+	quest_info (9213, "세계 탄생 9주년<세 번째 홍보 요원>")
+}
+
+quest {
+	quest_info (9214, "세계 탄생 9주년<보상 받기>")
+}
+
+quest {
+	quest_info (9215, "세계 탄생 9주년<두 번째 홍보 요원>")
+}
+
+quest {
+	quest_info (9216, "세계 탄생 9주년<세 번째 홍보 요원>")
+}
+
+quest {
+	quest_info (9217, "세계 탄생 9주년<보상 받기>")
+}
+
+quest {
+	quest_info (9218, "세계 탄생 9주년<두 번째 홍보 요원>")
+}
+
+quest {
+	quest_info (9219, "세계 탄생 9주년<세 번째 홍보 요원>")
+}
+
+quest {
+	quest_info (9220, "세계 탄생 9주년<보상 받기>")
+}
+
+quest {
+	quest_info (9221, "세계 탄생 9주년")
+	time(82800)
+}
+
+// 필리핀 로컬라이징 : "벙웅곳 병원 2층" 포트 말라야
+
+quest {
+	quest_info (9222, "병원 2층, 벙웅곳을 퇴치하라")
+	hunt ("BANGUNGOT_3", 1)
+}
+
+quest {
+	quest_info (9223, "병원에는 평화가 찾아왔을까..?")
+	time(601200)
+}
+
+quest {
+	quest_info (9224, "병원 2층 탐사")
+	time(601200)
+}
+
+
+// 한국 : 14.2
+
+quest {
+	quest_info (9225, "미스테리 절도 사건 1")
+}
+
+quest {
+	quest_info (9226, "미스테리 절도 사건 2")
+}
+
+quest {
+	quest_info (9227, "미스테리 절도 사건 3")
+}
+
+quest {
+	quest_info (9228, "미스테리 절도 사건 4")
+}
+
+quest {
+	quest_info (9229, "미스테리 절도 사건 5")
+}
+
+quest {
+	quest_info (9230, "미스테리 절도 사건 6")
+}
+
+quest {
+	quest_info (9231, "미스테리 절도 사건 7")
+}
+
+quest {
+	quest_info (9232, "미스테리 절도 사건 8")
+}
+
+quest {
+	quest_info (9233, "미스테리 절도 사건 9")
+}
+
+quest {
+	quest_info (9234, "미스테리 절도 사건 10")
+}
+
+quest {
+	quest_info (9235, "미스테리 절도 사건 11")
+}
+
+quest {
+	quest_info (9236, "미스테리 절도 사건 12")
+}
+
+quest {
+	quest_info (9237, "미스테리 절도 사건 13")
+}
+
+quest {
+	quest_info (9238, "미스테리 절도 사건 14")
+}
+
+quest {
+	quest_info (9239, "미스테리 절도 사건 15")
+}
+
+quest {
+	quest_info (9262, "미스테리 절도 사건 16")
+}
+
+quest {
+	quest_info (9240, "<루엔의 진술 노트.>")
+}
+
+quest {
+	quest_info (9241, "<루엔의 진술 노트..>")
+}
+
+quest {
+	quest_info (9242, "<루엔의 진술 노트...>")
+}
+
+quest {
+	quest_info (9243, "<루엔의 진술 노트....>")
+}
+
+quest {
+	quest_info (9244, "<데임스의 진술 노트.>")
+}
+
+quest {
+	quest_info (9245, "<데임스의 진술 노트..>")
+}
+
+quest {
+	quest_info (9246, "<데임스의 진술 노트...>")
+}
+
+quest {
+	quest_info (9247, "<데임스의 진술 노트....>")
+}
+
+quest {
+	quest_info (9248, "<로사의 진술 노트.>")
+}
+
+quest {
+	quest_info (9249, "<로사의 진술 노트..>")
+}
+
+quest {
+	quest_info (9250, "<로사의 진술 노트...>")
+}
+
+quest {
+	quest_info (9251, "<로사의 진술 노트....>")
+}
+
+quest {
+	quest_info (9252, "<뽀삐 관찰>")
+}
+
+quest {
+	quest_info (9253, "<어지럽혀진 책장 수색>")
+}
+
+quest {
+	quest_info (9254, "<훼손된 책 수색>")
+}
+
+quest {
+	quest_info (9255, "<음료 바구니 수색>")
+}
+
+quest {
+	quest_info (9256, "<난장판이 된 탁자 수색>")
+}
+
+quest {
+	quest_info (9257, "<떨어진 이물질 수색>")
+}
+
+quest {
+	quest_info (9258, "<현장 검증 결과>")
+}
+
+quest {
+	quest_info (9259, "<크루이안의 진술 확인>")
+	hunt ("MENBLATT", 5)
+	hunt ("PETAL", 30)
+}
+
+quest {
+	quest_info (9260, "<탐문수사 정리 노트>")
+}
+
+
 // ===================== 전장 ======================== 
 quest {
 	quest_info (2069, "마롤 티에라 협곡 전투")
@@ -3873,6 +7261,7 @@ quest {
 	quest_info (2070, "마롤 플라비우스 전투")
 	time(300) 
 }
+
 // 곽동언 //==================== 왕위조례 ======================== 
 quest {
 	quest_info (10000, "프론테라 성으로")
@@ -5149,62 +8538,670 @@ quest {
 	quest_info (11181, "크리스마스를 위하여...")
 }
 
+//--- 2010 에피소드 14.1	
+//비프로스트	
+quest {	
+	quest_info (11182,"테오레의 보고서")
+	time(60)
+}	
+	
+quest {	
+	quest_info (11183, "테오레의 부탁")
+}	
+	
+quest {	
+	quest_info (11184, "도망간 라피네")
+}	
+	
+quest {	
+	quest_info (11185, "작은 주머니")
+}	
+	
+quest {	
+	quest_info (11186, "작은 주머니")
+}	
+	
+quest {	
+	quest_info (11187, "작은 주머니")
+}	
+	
+quest {	
+	quest_info (11188, "작은 주머니")
+}	
+	
+quest {	
+	quest_info (11189, "비프로스트")
+}	
+	
+quest {	
+	quest_info (11190, "비프로스트")
+}	
+	
+quest {	
+	quest_info (11191, "비프로스트의 균열")
+}	
+	
+quest {	
+	quest_info (11192, "모라 마을로...")
+}	
+	
+quest {	
+	quest_info (11193, "쿠스미의 친구")
+}	
+	
+quest {	
+	quest_info (11194, "작은 주머니")
+}	
+	
+quest {	
+	quest_info (11195, "비프로스트")
+}	
+	
+quest {	
+	quest_info (11196, "비프로스트")
+}	
+	
+quest {	
+	quest_info (11197, "비프로스트의 균열")
+}	
+	
+quest {	
+	quest_info (11198, "모라 마을로...")
+}	
+	
+quest {	
+	quest_info (11199, "테오도의 친구")
+}	
+	
+quest {	
+	quest_info (11200, "작은 주머니")
+}	
+	
+quest {	
+	quest_info (11201, "비프로스트")
+}	
+	
+quest {	
+	quest_info (11202, "비프로스트")
+}	
+	
+quest {	
+	quest_info (11203, "비프로스트의 균열")
+}	
+	
+quest {	
+	quest_info (11204, "모라 마을로...")
+}	
+	
+quest {	
+	quest_info (11205, "포숑의 친구")
+}	
+	
+quest {	
+	quest_info (11206, "신속배달 요네스")
+}	
+	
+quest {	
+	quest_info (11207, "아주 무거운 짐")
+}	
+	
+quest {	
+	quest_info (11208, "다프네르")
+}
+
+
+//------- 말랑도
+quest {
+	quest_info (11209, "토마스씨의 고충")
+}
+
+quest {
+	quest_info (11210, "말랑도 정기 집회")
+}
+
+quest {
+	quest_info (11211, "말랑도 정기 집회")
+}
+
+quest {
+	quest_info (11212, "말랑도 정기 집회")
+}
+
+quest {
+	quest_info (11213, "말랑도 정기 집회")
+}
+
+quest {
+	quest_info (11214, "말랑도 정기 집회")
+}
+
+quest {
+	quest_info (11215, "말랑도 정기 집회")
+}
+
+quest {
+	quest_info (11216, "이그드라실 열매")
+}
+
+quest {
+	quest_info (11217, "이그드라실 열매")
+}
+
+quest {
+	quest_info (11218, "이그드라실 열매")
+}
+
+quest {
+	quest_info (11219, "이그드라실 열매")
+}
+
+quest {
+	quest_info (11220, "이그드라실 열매")
+}
+
+quest {
+	quest_info (11221, "세상에서 가장 말랑말랑쫀득쫀득한")
+}
+
+quest {
+	quest_info (11222, "세상에서 가장 말랑말랑쫀득쫀득한")
+}
+
+quest {
+	quest_info (11223, "세상에서 가장 말랑말랑쫀득쫀득한")
+}
+
+quest {
+	quest_info (11224, "세상에서 가장 말랑말랑쫀득쫀득한")
+}
+
+quest {
+	quest_info (11225, "교차하지 않는 노력의 길")
+}
+
+quest {
+	quest_info (11226, "교차하지 않는 노력의 길")
+}
+
+quest {
+	quest_info (11227, "교차하지 않는 노력의 길")
+}
+
+quest {
+	quest_info (11228, "교차하지 않는 노력의 길")
+}
+
+quest {
+	quest_info (11229, "별사탕을 위하여")
+}
+
+quest {
+	quest_info (11230, "별사탕을 위하여")
+}
+
+quest {
+	quest_info (11231, "별사탕을 위하여")
+}
+
+quest {
+	quest_info (11232, "별사탕을 위하여")
+}
+
+quest {
+	quest_info (11233, "별사탕을 위하여")
+}
+
+quest {
+	quest_info (11234, "별사탕을 위하여")
+}
+
+quest {
+	quest_info (11235, "별사탕을 위하여")
+}
+
+quest {
+	quest_info (11236, "교집합")
+}
+
+quest {
+	quest_info (11237, "토마스씨의 고충")
+}
+
+quest {
+	quest_info (11238, "이그드라실 열매")
+}
+
+quest {
+	quest_info (11239, "이그드라실 열매")
+	time(82800)
+}
+
+quest {
+	quest_info (11240, "세상에서 가장 말랑말랑쫀득쫀득한")
+}
+
+quest {
+	quest_info (11241, "세상에서 가장 말랑말랑쫀득쫀득한")
+}
+
+quest {
+	quest_info (11242, "세상에서 가장 말랑말랑쫀득쫀득한")
+}
+
+quest {
+	quest_info (11243, "세상에서 가장 말랑말랑쫀득쫀득한")
+	time(82800)
+}
+
+quest {
+	quest_info (11244, "말랑말랑젤리")
+}
+
+quest {
+	quest_info (11245, "말랑말랑젤리")
+	time(82800)
+}
+
+//-- Pc방 이벤트
+quest {
+	quest_info (11246, "아르바이트 휴식시간")
+	time(82800)
+}
+
+quest {
+	quest_info (11247, "시간은 금!")
+	time(1800)
+}
+
+quest {
+	quest_info (11248, "바알의 노천까페")
+	hunt("KING_DRAMOH", 30)
+}
+
+quest {
+	quest_info (11249, "바알의 노천까페")
+	hunt("SEDORA", 30)
+}
+
+quest {
+	quest_info (11250, "바알의 노천까페")
+}
+
+quest {
+	quest_info (11251, "바알의 노천까페")
+}
+
+quest {
+	quest_info (11252, "바알의 노천까페")
+}
+
+quest {
+	quest_info (11253, "바알의 노천까페")
+}
+
+quest {
+	quest_info (11254, "바알의 노천까페")
+}
+
+// 신급초기화 이벤트 (110420)
+quest {
+	quest_info (11264, "신급초기화")
+}
+
+quest {
+	quest_info (11265, "마리 푸기어")
+     	time(57600)
+}
+
+// - 2011 여름 이벤트
+quest {
+     quest_info (11266, "맛있는 수박 경연 대회 ")
+}
+
+quest {
+     quest_info (11267, "맛있는 수박 경연 대회 ")
+}
+
+quest {
+     quest_info (11268, "맛있는 수박 경연 대회 ")
+}
+
+quest {
+     quest_info (11269, "맛있는 수박 경연 대회 ")
+}
+
+quest {
+     quest_info (11270, "맛있는 수박 경연 대회 ")
+}
+
+quest {
+     quest_info (11271, "맛있는 수박 경연 대회 ")
+}
+
+quest {
+     quest_info (11272, "맛있는 수박 경연 대회 ")
+}
+
+quest {
+     quest_info (11273, "맛있는 수박 경연 대회 ")
+}
+
+quest {
+     quest_info (11274, "맛있는 수박 경연 대회 ")
+}
+
+quest {
+     quest_info (11275, "맛있는 수박 경연 대회 ")
+}
+
+quest {
+     quest_info (11276, "맛있는 수박 경연 대회 ")
+}
+
+quest {
+     quest_info (11277, "맛있는 수박 경연 대회 ")
+}
+
+quest {
+     quest_info (11278, "맛있는 수박 경연 대회 ")
+}
+
+quest {
+     quest_info (11279, "맛있는 수박 경연 대회 ")
+}
+
+quest {
+     quest_info (11280, "맛있는 수박 경연 대회 ")
+}
+
+quest {
+     quest_info (11281, "맛있는 수박 경연 대회 ")
+}
+
+quest {
+     quest_info (11282, "맛있는 수박 경연 대회 ")
+}
+
+quest {
+     quest_info (11283, "맛있는 수박 경연 대회 ")
+}
+
+//- 포트 말라야
+
+quest {
+     quest_info (11284, "포트말라야의 간호사")
+}
+
+quest {
+     quest_info (11285, "포트말라야의 간호사")
+}
+
+quest {
+     quest_info (11286, "포트말라야의 간호사")
+}
+
+quest {
+     quest_info (11287, "포트말라야의 간호사")
+}
+
+quest {
+     quest_info (11288, "포트말라야의 간호사")
+}
+
+quest {
+     quest_info (11289, "포트말라야의 간호사")
+}
+
+quest {
+     quest_info (11290, "포트말라야의 간호사")
+}
+
+quest {
+     quest_info (11291, "포트말라야의 간호사")
+}
+
+quest {
+     quest_info (11292, "포트말라야의 간호사")
+}
+
+quest {
+     quest_info (11293, "포트말라야의 간호사")
+
+}
+quest {
+     quest_info (11294, "포트말라야의 간호사")
+
+}
+quest {
+     quest_info (11295, "포트말라야의 간호사")
+
+}
+quest {
+     quest_info (11296, "포트말라야의 간호사")
+
+}
+quest {
+     quest_info (11297, "포트말라야의 간호사")
+
+}
+quest {
+     quest_info (11298, "포트말라야의 간호사")
+}
+
+quest {
+     quest_info (11299, "포트말라야의 간호사")
+}
+
+quest {
+     quest_info (11300, "포트말라야의 간호사")
+}
+
+quest {
+     quest_info (11301, "포트말라야의 간호사")
+}
+
+quest {
+     quest_info (11302, "포트말라야의 간호사")
+}
+
+quest {
+     quest_info (11303, "포트말라야의 간호사")
+}
+
+quest {
+     quest_info (11304, "포트말라야의 간호사")
+}
+
+quest {
+     quest_info (11305, "포트말라야의 간호사")
+}
+
+quest {
+     quest_info (11306, "포트말라야의 간호사")
+}
+
+quest {
+     quest_info (11307, "포트말라야의 간호사")
+}
+
+quest {
+     quest_info (11308, "포트말라야의 간호사")
+}
+
+quest {
+     quest_info (11309, "포트말라야의 간호사")
+     hunt("BANGUNGOT_3", 1)
+}
+
+//-- ep14.2
+quest {
+     quest_info (11310, "에클라쥬의 문")
+     time(30)
+}
+
+quest {
+     quest_info (11311, "에클라쥬의 문")
+}
+
+quest {
+     quest_info (11312, "골리앗")
+}
+
+quest {
+     quest_info (11313, "골리앗")
+}
+
+quest {
+     quest_info (11314, "골리앗")
+}
+
+quest {
+     quest_info (11315, "어쨌든 시간은 흐르고")
+}
+
+quest {
+     quest_info (11316, "어쨌든 시간은 흐르고")
+}
+
+quest {
+     quest_info (11317, "어쨌든 시간은 흐르고")
+}
+
+quest {
+     quest_info (11318, "어쨌든 시간은 흐르고")
+}
+
+quest {
+     quest_info (11319, "어쨌든 시간은 흐르고")
+}
+
+quest {
+     quest_info (11320, "어쨌든 시간은 흐르고")
+}
+
+quest {
+     quest_info (11321, "어쨌든 시간은 흐르고")
+}
+
+quest {
+     quest_info (11322, "어쨌든 시간은 흐르고")
+}
+
+quest {
+     quest_info (11323, "어쨌든 시간은 흐르고")
+}
+
+quest {
+     quest_info (11324, "어쨌든 시간은 흐르고")
+}
+
+quest {
+     quest_info (11325, "닭이 먼저냐 달걀이 먼저냐")
+}
+
+quest {
+     quest_info (11326, "닭이 먼저냐 달걀이 먼저냐")
+}
+
+quest {
+     quest_info (11327, "닭이 먼저냐 달걀이 먼저냐")
+}
+
+quest {
+     quest_info (11328, "닭이 먼저냐 달걀이 먼저냐")
+}
+
+quest {
+     quest_info (11329, "닭이 먼저냐 달걀이 먼저냐")
+}
+
+quest {
+     quest_info (11330, "닭이 먼저냐 달걀이 먼저냐")
+}
+
+quest {
+     quest_info (11331, "닭이 먼저냐 달걀이 먼저냐")
+}
+
+quest {
+     quest_info (11332, "닭이 먼저냐 달걀이 먼저냐")
+}
+
+quest {
+     quest_info (11333, "붉은 씨앗과 푸른 씨앗")
+}
+
+quest {
+     quest_info (11334, "붉은 씨앗과 푸른 씨앗")
+}
+
+quest {
+     quest_info (11335, "꿈꾸는 소년")
+}
+
+quest {
+     quest_info (11336, "꿈꾸는 소년")
+}
+
+quest {
+     quest_info (11337, "꿈꾸는 소년")
+}
 
 // 박일용 
 quest {
-	quest_info (12000,친구불협화음) 
+	quest_info (12000, "친구불협화음")
 }
 
 quest {
-	quest_info (12001,친구가깝지만 먼…) 
+	quest_info (12001, "친구가깝지만 먼…") 
 }
 
 quest {
-	quest_info (12002,친구우정의메신저) 
+	quest_info (12002,"친구우정의메신저") 
 }
 
 quest {
-	quest_info (12003,친구제3의 친구) 
+	quest_info (12003,"친구제3의 친구") 
 }
 
 quest {
-	quest_info (12004,친구일기장) 
+	quest_info (12004,"친구일기장") 
 }
 
 quest {
-	quest_info (12005,친구속마음) 
+	quest_info (12005,"친구속마음") 
 }
 
 quest {
-	quest_info (12006,친구영원한 비밀) 
+	quest_info (12006,"친구영원한 비밀") 
 }
 
 quest {
-	quest_info (12007,무기공급-1) 
+	quest_info (12007,"무기공급-1") 
 }
 
 quest {
-	quest_info (12008,무기공급-2) 
+	quest_info (12008,"무기공급-2") 
 }
 
 quest {
-	quest_info (12009,무기공급-실패) 
+	quest_info (12009,"무기공급-실패") 
 }
 
 quest {
-	quest_info (12010,무기공급-3) 
+	quest_info (12010,"무기공급-3") 
 }
 
 quest {
-	quest_info (12011,무기공급-4) 
+	quest_info (12011,"무기공급-4") 
 }
 
 quest {
-	quest_info (12012,무기공급-5) 
+	quest_info (12012,"무기공급-5") 
 }
 
 quest {
-	quest_info (12013,무기공급-6) 
+	quest_info (12013,"무기공급-6") 
 }
 
 quest {
@@ -6045,2967 +10042,6 @@ quest {
  quest_info (12223,"허가받지 못한 상인")
 }
 
-quest {	
-	quest_info (18001, "Spy Quest")
-}	
-quest {	
-	quest_info (18002, "Spy Quest")
-}	
-
-quest {	
-	quest_info (18003, "Spy Quest")
-}	
-
-quest {	
-	quest_info (18004, "Spy Quest")
-}	
-
-quest {	
-	quest_info (18005, "Spy Quest")
-}	
-
-quest {	
-	quest_info (18006, "Spy Quest")
-}	
-
-quest {	
-	quest_info (18007, "Spy Quest")
-}	
-
-quest {	
-	quest_info (18008, "Spy Quest")
-}	
-
-quest {	
-	quest_info (18009, "Spy Quest")
-}	
-
-quest {	
-	quest_info (18010, "Spy Quest")
-}	
-
-quest {	
-	quest_info (18011, "Spy Quest")
-}	
-
-quest {	
-	quest_info (18012, "Spy Quest")
-}	
-
-quest {	
-	quest_info (18013, "Spy Quest")
-}	
-
-quest {	
-	quest_info (18014, "Spy Quest")
-}	
-
-quest {	
-	quest_info (18015, "Spy Quest")
-}	
-
-quest {	
-	quest_info (18016, "Spy Quest")
-}	
-
-quest {	
-	quest_info (18017, "Spy Quest")
-}	
-
-quest {	
-	quest_info (18018, "Spy Quest")
-}	
-
-quest {	
-	quest_info (18019, "Spy Quest")
-}	
-
-quest {	
-	quest_info (18020, "Spy Quest")
-}	
-
-quest {	
-	quest_info (18021, "Spy Quest")
-}	
-
-quest {	
-	quest_info (18022, "Spy Quest")
-}	
-
-quest {	
-	quest_info (18023, "Spy Quest")
-}	
-
-quest {			
-	quest_info (18030, "Gaebolg")		
-}			
-			
-quest {			
-	quest_info (18031, "Gaebolg")		
-}			
-			
-quest {			
-	quest_info (18032, "Gaebolg")		
-}			
-			
-quest {			
-	quest_info (18033, "Gaebolg")		
-}			
-			
-quest {			
-	quest_info (18034, "Gaebolg")		
-}			
-			
-quest {			
-	quest_info (18035, "Gaebolg")		
-}			
-			
-quest {			
-	quest_info (18036, "Gaebolg")		
-}			
-			
-quest {			
-	quest_info (18037, "Gaebolg")		
-}			
-			
-quest {			
-	quest_info (18038, "Gaebolg")		
-}			
-			
-quest {			
-	quest_info (18039, "Gaebolg")		
-}			
-			
-quest {			
-	quest_info (18040, "Gaebolg")		
-}			
-			
-quest {			
-	quest_info (18041, "Gaebolg")		
-}			
-			
-quest {			
-	quest_info (18042, "Gaebolg")		
-}			
-			
-quest {			
-	quest_info (18043, "Gaebolg")		
-}			
-			
-quest {			
-	quest_info (18044, "Gaebolg")		
-}			
-			
-quest {			
-	quest_info (18045, "Gaebolg")		
-}			
-			
-quest {			
-	quest_info (18046, "Gaebolg")		
-}			
-			
-quest {			
-	quest_info (18047, "Gaebolg")		
-}			
-			
-quest {			
-	quest_info (18048, "Gaebolg")		
-}			
-			
-quest {			
-	quest_info (18049, "Gaebolg")		
-}			
-			
-quest {			
-	quest_info (18050, "Gaebolg")		
-}			
-			
-quest {			
-	quest_info (18051, "Gaebolg")		
-}			
-			
-quest {			
-	quest_info (18052, "Gaebolg")		
-}			
-
-quest {				
-	quest_info (18060, "Broken Matrushka")			
-}				
-				
-quest {				
-	quest_info (18061, "Broken Matrushka")			
-}				
-				
-quest {				
-	quest_info (18062, "Broken Matrushka")			
-}				
-				
-quest {				
-	quest_info (18063, "Broken Matrushka")			
-}				
-				
-quest {				
-	quest_info (18064, "Broken Matrushka")			
-}				
-				
-quest {				
-	quest_info (18065, "Broken Matrushka")			
-}				
-				
-quest {				
-	quest_info (18066, "Broken Matrushka")			
-}				
-				
-quest {				
-	quest_info (18067, "Broken Matrushka")			
-}				
-				
-quest {				
-	quest_info (18068, "Broken Matrushka")			
-}				
-				
-quest {				
-	quest_info (18069, "Broken Matrushka")			
-}				
-
-quest {			
-	quest_info (18070, "No Winter")		
-}			
-			
-quest {			
-	quest_info (18071, "No Winter")		
-}			
-			
-quest {			
-	quest_info (18072, "No Winter")		
-}			
-			
-quest {			
-	quest_info (18073, "No Winter")		
-}			
-			
-quest {			
-	quest_info (18074, "No Winter")		
-}			
-			
-quest {			
-	quest_info (18075, "No Winter")		
-}			
-			
-quest {			
-	quest_info (18076, "No Winter")		
-}			
-			
-quest {			
-	quest_info (18077, "No Winter")		
-}			
-			
-quest {			
-	quest_info (18078, "No Winter")		
-}			
-			
-quest {			
-	quest_info (18079, "No Winter")		
-}			
-
-quest {			
-	quest_info (17000, "Nameless")		
-}			
-			
-quest {			
-	quest_info (17001, "Nameless")		
-}			
-			
-quest {			
-	quest_info (17002, "Nameless")		
-}			
-			
-quest {			
-	quest_info (17003, "Nameless")		
-}			
-			
-quest {			
-	quest_info (17004, "Nameless")		
-}			
-			
-quest {			
-	quest_info (17005, "Nameless")		
-}			
-			
-quest {			
-	quest_info (17006, "Nameless")		
-}			
-			
-quest {			
-	quest_info (17007, "Nameless")		
-}			
-			
-quest {			
-	quest_info (17008, "Nameless")		
-}			
-			
-quest {			
-	quest_info (17009, "Nameless")		
-}			
-			
-quest {			
-	quest_info (17010, "Nameless")		
-}			
-			
-quest {			
-	quest_info (17011, "Nameless")		
-}			
-			
-quest {			
-	quest_info (17012, "Nameless")		
-}			
-			
-quest {			
-	quest_info (17013, "Nameless")		
-}			
-			
-quest {			
-	quest_info (17014, "Nameless")		
-}			
-			
-quest {			
-	quest_info (17015, "Nameless")		
-}			
-			
-quest {			
-	quest_info (17016, "Nameless")		
-}			
-			
-quest {			
-	quest_info (17017, "Nameless")		
-}			
-
-quest {				
-	quest_info (18100, "Whale Island")			
-}				
-				
-quest {				
-	quest_info (18101, "Whale Island")			
-}				
-				
-quest {				
-	quest_info (18102, "Whale Island")			
-}				
-				
-quest {				
-	quest_info (18103, "Whale Island")			
-}				
-				
-quest {				
-	quest_info (18104, "Whale Island")			
-}				
-				
-quest {				
-	quest_info (18105, "Whale Island")			
-}				
-				
-quest {				
-	quest_info (18106, "Whale Island")			
-}				
-				
-quest {				
-	quest_info (18107, "Whale Island")			
-}				
-				
-quest {				
-	quest_info (18108, "Whale Island")			
-}				
-				
-quest {				
-	quest_info (18109, "Whale Island")			
-}				
-				
-quest {				
-	quest_info (18110, "Whale Island")			
-}				
-				
-quest {				
-	quest_info (18111, "Whale Island")			
-}				
-				
-quest {				
-	quest_info (18112, "Whale Island")			
-}				
-				
-quest {				
-	quest_info (18113, "Whale Island")			
-}				
-				
-quest {				
-	quest_info (18114, "Whale Island")			
-}				
-				
-quest {				
-	quest_info (18115, "Whale Island")			
-}				
-				
-quest {				
-	quest_info (18116, "Whale Island")			
-}				
-				
-quest {				
-	quest_info (18117, "Whale Island")			
-}				
-				
-quest {				
-	quest_info (18118, "Whale Island")			
-}				
-				
-quest {				
-	quest_info (18119, "Whale Island")			
-}				
-				
-quest {				
-	quest_info (18120, "Whale Island")			
-}				
-				
-quest {				
-	quest_info (18121, "Shafka")			
-}				
-
-quest {	
-	quest_info (16000, "Sign Quest")
-}	
-
-quest {	
-	quest_info (16001, "Sign Quest")
-}	
-
-quest {	
-	quest_info (16002, "Sign Quest")
-}	
-
-quest {	
-	quest_info (16003, "Sign Quest")
-}	
-
-quest {	
-	quest_info (16004, "Sign Quest")
-}	
-
-quest {	
-	quest_info (16005, "Sign Quest")
-}	
-
-quest {	
-	quest_info (16006, "Sign Quest")
-}	
-
-quest {	
-	quest_info (16007, "Sign Quest")
-}	
-
-quest {	
-	quest_info (16008, "Sign Quest")
-}	
-
-quest {	
-	quest_info (16009, "Sign Quest")
-}	
-
-quest {	
-	quest_info (16010, "Sign Quest")
-}	
-
-quest {	
-	quest_info (16011, "Sign Quest")
-}	
-
-quest {	
-	quest_info (16012, "Sign Quest")
-}	
-
-quest {	
-	quest_info (16013, "Sign Quest")
-}	
-
-quest {	
-	quest_info (16014, "Sign Quest")
-}	
-
-quest {	
-	quest_info (16015, "Sign Quest")
-}	
-
-quest {	
-	quest_info (16016, "Sign Quest")
-}	
-
-quest {	
-	quest_info (16017, "Sign Quest")
-}	
-
-quest {	
-	quest_info (16018, "Sign Quest")
-}	
-
-quest {	
-	quest_info (16019, "Sign Quest")
-}	
-
-quest {	
-	quest_info (16020, "Sign Quest")
-	time(82800)
-}	
-
-quest {	
-	quest_info (16021, "Sign Quest")
-}	
-
-quest {	
-	quest_info (16022, "Sign Quest")
-}	
-
-quest {	
-	quest_info (16023, "Sign Quest")
-}	
-
-quest {	
-	quest_info (16024, "Sign Quest")
-}	
-
-quest {	
-	quest_info (16025, "Sign Quest")
-}	
-
-quest {	
-	quest_info (16026, "Sign Quest")
-}	
-
-quest {	
-	quest_info (16027, "Sign Quest")
-}	
-
-quest {	
-	quest_info (16028, "Sign Quest")
-}	
-
-quest {	
-	quest_info (16029, "Sign Quest")
-}	
-
-quest {	
-	quest_info (16030, "Sign Quest")
-}	
-
-quest {	
-	quest_info (16031, "Sign Quest")
-}	
-
-quest {	
-	quest_info (16032, "Sign Quest")
-}	
-
-quest {	
-	quest_info (16033, "Sign Quest")
-}	
-
-quest {	
-	quest_info (16034, "Sign Quest")
-}	
-
-quest {	
-	quest_info (16035, "Sign Quest")
-}	
-
-quest {	
-	quest_info (16036, "Sign Quest")
-}	
-
-quest {	
-	quest_info (16037, "Sign Quest")
-}	
-
-quest {	
-	quest_info (16038, "Sign Quest")
-}	
-
-quest {	
-	quest_info (16039, "Sign Quest")
-}	
-
-quest {	
-	quest_info (16040, "Sign Quest")
-}	
-
-quest {	
-	quest_info (16041, "Sign Quest")
-}	
-
-quest {	
-	quest_info (16042, "Sign Quest")
-}	
-
-quest {	
-	quest_info (16043, "Sign Quest")
-}	
-
-quest {	
-	quest_info (16044, "Sign Quest")
-}	
-
-quest {	
-	quest_info (16045, "Sign Quest")
-}	
-
-quest {	
-	quest_info (16046, "Sign Quest")
-}	
-
-quest {	
-	quest_info (16047, "Sign Quest")
-}	
-
-quest {	
-	quest_info (16048, "Sign Quest")
-}	
-
-quest {	
-	quest_info (16049, "Sign Quest")
-}	
-
-quest {	
-	quest_info (16050, "Sign Quest")
-}	
-
-quest {	
-	quest_info (16051, "Sign Quest")
-}	
-
-quest {	
-	quest_info (16052, "Sign Quest")
-}	
-
-quest {	
-	quest_info (16053, "Sign Quest")
-}	
-
-quest {	
-	quest_info (16054, "Sign Quest")
-}	
-
-quest {	
-	quest_info (16055, "Sign Quest")
-}	
-
-quest {	
-	quest_info (16056, "Sign Quest")
-}	
-
-quest {	
-	quest_info (16057, "Sign Quest")
-}	
-
-quest {	
-	quest_info (16058, "Sign Quest")
-}	
-
-quest {	
-	quest_info (16059, "Sign Quest")
-}	
-
-quest {	
-	quest_info (16060, "Sign Quest")
-}	
-
-quest {	
-	quest_info (16061, "Sign Quest")
-}	
-
-quest {	
-	quest_info (16062, "Sign Quest")
-}	
-
-quest {	
-	quest_info (16063, "Sign Quest")
-}	
-
-quest {	
-	quest_info (16064, "Sign Quest")
-}	
-
-quest {	
-	quest_info (16065, "Sign Quest")
-}	
-
-quest {	
-	quest_info (16066, "Sign Quest")
-}	
-
-quest {	
-	quest_info (16067, "Sign Quest")
-}	
-
-quest {	
-	quest_info (16068, "Sign Quest")
-}	
-
-quest {	
-	quest_info (16069, "Sign Quest")
-}	
-
-quest {	
-	quest_info (16070, "Sign Quest")
-}	
-
-quest {	
-	quest_info (16071, "Sign Quest")
-}	
-
-quest {	
-	quest_info (16072, "Sign Quest")
-}	
-
-quest {	
-	quest_info (16073, "Sign Quest")
-}	
-
-quest {	
-	quest_info (16074, "Sign Quest")
-}	
-
-quest {	
-	quest_info (16075, "Sign Quest")
-}	
-
-quest {	
-	quest_info (16076, "Sign Quest")
-}	
-
-quest {	
-	quest_info (16077, "Sign Quest")
-}	
-
-quest {	
-	quest_info (16078, "Sign Quest")
-}	
-
-quest {	
-	quest_info (16079, "Sign Quest")
-}	
-
-quest {	
-	quest_info (16080, "Sign Quest")
-}	
-
-quest {	
-	quest_info (16081, "Sign Quest")
-}	
-
-quest {	
-	quest_info (16082, "Sign Quest")
-}	
-
-quest {	
-	quest_info (16083, "Sign Quest")
-}	
-
-quest {	
-	quest_info (16084, "Sign Quest")
-}	
-
-quest {	
-	quest_info (16085, "Sign Quest")
-}
-
-quest {	
-	quest_info (16086, "Sign Quest")
-	time(7200)
-}
-
-quest {	
-	quest_info (16087, "Sign Quest")
-	time(7200)
-}
-
-//Kiel Hyre Quest
-
-quest {
-	quest_info (16101, "Kiel Hyre Quest")
-}
-
-quest {
-	quest_info (16102, "Kiel Hyre Quest")
-}
-
-quest {
-	quest_info (16103, "Kiel Hyre Quest")
-}
-
-quest {
-	quest_info (16104, "Kiel Hyre Quest")
-}
-
-quest {
-	quest_info (16105, "Kiel Hyre Quest")
-}
-
-quest {
-	quest_info (16106, "Kiel Hyre Quest")
-}
-
-quest {
-	quest_info (16107, "Kiel Hyre Quest")
-}
-
-quest {
-	quest_info (16108, "Kiel Hyre Quest")
-}
-
-quest {
-	quest_info (16109, "Kiel Hyre Quest")
-}
-
-quest {
-	quest_info (16110, "Kiel Hyre Quest")
-}
-
-quest {
-	quest_info (16111, "Kiel Hyre Quest")
-}
-
-quest {
-	quest_info (16112, "Kiel Hyre Quest")
-}
-
-quest {
-	quest_info (16113, "Kiel Hyre Quest")
-}
-
-quest {
-	quest_info (16114, "Kiel Hyre Quest")
-}
-
-quest {
-	quest_info (16115, "Kiel Hyre Quest")
-}
-
-quest {
-	quest_info (16116, "Kiel Hyre Quest")
-}
-
-quest {
-	quest_info (16117, "Kiel Hyre Quest")
-}
-
-quest {
-	quest_info (16118, "Kiel Hyre Quest")
-}
-
-quest {
-	quest_info (16119, "Kiel Hyre Quest")
-}
-
-quest {
-	quest_info (16120, "Kiel Hyre Quest")
-}
-
-quest {
-	quest_info (16121, "Kiel Hyre Quest")
-}
-
-quest {
-	quest_info (16122, "Kiel Hyre Quest")
-}
-
-quest {
-	quest_info (16123, "Kiel Hyre Quest")
-}
-
-quest {
-	quest_info (16124, "Kiel Hyre Quest")
-}
-
-quest {
-	quest_info (16125, "Kiel Hyre Quest")
-}
-
-quest {
-	quest_info (16126, "Kiel Hyre Quest")
-}
-
-quest {
-	quest_info (16127, "Kiel Hyre Quest")
-}
-
-quest {
-	quest_info (16128, "Kiel Hyre Quest")
-}
-
-quest {
-	quest_info (16129, "Kiel Hyre Quest")
-}
-
-quest {
-	quest_info (16130, "Kiel Hyre Quest")
-}
-
-quest {
-	quest_info (16131, "Kiel Hyre Quest")
-}
-
-quest {
-	quest_info (16132, "Kiel Hyre Quest")
-}
-
-quest {
-	quest_info (16133, "Kiel Hyre Quest")
-}
-
-quest {
-	quest_info (16134, "Kiel Hyre Quest")
-}
-
-quest {
-	quest_info (16135, "Kiel Hyre Quest")
-}
-
-quest {
-	quest_info (16136, "Kiel Hyre Quest")
-}
-
-quest {
-	quest_info (16137, "Kiel Hyre Quest")
-}
-
-quest {
-	quest_info (16138, "Kiel Hyre Quest")
-}
-
-quest {
-	quest_info (16139, "Kiel Hyre Quest")
-}
-
-quest {
-	quest_info (16140, "Kiel Hyre Quest")
-}
-
-quest {
-	quest_info (16141, "Kiel Hyre Quest")
-}
-
-quest {
-	quest_info (16142, "Kiel Hyre Quest")
-}
-
-quest {
-	quest_info (16143, "Kiel Hyre Quest")
-}
-
-quest {
-	quest_info (16144, "Kiel Hyre Quest")
-}
-
-quest {
-	quest_info (16145, "Kiel Hyre Quest")
-}
-
-quest {
-	quest_info (16146, "Kiel Hyre Quest")
-}
-
-
-//mag_sec.sc
-quest {
-	quest_info (16200, "TPS Reports")
-}
-
-quest {
-	quest_info (16201, "TPS Reports")
-}
-
-quest {
-	quest_info (16202, "TPS Reports")
-}
-
-quest {
-	quest_info (16203, "TPS Reports")
-}
-
-quest {
-	quest_info (16204, "TPS Reports")
-}
-
-//2010 St Patrick's Day Event
-quest {
-	quest_info (9058, "2010 St Patrick's Day")
-	hunt ("BATHORY", 250)
-	hunt ("POISON_SPORE", 250)
-}
-
-quest {
-	quest_info (9059, "2010 St Patrick's Day")
-}
-
-//======= EVENT QUEST STRINGS========
-
-quest {
-	quest_info (50000, "2009 Talk like a Pirate")
-}
-
-quest {
-	quest_info (50001, "2009 Talk like a Pirate")
-}
-
-quest {
-	quest_info (50002, "2009 Talk like a Pirate")
-}
-
-quest {
-	quest_info (50003, "2009 Talk like a Pirate")
-}
-
-quest {
-	quest_info (50004, "2009 Talk like a Pirate")
-}
-
-quest {
-	quest_info (50005, "2009 Talk like a Pirate")
-}
-
-quest {
-	quest_info (50006, "2009 Talk like a Pirate")
-}
-
-quest {
-	quest_info (50007, "2009 Talk like a Pirate")
-}
-
-quest {
-	quest_info (50008, "2009 Talk like a Pirate")
-}
-
-quest {
-	quest_info (50009, "2009 Talk like a Pirate")
-}
-
-quest {
-	quest_info (50010, "2009 Talk like a Pirate")
-}
-
-quest {
-	quest_info (50011, "2009 Talk like a Pirate")
-}
-
-quest {
-	quest_info (50012, "2009 Talk like a Pirate")
-}
-
-quest {
-	quest_info (50013, "2009 Talk like a Pirate")
-}
-
-quest {
-	quest_info (50015, "2009 Talk like a Pirate")
-}
-
-quest {
-	quest_info (50016, "2009 Talk like a Pirate")
-}
-
-quest {
-	quest_info (50017, "2009 Talk like a Pirate")
-}
-
-quest {
-	quest_info (50018, "2009 Talk like a Pirate")
-}
-
-quest {
-	quest_info (50019, "2009 Talk like a Pirate")
-}
-
-quest {
-	quest_info (50020, "2009 Talk like a Pirate")
-}
-
-quest {
-	quest_info (50021, "2009 Talk like a Pirate")
-}
-
-quest {
-	quest_info (50022, "2009 Talk like a Pirate")
-}
-
-quest {
-	quest_info (50023, "2009 Talk like a Pirate")
-}
-
-quest {
-	quest_info (50024, "2009 Talk like a Pirate")
-}
-
-quest {
-	quest_info (50025, "2009 Talk like a Pirate")
-}
-
-quest {
-	quest_info (50026, "2009 Talk like a Pirate")
-}
-
-quest {
-	quest_info (50027, "2009 Talk like a Pirate")
-}
-
-quest {
-	quest_info (50028, "2009 Talk like a Pirate")
-}
-
-quest {
-	quest_info (50029, "2009 Talk like a Pirate")
-}
-
-quest {	
-	quest_info (60001, "2009_easter")
-	hunt ("VADON", 75)
-	hunt ("CORNUTUS", 45)
-}	
-	
-quest {	
-	quest_info (60002, "2009_easter")
-	hunt ("OBEAUNE", 60)
-	hunt ("MARSE", 90)
-}	
-	
-quest {	
-	quest_info (60003, "2009_easter")
-	hunt ("PHEN", 120)
-	hunt ("SWORD_FISH", 60)
-}	
-	
-quest {	
-	quest_info (60004, "2009_easter")
-	hunt ("MARC", 60)
-	hunt ("SWORD_FISH", 120)
-}	
-	
-quest {	
-	quest_info (60005, "2009_easter")
-	hunt ("MARC", 90)
-	hunt ("SWORD_FISH", 150)
-}	
-	
-quest {	
-	quest_info (60006, "2009_easter")
-	hunt ("STROUF", 60)
-	hunt ("MERMAN", 30)
-}	
-
-//Old Endless Tower Timers
-quest {
-	quest_info (60007, "6day20hourtower")
-	time(590400) 
-}
-
-quest {
-	quest_info (60008, "4hourtower")
-	time(14400)
-}
-
-quest {
-	quest_info (60009, "Orc Dungeon Braziers")
-}
-
-//==============2009 Anniversary Quests=================
-
-quest {	
-	quest_info (60010, "2009 Anniversary")
-}
-
-quest {	
-	quest_info (60011, "2009 Anniversary")
-}
-
-quest {	
-	quest_info (60012, "2009 Anniversary")
-}
-
-quest {	
-	quest_info (60013, "2009 Anniversary")
-}
-
-quest {	
-	quest_info (60014, "2009 Anniversary")
-	hunt ("POISON_SPORE", 50)
-	hunt ("POPORING", 35)
-}
-
-quest {	
-	quest_info (60015, "2009 Anniversary")
-	hunt ("GHOUL", 20)
-	hunt ("DRAINLIAR", 25)
-}
-
-quest {	
-	quest_info (60016, "2009 Anniversary")
-	hunt ("NIGHTMARE", 50)
-	hunt ("JAKK", 50)
-}
-
-quest {	
-	quest_info (60017, "2009 Anniversary")
-}
-
-quest {	
-	quest_info (60018, "2009 Anniversary")
-	hunt ("CORNUTUS", 35)
-	hunt ("HYDRA", 25)
-}
-
-quest {	
-	quest_info (60019, "2009 Anniversary")
-	hunt ("SWORD_FISH", 55)
-	hunt ("MARC", 45)
-}
-
-quest {	
-	quest_info (60020, "2009 Anniversary")
-	hunt ("STROUF", 40)
-	hunt ("MERMAN", 50)
-}
-
-quest {	
-	quest_info (60021, "2009 Anniversary")
-}
-
-quest {	
-	quest_info (60022, "2009 Anniversary")
-}
-
-quest {	
-	quest_info (60023, "2009 Anniversary")
-}
-
-quest {	
-	quest_info (60024, "2009 Anniversary")
-	hunt ("ACIDUS", 30)
-	hunt ("ACIDUS_", 30)
-}
-
-quest {	
-	quest_info (60025, "2009 Anniversary")
-}
-
-quest {	
-	quest_info (60026, "2009 Anniversary")
-}
-
-quest {	
-	quest_info (60027, "2009 Anniversary")
-}
-
-
-quest {	
-	quest_info (60028, "2009 Anniversary")
-}
-
-
-quest {	
-	quest_info (60029, "2009 Anniversary")
-	hunt ("PORING", 40)
-	hunt ("POPORING", 40)
-}
-
-
-quest {	
-	quest_info (60030, "2009 Anniversary")
-	hunt ("CLOCK", 30)
-	hunt ("PUNK", 40)
-}
-
-
-quest {	
-	quest_info (60031, "2009 Anniversary")
-	hunt ("BRILIGHT", 30)
-	hunt ("CRAMP", 25)
-}
-
-
-quest {	
-	quest_info (60032, "2009 Anniversary")
-	hunt ("MARIN", 50)
-	hunt ("SASQUATCH", 25)
-}
-
-
-quest {	
-	quest_info (60033, "2009 Anniversary")
-	hunt ("ALARM", 30)
-	hunt ("ARCHER_SKELETON", 50)
-}
-
-
-quest {	
-	quest_info (60034, "2009 Anniversary")
-	hunt ("PENOMENA", 60)
-	hunt ("CRAMP", 30)
-}
-
-
-quest {	
-	quest_info (60035, "2009 Anniversary")
-	hunt ("METALING", 30)
-	hunt ("DUSTINESS", 40)
-}
-
-
-quest {	
-	quest_info (60036, "2009 Anniversary")
-	hunt ("STEM_WORM", 50)
-	hunt ("IRON_FIST", 20)
-}
-
-
-quest {	
-	quest_info (60037, "2009 Anniversary")
-	hunt ("HIGH_ORC", 70)
-	hunt ("ORC_ARCHER", 30)
-}
-
-
-quest {	
-	quest_info (60038, "2009 Anniversary")
-}
-
-
-quest {	
-	quest_info (60039, "2009 Anniversary")
-}
-
-quest {	
-	quest_info (60040, "2009 Anniversary")
-}
-
-quest {	
-	quest_info (60041, "2009 Anniversary")
-}
-
-quest {	
-	quest_info (60042, "2009 Anniversary")
-	time(300)
-}
-
-quest {	
-	quest_info (60043, "2009 Anniversary")
-	hunt ("GHOUL", 20)
-	hunt ("WHISPER", 10)
-}
-
-quest {	
-	quest_info (60044, "2009 Anniversary")
-	hunt ("EVIL_DRUID", 25)
-	hunt ("DARK_PRIEST", 1)
-}
-
-quest {	
-	quest_info (60045, "2009 Anniversary")
-	time(300)
-}
-
-quest {	
-	quest_info (60046, "2009 Anniversary")
-	hunt ("RIDEWORD", 20)
-	hunt ("RAYDRIC", 50)
-}
-
-quest {	
-	quest_info (60047, "2009 Anniversary")
-	hunt ("KHALITZBURG", 15)
-	hunt ("RAYDRIC", 90)
-}
-
-quest {	
-	quest_info (60048, "2009 Anniversary")
-	time(600)
-}
-
-quest {	
-	quest_info (60049, "2009 Anniversary")
-	hunt ("ZOMBIE_PRISONER", 25)
-	hunt ("SKEL_PRISONER", 20)
-}
-
-quest {	
-	quest_info (60050, "2009 Anniversary")
-	hunt ("INJUSTICE", 20)
-	hunt ("RYBIO", 20)
-}
-
-quest {	
-	quest_info (60051, "2009 Anniversary")
-	time(360)
-}
-
-quest {	
-	quest_info (60052, "2009 Anniversary")
-	hunt ("ANOLIAN", 30)
-	hunt ("WIND_GHOST", 20)
-}
-
-quest {	
-	quest_info (60053, "2009 Anniversary")
-	hunt ("IMP", 10)
-	hunt ("MAJORUROS", 40)
-}
-
-quest {	
-	quest_info (60054, "2009 Anniversary")
-	time(180)
-}
-
-quest {	
-	quest_info (60055, "2009 Anniversary")
-	hunt ("WRAITH", 25)
-	hunt ("SKEL_PRISONER", 10)
-}
-
-quest {	
-	quest_info (60056, "2009 Anniversary")
-	hunt ("DARK_PRIEST", 2)
-	hunt ("EVIL_DRUID", 20)
-}
-
-quest {	
-	quest_info (60057, "2009 Anniversary")
-}
-
-quest {	
-	quest_info (60058, "2009 Anniversary")
-}
-
-quest {	
-	quest_info (60059, "2009 Anniversary")
-}
-
-quest {	
-	quest_info (60060, "2009 Anniversary")
-}
-
-quest {	
-	quest_info (60061, "2009 Anniversary")
-	hunt ("DUSTINESS", 30)
-	hunt ("POPORING", 30)
-}
-
-quest {	
-	quest_info (60062, "2009 Anniversary")
-}
-
-//Endless Tower Time Limits
-
-quest {
-	quest_info (60200, "6 day 20 hr timer")
-	time(590400) 
-}
-
-
-quest {
-	quest_info (60201, "4 hour timer")
-	time (14400)
-}
-
-//===========Repeatable experience quests============
-
-quest {
-	quest_info (60101, "Repeatable Exp")
-	hunt ("PECOPECO", 51)
-}
-
-quest {
-	quest_info (60102, "Repeatable Exp")
-	hunt ("PECOPECO", 102)
-}
-
-quest {
-	quest_info (60103, "Repeatable Exp")
-	hunt ("PECOPECO", 150)
-}
-
-quest {
-	quest_info (60104, "Repeatable Exp")
-	hunt ("HODE", 53)
-}
-
-quest {
-	quest_info (60105, "Repeatable Exp")
-	hunt ("HODE", 100)
-}
-
-quest {
-	quest_info (60106, "Repeatable Exp")
-	hunt ("HODE", 150)
-}
-
-quest {
-	quest_info (60107, "Repeatable Exp")
-	hunt ("FABRE", 50)
-}
-
-quest {
-	quest_info (60108, "Repeatable Exp")
-	hunt ("FABRE", 100)
-}
-
-quest {
-	quest_info (60109, "Repeatable Exp")
-	hunt ("FABRE", 150)
-}
-
-quest {
-	quest_info (60110, "Repeatable Exp")
-	hunt ("PUPA", 50)
-}
-
-quest {
-	quest_info (60111, "Repeatable Exp")
-	hunt ("PUPA", 100)
-}
-
-quest {
-	quest_info (60112, "Repeatable Exp")
-	hunt ("PUPA", 150)
-}
-
-quest {
-	quest_info (60113, "Repeatable Exp")
-	hunt ("COCO", 50)
-}
-
-quest {
-	quest_info (60114, "Repeatable Exp")
-	hunt ("COCO", 100)
-}
-
-quest {
-	quest_info (60115, "Repeatable Exp")
-	hunt ("COCO", 150)
-}
-
-quest {
-	quest_info (60116, "Repeatable Exp")
-	hunt ("CARAMEL", 50)
-}
-
-quest {
-	quest_info (60117, "Repeatable Exp")
-	hunt ("CARAMEL", 100)
-}
-
-quest {
-	quest_info (60118, "Repeatable Exp")
-	hunt ("CARAMEL", 150)
-}
-
-quest {
-	quest_info (60119, "Repeatable Exp")
-	hunt ("ALLIGATOR", 50)
-}
-
-quest {
-	quest_info (60120, "Repeatable Exp")
-	hunt ("ALLIGATOR", 100)
-}
-
-quest {
-	quest_info (60121, "Repeatable Exp")
-	hunt ("ALLIGATOR", 150)
-}
-
-quest {
-	quest_info (60122, "Repeatable Exp")
-	hunt ("CREAMY", 50)
-}
-
-quest {
-	quest_info (60123, "Repeatable Exp")
-	hunt ("CREAMY", 100)
-}
-
-quest {
-	quest_info (60124, "Repeatable Exp")
-	hunt ("CREAMY", 150)
-}
-
-quest {
-	quest_info (60125, "Repeatable Exp")
-	hunt ("DEMON_PUNGUS", 50)
-}
-
-quest {
-	quest_info (60126, "Repeatable Exp")
-	hunt ("DEMON_PUNGUS", 100)
-}
-
-quest {
-	quest_info (60127, "Repeatable Exp")
-	hunt ("DEMON_PUNGUS", 150)
-}
-
-
-quest {
-	quest_info (60128, "Repeatable Exp")
-	hunt ("DOKEBI", 50)
-}
-
-quest {
-	quest_info (60129, "Repeatable Exp")
-	hunt ("DOKEBI", 100)
-}
-
-quest {
-	quest_info (60130, "Repeatable Exp")
-	hunt ("DOKEBI", 150)
-}
-
-quest {
-	quest_info (60131, "Repeatable Exp")
-	hunt ("DRYAD", 50)
-}
-
-quest {
-	quest_info (60132, "Repeatable Exp")
-	hunt ("DRYAD", 100)
-}
-
-quest {
-	quest_info (60133, "Repeatable Exp")
-	hunt ("DRYAD", 150)
-}
-
-quest {
-	quest_info (60134, "Repeatable Exp")
-	hunt ("FRILLDORA", 50)
-}
-
-quest {
-	quest_info (60135, "Repeatable Exp")
-	hunt ("FRILLDORA", 100)
-}
-
-quest {
-	quest_info (60136, "Repeatable Exp")
-	hunt ("FRILLDORA", 150)
-}
-
-quest {
-	quest_info (60137, "Repeatable Exp")
-	hunt ("GOAT", 50)
-}
-
-quest {
-	quest_info (60138, "Repeatable Exp")
-	hunt ("GOAT", 100)
-}
-
-quest {
-	quest_info (60139, "Repeatable Exp")
-	hunt ("GOAT", 150)
-}
-
-quest {
-	quest_info (60140, "Repeatable Exp")
-	hunt ("GOLEM", 50)
-}
-
-quest {
-	quest_info (60141, "Repeatable Exp")
-	hunt ("GOLEM", 100)
-}
-
-quest {
-	quest_info (60142, "Repeatable Exp")
-	hunt ("GOLEM", 150)
-}
-
-quest {
-	quest_info (60143, "Repeatable Exp")
-	hunt ("LEAF_CAT", 50)
-}
-
-quest {
-	quest_info (60144, "Repeatable Exp")
-	hunt ("LEAF_CAT", 100)
-}
-
-quest {
-	quest_info (60145, "Repeatable Exp")
-	hunt ("LEAF_CAT", 150)
-}
-
-quest {
-	quest_info (60146, "Event Repeatable Exp")
-	hunt ("SKELETON", 50)
-}
-
-quest {
-	quest_info (60147, "Event Repeatable Exp")
-	hunt ("SKELETON", 100)
-}
-
-quest {
-	quest_info (60148, "Event Repeatable Exp")
-	hunt ("SKELETON", 150)
-}
-
-quest {
-	quest_info (60149, "Event Repeatable Exp")
-	hunt ("MUNAK", 50)
-}
-
-quest {
-	quest_info (60150, "Event Repeatable Exp")
-	hunt ("MUNAK", 100)
-}
-
-quest {
-	quest_info (60151, "Event Repeatable Exp")
-	hunt ("MUNAK", 150)
-}
-
-quest {
-	quest_info (60152, "Event Repeatable Exp")
-	hunt ("SOHEE", 50)
-}
-
-quest {
-	quest_info (60153, "Event Repeatable Exp")
-	hunt ("SOHEE", 100)
-}
-
-quest {
-	quest_info (60154, "Event Repeatable Exp")
-	hunt ("SOHEE", 150)
-}
-
-quest {
-	quest_info (60155, "Event Repeatable Exp")
-	hunt ("ANTIQUE_FIRELOCK", 50)
-}
-
-quest {
-	quest_info (60156, "Event Repeatable Exp")
-	hunt ("ANTIQUE_FIRELOCK", 100)
-}
-
-quest {
-	quest_info (60157, "Event Repeatable Exp")
-	hunt ("ANTIQUE_FIRELOCK", 150)
-}
-
-quest {
-	quest_info (60158, "Event Repeatable Exp")
-	hunt ("TENGU", 50)
-}
-
-quest {
-	quest_info (60160, "Event Repeatable Exp")
-	hunt ("TENGU", 150)
-}
-
-quest {
-	quest_info (60161, "Event Repeatable Exp")
-	hunt ("VENATU_2", 25)
-	hunt ("VENATU_3", 25)
-}
-
-quest {
-	quest_info (60162, "Event Repeatable Exp")
-	hunt ("VENATU_2", 50)
-	hunt ("VENATU_3", 50)
-}
-
-quest {
-	quest_info (60163, "Event Repeatable Exp")
-	hunt ("VENATU_2", 75)
-	hunt ("VENATU_3", 75)
-}
-
-quest {
-	quest_info (60164, "Event Repeatable Exp")
-	hunt ("ARCHDAM", 50)
-}
-
-quest {
-	quest_info (60165, "Event Repeatable Exp")
-	hunt ("ARCHDAM", 100)
-}
-
-quest {
-	quest_info (60166, "Event Repeatable Exp")
-	hunt ("ARCHDAM", 150)
-}
-
-quest {
-	quest_info (60167, "Event Repeatable Exp")
-	hunt ("SIROMA", 50)
-}
-
-quest {
-	quest_info (60168, "Event Repeatable Exp")
-	hunt ("SIROMA", 100)
-}
-
-quest {
-	quest_info (60169, "Event Repeatable Exp")
-	hunt ("SIROMA", 150)
-}
-
-quest {
-	quest_info (60170, "Event Repeatable Exp")
-	hunt ("ICE_TITAN", 50)
-}
-
-quest {
-	quest_info (60171, "Event Repeatable Exp")
-	hunt ("ICE_TITAN", 100)
-}
-
-quest {
-	quest_info (60172, "Event Repeatable Exp")
-	hunt ("ICE_TITAN", 150)
-}
-
-
-quest {
-	quest_info (60173, "Event Repeatable Exp")
-	hunt ("DISGUISE", 50)
-}
-
-quest {
-	quest_info (60174, "Event Repeatable Exp")
-	hunt ("DISGUISE", 100)
-}
-
-quest {
-	quest_info (60175, "Event Repeatable Exp")
-	hunt ("DISGUISE", 150)
-}
-
-
-quest {
-	quest_info (60176, "Event Repeatable Exp")
-	hunt ("LOLI_RURI", 50)
-}
-
-quest {
-	quest_info (60177, "Event Repeatable Exp")
-	hunt ("LOLI_RURI", 100)
-}
-
-quest {
-	quest_info (60178, "Event Repeatable Exp")
-	hunt ("LOLI_RURI", 150)
-}
-
-quest {
-	quest_info (60179, "Event Repeatable Exp")
-	hunt ("MANTIS", 50)
-}
-
-quest {
-	quest_info (60180, "Event Repeatable Exp")
-	hunt ("MANTIS", 100)
-}
-
-quest {
-	quest_info (60181, "Event Repeatable Exp")
-	hunt ("MANTIS", 150)
-}
-
-quest {
-	quest_info (60182, "Event Repeatable Exp")
-	hunt ("DANCING_DRAGON", 50)
-}
-
-quest {
-	quest_info (60183, "Event Repeatable Exp")
-	hunt ("DANCING_DRAGON", 100)
-}
-
-quest {
-	quest_info (60184, "Event Repeatable Exp")
-	hunt ("DANCING_DRAGON", 150)
-}
-
-quest {			
-	quest_info (60185, "Event Repeatable Exp")		
-	hunt ("NECROMANCER", 20)		
-}			
-			
-quest {			
-	quest_info (60186, "Event Repeatable Exp")		
-	hunt ("NECROMANCER", 40)		
-}			
-			
-quest {			
-	quest_info (60187, "Event Repeatable Exp")		
-	hunt ("NECROMANCER", 60)		
-}	
-
-quest {
-	quest_info (60188, "Event Repeatable Exp")
-	hunt ("APOCALIPS", 50)
-}
-
-quest {
-	quest_info (60189, "Event Repeatable Exp")
-	hunt ("APOCALIPS", 100)
-}
-
-quest {
-	quest_info (60190, "Event Repeatable Exp")
-	hunt ("APOCALIPS", 150)
-}		
-//testing dragon hunt 
-quest {
-	quest_info (60301, "Dragon Hunting")
-	hunt ("PETIT", 100)
-}
-
-quest {
-	quest_info (60302, "Dragon Hunting")
-	hunt ("PETIT", 200)
-}
-
-quest {
-	quest_info (60303, "Dragon Hunting")
-	hunt ("FERUS_", 150)
-}
-
-quest {
-	quest_info (60304, "Dragon Hunting")
-	hunt ("FERUS_", 200)
-}
-
-quest {
-	quest_info (60305, "Dragon Hunting")
-	hunt ("FERUS", 100)
-}
-
-quest {
-	quest_info (60306, "Dragon Hunting")
-	hunt ("FERUS", 200)
-}
-
-quest {
-	quest_info (60307, "Dragon Hunting")
-	hunt ("ACIDUS_", 50)
-}
-
-quest {
-	quest_info (60308, "Dragon Hunting")
-	hunt ("ACIDUS_", 100)
-}
-
-quest {
-	quest_info (60309, "Dragon Hunting")
-	hunt ("ACIDUS", 100)
-}
-
-quest {
-	quest_info (60310, "Dragon Hunting")
-	hunt ("ACIDUS", 200)
-}
-
-quest {
-	quest_info (60311, "Dragon Hunting")
-	hunt ("PETIT_", 100)
-}
-
-quest {
-	quest_info (60312, "Dragon Hunting")
-	hunt ("PETIT_", 200)
-}
-
-quest {
-	quest_info (60313, "Dragon Hunting")
-	hunt ("LEAF_CAT", 150)
-}
-
-quest {
-	quest_info (60314, "Dragon Hunting")
-	hunt ("LEAF_CAT", 300)
-}
-
-quest {
-	quest_info (60315, "Dragon Hunting")
-	hunt ("NOVUS_", 100)
-}
-
-quest {
-	quest_info (60316, "Dragon Hunting")
-	hunt ("NOVUS_", 200)
-}
-
-//etc_hellion
-quest {
-	quest_info (19101, "The Eye of Hellion")
-}
-
-quest {
-	quest_info (19102, "The Eye of Hellion")
-}
-
-quest {
-	quest_info (19103, "The Eye of Hellion")
-}
-
-quest {
-	quest_info (19104, "The Eye of Hellion")
-}
-
-quest {
-	quest_info (19105, "The Eye of Hellion")
-}
-
-quest {
-	quest_info (19106, "The Eye of Hellion")
-}
-
-quest {
-	quest_info (19107, "The Eye of Hellion")
-}
-
-quest {
-	quest_info (19108, "The Eye of Hellion")
-}
-
-quest {
-	quest_info (19109, "The Eye of Hellion")
-}
-
-quest {
-	quest_info (19110, "The Eye of Hellion")
-}
-
-quest {
-	quest_info (19111, "The Eye of Hellion")
-}
-
-quest {
-	quest_info (19112, "The Eye of Hellion")
-}
-
-quest {
-	quest_info (19113, "The Eye of Hellion")
-}
-
-quest {
-	quest_info (19114, "The Eye of Hellion")
-}
-
-quest {
-	quest_info (19115, "The Eye of Hellion")
-}
-
-quest {
-	quest_info (19116, "The Eye of Hellion")
-}
-
-quest {
-	quest_info (19117, "The Eye of Hellion")
-}
-
-quest {
-	quest_info (19118, "The Eye of Hellion")
-}
-
-quest {
-	quest_info (19119, "The Eye of Hellion")
-}
-
-quest {
-	quest_info (19120, "The Eye of Hellion")
-}
-
-quest {
-	quest_info (19121, "The Eye of Hellion")
-}
-
-quest {
-	quest_info (19122, "The Eye of Hellion")
-}
-
-quest {
-	quest_info (19123, "The Eye of Hellion")
-}
-
-quest {
-	quest_info (19124, "The Eye of Hellion")
-}
-
-quest {
-	quest_info (19125, "The Eye of Hellion")
-}
-
-quest {
-	quest_info (19126, "The Eye of Hellion")
-}
-
-quest {
-	quest_info (19127, "The Eye of Hellion")
-}
-
-quest {
-	quest_info (19128, "The Eye of Hellion")
-}
-
-quest {
-	quest_info (19129, "The Eye of Hellion")
-}
-
-// 2010 World Easter Event
-quest {
-	quest_info (9117, "C??onie - Premi?e aventure")
-}
-
-quest {
-	quest_info (9118, "C??onie - Tuer DEVIRUCHI")
-	hunt("DEVIRUCHI", 50)
-}
-
-quest {
-	quest_info (9119, "C??onie - Tuer WRAITH DEAD")
-	hunt("WRAITH_DEAD", 50)
-}
-
-quest {
-	quest_info (9120, "C??onie - Tuer DULLAHAN")
-	hunt("DULLAHAN", 50)
-}
-
-quest {
-	quest_info (9121, "C??onie - Tuer NIGHTMARE TERROR")
-	hunt("NIGHTMARE_TERROR", 50)
-}
-
-quest {
-	quest_info (9122, "C??onie - Seconde aventure")
-}
-
-quest {
-	quest_info (9123, "C??onie - Aller ?Prontera~!")
-}
-
-
-//2010 Christmas
-quest {
-	quest_info (2235, "X-mas : 장난감 공장의 악동들")
-	hunt("G_CRUISER",10)
-}
-quest {
-	quest_info (2236, "X-mas : 장난감 공장의 악동들")
-	hunt("G_MYSTCASE",10)
-}
-quest {
-	quest_info (2237, "X-mas : 장난감 공장의 악동들")
-	hunt("KNIGHT_OF_WINDSTORM",1)
-}
-quest {
-	quest_info (2238, "천사가 들어준 크리스마스 소원")
-	hunt("WILOW",2)
-}
-quest {
-	quest_info (2239, "천사가 들어준 크리스마스 소원")
-	hunt("ELDER_WILOW",2)
-}
-quest {
-	quest_info (2240, "천사가 들어준 크리스마스 소원")
-	hunt("ORK_WARRIOR",2)
-}
-quest {
-	quest_info (2241, "천사가 들어준 크리스마스 소원")
-	hunt("ORC_LADY",2)
-}
-quest {
-	quest_info (2242, "천사가 들어준 크리스마스 소원")
-	hunt("MUMMY",4)
-}
-quest {
-	quest_info (2243, "천사가 들어준 크리스마스 소원")
-	hunt("VERIT",4)
-}
-quest {
-	quest_info (2244, "천사가 들어준 크리스마스 소원")
-	hunt("MARC",4)
-}
-
-quest {
-	quest_info (2245, "천사가 들어준 크리스마스 소원")
-	hunt("SWORD_FISH",4)
-}
-quest {
-	quest_info (2246, "천사가 들어준 크리스마스 소원")
-	hunt("PETIT",4)
-}
-quest {
-	quest_info (2247, "천사가 들어준 크리스마스 소원")
-	hunt("PETIT_",4)
-}
-quest {
-	quest_info (2248, "천사가 들어준 크리스마스 소원")
-	hunt("SPRING_RABBIT",4)
-}
-quest {
-	quest_info (2249, "천사가 들어준 크리스마스 소원")
-	hunt("PEST",4)
-}
-quest {
-	quest_info (2250, "천사가 들어준 크리스마스 소원")
-	hunt("DESERT_WOLF",4)
-}
-quest {
-	quest_info (2251, "천사가 들어준 크리스마스 소원")
-	hunt("SNOWIER",4)
-}
-quest {
-	quest_info (2252, "천사가 들어준 크리스마스 소원")
-	hunt("KOBOLD_3",4)
-}
-quest {
-	quest_info (2253, "천사가 들어준 크리스마스 소원")
-	hunt("KOBOLD_2",4)
-}
-quest {
-	quest_info (2254, "천사가 들어준 크리스마스 소원")
-	hunt("ANTONIO",1)
-}
-quest {
-	quest_info (2255, "천사가 들어준 크리스마스 소원")
-	hunt("CRYSTAL_1",1)
-}
-
-quest {
-	quest_info (60500, "BG Check")
-	time(120)
-}
-// Spirit Extractor II
-quest {
-	quest_info (9124, "Spirit Extractor - Kill 100 Curupira")
-	hunt ("CURUPIRA", 100)
-}
-
-quest {
-	quest_info (9125, "Spirit Extractor - Kill 100 Toucan")
-	hunt ("TOUCAN", 100)
-}
-
-quest {
-	quest_info (9126, "Spirit Extractor - Kill 100 COMODO")
-	hunt ("COMODO", 100)
-}
-
-quest {
-	quest_info (9127, "Spirit Extractor - Kill 100 Banaspaty")
-	hunt ("BANASPATY", 100)
-}
-
-quest {
-	quest_info (9128, "Spirit Extractor - Kill 15 IFRIT")
-	hunt ("IFRIT", 15)
-}
-
-quest {
-	quest_info (9129, "Spirit Extractor - Kill 15 Valkyrie Randgris")
-	hunt ("RANDGRIS", 15)
-}
-// Spirit Extractor III
-quest {
-	quest_info (9130, "Spirit Extractor - Kill 100 Sky Petite")
-	hunt ("PETIT_", 100)
-}
-
-quest {
-	quest_info (9131, "Spirit Extractor - Kill 100 Earth Petite")
-	hunt ("PETIT", 100)
-}
-
-quest {
-	quest_info (9132, "Spirit Extractor - Kill 100 Sky Deleter")
-	hunt ("DELETER", 100)
-}
-
-quest {
-	quest_info (9133, "Spirit Extractor - Kill 100 Earth Deleter")
-	hunt ("DELETER_", 100)
-}
-
-quest {
-	quest_info (9134, "Spirit Extractor - Kill 50 Gold Acidus")
-	hunt ("ACIDUS", 50)
-}
-
-quest {
-	quest_info (9135, "Spirit Extractor - Kill 50 Blue Acidus")
-	hunt ("ACIDUS_", 50)
-}
-
-quest {
-	quest_info (1120, "Somewhere far, far away, where Belte Malang was born! - Grilled Rice Cake made from Izlude")
-}
-quest {
-	quest_info (1121, "Somewhere far, far away, where Belte Malang was born! - Quick Delivery, Grilled Rice Cake")
-}
-quest {
-	quest_info (1122, "Somewhere far, far away, where Belte Malang was born! - Ingeolmi eating monkey")
-	hunt("YOYO", 50)
-}
-quest {
-	quest_info (1123, "Somewhere far, far away, where Belte Malang was born! - STOP!")
-	time(82800)
-}
-quest {
-	quest_info (1124, "Somewhere far, far away, where Belte Malang was born! - Ganggangsulae Expert")
-}
-quest {
-	quest_info (1125, "Somewhere far, far away, where Belte Malang was born! - 50 Festival Masks")
-}
-quest {
-	quest_info (1126, "Somewhere far, far away, where Belte Malang was born! - Korean Rice Cake Eating Machine")
-}
-quest {
-	quest_info (1127, "Somewhere far, far away, where Belte Malang was born! - Scribbles on Tiger Statue")
-}
-quest {
-	quest_info (1128, "Somewhere far, far away, where Belte Malang was born! - Dancing Janitor")
-}
-quest {
-	quest_info (1129, "Somewhere far, far away, where Belte Malang was born! - A Boy Beside Fences")
-}
-quest {
-	quest_info (1130, "Somewhere far, far away, where Belte Malang was born! - Dancing Janitor")
-}
-quest {
-	quest_info (1131, "Somewhere far, far away, where Belte Malang was born! - A Bull Beside an old tree")
-}
-quest {
-	quest_info (1132, "Somewhere far, far away, where Belte Malang was born! - Dancing Janitor")
-}
-quest {
-	quest_info (1133, "Somewhere far, far away, where Belte Malang was born! - Wall Fairy")
-}
-quest {
-	quest_info (1134, "Somewhere far, far away, where Belte Malang was born! - Dancing Janitor")
-}
-quest {
-	quest_info (1135, "Somewhere far, far away, where Belte Malang was born! - Gate Captain")
-}
-quest {
-	quest_info (1136, "Somewhere far, far away, where Belte Malang was born! - Dancing Janitor")
-}
-quest {
-	quest_info (1137, "Somewhere far, far away, where Belte Malang was born! - Enlightened One")
-}
-quest {
-	quest_info (1138, "Somewhere far, far away, where Belte Malang was born! - Dancing Janitor")
-}
-quest {
-	quest_info (1139, "Somewhere far, far away, where Belte Malang was born! - For the Friendship")
-}
-quest {
-	quest_info (1140, "Somewhere far, far away, where Belte Malang was born! - Finding Hometown Finale")
-        time(82800)
-}
-
-quest { 
-	quest_info (4154, "Homunculus Researcher") 
-} 
-
-quest { 
-	quest_info (4155, "Homunculus S Mutation Mission - 1") 
-} 
-
-quest { 
-	quest_info (4156, "Homunculus S Mutation Mission - 2") 
-} 
-
-quest { 
-	quest_info (4157, "Homunculus S Mutation Mission - 3") 
-} 
-
-quest { 
-	quest_info (4158, "Homunculus S Mutation Mission - 4") 
-} 
-
-quest { 
-	quest_info (4159, "Homunculus S Mutation Mission - 5") 
-} 
-
-quest { 
-	quest_info (4160, "Homunculus S Mutation Mission - 6") 
-}
-
-quest {
-	quest_info (9200, "Korea")
-}
-
-quest {
-	quest_info (9201, "Korea")
-}
-
-quest {
-	quest_info (9202, "Korea")
-}
-
-quest {
-	quest_info (9203, "Korea")
-}
-
-quest {
-	quest_info (9204, "Korea")
-}
-
-quest {
-	quest_info (9205, "Korea")
-}
-
-quest {
-        quest_info (13000, "RWC2011Card Gathering")
-}
-
-quest {
-        quest_info (13001, "RWC2011Card Gathering - Hold")
-        time(82800)
-}
-
-quest {
-	quest_info (9136, "Spirit Extractor - Kill 150 Ice Titan")
-	hunt ("ICE_TITAN", 150)
-}
-quest {
-	quest_info (9137, "Spirit Extractor - Kill 50 Gazeti")
-	hunt ("GAZETI", 50)
-}
-quest {
-	quest_info (9142, "Spirit Extractor - Kill 150 Ice Titan")
-	hunt ("ICE_TITAN", 150)
-}
-quest {
-	quest_info (9143, "Spirit Extractor - Kill 50 Gazeti")
-	hunt ("GAZETI", 50)
-}
-quest {
-	quest_info (9138, "Spirit Extractor - Kill 150 Gold Acidus")
-	hunt ("ACIDUS", 150)
-}
-quest {
-	quest_info (9139, "Spirit Extractor - Kill 150 Blue Acidus")
-	hunt ("ACIDUS_", 150)
-}
-quest {
-	quest_info (9140, "Spirit Extractor - Kill 100 Green Ferus")
-	hunt ("FERUS_", 100)
-}
-quest {
-	quest_info (9141, "Spirit Extractor - Kill 100 Red Ferus")
-	hunt ("FERUS", 100)
-}
-
-//중동 라마단
-
-quest {
-     quest_info (9273, "소원을 이루어 드립니다.")
-}
-
-quest {
-     quest_info (9274, "소원을 이루어 드립니다.")
-}
-
-quest {
-     quest_info (9275, "소원을 이루어 드립니다.")
-}
-
-quest {
-     quest_info (9276, "소원을 이루어 드립니다.")
-}
-
-quest {
-     quest_info (9277, "소원을 이루어 드립니다.")
-}
-
-quest {
-     quest_info (9278, "소원을 이루어 드립니다.")
-}
-
-quest {
-     quest_info (9279, "소원을 이루어 드립니다.")
-}
-
-quest {
-     quest_info (9280, "소원을 이루어 드립니다.")
-}
-
-quest {
-     quest_info (9281, "소원을 이루어 드립니다.")
-}
-
-quest {
-     quest_info (9282, "소원을 이루어 드립니다.")
-}
-
-//end
-
-quest {
-	quest_info (5035, "데와타 섬 - 전통음료")
-}
-
-quest {
-	quest_info (5036, "데와타 섬 - 전통음료")
-}
-
-quest {
-	quest_info (5037, "데와타 섬 - 전통음료")
-}
-
-quest {
-	quest_info (5038, "데와타 섬 - 전통음료")
-}
-
-quest {
-	quest_info (5039, "데와타 섬 - 전통음료")
-}
-
-quest {
-	quest_info (5040, "데와타 섬 - 전통음료")
-}
-
-quest {
-	quest_info (5041, "데와타 섬 - 전통음료")
-}
-
-quest {
-	quest_info (5042, "데와타 섬 - 전통음료")
-}
-
-quest {
-	quest_info (5043, "데와타 섬 - 전통음료")
-	time(300)
-}
-
-quest {
-	quest_info (5044, "데와타 섬 - 전통음료")
-	time(86400)
-}
-
-quest {
-	quest_info (5045, "데와타 섬 - 전통음료")
-}
-
-quest {
-	quest_info (5046, "데와타 섬 - 전통음료")
-}
-
-quest {
-	quest_info (5047, "데와타 섬 - 전통음료")
-}
-
-quest {
-	quest_info (5048, "데와타 섬 - 전통음료")
-}
-
-quest {
-	quest_info (5049, "데와타 섬 - 전통음료")
-}
-
-quest {
-	quest_info (5050, "데와타 섬 - 전통음료")
-}
-
-quest {
-	quest_info (5051, "데와타 섬 - 전통음료")
-}
-
-quest {
-	quest_info (5052, "데와타 섬 - 전통무기")
-}
-
-quest {
-	quest_info (5053, "데와타 섬 - 전통무기")
-}
-
-quest {
-	quest_info (5054, "데와타 섬 - 전통무기")
-}
-
-
-// 인도네시아 로컬 : "전설"
-
-quest {
-	quest_info (9155, "자티 왕관 제작 재료 구하기")
-}
-
-quest {
-	quest_info (9156, "자티 왕관 제작")
-}
-
-quest {
-	quest_info (9157, "현자 카시아파의 보답")
-}
-
-quest {
-	quest_info (9158, "경사스러운 소식 전하기(1)")
-}
-
-quest {
-	quest_info (9159, "파이코에게 돌아가기")
-}
-
-quest {
-	quest_info (9160, "경사스러운 소식 전하기(2)")
-}
-
-quest {
-	quest_info (9161, "파이코에게 돌아가기")
-}
-
-quest {
-	quest_info (9162, "경사스러운 소식 전하기(3)")
-}
-
-quest {
-	quest_info (9163, "파이코에게 돌아가기")
-}
-
-quest {
-	quest_info (9164, "경사스러운 소식 전하기(4)")
-}
-
-quest {
-	quest_info (9165, "자티왕관의 제작 성공과 파이코의 보답")
-}
-
-//-------- 노비스 레벨 돌파
-quest {
-	quest_info (5092, "노비스 한계돌파")
-}
-
-quest {
-	quest_info (5093, "노비스 한계돌파")
-}
-
-quest {
-	quest_info (5094, "노비스 한계돌파")
-	hunt("PORING", 1000)
-}
-
-quest {
-	quest_info (5095, "노비스 한계돌파")
-	hunt("LUNATIC", 1000)
-}
-
-quest {
-	quest_info (5096, "노비스 한계돌파")
-	hunt("FABRE", 1000)
-}
-
-quest {
-	quest_info (5097, "노비스 한계돌파")
-	hunt("PICKY", 1000)
-}
-
-quest {
-	quest_info (5098, "노비스 한계돌파")
-}
-
-quest {
-	quest_info (5099, "노비스 한계돌파")
-}
-
-quest {
-	quest_info (5100, "노비스 한계돌파")
-}
-
-
-//-- 2012.07.29 에피소드 14.1 (영문권)
-quest {
-	quest_info (1109, "로페와 유리디 - 미궁숲의 생존자")
-}
-
-quest {
-	quest_info (1110, "로페와 유리디 - 모두가 피해자")
-}
-
-quest {
-	quest_info (1111, "로페와 유리디 - 미궁숲으로")
-}
-
-quest {
-	quest_info (1112, "로페와 유리디 - 어디든 미궁")
-}
-
-quest {
-	quest_info (1113, "로페와 유리디 - 조각난 약속")
-}
-
-quest {
-	quest_info (1114, "로페와 유리디 - 희생의 대가")
-}
-
-quest {
-	quest_info (1115, "로페와 유리디 - 심연의 노래")
-}
-
-quest {
-	quest_info (1116, "로페와 유리디 - 망자의 노래")
-}
-
-quest {
-	quest_info (1117, "로페와 유리디 - 영원의 약속, 결별의 반지")
-}
-
-quest {
-	quest_info (1118, "동네기사단 - 단서가 궁금해")
-}
-
-quest {
- 	quest_info (1119, "동네기사단 - 두목의 심부름")
-	time(82800)
-}
-
-quest {
-	quest_info (2303, "발렌타인이벤트")
-	time(72000)
-}
-
-quest {
-	quest_info (2304, "발렌타인모자획득")
-}
-
-//---- 2012년 에피소드 14.1 (영문권)
-
-quest {
-	quest_info (5016, "연구도구를 가져다 줘")
-}
-
-quest {
-	quest_info (5017, "연구원의 복수")
-}
-
-quest {
-	quest_info (5018, "연구원의 복수")
-}
-
-quest {
-	quest_info (5019, "목욕탕 연구 표본 채취")
-}
-
-quest {
-	quest_info (5020, "표본 검사 중")
-	time(86400)
-}
-
-quest {
-	quest_info (5021, "이빨 표본 수집")
-}
-
-quest {
-	quest_info (5022, "비늘 표본 수집")
-}
-
-quest {
-	quest_info (5023, "표본 검사 중")
-	time(21600)
-}
-
-quest {
-	quest_info (5024, "동쪽 웅덩이 조사")
-}
-
-quest {
-	quest_info (5025, "서쪽 웅덩이 조사")
-}
-
-quest {
-	quest_info (5026, "남쪽 웅덩이 조사")
-}
-
-quest {
-	quest_info (5027, "북쪽 웅덩이 조사")
-}
-
-quest {
-	quest_info (5028, "표본 검사 중")
-	time(43200)
-}
-
-quest {
-	quest_info (5029, "미확인 생명체")
-	time(3600)
-}
-
-quest {
-	quest_info (5030, "꼬기의 부탁")
-}
-
-quest {
-	quest_info (5031, "꼬기의 부탁")
-}
-
-quest {
-	quest_info (5032, "꼬기의 부탁")
-}
-
-quest {
-	quest_info (5033, "꼬기의 부탁")
-}
-
-quest {
-	quest_info (5034, "가족의 소식")
-}
-
-//-- 2010 에피소드 14.1
-//--- 체셔의 심부름 2
-quest {
-	quest_info (7206, "새로운체셔의일")
-}
-
-quest {
-	quest_info (7207, "새로운체셔의일")
-}
-
-quest {
-	quest_info (7208, "새로운체셔의일")
-	time(86400)
-}
-
-quest {
-	quest_info (7209, "새로운체셔의일")
-}
-
-quest {
-	quest_info (7210, "새로운체셔의일")
-}
-
-//------방황하는 수호자
-quest {
-	quest_info (7211, "안개숲의거부")
-	time(9000)
-}
-
-quest {
-	quest_info (7212, "방황하는수호자")
-}
-
-quest {
-	quest_info (7213, "방황하는수호자")
-}
-
-//--- 2010 에피소드 14.1
-//비프로스트
-quest {
-	quest_info (11182,"테오레의 보고서")
-	time(60)
-}
-
-quest {
-	quest_info (11183, "테오레의 부탁")
-}
-
-quest {
-	quest_info (11184, "도망간 라피네")
-}
-
-quest {
-	quest_info (11185, "작은 주머니")
-}
-
-quest {
-	quest_info (11186, "작은 주머니")
-}
-
-quest {
-	quest_info (11187, "작은 주머니")
-}
-
-quest {
-	quest_info (11188, "작은 주머니")
-}
-
-quest {
-	quest_info (11189, "비프로스트")
-}
-
-quest {
-	quest_info (11190, "비프로스트")
-}
-
-quest {
-	quest_info (11191, "비프로스트의 균열")
-}
-
-quest {
-	quest_info (11192, "모라 마을로...")
-}
-
-quest {
-	quest_info (11193, "쿠스미의 친구")
-}
-
-quest {
-	quest_info (11194, "작은 주머니")
-}
-
-quest {
-	quest_info (11195, "비프로스트")
-}
-
-quest {
-	quest_info (11196, "비프로스트")
-}
-
-quest {
-	quest_info (11197, "비프로스트의 균열")
-}
-
-quest {
-	quest_info (11198, "모라 마을로...")
-}
-
-quest {
-	quest_info (11199, "테오도의 친구")
-}
-
-quest {
-	quest_info (11200, "작은 주머니")
-}
-
-quest {
-	quest_info (11201, "비프로스트")
-}
-
-quest {
-	quest_info (11202, "비프로스트")
-}
-
-quest {
-	quest_info (11203, "비프로스트의 균열")
-}
-
-quest {
-	quest_info (11204, "모라 마을로...")
-}
-
-quest {
-	quest_info (11205, "포숑의 친구")
-}
-
-quest {
-	quest_info (11206, "신속배달 요네스")
-}
-
-quest {
-	quest_info (11207, "아주 무거운 짐")
-}
-
-quest {
-	quest_info (11208, "다프네르")
-}
-
 //---2010년 6월 에피소드 14.1
 quest {
  quest_info (12225,"과일을 짊어진 벌레")
@@ -9135,1848 +10171,6 @@ quest {
  quest_info (12253,"실종자 수색은 충분함")
 	time(82800)
 }
-//-- 포트 말라야
-quest {
-	quest_info (12278,"버코너워 호수를 향해...")
-	time(590400)
-}
-
-quest {
-	quest_info (12279, "버코너워를 처치하라!!")
-	hunt ("BAKONAWA_3", 1)
-}
-
-//--포트말라야----필리핀 로컬라이징 바코나와 입장퀘스트
-
-quest {
-	quest_info (1174, "소문과 세월과 전설")
-}
-
-quest {
-	quest_info (1175, "소문과 세월과 전설")
-}
-
-quest {
-	quest_info (1176, "소문과 세월과 전설")
-}
-
-quest {
-	quest_info (1177, "소문과 세월과 전설")
-}
-
-quest {
-	quest_info (1178, "소문과 세월과 전설")
-}
-
-quest {
-	quest_info (1179, "소문과 세월과 전설")
-}
-
-quest {
-	quest_info (1180, "바코나와를 물리쳐라!")
-        qitem("TIYANAK", "Lost_Belongings", 30)
-}
-
-quest {
-	quest_info (1181, "바코나와를 물리쳐라!")
-        qitem("TIYANAK", "Lost_Belongings", 30)
-}
-
-quest {
-	quest_info (1182, "바코나와를 물리쳐라!")
-        qitem("TIYANAK", "Lost_Belongings", 30)
-}
-
-quest {
-	quest_info (1183, "바코나와를 물리쳐라!")
-        qitem("TIYANAK", "Lost_Belongings", 30)
-}
-
-quest {
-	quest_info (1184, "바코나와를 물리쳐라!")
-}
-
-quest {
-	quest_info (1185, "바코나와를 물리쳐라!")
-}
-
-quest {
-	quest_info (1186, "바코나와를 물리쳐라!")
-        hunt("TIKBALANG", 15)
-}
-
-quest {
-	quest_info (1187, "바코나와를 물리쳐라!")
-}
-
-quest {
-	quest_info (1188, "바코나와를 물리쳐라!")
-}
-
-quest {
-	quest_info (1189, "바코나와를 물리쳐라!")
-}
-
-quest {
-	quest_info (1190, "바코나와를 물리쳐라!")
-}
-
-quest {
-	quest_info (1191, "바코나와를 물리쳐라!")
-}
-
-quest {
-	quest_info (1192, "바코나와를 물리쳐라!")
-}
-
-quest {
-	quest_info (1193, "바코나와를 물리쳐라!")
-}
-
-//------------ 필리핀 로컬라이징 ------포트말라야--------------
-quest {
-	quest_info (2271, "숲 속의 비밀")
-
-}
-
-quest {
-	quest_info (2272, "숲 속의 비밀")
-
-}
-
-quest {
-	quest_info (2273, "숲 속의 비밀")
-
-}
-
-quest {
-	quest_info (2274, "숲 속의 비밀")
-
-}
-
-quest {
-	quest_info (2275, "숲 속의 비밀")
-
-}
-
-quest {
-	quest_info (2276, "숲 속의 비밀")
-
-}
-
-quest {
-	quest_info (2277, "숲 속의 비밀")
-
-}
-
-quest {
-	quest_info (2278, "숲 속의 비밀")
-
-}
-
-quest {
-	quest_info (2279, "숲 속의 비밀")
-
-}
-
-quest {
-	quest_info (2280, "숲 속의 비밀")
-
-}
-
-quest {
-	quest_info (2281, "부워여 처치")
-	hunt("BUWAYA", 1)
-
-}
-
-//- 포트 말라야
-quest {
-	quest_info (4229, "부워여의 동굴")
-	time(82800)
-}
-
-//-----------2011 포트말라야 일일퀘 걸작선
-quest {
-	quest_info (7350, "경계하는 마을")
-}
-
-quest {
-	quest_info (7351, "내 낡은 단추보다 좋은 것")
-}
-
-quest {
-	quest_info (7352, "단추라도-선원")
-}
-
-quest {
-	quest_info (7353, "단추라도-노인")
-}
-
-quest {
-	quest_info (7354, "단추라도-판도이")
-}
-
-quest {
-	quest_info (7355, "단추라도-상인")
-}
-
-quest {
-	quest_info (7356, "단추라도-탈라")
-}
-
-quest {
-	quest_info (7357, "단추라도-로멜")
-}
-
-quest {
-	quest_info (7358, "그들이 단추를 원하는 이유")
-}
-
-quest {
-	quest_info (7359, "선원에게 성물전달")
-}
-
-quest {
-	quest_info (7360, "노인에게 성물전달")
-}
-
-quest {
-	quest_info (7361, "판도이에게 성물전달")
-}
-
-quest {
-	quest_info (7362, "상인에게 성물전달")
-}
-
-quest {
-	quest_info (7363, "탈라에게 성물전달")
-}
-
-quest {
-	quest_info (7364, "로멜에게 성물전달")
-}
-
-quest {
-	quest_info (7365, "내 낡은 단추보다 좋은 것2")
-}
-
-quest {
-	quest_info (7366, "수호물과 소녀1")
-}
-
-quest {
-	quest_info (7367, "수호물과 소녀2")
-		time(600)
-}
-
-quest {
-	quest_info (7368, "선원에게 수호물전달")
-}
-
-quest {
-	quest_info (7369, "노인에게 수호물전달")
-}
-
-quest {
-	quest_info (7370, "판도이에게 수호물전달")
-}
-
-quest {
-	quest_info (7371, "상인에게 수호물전달")
-}
-
-quest {
-	quest_info (7372, "탈라에게 수호물전달")
-}
-
-quest {
-	quest_info (7373, "로멜에게 수호물전달")
-}
-
-quest {
-	quest_info (7374, "사랑과 수호물은 모두에게")
-}
-
-quest {
-	quest_info (7375, "사랑과 수호물은 모두에게")
-	time(82800)
-}
-
-quest {
-	quest_info (7376, "노인과 무쇠솥1")
-}
-
-quest {
-	quest_info (7377, "노인과 무쇠솥2")
-}
-
-quest {
-	quest_info (7378, "노인과 무쇠솥-대기")
-	time(82800)
-}
-
-quest {
-	quest_info (7379, "평화전도사")
-}
-
-quest {
-	quest_info (7380, "전통수호물 제작을 위해")
-}
-
-quest {
-	quest_info (7381, "수호물의 재료-대기")
-	time(82800)
-}
-
-quest {
-	quest_info (7382, "선원에게 전달완료")
-}
-
-quest {
-	quest_info (7383, "노인에게 전달완료")
-}
-
-quest {
-	quest_info (7384, "판도이에게 전달완료")
-}
-
-quest {
-	quest_info (7385, "상인에게 전달완료")
-}
-
-quest {
-	quest_info (7386, "탈라에게 전달완료")
-}
-
-quest {
-	quest_info (7387, "로멜에게 전달완료")
-}
-
-quest {
-	quest_info (7388, "마리스의 아이1")
-}
-
-quest {
-	quest_info (7389, "마리스의 아이2")
-}
-
-quest {
-	quest_info (7390, "마리스의 아이-대기")
-	time(82800)
-}
-
-quest {
-	quest_info (7391, "제제제젤로피")
-	qitem("JEJELING", "Jejellopy", 50)
-}
-
-quest {
-	quest_info (7392, "제제제젤로피-대기")
-	time(82800)
-}
-
-quest {
-	quest_info (7393, "반짝반짝 실버블레이드")
-	hunt("TIYANAK", 10)
-	hunt("MANANANGGAL", 10)
-}
-
-quest {
-	quest_info (7394, "내일도 반짝반짝")
-	time(82800)
-}
-
-quest {
-	quest_info (7395, "페리호의 영혼")
-}
-
-quest {
-	quest_info (7396, "페리호의 화내는 영혼")
-}
-
-quest {
-	quest_info (7397, "페리호의 디와타")
-	qitem("ENGKANTO", "Elegant_Flower", 30)
-}
-
-quest {
-	quest_info (7398, "페리호의 디와타")
-}
-
-quest {
-	quest_info (7399, "페리호의 디와타")
-}
-
-quest {
-	quest_info (7400, "포트말라야의뭄바키")
-}
-
-quest {
-	quest_info (7401, "페리안정화-대기")
-	time(82800)
-}
-
-quest {
-	quest_info (7402, "디와타와 꽃다발")
-	qitem("ENGKANTO", "Elegant_Flower", 30)
-}
-
-quest {
-	quest_info (7403, "페리호의 디와타")
-}
-
-quest {
-	quest_info (7404, "제젤링 퇴치")
-	hunt("JEJELING", 20)	
-}
-
-quest {
-	quest_info (7405, "제젤링 퇴치-대기")
-	time(82800)
-}
-
-quest {
-	quest_info (7406, "반타이 뼈다귀")
-	qitem("TIKBALANG", "Evil_Bone", 50)
-	qitem("TIYANAK", "Evil_Bone", 50)
-	qitem("BUNGISNGIS", "Evil_Bone", 50)
-}
-
-quest {
-	quest_info (7407, "반타이 뼈다귀")
-}
-
-quest {
-	quest_info (7408, "반타이 뼈다귀-대기")
-	time(82800)
-}
-
-quest {
-	quest_info (7409, "붕이승이스 퇴치")
-	hunt("BUNGISNGIS", 10)	
-}
-
-quest {
-	quest_info (7410, "붕이승이스-내일도")
-	time(82800)
-}
-
-// 필리핀 로컬라이징 : "벙웅곳 병원 2층" 포트 말라야
-
-quest {
-	quest_info (9222, "병원 2층, 벙웅곳을 퇴치하라")
-	hunt ("BANGUNGOT_3", 1)
-}
-
-quest {
-	quest_info (9223, "병원에는 평화가 찾아왔을까..?")
-	time(601200)
-}
-
-quest {
-	quest_info (9224, "병원 2층 탐사")
-	time(601200)
-}
-
-//- 포트 말라야
-
-quest {
-     quest_info (11284, "포트말라야의 간호사")
-}
-
-quest {
-     quest_info (11285, "포트말라야의 간호사")
-}
-
-quest {
-     quest_info (11286, "포트말라야의 간호사")
-}
-
-quest {
-     quest_info (11287, "포트말라야의 간호사")
-}
-
-quest {
-     quest_info (11288, "포트말라야의 간호사")
-}
-
-quest {
-     quest_info (11289, "포트말라야의 간호사")
-}
-
-quest {
-     quest_info (11290, "포트말라야의 간호사")
-}
-
-quest {
-     quest_info (11291, "포트말라야의 간호사")
-}
-
-quest {
-     quest_info (11292, "포트말라야의 간호사")
-}
-
-quest {
-     quest_info (11293, "포트말라야의 간호사")
-
-}
-quest {
-     quest_info (11294, "포트말라야의 간호사")
-
-}
-quest {
-     quest_info (11295, "포트말라야의 간호사")
-
-}
-quest {
-     quest_info (11296, "포트말라야의 간호사")
-
-}
-quest {
-     quest_info (11297, "포트말라야의 간호사")
-
-}
-quest {
-     quest_info (11298, "포트말라야의 간호사")
-}
-
-quest {
-     quest_info (11299, "포트말라야의 간호사")
-}
-
-quest {
-     quest_info (11300, "포트말라야의 간호사")
-}
-
-quest {
-     quest_info (11301, "포트말라야의 간호사")
-}
-
-quest {
-     quest_info (11302, "포트말라야의 간호사")
-}
-
-quest {
-     quest_info (11303, "포트말라야의 간호사")
-}
-
-quest {
-     quest_info (11304, "포트말라야의 간호사")
-}
-
-quest {
-     quest_info (11305, "포트말라야의 간호사")
-}
-
-quest {
-     quest_info (11306, "포트말라야의 간호사")
-}
-
-quest {
-     quest_info (11307, "포트말라야의 간호사")
-}
-
-quest {
-     quest_info (11308, "포트말라야의 간호사")
-}
-
-quest {
-     quest_info (11309, "포트말라야의 간호사")
-     hunt("BANGUNGOT_3", 1)
-}
---malangdo
-
-//---------말랑도 일일퀘스트 - 불량 고양이 돕기 --------------------------------
-
-quest {
-	quest_info (1145, "위기에 처한 불량 고양이들을 도와라!")
-}
-quest {
-	quest_info (1146, "위기에 처한 불량 고양이들을 도와라!")
-}
-quest {
-	quest_info (1147, "위기에 처한 불량 고양이들을 도와라!")
-}
-quest {
-	quest_info (1148, "위기에 처한 불량 고양이들을 도와라!")
-}
-quest {
-	quest_info (1149, "위기에 처한 불량 고양이들을 도와라!")
-}
-quest {
-	quest_info (1150, "위기에 처한 불량 고양이들을 도와라!")
-}
-quest {
-	quest_info (1151, "위기에 처한 불량 고양이들을 도와라!")
-}
-quest {
-	quest_info (1152, "위기에 처한 불량 고양이들을 도와라! - 종료")
-        time(82800)
-}
-
-quest {
-	quest_info (1153, "위기에 처한 불량 고양이들을 도와라!")
-}
-quest {
-	quest_info (1154, "위기에 처한 불량 고양이들을 도와라!")
-	hunt("RED_ERUMA", 20)
-}
-quest {
-	quest_info (1155, "위기에 처한 불량 고양이들을 도와라!")
-}
-
-
-// 말랑도 문어 던전 //
-quest {
-	quest_info (4197, "문어 동굴")
-	time(3600)
-}
-
-
-//- 말랑도
-quest {
-	quest_info (5058, "냥게이머메인_01")
-}
-
-quest {
-	quest_info (5059, "냥게이머메인_02")
-}
-
-quest {
-	quest_info (5060, "냥게이머메인_03")
-	time(180)
-}
-
-quest {
-	quest_info (5061, "냥게이머메인_04")
-}
-
-quest {
-	quest_info (5062, "냥게이머메인_05")
-}
-
-quest {
-	quest_info (5063, "냥게이머메인_06")
-}
-
-quest {
-	quest_info (5064, "냥게이머메인_07")
-}
-
-quest {
-	quest_info (5065, "냥게이머메인_08")
-}
-
-quest {
-	quest_info (5066, "냥게이머메인_09")
-}
-
-quest {
-	quest_info (5067, "냥게이머메인_10")
-}
-
-quest {
-	quest_info (5068, "냥게이머메인_11")
-	time(72000)
-}
-
-quest {
-	quest_info (5069, "냥게이머메인_12")
-	time(3600)
-}
-
-quest {
-	quest_info (5070, "냥게이머_가위쿨")
-	time(86400)
-}
-
-quest {
-	quest_info (5071, "냥게이머_참참쿨")
-	time(86400)
-}
-
-quest {
-	quest_info (5072, "냥게이머_꽁냥쿨")
-	time(86400)
-}
-
-quest {
-	quest_info (5073, "냥게이머_깃발쿨")
-	time(86400)
-}
-
-quest {
-	quest_info (5074, "냥게이머일일_01")
-	hunt("PHEN", 30)
-}
-
-quest {
-	quest_info (5075, "냥게이머일일_02")
-	hunt("MARSE", 50)
-}
-
-quest {
-	quest_info (5076, "냥게이머일일_03")
-	hunt("KOBOLD_ARCHER", 30)
-}
-
-quest {
-	quest_info (5077, "냥게이머일일_04")
-	hunt("CRAMP", 10)
-}
-
-quest {
-	quest_info (5078, "냥게이머일일_05")
-	hunt("PECOPECO", 50)
-}
-
-quest {
-	quest_info (5079, "냥게이머일일_06")
-}
-
-quest {
-	quest_info (5080, "냥게이머일일_07")
-}
-
-quest {
-	quest_info (5081, "냥게이머일일_08")
-}
-
-quest {
-	quest_info (5082, "냥게이머일일_09")
-}
-
-quest {
-	quest_info (5083, "냥게이머일일_10")
-}
-
-quest {
-	quest_info (5084, "냥게이머일일_11")
-}
-
-quest {
-	quest_info (5085, "냥게이머일일_12")
-}
-
-quest {
-	quest_info (5086, "냥게이머일일_13")
-}
-
-quest {
-	quest_info (5087, "냥게이머일일_14")
-}
-
-quest {
-	quest_info (5088, "냥게이머일일_15")
-}
-
-quest {
-	quest_info (5089, "냥게이머일일_16")
-}
-
-quest {
-	quest_info (5090, "냥게이머일일_17")
-}
-
-quest {
-	quest_info (5091, "말랑도로 출발")
-}
-
-
-//--- ??? ?? ??
-quest {
-	quest_info (7214, "???? 1?? ???")
-}
-
-quest {
-	quest_info (7215, "??? ??")
-	hunt("STALACTIC_GOLEM", 3)
-}
-
-quest {
-	quest_info (7216, "?? ??")
-	hunt("STALACTIC_GOLEM", 10)
-}
-
-quest {
-	quest_info (7217, "?? ??")
-}
-
-quest {
-	quest_info (7218, "????")
-}
-
-quest {
-	quest_info (7219, "???? 2?? ??")
-}
-
-quest {
-	quest_info (7220, "?? ???")
-	hunt("WRAITH", 20)
-}
-
-quest {
-	quest_info (7221, "?? ???")
-	hunt("EVIL_DRUID", 10)
-}
-
-quest {
-	quest_info (7222, "????")
-}
-
-quest {
-	quest_info (7223, "???? 3?? ?????")
-}
-
-quest {
-	quest_info (7224, "???? ??")
-	hunt("PORCELLIO", 30)
-}
-
-quest {
-	quest_info (7225, "??,??,?")
-	hunt("NOXIOUS", 30)
-}
-
-quest {
-	quest_info (7226, "??,??,?")
-	hunt("VENOMOUS", 30)
-}
-
-quest {
-	quest_info (7227, "??,??,?")
-	hunt("TEDDY_BEAR", 5)
-}
-
-quest {
-	quest_info (7228, "????")
-}
-
-quest {
-	quest_info (7229, "??? ????")
-}
-
-quest {
-	quest_info (7230, "??? ????")
-	hunt("SIROMA", 30)
-}
-
-quest {
-	quest_info (7231, "??? ????")
-	hunt("SIROMA", 30)
-}
-
-quest {
-	quest_info (7232, "??? ????")
-}
-
-quest {
-	quest_info (7233, "??? ????")
-}
-
-quest {
-	quest_info (7234, "??? ????")
-}
-
-quest {
-	quest_info (7235, "??? ????")
-	hunt("NEPENTHES", 1)
-}
-
-quest {
-	quest_info (7236, "??? ????")
-	hunt("PINGUICULA", 5)
-}
-
-quest {
-	quest_info (7237, "????")
-}
-
-quest {
-	quest_info (7238, "??? ??? ???")
-}
-
-quest {
-	quest_info (7239, "??? ??? ???")
-}
-
-quest {
-	quest_info (7240, "???? 1??")
-}
-
-quest {
-	quest_info (7241, "??? ???-???")
-	time(86400)
-}
-
-//--- 말랑도 야옹 모험단
-
-quest {
-	quest_info (7242, "냐드벤처-라토의부탁")
-}
-
-quest {
-	quest_info (7243, "냐드벤처-두루두루시작")
-}
-
-quest {
-	quest_info (7244, "냐드벤처-두루두루A")
-	time(180)
-}
-
-quest {
-	quest_info (7245, "냐드벤처-두루두루B")
-	time(180)
-}
-
-quest {
-	quest_info (7246, "냐드벤처-지금만나러")
-}
-
-quest {
-	quest_info (7247, "냐드벤처-쾅돌이")
-}
-
-//-- 7248(사용안함)
-
-quest {
-	quest_info (7249, "냐드벤처-쾅돌이내일")
-	time(86400)
-}
-
-quest {
-	quest_info (7250, "냐드벤처-숨겨진보물")
-}
-
-quest {
-	quest_info (7251, "냐드벤처-그림조각")
-}
-
-quest {
-	quest_info (7252, "냐드벤처-그림조각")
-}
-
-quest {
-	quest_info (7253, "냐드벤처-그림조각")
-}
-
-quest {
-	quest_info (7254, "냐드벤처-그림조각")
-}
-
-quest {
-	quest_info (7255, "냐드벤처-그림조각")
-}
-
-quest {
-	quest_info (7256, "냐드벤처-그림조각")
-}
-
-quest {
-	quest_info (7257, "냐드벤처-달리기내일")
-	time(86400)
-}
-
-quest {
-	quest_info (7258, "냐드벤처-그림조각")
-}
-
-quest {
-	quest_info (7259, "냐드벤처-완성된그림")
-}
-
-
-//------말랑도 고양이건빵
-quest {
-	quest_info (7260, "고양이건빵-벌레발생")
-}
-
-quest {
-	quest_info (7261, "고양이건빵-선장실")
-}
-
-quest {
-	quest_info (7262, "고양이건빵-선실")
-}
-
-quest {
-	quest_info (7263, "고양이건빵-집회실")
-}
-
-quest {
-	quest_info (7264, "조리장냐스에게")
-}
-
-quest {
-	quest_info (7265, "냐스의분노")
-}
-
-quest {
-	quest_info (7266, "냐스의선언")
-}
-
-quest {
-	quest_info (7267, "클리냥과약속")
-	time(86400)
-}
-
-quest {
-	quest_info (7268, "고양이건빵수거")
-}
-
-quest {
-	quest_info (7269, "고양이건빵-수풀")
-}
-
-quest {
-	quest_info (7270, "고양이건빵-수상한모래1")
-}
-
-quest {
-	quest_info (7271, "고양이건빵-계단아래")
-}
-
-quest {
-	quest_info (7272, "고양이건빵-캣타워구석")
-}
-
-quest {
-	quest_info (7273, "고양이건빵-사물함구석")
-}
-
-quest {
-	quest_info (7274, "고양이건빵-캣타워발판")
-}
-
-quest {
-	quest_info (7275, "고양이건빵-수상한모래2")
-}
-
-quest {
-	quest_info (7276, "식재료납품약속")
-	time(86400)
-}
-
-//덱요리
-quest {
-	quest_info (7281, "요리를 가져와")
-}
-
-quest {
-	quest_info (7282, "요리를 가져와")
-}
-
-quest {
-	quest_info (7283, "요리를 가져와")
-}
-
-quest {
-	quest_info (7284, "요리를 가져와")
-}
-
-quest {
-	quest_info (7285, "요리를 가져와")
-}
-
-quest {
-	quest_info (7286, "요리를 가져와")
-}
-
-quest {
-	quest_info (7287, "요리를 가져와")
-}
-
-quest {
-	quest_info (7288, "요리를 가져와")
-}
-
-quest {
-	quest_info (7289, "요리를 가져와")
-}
-
-quest {
-	quest_info (7290, "요리를 가져와")
-}
-
-//힘요리
-quest {
-	quest_info (7291, "요리를 가져와")
-}
-
-quest {
-	quest_info (7292, "요리를 가져와")
-}
-
-quest {
-	quest_info (7293, "요리를 가져와")
-}
-
-quest {
-	quest_info (7294, "요리를 가져와")
-}
-
-quest {
-	quest_info (7295, "요리를 가져와")
-}
-
-quest {
-	quest_info (7296, "요리를 가져와")
-}
-
-quest {
-	quest_info (7297, "요리를 가져와")
-}
-
-quest {
-	quest_info (7298, "요리를 가져와")
-}
-
-quest {
-	quest_info (7299, "요리를 가져와")
-}
-
-quest {
-	quest_info (7300, "요리를 가져와")
-}
-
-//어질요리
-quest {
-	quest_info (7301, "요리를 가져와")
-}
-
-quest {
-	quest_info (7302, "요리를 가져와")
-}
-
-quest {
-	quest_info (7303, "요리를 가져와")
-}
-
-quest {
-	quest_info (7304, "요리를 가져와")
-}
-
-quest {
-	quest_info (7305, "요리를 가져와")
-}
-
-quest {
-	quest_info (7306, "요리를 가져와")
-}
-
-quest {
-	quest_info (7307, "요리를 가져와")
-}
-
-quest {
-	quest_info (7308, "요리를 가져와")
-}
-
-quest {
-	quest_info (7309, "요리를 가져와")
-}
-
-quest {
-	quest_info (7310, "요리를 가져와")
-}
-
-//바탈요리
-quest {
-	quest_info (7311, "요리를 가져와")
-}
-
-quest {
-	quest_info (7312, "요리를 가져와")
-}
-
-quest {
-	quest_info (7313, "요리를 가져와")
-}
-
-quest {
-	quest_info (7314, "요리를 가져와")
-}
-
-quest {
-	quest_info (7315, "요리를 가져와")
-}
-
-quest {
-	quest_info (7316, "요리를 가져와")
-}
-
-quest {
-	quest_info (7317, "요리를 가져와")
-}
-
-quest {
-	quest_info (7318, "요리를 가져와")
-}
-
-quest {
-	quest_info (7319, "요리를 가져와")
-}
-
-quest {
-	quest_info (7320, "요리를 가져와")
-}
-
-//인트요리
-quest {
-	quest_info (7321, "요리를 가져와")
-}
-
-quest {
-	quest_info (7322, "요리를 가져와")
-}
-
-quest {
-	quest_info (7323, "요리를 가져와")
-}
-
-quest {
-	quest_info (7324, "요리를 가져와")
-}
-
-quest {
-	quest_info (7325, "요리를 가져와")
-}
-
-quest {
-	quest_info (7326, "요리를 가져와")
-}
-
-quest {
-	quest_info (7327, "요리를 가져와")
-}
-
-quest {
-	quest_info (7328, "요리를 가져와")
-}
-
-quest {
-	quest_info (7329, "요리를 가져와")
-}
-
-quest {
-	quest_info (7330, "요리를 가져와")
-}
-
-
-//럭요리
-quest {
-	quest_info (7331, "요리를 가져와")
-}
-
-quest {
-	quest_info (7332, "요리를 가져와")
-}
-
-quest {
-	quest_info (7333, "요리를 가져와")
-}
-
-quest {
-	quest_info (7334, "요리를 가져와")
-}
-
-quest {
-	quest_info (7335, "요리를 가져와")
-}
-
-quest {
-	quest_info (7336, "요리를 가져와")
-}
-
-quest {
-	quest_info (7337, "요리를 가져와")
-}
-
-quest {
-	quest_info (7338, "요리를 가져와")
-}
-
-quest {
-	quest_info (7339, "요리를 가져와")
-}
-
-quest {
-	quest_info (7340, "요리를 가져와")
-}
-
-//20요리
-quest {
-	quest_info (7341, "요리를 가져와")
-}
-
-quest {
-	quest_info (7342, "요리를 가져와")
-}
-
-quest {
-	quest_info (7343, "요리를 가져와")
-}
-
-quest {
-	quest_info (7344, "요리를 가져와")
-}
-
-quest {
-	quest_info (7345, "요리를 가져와")
-}
-
-quest {
-	quest_info (7346, "요리를 가져와")
-}
-
-
-//-- ??? ????
-quest {
-	quest_info (4161, "????<??? ???1>")
-}
-
-quest {
-	quest_info (4162, "????<??? ???2>")
-}
-
-quest {
-	quest_info (4163, "????<??? ???3>")
-}
-
-quest {
-	quest_info (4164, "????<??? ???4>")
-}
-
-quest {
-	quest_info (4165, "????<??? ???5>")
-}
-
-quest {
-	quest_info (4166, "???? ? ?? ????")
-}
-
-// ??? 86 ~ 90
-quest {
-	quest_info (4167, "????? ??")
-	hunt("DRAGON_TAIL", 30)
-}
-
-quest {
-	quest_info (4168, "??? ?? ??")
-	hunt("SPRING_RABBIT", 30)
-}
-
-quest {
-	quest_info (4169, "??? ??")
-	hunt("PEST", 30)
-}
-
-quest {
-	quest_info (4170, "??? ??")
-	hunt("BATHORY", 30)
-}
-
-quest {
-	quest_info (4171, "?? ??")
-	hunt("ALARM", 30)
-}
-
-quest {
-	quest_info (4172, "???? ??")
-	hunt("VAVAYAGA", 30)
-}
-
-quest {
-	quest_info (4173, "?? ??")
-	hunt("HYEGUN", 30)
-}
-
-quest {
-	quest_info (4174, "?? ??? ??")
-	hunt("ANTIQUE_FIRELOCK", 30)
-}
-
-quest {
-	quest_info (4175, "???? ??")
-	hunt("ZIPPER_BEAR", 30)
-}
-
-quest {
-	quest_info (4176, "?? ?? ??")
-	hunt("PETIT", 30)
-}
-
-quest {
-	quest_info (4177, "????? ??")
-	hunt("RAFFLESIA", 30)
-}
-
-quest {
-	quest_info (4178, "???? ??")
-	hunt("VENOMOUS", 30)
-}
-
-quest {
-	quest_info (4179, "?? ??")
-	hunt("PITMAN", 30)
-}
-
-quest {
-	quest_info (4180, "?? ??? ??")
-	hunt("NOVUS_", 30)
-}
-
-// ??? 91 ~ 99
-quest {
-	quest_info (4181, "??? ??")
-	hunt("SOLIDER", 30)
-}
-
-quest {
-	quest_info (4182, "??? ??")
-	hunt("FREEZER", 30)
-}
-
-quest {
-	quest_info (4183, "?? ??")
-	hunt("HEATER", 30)
-}
-
-quest {
-	quest_info (4184, "????? ??")
-	hunt("INJUSTICE", 30)
-}
-
-quest {
-	quest_info (4185, "??? ??")
-	hunt("RYBIO", 30)
-}
-
-quest {
-	quest_info (4186, "?? ???? ??")
-	hunt("DARK_PRIEST", 30)
-}
-
-quest {
-	quest_info (4187, "??? ??")
-	hunt("STAPO", 30)
-}
-
-quest {
-	quest_info (4188, "??? ??")
-	hunt("ROWEEN", 30)
-}
-
-quest {
-	quest_info (4189, "??? ??")
-	hunt("SIROMA", 30)
-}
-
-quest {
-	quest_info (4190, "??? ??")
-	hunt("SHINOBI", 30)
-}
-
-quest {
-	quest_info (4191, "??? ??")
-	hunt("WICKED_NYMPH", 30)
-}
-
-quest {
-	quest_info (4192, "???? ??")
-	hunt("DEVIRUCHI", 30)
-}
-
-quest {
-	quest_info (4193, "??? ??")
-	hunt("MINERAL", 30)
-}
-
-quest {
-	quest_info (4194, "?? ??")
-	hunt("KAHO", 30)
-}
-
-quest {
-	quest_info (4195, "???? ??")
-	hunt("NERAID", 30)
-}
-
-quest {
-	quest_info (4196, "????? ??")
-	hunt("DISGUISE", 30)
-}
-
-// ??? ?? ?? ?? (86 ~90)
-quest {
-	quest_info (4198, "????? ?? - ?? ?")
-	time(10800)
-}
-
-quest {
-	quest_info (4199, "??? ?? ?? - ?? ?")
-	time(10800)
-}
-
-quest {
-	quest_info (4200, "??? ?? - ?? ?")
-	time(10800)
-}
-
-quest {
-	quest_info (4201, "??? ?? - ?? ?")
-	time(10800)
-}
-
-quest {
-	quest_info (4202, "?? ?? - ?? ?")
-	time(10800)
-}
-
-quest {
-	quest_info (4203, "???? ?? - ?? ?")
-	time(10800)
-}
-
-quest {
-	quest_info (4204, "?? ?? - ?? ?")
-	time(10800)
-}
-
-quest {
-	quest_info (4205, "?? ??? ?? - ?? ?")
-	time(10800)
-}
-
-quest {
-	quest_info (4206, "???? ?? - ?? ?")
-	time(10800)
-}
-
-quest {
-	quest_info (4207, "?? ?? ?? - ?? ?")
-	time(10800)
-}
-
-quest {
-	quest_info (4208, "????? ?? - ?? ?")
-	time(10800)
-}
-
-quest {
-	quest_info (4209, "???? ?? - ?? ?")
-	time(10800)
-}
-
-quest {
-	quest_info (4210, "?? ?? - ?? ?")
-	time(10800)
-}
-
-quest {
-	quest_info (4211, "?? ??? ?? - ?? ?")
-	time(10800)
-}
-
-
-// ??? ?? ?? ?? (91 ~ 99)
-quest {
-	quest_info (4212, "??? ?? - ?? ?")
-	time(10800)
-}
-
-quest {
-	quest_info (4213, "??? ?? - ?? ?")
-	time(10800)
-}
-
-quest {
-	quest_info (4214, "?? ?? - ?? ?")
-	time(10800)
-}
-
-quest {
-	quest_info (4215, "????? ?? - ?? ?")
-	time(10800)
-}
-
-quest {
-	quest_info (4216, "??? ?? - ?? ?")
-	time(10800)
-}
-
-quest {
-	quest_info (4217, "?? ???? ?? - ?? ?")
-	time(10800)
-}
-
-quest {
-	quest_info (4218, "??? ?? - ?? ?")
-	time(10800)
-}
-
-quest {
-	quest_info (4219, "??? ?? - ?? ?")
-	time(10800)
-}
-
-quest {
-	quest_info (4220, "??? ?? - ?? ?")
-	time(10800)
-}
-
-quest {
-	quest_info (4221, "??? ?? - ?? ?")
-	time(10800)
-}
-
-quest {
-	quest_info (4222, "??? ?? - ?? ?")
-	time(10800)
-}
-
-quest {
-	quest_info (4223, "???? ?? - ?? ?")
-	time(10800)
-}
-
-quest {
-	quest_info (4224, "??? ?? - ?? ?")
-	time(10800)
-}
-
-quest {
-	quest_info (4225, "?? ?? - ?? ?")
-	time(10800)
-}
-
-quest {
-	quest_info (4226, "???? ?? - ?? ?")
-	time(10800)
-}
-
-quest {
-	quest_info (4227, "????? ?? - ?? ?")
-	time(10800)
-}
-
-quest {
-     quest_info (11378, "Trick or treat")
-}
-
-
-
-
-// 이벤트 메모리얼던전
-quest {
-        quest_info (5335, "이벤트메모리얼_00")
-}
-
-quest {
-        quest_info (5336, "이벤트메모리얼_01")
-}
-
-quest {
-        quest_info (5337, "이벤트메모리얼_02")
-}
-
-quest {
-        quest_info (5338, "이벤트메모리얼_03")
-}
-
-quest {
-        quest_info (5339, "이벤트메모리얼_04")
-}
-
-quest {
-        quest_info (5340, "이벤트메모리얼_05")
-}
-
-// 20131209 Christmas Event
-quest {
-	quest_info (15055, "2013 크리스마스용")
-}
-quest {
-	quest_info (15056, "2013 크리스마스용")
-}
-quest {
-	quest_info (15057, "2013 크리스마스용")
-}
-quest {
-	quest_info (15058, "2013 크리스마스용")
-}
-quest {
-	quest_info (15059, "2013 크리스마스용")
-	time(82800)
-}
-quest {
-	quest_info (15060, "2013 크리스마스용")
-}
-quest {
-	quest_info (15061, "2013 크리스마스용")
-}
-quest {
-	quest_info (15062, "2013 크리스마스용")
-}
-quest {
-	quest_info (15063, "2013 크리스마스용")
-}
-quest {
-	quest_info (15064, "2013 크리스마스용")
-}
-
-//------- 말랑도
-quest {
-	quest_info (11209, "토마스씨의 고충")
-}
-
-quest {
-	quest_info (11210, "말랑도 정기 집회")
-}
-
-quest {
-	quest_info (11211, "말랑도 정기 집회")
-}
-
-quest {
-	quest_info (11212, "말랑도 정기 집회")
-}
-
-quest {
-	quest_info (11213, "말랑도 정기 집회")
-}
-
-quest {
-	quest_info (11214, "말랑도 정기 집회")
-}
-
-quest {
-	quest_info (11215, "말랑도 정기 집회")
-}
-
-quest {
-	quest_info (11216, "이그드라실 열매")
-}
-
-quest {
-	quest_info (11217, "이그드라실 열매")
-}
-
-quest {
-	quest_info (11218, "이그드라실 열매")
-}
-
-quest {
-	quest_info (11219, "이그드라실 열매")
-}
-
-quest {
-	quest_info (11220, "이그드라실 열매")
-}
-
-quest {
-	quest_info (11221, "세상에서 가장 말랑말랑쫀득쫀득한")
-}
-
-quest {
-	quest_info (11222, "세상에서 가장 말랑말랑쫀득쫀득한")
-}
-
-quest {
-	quest_info (11223, "세상에서 가장 말랑말랑쫀득쫀득한")
-}
-
-quest {
-	quest_info (11224, "세상에서 가장 말랑말랑쫀득쫀득한")
-}
-
-quest {
-	quest_info (11225, "교차하지 않는 노력의 길")
-}
-
-quest {
-	quest_info (11226, "교차하지 않는 노력의 길")
-}
-
-quest {
-	quest_info (11227, "교차하지 않는 노력의 길")
-}
-
-quest {
-	quest_info (11228, "교차하지 않는 노력의 길")
-}
-
-quest {
-	quest_info (11229, "별사탕을 위하여")
-}
-
-quest {
-	quest_info (11230, "별사탕을 위하여")
-}
-
-quest {
-	quest_info (11231, "별사탕을 위하여")
-}
-
-quest {
-	quest_info (11232, "별사탕을 위하여")
-}
-
-quest {
-	quest_info (11233, "별사탕을 위하여")
-}
-
-quest {
-	quest_info (11234, "별사탕을 위하여")
-}
-
-quest {
-	quest_info (11235, "별사탕을 위하여")
-}
-
-quest {
-	quest_info (11236, "교집합")
-}
-
-quest {
-	quest_info (11237, "토마스씨의 고충")
-}
-
-quest {
-	quest_info (11238, "이그드라실 열매")
-}
-
-quest {
-	quest_info (11239, "이그드라실 열매")
-	time(82800)
-}
-
-quest {
-	quest_info (11240, "세상에서 가장 말랑말랑쫀득쫀득한")
-}
-
-quest {
-	quest_info (11241, "세상에서 가장 말랑말랑쫀득쫀득한")
-}
-
-quest {
-	quest_info (11242, "세상에서 가장 말랑말랑쫀득쫀득한")
-}
-
-quest {
-	quest_info (11243, "세상에서 가장 말랑말랑쫀득쫀득한")
-	time(82800)
-}
-
-quest {
-	quest_info (11244, "말랑말랑젤리")
-}
-
-quest {
-	quest_info (11245, "말랑말랑젤리")
-	time(82800)
-}
 
 //-- 말랑도
 quest {
@@ -11084,431 +10278,1505 @@ quest {
 	time(579600)
 }
 
+//-- 2011 4월 밝히리 이벤트 
 quest {
- quest_info (9167,"Eden Tutorial")
+	quest_info (12275,"미묘한 수배전단")
 }
 
 quest {
- quest_info (9168,"Eden Tutorial")
+	quest_info (12276,"폭주하는 공제회 자판기")
+	time(300)
 }
 
 quest {
- quest_info (9169,"Eden Tutorial")
+	quest_info (12277,"수배전단, 드..드리겠습니다")
+}
+
+//-- 포트 말라야
+quest {
+	quest_info (12278,"버코너워 호수를 향해...")
+	time(590400)
 }
 
 quest {
- quest_info (9170,"Eden Tutorial")
+	quest_info (12279, "버코너워를 처치하라!!")
+	hunt ("BAKONAWA_3", 1)
+}
+
+
+//-------용진씨 퀘스트 필드 13000 ~ 13999
+quest {
+        quest_info (13000, "RWC2011카드 모으기")
 }
 
 quest {
- quest_info (9171,"Eden Tutorial")
+        quest_info (13001, "RWC2011카드모으기 - 대기")
+        time(82800)
+}
+
+//-- 낙원단 100 - 110
+quest {
+        quest_info (13002, "모험자의 조건 - 브리간 수집")
 }
 
 quest {
- quest_info (9172,"Eden Tutorial")
+	quest_info (13003,"캐럿 처치 - 내가 웃는게 웃는게 아니야")
+	hunt("CARAT", 30)
 }
 
 quest {
- quest_info (9173,"Eden Tutorial")
-	time(68400)
+	quest_info (13004, "캐럿 처리 - 대기 중")
+	time(79200)
 }
 
 quest {
- quest_info (4344,"Easter Event")
+	quest_info (13005,"아크라우스 처치 - 콩..콩까지마!")
+	hunt("ARCLOUSE", 22)
 }
 
 quest {
- quest_info (4345,"Easter Event")
+	quest_info (13006, "아크라우스 처리 - 대기 중")
+	time(79200)
+}
+
+quest {
+	quest_info (13007,"아놀리안 처치 - 성지순례 - 1")
+	hunt("ANOLIAN", 30)
+}
+
+quest {
+	quest_info (13008, "아놀리안 처리 - 대기 중")
+	time(79200)
+}
+
+quest {
+	quest_info (13009,"스팅 처치 - 성지순례 - 2")
+	hunt("STING", 30)
+}
+
+quest {
+	quest_info (13010, "스팅 처리 - 대기 중")
+	time(79200)
+}
+
+quest {
+	quest_info (13011,"메이저우로스 처치 - 성지순례 - 3")
+	hunt("MAJORUROS", 30)
+}
+
+quest {
+	quest_info (13012, "메이저우로스 처치 - 대기 중")
+	time(79200)
+}
+
+quest {
+	quest_info (13013,"핀귀큘라 처치 - 모험자들을 위한 배려")
+	hunt("PINGUICULA", 30)
+}
+
+quest {
+	quest_info (13014, "핀귀큘라 처리 - 대기 중")
+	time(79200)
+}
+
+quest {
+	quest_info (13015,"루시올라 베스파 처치 - 트라우마")
+	hunt("LUCIOLA_VESPA", 30)
+}
+
+quest {
+	quest_info (13016, "루시올라 베스파 처리 - 대기 중")
+	time(79200)
+}
+
+quest {
+	quest_info (13017,"데저트울프 처치 - 늑대와 함께 춤을")
+	hunt("DESERT_WOLF", 30)
+}
+
+quest {
+	quest_info (13018, "데저트울프 처리 - 대기 중")
+	time(79200)
+}
+
+quest {
+	quest_info (13019,"스노이어 처치 - 시끄러운 녀석들")
+	hunt("SNOWIER", 30)
+}
+
+quest {
+	quest_info (13020, "스노이어 처리 - 대기 중")
+	time(79200)
+}
+
+quest {
+	quest_info (13021,"아이스 티탄 처치 - 골렘? 골렘!")
+	hunt("ICE_TITAN", 30)
+}
+
+quest {
+	quest_info (13022, "아이스 티탄 처리 - 대기 중")
+	time(79200)
+}
+
+quest {
+	quest_info (13023,"나이트메어 테러 처치 - 흐린 추억속의 그대")
+	hunt("NIGHTMARE_TERROR", 30)
+}
+
+quest {
+	quest_info (13024, "나이트메어 테러 처리 - 대기 중")
+	time(79200)
+}
+
+quest {
+	quest_info (13025,"딜리터 처치 - 마지막 춤은 나와 함께")
+	hunt("DELETER", 30)
+}
+
+quest {
+	quest_info (13026, "딜리터 처리 - 대기 중")
+	time(79200)
+}
+
+
+//-- 2011 추석
+quest {
+        quest_info (13027, "효녀 초승달의 부탁")
+}
+
+quest {
+        quest_info (13028, "깨끗하게 맑게 자신있게")
+}
+
+quest {
+	quest_info (13029, "깨끗하게 맑게 자신있게 - 대기 중")
 	time(82800)
 }
 
-//==== 생체던전 4층 퀘스트 5109 - 5125
 quest {
-	quest_info (5109, "생체던전 4층 퀘스트01")
+        quest_info (13030, "방앗간의 의뢰")
 }
 
 quest {
-	quest_info (5110, "생체던전 4층 퀘스트02")
+        quest_info (13031, "반달아가씨를 찾아라")
 }
 
 quest {
-	quest_info (5111, "생체던전 4층 퀘스트03")
+        quest_info (13032, "잡초도령의 끈기")
 }
 
 quest {
-	quest_info (5112, "생체던전 4층 퀘스트04")
-	time(259200)
+	quest_info (13033, "잡초도령의 끈기 - 대기 중")
+	time(82800)
 }
 
 quest {
-  quest_info (5113, "생체던전 4층 퀘스트05")
-  hunt("B_SEYREN", 1)
+        quest_info (13034, "곶감과 쑥떡에 사랑을 담아")
 }
 
 quest {
-  quest_info (5114, "생체던전 4층 퀘스트06")
-  hunt("B_RANDEL", 1)
+        quest_info (13035, "사랑하는 할머니를 위해")
 }
 
 quest {
-  quest_info (5115, "생체던전 4층 퀘스트07")
-  hunt("B_MAGALETA", 1)
+	quest_info (13036, "사랑하는 할머니를 위해 - 대기 중")
+	time(82800)
 }
 
 quest {
-  quest_info (5116, "생체던전 4층 퀘스트08")
-  hunt("B_CHEN", 1)
+        quest_info (13037, "으르렁처자의 이야기")
 }
 
 quest {
-  quest_info (5117, "생체던전 4층 퀘스트09")
-  hunt("B_KATRINN", 1)
+        quest_info (13038, "반달아가씨의 이야기")
 }
 
 quest {
-  quest_info (5118, "생체던전 4층 퀘스트10")
-  hunt("B_CELIA", 1)
+        quest_info (13039, "쑥떡을 얻었습니다")
+}
+
+//-- 낙원단 100 - 110
+quest {
+	quest_info (13040,"로리루리 처치 - 하앍하앍")
+	hunt("LOLI_RURI", 30)
 }
 
 quest {
-  quest_info (5119, "생체던전 4층 퀘스트11")
-  hunt("B_HARWORD", 1)
+	quest_info (13041, "로리루리 처리 - 대기 중")
+	time(79200)
 }
 
 quest {
-  quest_info (5120, "생체던전 4층 퀘스트12")
-  hunt("B_FLAMEL", 1)
+	quest_info (13042,"메두사 처치 - 어느 미용사의 절규")
+	hunt("MEDUSA", 30)
 }
 
 quest {
-  quest_info (5121, "생체던전 4층 퀘스트13")
-  hunt("B_EREMES", 1)
+	quest_info (13043, "메두사 처치 - 대기 중")
+	time(79200)
 }
 
 quest {
-  quest_info (5122, "생체던전 4층 퀘스트14")
-  hunt("B_GERTIE", 1)
+	quest_info (13044,"아누비스 처치 - 사막의 붉은 별")
+	hunt("ANUBIS", 30)
 }
 
 quest {
-  quest_info (5123, "생체던전 4층 퀘스트15")
-  hunt("B_SHECIL", 1)
+	quest_info (13045, "아누비스 처리 - 대기 중")
+	time(79200)
 }
 
 quest {
-  quest_info (5124, "생체던전 4층 퀘스트16")
-  hunt("B_ALPHOCCIO", 1)
+	quest_info (13046,"텐드릴리온 처치 - 이 구역의 맹수는 나야!")
+	hunt("TENDRILRION", 1)
 }
 
 quest {
-  quest_info (5125, "생체던전 4층 퀘스트17")
-  hunt("B_TRENTINI", 1)
+	quest_info (13047, "텐드릴리온 처리 - 대기 중")
+	time(79200)
 }
 
-//--- 아지트 투자전 추가투표
 quest {
-	quest_info (7349, "재투표")
+	quest_info (13048,"텐드릴리온 처치 - 이 구역의 맹수는 나야!")
+	hunt("TENDRILRION", 1)
+}
+
+quest {
+	quest_info (13049, "텐드릴리온 처리 - 대기 중")
+	time(79200)
+}
+
+//--- 테스트 구간
+quest {
+	quest_info (14001, "포링코인1")
+	hunt("PORING", 10)
+}
+
+quest {
+	quest_info (14002, "포링코인2")
+}
+
+quest {
+	quest_info (14003, "포링코인2")
+}
+
+//--- 보상이벤트
+quest {
+	quest_info (14004, "발키리의반지")
+}
+
+
+//대만에 적용된 퀘스트 미션
+// 2010년 해외 부활절 이벤트
+quest {
+	quest_info (9117, "서약의 의식 - 1단계 모험")
+}
+
+quest {
+	quest_info (9118, "서약의 의식 - 데비루치 처단")
+	hunt ("DEVIRUCHI", 50)
+}
+
+quest {
+	quest_info (9119, "서약의 의식 - 레이스 데드 처단")
+	hunt ("WRAITH_DEAD", 50)
+}
+
+quest {
+	quest_info (9120, "서약의 의식 - 듀라한 처단")
+	hunt ("DULLAHAN", 50)
+}
+
+quest {
+	quest_info (9121, "서약의 의식 - 나이트메어 테러 처단")
+	hunt ("NIGHTMARE_TERROR", 50)
+}
+
+quest {
+	quest_info (9122, "서약의 의식 - 2단계 모험")
+}
+
+quest {
+	quest_info (9123, "서약의 의식 - 프론테라로~!")
+}
+
+
+// 2010 대만 노동절 이벤트.
+
+
+quest {
+	quest_info (9105, "노동절")
+}
+
+quest {
+	quest_info (9106, "노동절: 현재 상황")
+	time(72000)
+}
+
+quest {
+	quest_info (9107, "노동절: 몬스터의 소굴 1층")
+	hunt("PORING", 50)
+}
+
+quest {
+	quest_info (9108, "노동절: 몬스터의 소굴 2층")
+	hunt("THIEF_BUG", 50)
+}
+
+quest {
+	quest_info (9109, "노동절: 몬스터의 소굴 3층")
+	hunt("KUKRE", 50)
+}
+
+quest {
+	quest_info (9110, "노동절: 몬스터의 소굴 4층")
+	hunt("POPORING", 50)
+}
+
+quest {
+	quest_info (9111, "노동절: 몬스터의 소굴 5층")
+	hunt("VITATA", 50)
+}
+
+quest {
+	quest_info (9112, "노동절: 몬스터의 소굴 6층")
+	hunt("SKEL_WORKER", 30)
+}
+
+quest {
+	quest_info (9113, "노동절: 몬스터의 소굴 7층")
+	hunt("VERIT", 20)
+}
+
+quest {
+	quest_info (9114, "노동절: 몬스터의 소굴 8층")
+	hunt("MAGMARING", 10)
+}
+
+quest {
+	quest_info (9115, "노동절: 몬스터의 소굴 9층")
+	hunt("SKEL_PRISONER", 5)
+}
+
+quest {
+	quest_info (9116, "노동절: 몬스터의 소굴 10층")
+	hunt("ZOMBIE_MASTER", 3)
+}
+
+// 대만, 중국, 말레이시아 - 단오절 이벤트 퀘스트 [용지성의 수호자]
+quest {
+	quest_info (9125, "왕릉 1층의 괴물 처단")
+	hunt ("HORONG", 5)
+	hunt ("LI_ME_MANG_RYANG", 10)
+}
+
+quest {
+	quest_info (9126, "왕릉 1층의 괴물 처단: 휴식 중")
+	time(72000)
+}
+
+quest {
+	quest_info (9127, "왕릉 내부의 괴물 처단")
+	hunt ("DANCING_DRAGON", 5)
+	hunt ("HYEGUN", 10)
+}
+
+quest {
+	quest_info (9128, "왕릉 내부의 괴물 처단: 휴식 중")
+	time(72000)
+}
+
+quest {
+	quest_info (9129, "센양궁의 괴물 처단")
+	hunt ("CHUNG_E_", 5)
+	hunt ("CIVIL_SERVANT", 10)
+}
+
+quest {
+	quest_info (9130, "센양궁의 괴물 처단: 휴식 중")
+	time(72000)
+}
+
+//-------------대만 아버지의 날 이벤트
+
+quest {
+	quest_info (9147, "호른을 잡아라")
+	hunt ("HORN", 30)
+}
+
+
+// 낙원단 의뢰 [ 26 - 40 ] 추가 퀘스트 
+quest {
+	quest_info (4151, "해충박멸제배달")
+}
+
+quest {
+	quest_info (4152, "모포배달")
+}
+
+// 2010 대만 초기화 이벤트
+
+quest {
+	quest_info (9166, "능력치 초기화 : 현재상황")
+	time(72000)
+}
+
+// -----------------------대만 국경절 이벤트
+quest {
+	quest_info (5126, "대만 국경절 이벤트")
+}
+
+quest {
+	quest_info (5127, "대만 국경절 이벤트")
+}
+
+quest {
+	quest_info (5128, "대만 국경절 이벤트")
+}
+
+quest {
+	quest_info (5129, "대만 국경절 이벤트")
+}
+
+quest {
+	quest_info (5130, "대만 국경절 이벤트")
+}
+
+
+quest {
+	quest_info (4132, "수상한 마법사")
+	time(86400)
+
+}
+
+// 최종 수정일 12. 3. 28 (오후 2:50 2012-03-26
+// 1번은 절대 지우면 안됩니다.
+quest {
+	quest_info (1, "비밀")
+}
+
+//검사
+//----------2012 초보자수련장 검사 수련
+
+quest {
+	quest_info (1229, "검사 수업")
+}
+
+quest {
+	quest_info (1230, "검사 수업")
+}
+
+quest {
+	quest_info (1233, "검사 훈련")
+}
+
+quest {
+	quest_info (1234, "검사 훈련")
+}
+
+quest {
+	quest_info (1235, "검사 훈련")
+        hunt("TAROU", 10)
+}
+quest {
+	quest_info (1236, "검사 훈련")
+        hunt("FARMILIAR", 10)
+}
+
+quest {
+	quest_info (1237, "상점 안내")
+}
+
+quest {
+	quest_info (1238, "상점 안내")
+}
+
+quest {
+	quest_info (1239, "상점 안내")
+}
+
+quest {
+	quest_info (1240, "상점 안내")
+}
+//-------------------------------------
+
+quest {
+	quest_info (2293, "모험의 동반자")
+}
+
+quest {
+	quest_info (2294, "모험의 동반자")
+}
+
+quest {
+	quest_info (2295, "모험의 동반자")
+}
+
+quest {
+	quest_info (2296, "모험의 동반자")
+}
+
+quest {
+	quest_info (2297, "모험의 동반자")
+}
+quest {
+	quest_info (2298, "모험의 동반자")
+}
+
+quest {
+	quest_info (2299, "속성 체험")
+}
+//-------------------------------------
+quest {
+	quest_info (4268, "닌자 훈련-선생")
+}
+
+quest {
+	quest_info (4269, "크리투라 등록")
+}
+
+quest {
+	quest_info (4270, "닌자 훈련-스탯설명")
+}
+
+quest {
+	quest_info (4271, "닌자 훈련-스킬설명")
+}
+
+quest {
+	quest_info (4272, "닌자 훈련-스킬문답")
+}
+
+quest {
+	quest_info (4273, "닌자 훈련-무기설명")
+}
+
+quest {
+	quest_info (4274, "닌자 훈련-전직설명")
+}
+
+quest {
+	quest_info (4275, "닌자 훈련-연습1")
+	hunt("DROPS", 10)
+	time(60)
+}
+
+quest {
+	quest_info (4276, "닌자 훈련-연습2")
+	hunt("PORING", 10)
+	time(60)
+}
+
+quest {
+	quest_info (4277, "닌자 훈련-실전1")
+	hunt("ROCKER", 10)
+}
+
+quest {
+	quest_info (4278, "닌자 훈련-실전2")
+	hunt("WORM_TAIL", 10)
+}
+
+quest {
+	quest_info (4279, "닌자 훈련-시험")
+	hunt("POPORING", 1)
+}
+
+quest {
+	quest_info (4280, "닌자 훈련-시험")
+	hunt("POPORING", 1)
+}
+
+
+quest {
+	quest_info (4281, "초보자 훈련-닌자")
+	hunt("LUNATIC", 3)
+}
+
+
+quest {
+	quest_info (4282, "닌자 훈련-연습1")
+	hunt("G_DROPS", 10)
+	time(60)
+}
+
+quest {
+	quest_info (4283, "닌자 훈련-연습2")
+	hunt("G_PORING", 10)
+	time(60)
+}
+
+quest {
+	quest_info (4284, "닌자 훈련-실전1")
+	hunt("ROCKER", 10)
+}
+
+quest {
+	quest_info (4285, "닌자 훈련-실전2")
+	hunt("WORM_TAIL", 10)
+}
+
+quest {
+	quest_info (4286, "닌자 훈련-시험")
+	hunt("POPORING_IMMUNE_M", 1)
+}
+
+quest {
+	quest_info (4287, "닌자 훈련-시험")
+	hunt("POPORING_IMMUNE_A", 1)
+}
+//----- 초보자 수련장 개편 건슬듀토리얼 -----//
+quest {
+	quest_info (5147, "초보자건슬링거_1")
+}
+
+quest {
+	quest_info (5148, "초보자건슬링거_2")
+}
+
+quest {
+	quest_info (5149, "초보자건슬링거_3")
+        hunt("HORNET", 10)
+}
+
+quest {
+	quest_info (5150, "초보자건슬링거_4")
+        hunt("RODA_FROG", 10)
+}
+
+quest {
+	quest_info (5151, "초보자건슬링거_5")
+        hunt("SAVAGE_BABE", 10)
+}
+
+quest {
+	quest_info (5152, "초보자건슬링거_6")
+        hunt("ROCKER", 10)
+}
+
+//----- 초보자 수련장 개편 제련듀토리얼 -----//
+quest {
+	quest_info (5153, "제련듀토리얼_01")
+}
+
+quest {
+	quest_info (5154, "제련듀토리얼_02")
+}
+
+quest {
+	quest_info (5155, "제련듀토리얼_03")
+}
+
+quest {
+	quest_info (5156, "제련듀토리얼_04")
+}
+
+//----- 초보자 수련장 개편 인첸트듀토리얼 -----//
+quest {
+	quest_info (5157, "인첸트듀토리얼_01")
+}
+
+quest {
+	quest_info (5158, "인첸트듀토리얼_02")
+}
+
+quest {
+	quest_info (5159, "인첸트듀토리얼_03")
+}
+//-----------------------------------------------
+quest {
+	quest_info (7471, "튜토리얼")
+}
+
+quest {
+	quest_info (7472, "튜토리얼")
+}
+
+quest {
+	quest_info (7473, "튜토리얼")
+}
+
+quest {
+	quest_info (7474, "튜토리얼")
+}
+
+quest {
+	quest_info (7475, "튜토리얼")
+}
+
+quest {
+	quest_info (7476, "튜토리얼")
+}
+
+quest {
+	quest_info (7477, "튜토리얼")
+}
+
+quest {
+	quest_info (7478, "튜토리얼")
+}
+
+quest {
+	quest_info (7479, "튜토리얼")
+}
+
+quest {
+	quest_info (7480, "튜토리얼")
+}
+
+quest {
+	quest_info (7481, "튜토리얼")
+}
+
+quest {
+	quest_info (7482, "튜토리얼")
+}
+
+quest {
+	quest_info (7483, "튜토리얼")
+}
+
+quest {
+	quest_info (7484, "튜토리얼")
+}
+
+quest {
+	quest_info (7485, "튜토리얼")
+	hunt("R_PORING",1)
+}
+
+quest {
+	quest_info (7486, "튜토리얼")
+}
+
+quest {
+	quest_info (7487, "튜토리얼")
+	hunt("R_PORING",4)
+	time(30)
+}
+
+quest {
+	quest_info (7488, "튜토리얼")
+	hunt("DROPS",5)
+	hunt("PICKY",5)
+	hunt("DESERT_WOLF_B",5)
+}
+
+quest {
+	quest_info (7489, "튜토리얼")
+	hunt("FARMILIAR",1)
+}
+
+quest {
+	quest_info (7490, "튜토리얼")
+}
+
+quest {
+	quest_info (7491, "튜토리얼")
+}
+
+quest {
+	quest_info (7492, "튜토리얼")
+	hunt("AMBERNITE",10)
+}
+
+quest {
+	quest_info (7493, "튜토리얼")
+	hunt("SCORPION",17)
+}
+
+quest {
+	quest_info (7494, "튜토리얼")
+	hunt("CHONCHON_",10)
+	hunt("FABRE_",10)
+}
+// 한국 : 튜토리얼 아카데미
+
+quest {
+	quest_info (9264, "마술사로 전직하기<게펜 근처 필드로 이동>")
+}
+
+quest {
+	quest_info (9265, "마술사로 전직하기<게펜 마을로 이동>")
+}
+
+quest {
+	quest_info (9266, "마술사로 전직하기<마법사 길드로 이동>")
+}
+
+quest {
+	quest_info (9267, "마술사로 강해지는 길_1")
+	hunt ("CHONCHON", 30)
+	hunt ("FABRE", 30)
+}
+
+quest {
+	quest_info (9268, "마술사로 강해지는 길_2")
+	hunt ("RODA_FROG", 30)
+	hunt ("SAVAGE_BABE", 30)
+}
+
+quest {
+	quest_info (9269, "마술사로 강해지는 길_3")
+}
+
+quest {
+	quest_info (9270, "마술사로 강해지는 길_4")
+	hunt ("THIEF_BUG", 30)
+	hunt ("THIEF_BUG_EGG", 30)
+}
+//----------------------------------------
+quest {
+     quest_info (11338, "스비노와 대화")
+}
+
+quest {
+     quest_info (11339, "초보자_세상에서 젤로 맛있는")
+     hunt("PORING", 10)
+}
+
+quest {
+     quest_info (11340, "초보자_당근은 맛있어")
+     hunt("LUNATIC", 10)
+}
+
+quest {
+     quest_info (11341, "초보자_파브르 옷감기")
+     hunt("FABRE", 10)
+}
+
+quest {
+     quest_info (11342, "초보자_붕붕~")
+     hunt("HORNET", 10)
+}
+
+quest {
+     quest_info (11343, "엘리스와 대화")
+}
+
+quest {
+     quest_info (11344, "초보자_배리어!!")
+     hunt("PUPA", 5)
+}
+
+quest {
+     quest_info (11345, "엘리스와 대화")
+}
+
+quest {
+     quest_info (11346, "복사_축축한 생물들(LV.13)")
+     hunt("DEAD_PLANKTON", 20)
+     hunt("RODA_FROG", 20)
+}
+
+quest {
+     quest_info (11347, "복사_물렁물렁한 뼈(LV.18)")
+     hunt("WEAK_SKELETON", 30)
+}
+
+quest {
+     quest_info (11348, "복사_딱딱한 뼈(LV.23)")
+     hunt("WEAK_SKEL_SOLDIER", 30)
+}
+
+quest {
+ quest_info (12302,"살림하미드")
+}
+
+quest {
+ quest_info (12303,"상인지망생")
+}
+
+quest {
+ quest_info (12304,"상인학 개론")
+}
+
+quest {
+ quest_info (12305,"능력치에 대해")
+}
+
+quest {
+ quest_info (12306,"디스카운트 체험")
+}
+
+quest {
+ quest_info (12307,"상인의 길")
+}
+
+quest {
+ quest_info (12308,"웜 테일 퇴치")
+ hunt("WORM_TAIL", 20)
+}
+
+quest {
+ quest_info (12309,"보아 퇴치")
+ hunt("SNAKE", 20)
+}
+
+quest {
+ quest_info (12310,"스포아 퇴치")
+ hunt("SPORE", 20)
+}
+
+quest {
+ quest_info (12311,"세일러 스컬 퇴치")
+ hunt("SAILOR_SKELETON", 10)
+}
+
+quest {
+ quest_info (12312,"이론수업 보강")
+}
+
+quest {
+ quest_info (12313,"스테이터스에 관해")
+}
+
+quest {
+ quest_info (12314,"스킬에 관해")
+}
+
+quest {
+ quest_info (13101,"태권전직희망자")
+}
+
+quest {
+ quest_info (13102,"돌려차기안면강타")
+}
+
+quest {
+ quest_info (13103,"윌로우 격파")
+ hunt("WILOW", 10)
+}
+
+quest {
+ quest_info (13104,"스포아 격파")
+ hunt("SPORE", 10)
+}
+
+quest {
+ quest_info (13105,"좀비 격파")
+ hunt("ZOMBIE", 10)
+}
+
+quest {
+ quest_info (13106,"스켈레톤 격파")
+ hunt("SKELETON", 10)
+}
+
+//------ 초보자 수련장 (궁수편)
+
+quest {
+	quest_info (14142, "궁수마을을 찾아서")
+}
+
+quest {
+	quest_info (14143, "궁수 전직 신청")
+}
+
+quest {
+	quest_info (14144, "재시험 - 스테이터스")
+}
+
+quest {
+	quest_info (14145, "스킬 설명 듣기")
+}
+
+quest {
+	quest_info (14146, "독수리의 눈 선생님 만나기")
+}
+
+quest {
+	quest_info (14147, "재시험 - 스킬")
+}
+
+quest {
+	quest_info (14148, "다음 단계로")
+}
+
+quest {
+	quest_info (14149, "2차 직업 설명 듣기")
+}
+
+quest {
+	quest_info (14150, "다음 단계로")
+}
+
+quest {
+	quest_info (14151, "사냥훈련 - 스포아")
+	hunt("SPORE", 10)
+}
+
+quest {
+	quest_info (14152, "사냥훈련 - 크리미")
+	hunt("CREAMY", 10)
+}
+
+quest {
+	quest_info (14153, "사냥훈련 - 스켈레톤")
+	hunt("SKELETON", 10)
+}
+
+//----------- 초보자용 식당
+
+quest {
+	quest_info (14154, "향긋한 허브무침")
+}
+
+quest {
+	quest_info (14155, "사근 샐러드")
+}
+
+quest {
+	quest_info (14156, "아무거나 전골")
+}
+
+quest {
+	quest_info (14157, "황금색 사과구이")
+}
+
+//----------- 추가
+
+quest {
+	quest_info (14158, "궁수입문서 증정")
+}
+
+quest {
+	quest_info (14159, "헌터만나기 1회")
+}
+
+quest {
+	quest_info (14160, "바드만나기 1회")
+}
+
+quest {
+	quest_info (14161, "스테이터스 시험")
+}
+
+quest {
+	quest_info (14162, "스킬 시험")
+}
+
+quest {
+	quest_info (14163, "스포아보상 1회")
+}
+
+quest {
+	quest_info (14164, "크리미보상 1회")
+}
+
+quest {
+	quest_info (14165, "스켈레톤보상")
+}
+
+//--1
+quest {
+	quest_info (15000, "초보자 수련장: 상태 이상 경험해보기")
+}
+
+quest {
+	quest_info (15001, "초보자 수련장: 죽은척하기 스킬퀘")
+	time(20)
+}
+
+//--
+quest {
+     quest_info (11255, "수달 삼쑨")
+}
+
+//-------------Poring Badge Event(20120723)
+quest {
+	quest_info (2300, "EPISODE 14-1 EVENT")
+	time(86400)
+}
+
+//------------nightmare  20120823 -----------
+
+quest {
+	quest_info (2289, "수상한고양이: 앙숙")
+	hunt("N_VERIT", 20)
+}
+
+quest {
+	quest_info (2290, "수상한고양이: 앙숙(대기)")
+	time(82800)
+}
+
+quest {
+	quest_info (2291, "수상한고양이: 귀찮은 녀석(대기)")
+	time(82800)
+}
+
+quest {
+	quest_info (2292, "수상한고양이: 귀찮은 녀석")
+	hunt("N_ANCIENT_MUMMY", 20)
+}
+
+
+//------------10th anniversary 20120921--------------
+quest {
+ quest_info (12323,"킹포링 모자 수령")
+}
+
+quest {
+ quest_info (12324,"의상 킹포링 모자 수령")
+}
+
+//--------------beginning of school event 20120927------------
+quest {
+        quest_info (5239, "대만개학이벤_01")
+}
+
+quest {
+        quest_info (5240, "대만개학이벤_02")
+}
+
+quest {
+        quest_info (5241, "대만개학이벤_03")
+}
+
+quest {
+        quest_info (5242, "대만개학이벤_04")
+}
+
+quest {
+        quest_info (5243, "대만개학이벤_05")
+}
+
+quest {
+        quest_info (5244, "대만개학이벤_06")
+}
+
+quest {
+        quest_info (5245, "대만개학이벤_07")
+}
+
+quest {
+        quest_info (5246, "대만개학이벤_08")
+}
+
+quest {
+        quest_info (5247, "대만개학이벤_09")
+}
+
+quest {
+        quest_info (5248, "대만개학이벤_10")
+}
+
+quest {
+        quest_info (5249, "대만개학이벤_11")
+}
+
+quest {
+        quest_info (5250, "대만개학이벤_12")
+}
+
+//--------------halloween 20121025-----------
+
+quest {
+	quest_info (14166, "사과!!!")
+}
+
+quest {
+	quest_info (14167, "모자 재료 수집")
+}
+
+quest {
+	quest_info (14168, "퀴즈 정답!")
+}
+
+quest {
+	quest_info (14169, "아이들에겐 간식이 최고")
+}
+
+quest {
+	quest_info (14170, "퀴즈 오답")
+}
+
+quest {
+	quest_info (14171, "햄식이의 부탁")
+}
+
+quest {
+	quest_info (14172, "한돌이의 부탁")
+}
+
+quest {
+	quest_info (14173, "제령부적 재료 수집")
+}
+
+quest {
+	quest_info (14174, "토토의 부탁")
+}
+
+quest {
+	quest_info (14175, "휘겔 조사")
+}
+
+quest {
+	quest_info (14176, "잭의 부탁 거절")
+}
+
+quest {
+	quest_info (14177, "센트레아의 집으로")
+}
+
+quest {
+	quest_info (14178, "잭의 영혼 찾기")
+}
+
+quest {
+	quest_info (14179, "잭에게로")
+}
+
+quest {
+	quest_info (14180, "센트레아에게로")
+}
+
+//--------------day day event 20121106-----------
+
+quest {
+	quest_info (2301, "대만이벤트")
+	time(82800)
+}
+
+//----------2012크리스마스_메리 크리스마스, 너구리 만세단!
+
+quest {
+	quest_info (1276, "메리 크리스마스, 너구리 만세단!")
+}
+
+quest {
+	quest_info (1277, "메리 크리스마스, 너구리 만세단!")
+}
+
+quest {
+	quest_info (1278, "메리 크리스마스, 너구리 만세단!")
+}
+
+quest {
+	quest_info (1279, "메리 크리스마스, 너구리 만세단!")
+}
+
+quest {
+	quest_info (1280, "메리 크리스마스, 너구리 만세단!")
+}
+
+quest {
+	quest_info (1281, "메리 크리스마스, 너구리 만세단!")
+}
+
+quest {
+	quest_info (1282, "메리 크리스마스, 너구리 만세단!")
+}
+
+quest {
+	quest_info (1283, "메리 크리스마스, 너구리 만세단!")
+}
+
+quest {
+	quest_info (1284, "메리 크리스마스, 너구리 만세단!")
+}
+
+quest {
+	quest_info (1285, "메리 크리스마스, 너구리 만세단!")
+}
+
+quest {
+	quest_info (1286, "메리 크리스마스, 너구리 만세단!")
+}
+
+quest {
+	quest_info (1287, "메리 크리스마스, 너구리 만세단!")
+}
+
+quest {
+	quest_info (1288, "메리 크리스마스, 너구리 만세단!")
+}
+
+quest {
+	quest_info (1289, "메리 크리스마스, 너구리 만세단!")
+}
+
+quest {
+	quest_info (1290, "메리 크리스마스, 너구리 만세단!")
+}
+
+quest {
+	quest_info (1291, "메리 크리스마스, 너구리 만세단!")
+}
+
+quest {
+	quest_info (1292, "메리 크리스마스, 너구리 만세단!")
+}
+
+quest {
+	quest_info (1293, "메리 크리스마스, 너구리 만세단!")
+}
+
+quest {
+	quest_info (1294, "메리 크리스마스, 너구리 만세단!")
+}
+
+quest {
+	quest_info (1295, "메리 크리스마스, 너구리 만세단!")
+}
+
+quest {
+	quest_info (1296, "메리 크리스마스, 너구리 만세단!")
+}
+
+//----------luck event(2012.12.27)
+quest {
+	quest_info (2302, "행운 이벤트")
 	time(7200)
 }
 
 
-// 14? ???
+//----------new year event(2013.2.7)
 
 quest {
-	quest_info (14450, ??? ???? ????)
+	quest_info (15009, "대만2013구정이벤트_퀘스트1")
 }
-
-quest {
-	quest_info (14451, ????)
-}
-
-quest {
-	quest_info (14452, ??? ??)
-}
-
-quest {
-	quest_info (14453, ??????)
-}
-
-quest {
-	quest_info (14454, ????)
-}
-
-quest {
-	quest_info (14455, ?? ????)
-}
-
-quest {
-	quest_info (14456, ??? ?? ??)
-}
-
-quest {
-	quest_info (14457, ?? ??????)
-}
-
-quest {
-	quest_info (14458, ??? ??)
-}
-
-quest {
-	quest_info (14459, ??? ??)
-}
-
-quest {
-	quest_info (14460, ??? ??)
-	hunt("WANDERING_SOUL", 10)
-}
-
-quest {
-	quest_info (14461, ??? ??)
-}
-
-quest {
-	quest_info (14462, ??? ??)
-	hunt("DARK_SOUL", 10)
-}
-
-quest {
-	quest_info (14463, ??? ??)
-	hunt("HYLOZOIST", 20)
-	hunt("BLOODY_MURDERER", 20)
-	
-}
-
-quest {
-	quest_info (14464, ??? ???? ????)
-	time(82800)
-}
-
-quest {
-	quest_info (14465, ??? ??? ????)
-	time(82800)
-}
-
-
-
-
-
-
-
-// 2014 여름 이벤트 말랑도 낚시왕
-
-quest {
-	quest_info (9401, "연어 낚시에 성공하자!")
-}
-
-quest {
-	quest_info (9402, "피라니아 낚시에 성공하자!")
-}
-
-quest {
-	quest_info (9403, "도미 낚시에 성공하자!")
-}
-
-quest {
-	quest_info (9404, "문어 낚시에 성공하자!")
-}
-
-quest {
-	quest_info (9405, "참 다랑어 낚시에 성공하자!")
-}
-
-quest {
-	quest_info (9406, "상어 낚시에 성공하자!")
-}
-
-quest {
-	quest_info (9407, "강태공 수석 조수 찾아가기")
-	time(82800)
-}
-
-quest {
-	quest_info (9408, "프로 낚시꾼 찾아가기")
-	time(82800)
-}
-
 quest {
-	quest_info (9421, "연어 낚시 성공!")
+	quest_info (15010, "대만2013구정이벤트_퀘스트2")
 }
-
 quest {
-	quest_info (9422, "피라니아 낚시 성공!")
+	quest_info (15011, "대만2013구정이벤트_퀘스트3")
 }
-
 quest {
-	quest_info (9423, "도미 낚시 성공!")
+	quest_info (15012, "대만2013구정이벤트_퀘스트4")
+	hunt("SNAKE_NEWYEAR", 100)
 }
-
 quest {
-	quest_info (9424, "문어 낚시 성공!")
+	quest_info (15013, "대만2013구정이벤트_20시간체크")
+	time(72000)
 }
 
+//----------balentane day event(2013.2.7)
 quest {
-	quest_info (9425, "참 다랑어 낚시 성공!")
+	quest_info (2303, "발렌타인이벤트")
+	time(72000)
 }
 
 quest {
-	quest_info (9426, "상어 낚시 성공!")
+	quest_info (2304, "발렌타인모자획득")
 }
 
-// 14년 여름 이벤트 - 방학숙제
 
-quest {
-	quest_info (14418,"세상에서 제일 맛있는 연어")
-}
 
+//------------------------ 어머니의 날 20130508---------
 quest {
-	quest_info (14419,"영감의 고등어")
+     quest_info (11256, "어머니의 소망")
 }
 
 quest {
-	quest_info (14420,"곤충채집")
+     quest_info (11257, "어머니의 소망")
 }
 
 quest {
-	quest_info (14421,"곤충채집")
+     quest_info (11258, "어머니의 소망")
 }
 
 quest {
-	quest_info (14422,"곤충채집")
+     quest_info (11259, "어머니의 소망")
 }
 
 quest {
-	quest_info (14423,"그림 그리기 재료")
+     quest_info (11260, "어머니의 소망")
 }
 
-quest {
-	quest_info (14424,"그림 그리기 재료")
-}
 
-quest {
-	quest_info (14425,"그림 그리기 재료")
-}
 
-quest {
-	quest_info (14426,"그림 그리기 재료")
-}
 
 quest {
-	quest_info (14427,"그림 그리기 재료")
+ quest_info (12280,"수상한 죄수")
 }
 
 quest {
-	quest_info (14428,"그림 그리기 재료")
+ quest_info (12281,"원치않은 심부름")
 }
 
 quest {
-	quest_info (14429,"그림 그리기 재료")
+ quest_info (12282,"가십왕 클레버")
 }
 
 quest {
-	quest_info (14430,"그날의 날씨는?")
+ quest_info (12283,"균열 연구자.")
 }
 
 quest {
-	quest_info (14431,"그날의 날씨는?")
+ quest_info (12284,"고양이 상단의 정보통")
 }
 
 quest {
-	quest_info (14432,"그날의 날씨는?")
+ quest_info (12285,"고양이를 진정시키는 법")
 }
 
 quest {
-	quest_info (14433,"그날의 날씨는?")
+ quest_info (12286,"통조림과 맞바꾼 정보")
 }
 
 quest {
-	quest_info (14434,"그날의 날씨는?")
+ quest_info (12287,"이상한 체험")
 }
 
 quest {
-	quest_info (14435,"에이미에게")
+ quest_info (12288,"제대로 된 체험")
 }
 
 quest {
-	quest_info (14436,"로봇의 재료")
+ quest_info (12289,"또다시 면회")
 }
 
 quest {
-	quest_info (14437,"로봇의 재료")
+ quest_info (12290,"클레버의 역사서")
 }
 
 quest {
-	quest_info (14438,"로봇의 재료")
+ quest_info (12291,"숨겨진 역사서(?)")
 }
 
 quest {
-	quest_info (14439,"곤충채집")
+ quest_info (12292,"알려지지 않은 자")
 }
 
 quest {
-	quest_info (14440,"곤충채집")
+ quest_info (12293,"과거의 인물")
 }
 
 quest {
-	quest_info (14441,"곤충채집")
+ quest_info (12294,"에클라쥬 관광")
 }
 
 quest {
-	quest_info (14442,"분류의 시간")
-	time(82800)
+ quest_info (12295,"오작동")
 }
 
 quest {
-	quest_info (14443,"로봇의 재료")
+ quest_info (12296,"반응기와 즐거운 한때")
 }
 
-quest {
-	quest_info (14444,"로봇의 재료")
+quest { 
+quest_info (12297,"에뜰랑을 만나다")
 }
 
 quest {
-	quest_info (14445,"로봇의 재료")
+ quest_info (12298,"두가지 부탁")
 }
 
 quest {
-	quest_info (14446,"만들기 시간")
-	time(82800)
+ quest_info (12299,"로베르와의 재회")
 }
 
 quest {
-	quest_info (14447,"에이미와 면담")
+ quest_info (12300,"에뜰랑과의 재회")
 }
 
-quest {
-        quest_info (4357, "?????-??1")
-        hunt("XMAS_LUNATIC", 3)
-}
-quest {
-        quest_info (4358, "?????-??2")
-        hunt("GOBLINE_XMAS", 3)
-}
-quest {
-        quest_info (4359, "?????-??3")
-        hunt("ORC_XMAS", 3)
-}
-quest {
-        quest_info (4360, "?????-??4")
-        hunt("JAKK_XMAS", 3)
-}
-quest {
-        quest_info (4361, "?????-??1")
-        time(79200)
-}
-quest {
-        quest_info (4362, "?????-??2")
-        time(79200)
-}
-quest {
-        quest_info (4363, "?????-??3")
-        time(79200)
-}
 quest {
-        quest_info (4364, "?????-??4")
-        time(79200)
+ quest_info (12301,"남은 두 친구")
 }
 
-//14.2
 quest {
         quest_info (13050, "대지를 사랑하는 요정")
 }
@@ -11755,571 +12023,6 @@ quest {
 }
 
 quest {
-	quest_info (1214, "프로페서 웜의 기억 찾기")
-}
-
-quest {
-	quest_info (1215, "프로페서 웜의 기억 찾기")
-}
-
-quest {
-	quest_info (1216, "프로페서 웜의 기억 찾기")
-        qitem("PETAL", "Star_Shape_Mushroom", 30)
-}
-
-quest {
-	quest_info (1217, "프로페서 웜의 기억 찾기")
-}
-
-quest {
-	quest_info (1218, "프로페서 웜의 기억 찾기")
-}
-
-quest {
-	quest_info (1219, "프로페서 웜의 기억 찾기")
-}
-
-quest {
-	quest_info (1220, "프로페서 웜의 기억 찾기")
-}
-
-quest {
-	quest_info (1221, "프로페서 웜의 기억 찾기")
-}
-
-quest {
-	quest_info (1222, "프로페서 웜의 기억 찾기")
-}
-
-quest {
-	quest_info (1223, "프로페서 웜의 기억 찾기")
-}
-
-quest {
-	quest_info (1224, "프로페서 웜의 기억 찾기")
-}
-
-quest {
-	quest_info (1225, "프로페서 웜의 기억 찾기")
-        hunt("LICHTERN_B", 15)
-}
-
-quest {
-	quest_info (1226, "프로페서 웜의 기억 찾기")
-}
-
-quest {
-	quest_info (1227, "프로페서 웜의 기억 찾기")
-        qitem("PETAL", "Star_Shape_Mushroom", 30)
-}
-
-quest {
-	quest_info (1228, "프로페서 웜의 기억 찾기")
-}
-quest {
-	quest_info (4254, "장난꾸러기들")
-}
-
-quest {
-	quest_info (4255, "장난꾸러기들")
-	hunt("MENBLATT", 20)
-}
-
-quest {
-	quest_info (4256, "장난꾸러기들")
-}
-
-quest {
-	quest_info (4257, "장난꾸러기들")
-}
-
-quest {
-	quest_info (4258, "장난꾸러기들")
-}
-
-quest {
-	quest_info (4259, "장난꾸러기들")
-}
-
-quest {
-	quest_info (4260, "장난꾸러기들")
-}
-
-quest {
-	quest_info (4261, "장난꾸러기들")
-}
-
-quest {
-	quest_info (4262, "장난꾸러기들")
-}
-
-quest {
-	quest_info (4263, "장난꾸러기들")
-}
-
-quest {
-	quest_info (4264, "장난꾸러기들")
-}
-
-quest {
-	quest_info (4265, "장난꾸러기들")
-}
-
-quest {
-	quest_info (4266, "스킬초기화 완료")
-}
-
-quest {
-	quest_info (4267, "스탯초기화 완료")
-}
-quest {
-	quest_info (7411, "에클라쥬 여행자 포메")
-}
-
-quest {
-	quest_info (7412, "에클라쥬 여행자 리트립")
-}
-
-quest {
-	quest_info (7413, "에클라쥬 여행자 치바")
-}
-
-quest {
-	quest_info (7414, "에클라쥬 가드의 전언")
-}
-
-quest {
-	quest_info (7415, "라피네의 군수참모")
-}
-
-quest {
-	quest_info (7416, "만남을 위한 기다림")
-	time(600)
-}
-
-quest {
-	quest_info (7417, "카르듀이의 제안")
-}
-
-quest {
-	quest_info (7418, "에클라쥬를 위해")
-}
-
-quest {
-	quest_info (7419, "에클라쥬를 위해")
-}
-
-quest {
-	quest_info (7420, "에클라쥬를 위해")
-}
-
-quest {
-	quest_info (7421, "그 정도면 충분해")
-}
-
-quest {
-	quest_info (7422, "카르듀이의 선물")
-}
-
-quest {
-	quest_info (7423, "왕에 대한 소문")
-}
-
-quest {
-	quest_info (7424, "왕에 대한 소문")
-}
-
-quest {
-	quest_info (7425, "왕에 대한 소문")
-}
-
-quest {
-	quest_info (7426, "왕에 대한 소문")
-}
-
-quest {
-	quest_info (7427, "이럴땐 정공법이다!")
-}
-
-quest {
-	quest_info (7428, "야성미 넘치는 야이")
-}
-
-quest {
-	quest_info (7429, "최근의 트랜드는 야성")
-	time(82800)
-}
-
-quest {
-	quest_info (7430, "공간을 달리는 배달부")
-}
-
-quest {
-	quest_info (7431, "우편배달부는 쉬지않아!")
-	time(82800)
-}
-
-quest {
-	quest_info (7432, "꽃이 피어난 대지의 말썽꾼")
-	hunt("MENBLATT", 5)
-	hunt("PETAL", 5)
-}
-
-quest {
-	quest_info (7433, "꾸준한 산책이 필요하다.")
-	time(82800)
-}
-
-quest {
-	quest_info (9225, "미스테리 절도 사건 1")
-}
-
-quest {
-	quest_info (9226, "미스테리 절도 사건 2")
-}
-
-quest {
-	quest_info (9227, "미스테리 절도 사건 3")
-}
-
-quest {
-	quest_info (9228, "미스테리 절도 사건 4")
-}
-
-quest {
-	quest_info (9229, "미스테리 절도 사건 5")
-}
-
-quest {
-	quest_info (9230, "미스테리 절도 사건 6")
-}
-
-quest {
-	quest_info (9231, "미스테리 절도 사건 7")
-}
-
-quest {
-	quest_info (9232, "미스테리 절도 사건 8")
-}
-
-quest {
-	quest_info (9233, "미스테리 절도 사건 9")
-}
-
-quest {
-	quest_info (9234, "미스테리 절도 사건 10")
-}
-
-quest {
-	quest_info (9235, "미스테리 절도 사건 11")
-}
-
-quest {
-	quest_info (9236, "미스테리 절도 사건 12")
-}
-
-quest {
-	quest_info (9237, "미스테리 절도 사건 13")
-}
-
-quest {
-	quest_info (9238, "미스테리 절도 사건 14")
-}
-
-quest {
-	quest_info (9239, "미스테리 절도 사건 15")
-}
-
-quest {
-	quest_info (9262, "미스테리 절도 사건 16")
-}
-
-quest {
-	quest_info (9240, "<루엔의 진술 노트.>")
-}
-
-quest {
-	quest_info (9241, "<루엔의 진술 노트..>")
-}
-
-quest {
-	quest_info (9242, "<루엔의 진술 노트...>")
-}
-
-quest {
-	quest_info (9243, "<루엔의 진술 노트....>")
-}
-
-quest {
-	quest_info (9244, "<데임스의 진술 노트.>")
-}
-
-quest {
-	quest_info (9245, "<데임스의 진술 노트..>")
-}
-
-quest {
-	quest_info (9246, "<데임스의 진술 노트...>")
-}
-
-quest {
-	quest_info (9247, "<데임스의 진술 노트....>")
-}
-
-quest {
-	quest_info (9248, "<로사의 진술 노트.>")
-}
-
-quest {
-	quest_info (9249, "<로사의 진술 노트..>")
-}
-
-quest {
-	quest_info (9250, "<로사의 진술 노트...>")
-}
-
-quest {
-	quest_info (9251, "<로사의 진술 노트....>")
-}
-
-quest {
-	quest_info (9252, "<뽀삐 관찰>")
-}
-
-quest {
-	quest_info (9253, "<어지럽혀진 책장 수색>")
-}
-
-quest {
-	quest_info (9254, "<훼손된 책 수색>")
-}
-
-quest {
-	quest_info (9255, "<음료 바구니 수색>")
-}
-
-quest {
-	quest_info (9256, "<난장판이 된 탁자 수색>")
-}
-
-quest {
-	quest_info (9257, "<떨어진 이물질 수색>")
-}
-
-quest {
-	quest_info (9258, "<현장 검증 결과>")
-}
-
-quest {
-	quest_info (9259, "<크루이안의 진술 확인>")
-	hunt ("MENBLATT", 5)
-	hunt ("PETAL", 30)
-}
-
-quest {
-	quest_info (9260, "<탐문수사 정리 노트>")
-}
-quest {
-     quest_info (11310, "에클라쥬의 문")
-     time(30)
-}
-
-quest {
-     quest_info (11311, "에클라쥬의 문")
-}
-
-quest {
-     quest_info (11312, "골리앗")
-}
-
-quest {
-     quest_info (11313, "골리앗")
-}
-
-quest {
-     quest_info (11314, "골리앗")
-}
-
-quest {
-     quest_info (11315, "어쨌든 시간은 흐르고")
-}
-
-quest {
-     quest_info (11316, "어쨌든 시간은 흐르고")
-}
-
-quest {
-     quest_info (11317, "어쨌든 시간은 흐르고")
-}
-
-quest {
-     quest_info (11318, "어쨌든 시간은 흐르고")
-}
-
-quest {
-     quest_info (11319, "어쨌든 시간은 흐르고")
-}
-
-quest {
-     quest_info (11320, "어쨌든 시간은 흐르고")
-}
-
-quest {
-     quest_info (11321, "어쨌든 시간은 흐르고")
-}
-
-quest {
-     quest_info (11322, "어쨌든 시간은 흐르고")
-}
-
-quest {
-     quest_info (11323, "어쨌든 시간은 흐르고")
-}
-
-quest {
-     quest_info (11324, "어쨌든 시간은 흐르고")
-}
-
-quest {
-     quest_info (11325, "닭이 먼저냐 달걀이 먼저냐")
-}
-
-quest {
-     quest_info (11326, "닭이 먼저냐 달걀이 먼저냐")
-}
-
-quest {
-     quest_info (11327, "닭이 먼저냐 달걀이 먼저냐")
-}
-
-quest {
-     quest_info (11328, "닭이 먼저냐 달걀이 먼저냐")
-}
-
-quest {
-     quest_info (11329, "닭이 먼저냐 달걀이 먼저냐")
-}
-
-quest {
-     quest_info (11330, "닭이 먼저냐 달걀이 먼저냐")
-}
-
-quest {
-     quest_info (11331, "닭이 먼저냐 달걀이 먼저냐")
-}
-
-quest {
-     quest_info (11332, "닭이 먼저냐 달걀이 먼저냐")
-}
-
-quest {
-     quest_info (11333, "붉은 씨앗과 푸른 씨앗")
-}
-
-quest {
-     quest_info (11334, "붉은 씨앗과 푸른 씨앗")
-}
-
-quest {
-     quest_info (11335, "꿈꾸는 소년")
-}
-
-quest {
-     quest_info (11336, "꿈꾸는 소년")
-}
-
-quest {
-     quest_info (11337, "꿈꾸는 소년")
-}
-quest {
- quest_info (12280,"수상한 죄수")
-}
-
-quest {
- quest_info (12281,"원치않은 심부름")
-}
-
-quest {
- quest_info (12282,"가십왕 클레버")
-}
-
-quest {
- quest_info (12283,"균열 연구자.")
-}
-
-quest {
- quest_info (12284,"고양이 상단의 정보통")
-}
-
-quest {
- quest_info (12285,"고양이를 진정시키는 법")
-}
-
-quest {
- quest_info (12286,"통조림과 맞바꾼 정보")
-}
-
-quest {
- quest_info (12287,"이상한 체험")
-}
-
-quest {
- quest_info (12288,"제대로 된 체험")
-}
-
-quest {
- quest_info (12289,"또다시 면회")
-}
-
-quest {
- quest_info (12290,"클레버의 역사서")
-}
-
-quest {
- quest_info (12291,"숨겨진 역사서(?)")
-}
-
-quest {
- quest_info (12292,"알려지지 않은 자")
-}
-
-quest {
- quest_info (12293,"과거의 인물")
-}
-
-quest {
- quest_info (12294,"에클라쥬 관광")
-}
-
-quest {
- quest_info (12295,"오작동")
-}
-
-quest {
- quest_info (12296,"반응기와 즐거운 한때")
-}
-
-quest { 
-quest_info (12297,"에뜰랑을 만나다")
-}
-
-quest {
- quest_info (12298,"두가지 부탁")
-}
-
-quest {
- quest_info (12299,"로베르와의 재회")
-}
-
-quest {
- quest_info (12300,"에뜰랑과의 재회")
-}
-
-quest {
- quest_info (12301,"남은 두 친구")
-}
-
-quest {
 	quest_info (14118, "우하리의 걱정")
 }
 
@@ -12399,124 +12102,1794 @@ quest {
 quest {
 	quest_info (14141, "연구의 재료")
 }
-
-
-//오브
 quest {
-	quest_info (7445, "오브탈취")
+	quest_info (7501, "수상한녀석1")
+	time(14400)
+	hunt("BABY_STRANGE", 1)
 }
 
 quest {
-	quest_info (7446, "오브탈취")
+	quest_info (7502, "수상한녀석10")
+	time(14400)
+	hunt("BABY_STRANGE", 10)
 }
 
 quest {
-	quest_info (7447, "오브탈취")
+	quest_info (7503, "수상한녀석30")
+	time(14400)
+	hunt("BABY_STRANGE", 30)
 }
 
 quest {
-	quest_info (7448, "오브탈취")
+	quest_info (7504, "엠펠브레이커1")
+	time(14400)
+	hunt("EMPELIUM", 1)
 }
 
 quest {
-	quest_info (7449, "오브탈취")
+	quest_info (7505, "엠펠브레이커3")
+	time(14400)
+	hunt("EMPELIUM", 3)
 }
 
 quest {
-	quest_info (7450, "오브탈취")
+	quest_info (7506, "엠펠브레이커5")
+	time(14400)
+	hunt("EMPELIUM", 5)
 }
 
 quest {
-	quest_info (7451, "오브탈취")
+	quest_info (7507, "작은나무상자10")
+	time(14400)
 }
 
 quest {
-	quest_info (7452, "오브탈취")
+	quest_info (7508, "작은나무상자20")
+	time(14400)
 }
 
 quest {
-	quest_info (7453, "오브탈취")
+	quest_info (7509, "작은나무상자30")
+	time(14400)
 }
 
 quest {
-	quest_info (7434, "쌍둥이와 마학자")
+	quest_info (7510, "도둑퇴치1")
+	time(14400)
+	hunt("THIEF_PORING", 1)
 }
 
 quest {
-	quest_info (7435, "쌍둥이와 마학자")
-	time(180)
+	quest_info (7511, "도둑퇴치10")
+	time(14400)
+	hunt("THIEF_PORING", 10)
 }
 
 quest {
-	quest_info (7436, "쌍둥이와 마학자")
+	quest_info (7512, "도둑퇴치30")
+	time(14400)
+	hunt("THIEF_PORING", 30)
 }
 
 quest {
-	quest_info (7437, "쌍둥이와 마학자")
+	quest_info (7513, "월급명세서10")
+	time(14400)
 }
 
 quest {
-	quest_info (7438, "쌍둥이와 마학자")
+	quest_info (7514, "월급명세서20")
+	time(14400)
 }
 
 quest {
-	quest_info (7439, "쌍둥이와 마학자")
+	quest_info (7515, "월급명세서30")
+	time(14400)
 }
 
 quest {
-	quest_info (7440, "쌍둥이와 마학자")
+	quest_info (7516, "엠펠파괴휴식")
+	time(1200)
+}
+
+//-- 길드 아지트 점령
+quest {
+	quest_info (7517, "발키리대기")
+	time(3600)
 }
 
 quest {
-	quest_info (7441, "쌍둥이와 마학자")
+	quest_info (7518, "루이나대기")
+	time(3600)
 }
 
 quest {
-	quest_info (7442, "쌍둥이와 마학자")
+	quest_info (7519, "브리토리아대기")
+	time(3600)
 }
 
 quest {
-	quest_info (7443, "쌍둥이와 마학자")
+	quest_info (7520, "청림대기")
+	time(3600)
 }
 
 quest {
-	quest_info (7444, "쌍둥이와 마학자")
-}
-
-//나이트메어(14.2에 포함)
-quest {
-	quest_info (2289, "수상한고양이: 앙숙")
-	hunt("N_VERIT", 20)
+	quest_info (7521, "니다뵐대기")
+	time(3600)
 }
 
 quest {
-	quest_info (2290, "수상한고양이: 앙숙(대기)")
+	quest_info (7522, "발프레이야대기")
+	time(3600)
+}
+
+quest {
+	quest_info (7523, "글로리아대기")
+	time(3600)
+}
+
+quest {
+	quest_info (7524, "카프라가텐대기")
+	time(3600)
+}
+
+//-- 길드던전 일일퀘스트
+quest {
+	quest_info (7525, "길드일퀘")
+	hunt("CREMY_FEAR", 50)
+	hunt("CATERPILLAR", 50)
+}
+
+quest {
+	quest_info (7526, "길드일퀘")
+	hunt("GLD_KOBOLD_1", 30)
+	hunt("GLD_KOBOLD_2", 30)
+	hunt("GLD_KOBOLD_3", 30)
+}
+
+quest {
+	quest_info (7527, "길드일퀘")
+	hunt("PYURIEL", 1)
+	hunt("LORA", 1)
+}
+
+quest {
+	quest_info (7528, "길드일퀘")
+	hunt("GIANT_HONET", 50)
+	hunt("ANCIENT_WORM", 50)
+}
+
+quest {
+	quest_info (7529, "길드일퀘")
+	hunt("KILLER_MANTIS", 40)
+	hunt("ANGRA_MANTIS", 50)
+}
+
+quest {
+	quest_info (7530, "길드일퀘")
+	hunt("GIOIA", 1)
+	hunt("ELVIRA", 1)
+}
+
+quest {
+	quest_info (7531, "길드일퀘")
+	hunt("WRAITH_DEAD", 50)
+	hunt("ZOMBIE_MASTER", 50)
+}
+
+quest {
+	quest_info (7532, "길드일퀘")
+	hunt("GLD_DARK_SHADOW", 50)
+	hunt("GLD_DARK_FRAME", 20)
+	hunt("GLD_DARK_PRIEST", 20)
+}
+
+quest {
+	quest_info (7533, "길드일퀘")
+	hunt("KADES", 1)
+	hunt("RUDO", 1)
+}
+
+quest {
+	quest_info (7534, "길드일퀘")
+	hunt("LEIB_OLMAI", 50)
+	hunt("GULLINBURSTI", 50)
+}
+
+quest {
+	quest_info (7535, "길드일퀘")
+	hunt("SKELETON_GENERAL", 45)
+	hunt("AM_MUT", 20)
+	hunt("GAJOMART", 25)
+}
+
+quest {
+	quest_info (7536, "길드일퀘")
+	hunt("DAEHYON", 1)
+	hunt("SOHEON", 1)
+}
+
+quest {
+	quest_info (7537, "길드일퀘")
+	hunt("HELL_APOCALIPS", 50)
+	hunt("ZAKUDAM", 50)
+}
+
+quest {
+	quest_info (7538, "길드일퀘")
+	hunt("HEAVY_METALING", 35)
+	hunt("COBALT_MINERAL", 35)
+}
+
+quest {
+	quest_info (7539, "길드일퀘")
+	hunt("BANSHEE_MASTER", 50)
+	hunt("BEHOLDER_MASTER", 30)
+}
+
+quest {
+	quest_info (7540, "길드일퀘")
+	hunt("AUNOE", 50)
+	hunt("FANAT", 20)
+}
+
+quest {
+	quest_info (7541, "길드일퀘")
+	hunt("L_SEYREN", 30)
+	hunt("L_EREMES", 30)
+	hunt("L_HARWORD", 30)
+}
+
+quest {
+	quest_info (7542, "길드일퀘")
+	hunt("L_KATRINN", 30)
+	hunt("L_MAGALETA", 30)
+	hunt("L_SHECIL", 30)
+}
+
+//--- 길드일퀘 대기
+quest {
+	quest_info (7543, "일퀘대기")
+	time(79200)
+}
+
+quest {
+	quest_info (7544, "일퀘대기")
+	time(79200)
+}
+
+quest {
+	quest_info (7545, "일퀘대기")
+	time(604800)
+}
+
+quest {
+	quest_info (7546, "일퀘대기")
+	time(79200)
+}
+
+quest {
+	quest_info (7547, "일퀘대기")
+	time(79200)
+}
+
+quest {
+	quest_info (7548, "일퀘대기")
+	time(604800)
+}
+
+quest {
+	quest_info (7549, "일퀘대기")
+	time(79200)
+}
+
+quest {
+	quest_info (7550, "일퀘대기")
+	time(79200)
+}
+
+quest {
+	quest_info (7551, "일퀘대기")
+	time(604800)
+}
+
+quest {
+	quest_info (7552, "일퀘대기")
+	time(79200)
+}
+
+quest {
+	quest_info (7553, "일퀘대기")
+	time(79200)
+}
+
+quest {
+	quest_info (7554, "일퀘대기")
+	time(604800)
+}
+
+quest {
+	quest_info (7555, "일퀘대기")
+	time(79200)
+}
+
+quest {
+	quest_info (7556, "일퀘대기")
+	time(79200)
+}
+
+quest {
+	quest_info (7557, "일퀘대기")
+	time(79200)
+}
+
+quest {
+	quest_info (7558, "일퀘대기")
+	time(79200)
+}
+
+quest {
+	quest_info (7559, "일퀘대기")
+	time(79200)
+}
+
+quest {
+	quest_info (7560, "일퀘대기")
+	time(79200)
+}
+
+quest {
+	quest_info (7561, "카프라가텐길드일퀘")
+	hunt("L_YGNIZEM", 30)
+	hunt("L_WHIKEBAIN", 30)
+	hunt("L_ARMAIA", 30)
+}
+
+quest {
+	quest_info (7562, "카프라가텐길드일퀘")
+	hunt("L_RAWREL", 30)
+	hunt("L_EREND", 30)
+	hunt("L_KAVAC", 30)
+}
+
+quest {
+	quest_info (7563, "카프라가텐일퀘대기")
+	time(79200)
+}
+
+quest {
+	quest_info (7564, "카프라가텐일퀘대기")
+	time(79200)
+}
+
+
+//-------글래스트 헤임 메모리얼 시간의 틈
+quest {
+ quest_info (12316,"후긴과의 첫 만남")
+}
+
+quest {
+ quest_info (12317,"시간이동의 흔적")
 	time(82800)
 }
 
 quest {
-	quest_info (2291, "수상한고양이: 귀찮은 녀석(대기)")
+ quest_info (12318,"타락한뿌리 퇴치")
+ hunt("MG_CORRUPTION_ROOT", 1)
+}
+
+quest {
+ quest_info (12319,"암다라이스 퇴치")
+ hunt("MG_AMDARAIS", 1)
+}
+
+quest {
+ quest_info (12320,"시간 여행자")
+}
+
+quest {
+ quest_info (12321,"시간 정복자")
+}
+
+quest {
+ quest_info (12322,"공간 왜곡")
+}
+quest {
+	quest_info (1183, "바코나와를 물리쳐라!")
+}
+
+quest {
+	quest_info (2315, "해양음악축제")
+}
+quest {														
+	quest_info (2316, "2013 중추절")													
+}														
+														
+quest {														
+	quest_info (2317, "2013 중추절")													
+}					
+
+quest {
+	quest_info (13194, "보석교환 - 대기")
+	time(82800)
+}
+quest {
+     quest_info (11378, "Trick or treat")
+}
+quest {
+        quest_info (5319, "Evt대만경험치_01")
+        time(82800)
+}
+
+quest {
+        quest_info (5320, "Evt대만경험치_02")
+        hunt("CHONCHON", 30)
+}
+
+quest {
+        quest_info (5321, "Evt대만경험치_03")
+        hunt("ROCKER", 30)
+}
+
+quest {
+        quest_info (5322, "Evt대만경험치_04")
+        hunt("PECOPECO", 30)
+}
+
+quest {
+        quest_info (5323, "Evt대만경험치_05")
+        hunt("VITATA", 30)
+}
+
+quest {
+        quest_info (5324, "Evt대만경험치_06")
+        hunt("ORC_LADY", 30)
+}
+
+quest {
+        quest_info (5325, "Evt대만경험치_07")
+        hunt("GREATEST_GENERAL", 30)
+}
+
+quest {
+        quest_info (5326, "Evt대만경험치_08")
+        hunt("MANTIS", 30)
+}
+
+quest {
+        quest_info (5327, "Evt대만경험치_09")
+        hunt("GRAND_PECO", 30)
+}
+
+quest {
+        quest_info (5328, "Evt대만경험치_10")
+        hunt("INCREASE_SOIL", 30)
+}
+
+quest {
+        quest_info (5329, "Evt대만경험치_11")
+        hunt("DEVIRUCHI", 30)
+}
+
+quest {
+        quest_info (5330, "Evt대만경험치_12")
+        hunt("DESERT_WOLF", 30)
+}
+
+quest {
+        quest_info (5331, "Evt대만경험치_13")
+        hunt("RAYDRIC", 30)
+}
+
+quest {
+        quest_info (5332, "Evt대만경험치_14")
+        hunt("ENGKANTO", 30)
+}
+
+quest {
+        quest_info (5333, "Evt대만경험치_15")
+        hunt("SKEGGIOLD", 30)
+}
+
+quest {
+        quest_info (5334, "Evt대만경험치_16")
+        hunt("ANGRA_MANTIS", 30)
+}
+quest {
+	quest_info (2318, "RO Girl")
+}
+
+quest {
+	quest_info (15055, "2013 크리스마스용")
+}
+quest {
+	quest_info (15056, "2013 크리스마스용")
+}
+quest {
+	quest_info (15057, "2013 크리스마스용")
+}
+quest {
+	quest_info (15058, "2013 크리스마스용")
+}
+quest {
+	quest_info (15059, "2013 크리스마스용")
+	time(82800)
+}
+quest {
+	quest_info (15060, "2013 크리스마스용")
+}
+quest {
+	quest_info (15061, "2013 크리스마스용")
+}
+quest {
+	quest_info (15062, "2013 크리스마스용")
+}
+quest {
+	quest_info (15063, "2013 크리스마스용")
+}
+quest {
+	quest_info (15064, "2013 크리스마스용")
+}
+quest {
+	quest_info (7630, "2014신년이벤트")
+	hunt("FANTASTIC_B_UNICORN", 1)
+}
+
+quest {
+	quest_info (7631, "2014신년이벤트")
+	time(82800)
+}
+quest {
+	quest_info (15066, "대만2014구정이벤트_23시간체크")
+	time(82800)
+}
+// 발렌타인데이 이벤트
+quest {
+	quest_info (14373,"조각가를 찾아서")
+}
+
+quest {
+	quest_info (14374,"다시 조각가에게")
+}
+
+quest {
+	quest_info (14375,"알케미스트에게")
+}
+
+quest {
+	quest_info (14376,"수도사에게")
+}
+
+quest {
+	quest_info (14377,"금단의 신부에게로")
+}
+
+quest {
+	quest_info (14378,"각오는 되어 있겠지")
+}
+
+quest {
+	quest_info (14379,"각오는 되어 있다")
+}
+
+quest {
+	quest_info (14380,"제물을 가지고 오도록")
+}
+
+quest {
+	quest_info (14381,"조각가에게로")
+}
+
+quest {
+	quest_info (14382,"무언가 잘못됐다")
+}
+
+quest {
+	quest_info (14383,"재료가 빠졌어")
+}
+
+quest {
+	quest_info (14384,"부드러운 돌")
+	qitem("STALACTIC_GOLEM", "Soft_Stone", 30)
+}
+
+quest {
+	quest_info (14385,"부드러운 돌")
+	qitem("BRADIUM_GOLEM", "Soft_Stone", 30)
+}
+
+quest {
+	quest_info (14386,"하루의 시간")
 	time(82800)
 }
 
 quest {
-	quest_info (2292, "수상한고양이: 귀찮은 녀석")
-	hunt("N_ANCIENT_MUMMY", 20)
+	quest_info (14387,"우리 자기 좀")
 }
 
 quest {
-	quest_info (12363, "태국마야서버 선물 수령")
+	quest_info (14388,"전설의 원예가")
+}
+
+quest {
+	quest_info (14389,"물이 나오지 않아")
+}
+
+quest {
+	quest_info (14390,"원인 불명")
+}
+
+quest {
+	quest_info (14391,"비료 제작소로")
+}
+
+quest {
+	quest_info (14392,"원예가에게")
 }
 
 
+quest {
+	quest_info (14393,"미팅 주선-모로크")
+}
 
+quest {
+	quest_info (14394,"미팅 주선-페이욘")
+}
+
+quest {
+	quest_info (14395,"원예가에게")
+}
+
+quest {
+	quest_info (14396,"씨앗을 얻었다")
+}
+
+quest {
+	quest_info (14397,"알데바란으로")
+}
+
+quest {
+	quest_info (14398,"게펜으로")
+}
+
+quest {
+	quest_info (14399,"숙성된 그것")
+	qitem("SASQUATCH", "Aged_Poo", 30)
+}
+
+quest {
+	quest_info (14400,"숙성된 그것")
+	qitem("TATACHO", "Aged_Poo", 30)
+}
+
+quest {
+	quest_info (14401,"하루의 시간")
+	time(82800)
+}
+
+quest {
+	quest_info (14402, "곤란한 비타")
+}
+quest {
+	quest_info (2350, "대만 어머니날 이벤트")
+	hunt ("SMOKIE_THIEF",10)
+}
+quest {
+	quest_info (9410, "행복의 날개 일일 보상 받기")
+	time(86400)
+}
+//행복서버 일일출석 이벤트 신서버 독점
+quest {
+	quest_info (9411, "매일 출석 보상 받기")
+	time(86400)
+}
+
+quest {
+	quest_info (9412, "매일 출석 보상 받기")
+	time(86400)
+}
+
+quest {
+	quest_info (9413, "매일 출석 보상 받기")
+	time(86400)
+}
+
+quest {
+	quest_info (9414, "매일 출석 보상 받기")
+	time(86400)
+}
+
+quest {
+	quest_info (9415, "매일 출석 보상 받기")
+	time(86400)
+}
+
+quest {
+	quest_info (9416, "매일 출석 보상 받기")
+	time(86400)
+}
+
+quest {
+	quest_info (9417, "매일 출석 보상 받기")
+	time(86400)
+}
+quest {
+        quest_info (5401, "Tai_2014_7석이벤")
+        time (82800)
+}
+//-------------2014 추석
+quest {
+ 	quest_info (11390,"찰진떡 잡기")
+ 	hunt("EVENT_RICECAKE", 10)
+}
+
+//-영웅의 흔적과 차원이동
+quest {
+	quest_info (7565, "차원의균열과 레이안")
+}
+
+quest {
+	quest_info (7566, "차원이동기")
+}
+
+//--영웅의 흔적
+quest {
+	quest_info (12325,"페이스웜 둥지의 흔적")
+	time(82800)
+}
+
+quest {
+	quest_info (12326,"오래된 반지의 주인")
+	time(82800)
+}
+
+quest {
+	quest_info (12327,"낡은 사진첩의 추억")
+	time(82800)
+}
+
+quest {
+	quest_info (12328,"마님 왜 돌쇠에게만...")
+	time(82800)
+}
+
+quest {
+	quest_info (12329,"성불하십시오.")
+	time(82800)
+}
+
+//영웅의 흔적 메모리얼 던전: 사라의 기억
+
+quest {
+	quest_info (15002, "메모리얼: 사라의 기억 쿨타임")
+	time(72000)
+}
+quest {
+	quest_info (15003, "메모리얼: 사라의 기억 진행도")
+}
+//----------영웅의 흔적 - 저주의 검사 '망령의 왕궁' 메모리얼 던전
+quest {
+ quest_info (1260,"저주의 검사")
+}
+
+quest {
+ quest_info (1261,"저주의 검사")
+	time(82800)
+}
+quest {
+ quest_info (1262,"저주의 검사")
+}
+quest {
+ quest_info (1263,"저주의 검사")
+}
+
+
+//- 마신의 탑
+quest {
+	quest_info (7568, "마신의탑")
+	time(5400)
+}
+
+quest {
+	quest_info (7569, "마신의탑")
+}
+
+quest {
+	quest_info (7570, "마신의탑")
+	hunt("MM_EVIL_SHADOW1", 7)
+	hunt("MM_EVIL_SHADOW2", 7)
+	hunt("MM_EVIL_SHADOW3", 7)
+}
+
+quest {
+	quest_info (7571, "마신의탑")
+}
+
+quest {
+	quest_info (7572, "마신의탑")
+}
+
+quest {
+	quest_info (7573, "마신의탑")
+}
+
+quest {
+	quest_info (7574, "마신의탑")
+}
+
+quest {
+	quest_info (7575, "마신의탑")
+}
+
+quest {
+	quest_info (7576, "마신의탑")
+}
+
+quest {
+	quest_info (7577, "마신의탑")
+	time(82800)
+}
+
+
+// 영웅의 흔적 : "게펜 마법 대회"
+
+quest {
+	quest_info (9284, "게펜 깡패를 막아라.")
+}
+
+quest {
+	quest_info (9285, "게펜 깡패를 물리치다.")
+}
+
+quest {
+	quest_info (9286, "게펜 불량배를 막아라.")
+}
+
+quest {
+	quest_info (9287, "게펜 불량배를 물리치다.")
+}
+
+quest {
+	quest_info (9288, "게펜 도둑을 잡아라.")
+}
+
+quest {
+	quest_info (9289, "도둑에게 물건을 되찾다.")
+}
+
+quest {
+	quest_info (9290, "마법대회 참가.")
+}
+
+quest {
+	quest_info (9291, "마법대회 참가.")
+}
+
+quest {
+	quest_info (9292, "마법대회 참가.")
+}
+
+
+quest {
+	quest_info (9293, "마법대회 참가 등록 시험.")
+	hunt ("DESERT_WOLF", 1)
+}
+
+quest {
+	quest_info (9294, "마법대회 참가 등록 완료.")
+}
+
+quest {
+	quest_info (9295, "마법대회 1경기 시작.")
+}
+
+quest {
+	quest_info (9296, "마법대회 2경기 시작.")
+}
+
+quest {
+	quest_info (9297, "마법대회 3경기 시작.")
+}
+quest {
+	quest_info (9298, "마법대회 4경기 시작.")
+}
+quest {
+	quest_info (9299, "마법대회 5경기 시작.")
+}
+quest {
+	quest_info (9300, "마법대회 6경기 시작.")
+}
+quest {
+	quest_info (9301, "마법대회 7경기 시작.")
+}
+quest {
+	quest_info (9302, "마법대회 8경기 시작.")
+}
+quest {
+	quest_info (9303, "마법대회 9경기 시작.")
+}
+quest {
+	quest_info (9304, "마법대회 10경기 시작.")
+}
+quest {
+	quest_info (9305, "마법대회 11경기 시작.")
+}
+quest {
+	quest_info (9306, "마법대회 12경기 시작.")
+}
+quest {
+	quest_info (9307, "마법대회 결승 시작.")
+}
+quest {
+	quest_info (9308, "마법대회 우승~!.")
+}
+quest {
+	quest_info (9309, "마법대회 패배.")
+}
+
+quest {
+	quest_info (9310, "아이리스와의 만남.")
+}
+
+quest {
+	quest_info (9311, "케이아스와의 만남.")
+}
+
+quest {
+	quest_info (9312, "리디아와의 만남.")
+}
+
+quest {
+	quest_info (9313, "펜릴과의 만남.")
+}
+
+quest {
+	quest_info (9314, "로키와의 만남.")
+}
+
+quest {
+	quest_info (9315, "차원의 균열 탐사")
+}
+
+quest {
+	quest_info (9316, "차원의 균열 재 탐사")
+	time(82800)
+}
+//----------EP14.3_화염분지와 멸망축복회
+
+quest {
+	quest_info (1264, "화염분지와 멸망축복회")
+}
+
+quest {
+	quest_info (1265, "화염분지와 멸망축복회")
+}
+
+quest {
+	quest_info (1266, "화염분지와 멸망축복회")
+        qitem("FIRE_SAND_MAN", "PatrolLog", 20)
+}
+
+quest {
+	quest_info (1267, "화염분지와 멸망축복회")
+}
+
+quest {
+	quest_info (1268, "화염분지와 멸망축복회")
+        hunt("FIRE_SAND_MAN", 20)
+}
+quest {
+	quest_info (1269, "화염분지와 멸망축복회")
+        hunt("FIRE_FRILLDORA", 20)
+}
+
+quest {
+	quest_info (1270, "화염분지와 멸망축복회")
+}
+
+quest {
+	quest_info (1271, "화염분지와 멸망축복회")
+}
+
+quest {
+	quest_info (1272, "화염분지와 멸망축복회")
+}
+
+quest {
+	quest_info (1273, "화염분지와 멸망축복회")
+}
+
+quest {
+	quest_info (1274, "화염분지와 멸망축복회")
+}
+
+quest {
+	quest_info (1275, "화염분지와 멸망축복회")
+}
+
+quest {
+	quest_info (1297, "화염분지와 멸망축복회")
+}
+
+// Episode 14.3 파괴된 사막도시 모로크 수리
+quest {
+        quest_info (5251, "EP14_3_morocc_01")
+}
+
+quest {
+        quest_info (5252, "EP14_3_morocc_02")
+        time(10800)
+}
+
+quest {
+        quest_info (5253, "EP14_3_morocc_03")
+}
+
+quest {
+        quest_info (5254, "EP14_3_morocc_04")
+        time(10800)
+}
+
+quest {
+        quest_info (5255, "EP14_3_morocc_05")
+}
+
+quest {
+        quest_info (5256, "EP14_3_morocc_06")
+        time(10800)
+}
+
+quest {
+        quest_info (5257, "EP14_3_morocc_07")
+}
+
+quest {
+        quest_info (5258, "EP14_3_morocc_08")
+        time(10800)
+}
+
+quest {
+        quest_info (5259, "EP14_3_morocc_09")
+}
+
+quest {
+        quest_info (5260, "EP14_3_morocc_10")
+        time(10800)
+}
+
+quest {
+        quest_info (5261, "EP14_3_morocc_11")
+}
+
+quest {
+        quest_info (5262, "EP14_3_morocc_12")
+        time(10800)
+}
+
+quest {
+        quest_info (5263, "EP14_3_morocc_13")
+}
+
+quest {
+        quest_info (5264, "EP14_3_morocc_14")
+        time(10800)
+}
+
+quest {
+        quest_info (5265, "EP14_3_morocc_15")
+        hunt("MOROCC_1", 10)
+}
+
+quest {
+        quest_info (5266, "EP14_3_morocc_16")
+        hunt("MOROCC_2", 10)
+}
+
+quest {
+        quest_info (5267, "EP14_3_morocc_17")
+        hunt("MOROCC_3", 10)
+}
+
+quest {
+        quest_info (5268, "EP14_3_morocc_18")
+        hunt("MOROCC_4", 10)
+}
+
+quest {
+        quest_info (5269, "EP14_3_morocc_19")
+        time(10800)
+}
+
+quest {
+        quest_info (5270, "EP14_3_morocc_20")
+        time(180)
+}
+
+quest {
+        quest_info (5271, "EP14_3_morocc_21")
+}
+
+quest {
+        quest_info (5272, "EP14_3_morocc_22")
+}
+
+quest {
+        quest_info (5273, "EP14_3_morocc_23")
+}
+
+quest {
+        quest_info (5274, "EP14_3_morocc_24")
+}
+
+quest {
+        quest_info (5275, "EP14_3_morocc_25")
+        time(10800)
+}
+
+//- ep14.3
+quest {
+	quest_info (7578, "날뛰는상자")
+	hunt("E_ANGRY_MIMIC", 1)
+	qitem("E_ANGRY_MIMIC", "Bradium_Box", 100)
+}
+
+quest {
+	quest_info (7579, "날뛰는상자")
+	hunt("E_ANGRY_MIMIC", 10)
+	qitem("E_ANGRY_MIMIC", "Bradium_Box", 100)
+}
+
+quest {
+	quest_info (7580, "날뛰는상자")
+	time(82800)
+}
+
+quest {
+	quest_info (7581, "위협차단")
+	hunt("B_MOROCC_2", 1)
+	hunt("B_MOROCC_1", 1)
+	hunt("B_MOROCC_4", 1)
+}
+
+quest {
+	quest_info (7582, "위협차단")
+	time(82800)
+}
+
+quest {
+	quest_info (7583, "마력회수")
+	qitem("B_MOROCC_2", "Mana_crystal", 100)
+	qitem("B_MOROCC_1", "Mana_crystal", 100)
+	qitem("B_MOROCC_4", "Mana_crystal", 100)
+}
+
+quest {
+	quest_info (7584, "마력회수")
+	time(82800)
+}
+
+// ep14.3 part 2 end of morocc
+
+quest {
+	quest_info (7593, "마신전")
+	hunt("MM_MOROCC_ADT", 1)
+}
+
+quest {
+	quest_info (7594, "마신전")
+	hunt("MM_BRINARANEA", 1)
+	hunt("MM_MUSPELLSKOLL", 1)
+}
+
+quest {
+	quest_info (7595, "마신전")
+	hunt("MM_MANA_WHITE", 3)
+	hunt("MM_MANA_RED", 3)
+	hunt("MM_MANA_YELLOW", 3)
+}
+
+quest {
+	quest_info (7596, "마신전")
+	qitem("MM_GB_MOROCC_1", "Soul_Of_Ahat", 100)
+	qitem("MM_GB_MOROCC_4", "Soul_Of_Shnaim", 100)
+}
+
+quest {
+	quest_info (7597, "마신전")
+}
+
+quest {
+	quest_info (7598, "마신전")
+	time(82800)
+}
+
+quest {
+	quest_info (7599, "마신전")
+	time(82800)
+}
+
+quest {
+	quest_info (7600, "마신전")
+	time(82800)
+}
+
+quest {
+	quest_info (7601, "마신전")
+	hunt("MM_BRINARANEA", 1)
+}
+
+quest {
+	quest_info (7602, "마신전")
+}
+
+quest {
+	quest_info (7603, "마신전")
+	hunt("MM_MUSPELLSKOLL", 1)
+}
+
+quest {
+	quest_info (7604, "마신전")
+}
+
+quest {
+	quest_info (7605, "마신전")
+	time(10800)
+}
+
+// EP 14.3 : "모르스의 동굴"
+quest {
+	quest_info (9318, "은신해 있는 모로크 추적")
+	hunt ("EP14_MORS_BOSSB", 1)
+}
+
+quest {
+	quest_info (9319, "끝 없는 모로크 추적")
+	time(82800)
+}
+
+//-- ep 14.3
+quest {
+     quest_info (11349, "차원 이동")
+}
+quest {
+     quest_info (11350, "차원 이동")
+}
+quest {
+     quest_info (11351, "차원 이동")
+}
+quest {
+     quest_info (11352, "차원 이동")
+}
+quest {
+     quest_info (11353, "차원 이동")
+}
+quest {
+     quest_info (11354, "표본 채집")
+}
+quest {
+     quest_info (11355, "표본 채집")
+     hunt("FIREPIT", 20)
+}
+quest {
+     quest_info (11356, "표본 채집")
+}
+quest {
+     quest_info (11357, "표본 채집")
+     hunt("SONIA", 25)
+}
+quest {
+     quest_info (11358, "표본 채집")
+}
+quest {
+     quest_info (11359, "해독")
+}
+quest {
+     quest_info (11360, "해독")
+}
+quest {
+     quest_info (11361, "해독")
+}
+quest {
+     quest_info (11362, "해독")
+}
+
+// 14.3 지터벅
+
+quest {
+	quest_info (13181, "악몽의 지터벅")
+}
+
+quest {
+	quest_info (13182, "악몽의 지터벅 - 대기")
+	time(72000)
+}
+
+quest {
+	quest_info (13183, "악몽의 지터벅")
+}
+
+// 14.3 메모리얼 던전 : 비오스의 섬
+quest {
+	quest_info (15005, "메모리얼: 비오스의 섬 쿨타임")
+	time(82800)
+}
+quest {
+	quest_info (15006, "메모리얼: 비오스의 섬 진행도")
+}
+quest {
+	quest_info (15007, "메모리얼: 비오스의 섬 쿨타임2")
+	time(300)
+}
+quest {
+	quest_info (15008, "메모리얼: 비오스의 섬 쿨타임3")
+	time(300)
+}
+quest {
+	quest_info (2314, "클랜시스템")
+}
+//- 호러 장난감공장
+quest {
+	quest_info (12330,"해골 얼굴의 소녀")
+}
+
+
+quest {
+	quest_info (12331,"장난감 공장의 흔적")
+	time(82800)
+}
+
+quest {
+	quest_info (11391,"추석 아르바이트 완료")
+	time(86400) 
+}
+
+quest {
+ 	quest_info (11392,"찰진떡 잡기")
+ 	hunt("EVENT_RICECAKE", 10)
+}
+
+
+//-- 121-130  13107 - 13142
+quest {
+ quest_info (13107,"타나토스 타워 탐색")
+}
+
+quest {
+ quest_info (13108,"라헬 신전 탐색")
+}
+
+quest {
+ quest_info (13109,"이름없는 섬 탐색")
+}
+
+quest {
+ quest_info (13110,"어비스 레이크 탐색")
+}
+
+quest {
+ quest_info (13111,"타나토스 타워 탐색 - 결과 보고")
+}
+
+quest {
+ quest_info (13112,"라헬 신전 탐색 - 결과 보고")
+}
+
+quest {
+ quest_info (13113,"이름없는 섬 탐색 - 결과 보고")
+}
+
+quest {
+ quest_info (13114,"어비스 레이크 탐색 - 결과 보고")
+}
+
+
+quest {
+	quest_info (13115, "타나토스 타워 탐색 - 대기 중")
+	time(79200)
+}
+
+quest {
+	quest_info (13116, "라헬 신전 탐색 - 대기 중")
+	time(79200)
+}
+
+quest {
+	quest_info (13117, "이름없는 섬 탐색 - 대기 중")
+	time(79200)
+}
+
+quest {
+	quest_info (13118, "어비스 레이크 탐색 - 대기 중")
+	time(79200)
+}
+
+quest {
+ quest_info (13119,"신벌의대행자 퇴치")
+ hunt("RETRIBUTION", 30)
+}
+
+quest {
+	quest_info (13120, "신벌의대행자 퇴치 - 대기 중")
+	time(79200)
+}
+
+quest {
+ quest_info (13121,"위로하는자 퇴치")
+ hunt("SOLACE", 30)
+}
+
+quest {
+	quest_info (13122, "위로하는자 퇴치 - 대기 중")
+	time(79200)
+}
+
+quest {
+ quest_info (13123,"안식을주는자 퇴치")
+ hunt("SHELTER", 30)
+}
+
+quest {
+	quest_info (13124, "안식을주는자 퇴치 - 대기 중")
+	time(79200)
+}
+
+quest {
+ quest_info (13125,"감시하는자 퇴치")
+ hunt("OBSERVATION", 30)
+}
+
+quest {
+	quest_info (13126, "감시하는자 퇴치 - 대기 중")
+	time(79200)
+}
+
+quest {
+ quest_info (13127,"판베르크 퇴치")
+ hunt("VANBERK", 20)
+ hunt("ISILLA", 20)
+}
+
+quest {
+	quest_info (13128, "판베르크 퇴치 - 대기 중")
+	time(79200)
+}
+
+quest {
+ quest_info (13129,"호드렘린 퇴치")
+ hunt("HODREMLIN", 30)
+}
+
+quest {
+	quest_info (13130, "호드렘린 퇴치 - 대기 중")
+	time(79200)
+}
+
+quest {
+ quest_info (13131,"아카브 퇴치")
+ hunt("AGAV", 20)
+ hunt("ECHIO", 20)
+}
+
+quest {
+	quest_info (13132, "아카브 퇴치 - 대기 중")
+	time(79200)
+}
+
+quest {
+ quest_info (13133,"누더기좀비 퇴치")
+ hunt("RAGGED_ZOMBIE", 30)
+}
+
+quest {
+	quest_info (13134, "누더기좀비 퇴치 - 대기 중")
+	time(79200)
+}
+
+quest {
+ quest_info (13135,"좀비슬러터 퇴치")
+ hunt("ZOMBIE_SLAUGHTER", 30)
+}
+
+quest {
+	quest_info (13136, "좀비슬러터 퇴치 - 대기 중")
+	time(79200)
+}
+
+quest {
+ quest_info (13137,"벤시 퇴치")
+ hunt("BANSHEE", 30)
+}
+
+quest {
+	quest_info (13138, "벤시 퇴치 - 대기 중")
+	time(79200)
+}
+
+quest {
+ quest_info (13139,"페러스 퇴치")
+ hunt("FERUS", 30)
+ hunt("FERUS_", 30)
+}
+
+quest {
+	quest_info (13140, "페러스 퇴치 - 대기 중")
+	time(79200)
+}
+
+quest {
+ quest_info (13141,"어시더스 퇴치 ")
+ hunt("ACIDUS", 30)
+ hunt("ACIDUS_", 30)
+}
+
+quest {
+	quest_info (13142, "어시더스 퇴치 - 대기 중")
+	time(79200)
+}
+
+//-- 131-140  13143 ~ 13168
+quest {
+ quest_info (13143,"이그니젬 세니아 이야기")
+ hunt("YGNIZEM", 30)
+}
+
+quest {
+	quest_info (13144, "이그니젬 세니아 - 대기 중")
+	time(79200)
+}
+
+quest {
+ quest_info (13145,"아르마이어 딘제 이야기")
+ hunt("ARMAIA", 30)
+}
+
+quest {
+	quest_info (13146, "아르마이어 딘제 - 대기 중")
+	time(79200)
+}
+
+quest {
+ quest_info (13147,"훼케바인 트리스 이야기")
+ hunt("WHIKEBAIN", 30)
+}
+
+quest {
+	quest_info (13148, "훼케바인 트리스 - 대기 중")
+	time(79200)
+}
+
+quest {
+ quest_info (13149,"카바크 이카루스 이야기")
+ hunt("KAVAC", 30)
+}
+
+quest {
+	quest_info (13150, "카바크 이카루스 - 대기 중")
+	time(79200)
+}
+
+quest {
+ quest_info (13151,"이렌드 에베시 이야기")
+ hunt("EREND", 30)
+}
+
+quest {
+	quest_info (13152, "이렌드 에베시 - 대기 중")
+	time(79200)
+}
+
+quest {
+ quest_info (13153,"라우렐 뷘더 이야기")
+ hunt("RAWREL", 30)
+}
+
+quest {
+	quest_info (13154, "라우렐 뷘더 - 대기 중")
+	time(79200)
+}
+
+quest {
+ quest_info (13155,"모로크 이야기1")
+ hunt("MOROCC_1", 30)
+}
+
+quest {
+	quest_info (13156, "모로크 이야기1 - 대기 중")
+	time(79200)
+}
+
+quest {
+ quest_info (13157,"모로크 이야기2")
+ hunt("MOROCC_2", 30)
+}
+
+quest {
+	quest_info (13158, "모로크 이야기2 - 대기 중")
+	time(79200)
+}
+
+quest {
+ quest_info (13159,"모로크 이야기3")
+ hunt("MOROCC_4", 30)
+}
+
+quest {
+	quest_info (13160, "모로크 이야기3 - 대기 중")
+	time(79200)
+}
+
+quest {
+ quest_info (13161,"스카라바1")
+ hunt("HORN_SCARABA", 30)
+}
+
+quest {
+	quest_info (13162, "스카라바1 - 대기 중")
+	time(79200)
+}
+
+quest {
+ quest_info (13163,"스카라바2")
+ hunt("HORN_SCARABA2", 30)
+}
+
+quest {
+	quest_info (13164, "스카라바2 - 대기 중")
+	time(79200)
+}
+
+quest {
+ quest_info (13165,"스카라바3")
+ hunt("ANTLER_SCARABA", 30)
+}
+
+quest {
+	quest_info (13166, "스카라바3 - 대기 중")
+	time(79200)
+}
+
+quest {
+ quest_info (13167,"스카라바4")
+ hunt("RAKE_SCARABA", 30)
+}
+
+quest {
+	quest_info (13168, "스카라바4 - 대기 중")
+	time(79200)
+}
+
+// 14년 할로윈
+
+quest {
+	quest_info (14450, 어려운 사제님을 도와주자)
+}
+
+quest {
+	quest_info (14451, 성당으로)
+}
+
+quest {
+	quest_info (14452, 성물의 재료)
+}
+
+quest {
+	quest_info (14453, 니플헤임으로)
+}
+
+quest {
+	quest_info (14454, 루티에로)
+}
+
+quest {
+	quest_info (14455, 다시 성당으로)
+}
+
+quest {
+	quest_info (14456, 소환을 위한 준비)
+}
+
+quest {
+	quest_info (14457, 다시 니플헤임으로)
+}
+
+quest {
+	quest_info (14458, 로루의 요청)
+}
+
+quest {
+	quest_info (14459, 데비의 요청)
+}
+
+quest {
+	quest_info (14460, 로루의 부탁)
+	hunt("WANDERING_SOUL", 10)
+}
+
+quest {
+	quest_info (14461, 로루의 부탁)
+}
+
+quest {
+	quest_info (14462, 데비의 부탁)
+	hunt("DARK_SOUL", 10)
+}
+
+quest {
+	quest_info (14463, 데비의 부탁)
+	hunt("HYLOZOIST", 20)
+	hunt("BLOODY_MURDERER", 20)
+	
+}
+
+quest {
+	quest_info (14464, 파티는 하룻동안 계속된다)
+	time(82800)
+}
+
+quest {
+	quest_info (14465, 아직은 놈들이 조용하다)
+	time(82800)
+}
+quest {	
+	quest_info(2360,"인어아가씨")
+}	
+quest {	
+	quest_info(2361,"인어아가씨")
+}	
+quest {	
+	quest_info(2362,"인어아가씨")
+}	
+quest {	
+	quest_info(2363,"인어아가씨")
+}	
+quest {	
+	quest_info(2364,"인어아가씨")
+	time(82800)
+}
+
+
+// 14년 크리스마스이벤트
+quest {
+        quest_info (4357, "크리스마스-사냥1")
+        hunt("XMAS_LUNATIC", 3)
+}
+quest {
+        quest_info (4358, "크리스마스-사냥2")
+        hunt("GOBLINE_XMAS", 3)
+}
+quest {
+        quest_info (4359, "크리스마스-사냥3")
+        hunt("ORC_XMAS", 3)
+}
+quest {
+        quest_info (4360, "크리스마스-사냥4")
+        hunt("JAKK_XMAS", 3)
+}
+quest {
+        quest_info (4361, "크리스마스-대기1")
+        time(79200)
+}
+quest {
+        quest_info (4362, "크리스마스-대기2")
+        time(79200)
+}
+quest {
+        quest_info (4363, "크리스마스-대기3")
+        time(79200)
+}
+quest {
+        quest_info (4364, "크리스마스-대기4")
+        time(79200)
+}
+
+
+// 15년 새해 이벤트
 quest {
 	quest_info (7671, "2015새해이벤트")
 }
 
 quest {
 	quest_info (7672, "2015새해이벤트-쿨타임")
-	time(14400)
+	time(72000)
 }
 
 
@@ -12524,179 +13897,1000 @@ quest {
 	quest_info (11393, "2015 신년 모자 제작")
 }
 
+//15년 발렌타인 이벤트
+quest {	
+	quest_info(2365,"2015발렌타인")
+}
+
+//--대만사계절
+quest {	
+	quest_info(2367,"대만 사계절 학원")
+	time(82800)
+}
+
+quest {	
+	quest_info(2368,"대만 사계절 학원")
+}
+quest {	
+	quest_info(2369,"대만 사계절 학원")
+}
+quest {	
+	quest_info(2370,"대만 사계절 학원")
+}
+quest {	
+	quest_info(2371,"대만 사계절 학원")
+}
+quest {	
+	quest_info(2372,"대만 사계절 학원")
+}
+quest {	
+	quest_info(2373,"대만 사계절 학원")
+}
+
+// 2013 가정의 달
 
 quest {
-	quest_info (7347, "맛있는 문어구이")
-	time(1800)
-}
-
-
-
-//- 개구리모자 ~5004 
-quest{
-	quest_info(5000, "멸족위기")
-}
-
-quest{
-	quest_info(5001, "동족의 복수")
-	hunt("SIDE_WINDER", 50)
-}
-
-quest{
-	quest_info(5002, "개구리의 영웅")
-}
-
-quest{
-	quest_info(5003, "개구리은신술")
-}
-
-quest{
-	quest_info(5004, "먹이부족")
-	hunt("ARGIOPE", 50)
-}
-
-//-- 1100 ~ 1999 박성혁
-// 혼자놀기상자 퀘미션
-
-quest {
-	quest_info (1100, "특훈, 스핑크스 던전에서 혼자 놀기!")
-        hunt("ZEROM", 20)
+	quest_info (14208, "우리 세비지 좀..")
 }
 
 quest {
-	quest_info (1101, "특훈, 스핑크스 던전에서 혼자 놀기!")
-        hunt("REQUIEM", 20)
+	quest_info (14209, "우리 그랜드 페코 좀..")
 }
 
 quest {
-	quest_info (1102, "특훈, 시계탑에서 혼자 놀기!")
-        hunt("ARCLOUSE", 40)
+	quest_info (14210, "우리 데저트 울프 좀..")
 }
 
 quest {
-	quest_info (1103, "특훈, 시계탑에서 혼자 놀기!")
-        hunt("HIGH_ORC", 30)
+	quest_info (14211, "이야기를 전해다오")
 }
 
 quest {
-	quest_info (1104, "특훈, 용지성에서 혼자 놀기!")
-        hunt("CHUNG_E", 20)
+	quest_info (14212, "남편 좀 찾아 줘요")
 }
 
 quest {
-	quest_info (1105, "특훈, 용지성에서 혼자 놀기!")
-        hunt("CIVIL_SERVANT", 50)
+	quest_info (14213, "페코가..")
 }
 
 quest {
-	quest_info (1106, "특훈, 아마쯔 던전에서 혼자 놀기!")
-        hunt("THE_PAPER", 20)
+	quest_info (14214, "세비지가..")
 }
 
 quest {
-	quest_info (1107, "특훈, 아마쯔 던전에서 혼자 놀기!")
-        hunt("ANTIQUE_FIRELOCK", 40)
+	quest_info (14215, "우리 애기 좀 찾아 주세요")
 }
 
 quest {
-	quest_info (1108, "특훈, 용지성에서 혼자 놀기!")
-        hunt("CHUNG_E_", 20)
+	quest_info (14216, "꽃!!!!")
+}
+
+quest {
+	quest_info (14217, "나에게 어울리는 리본")
+}
+
+quest {
+	quest_info (14218, "성실 청년")
+}
+
+quest {
+	quest_info (14219, "착한 청년")
+}
+
+quest {
+	quest_info (14220, "나쁜 청년")
+}
+
+quest {
+	quest_info (14221, "멋진 청년")
+}
+
+quest {
+	quest_info (14222, "부자청년")
+}
+
+quest {
+	quest_info (14223, "뿌리를 찾아 주세요")
+}
+
+quest {
+	quest_info (14224, "이야기는 할머니에게")
+}
+
+quest {
+	quest_info (14225, "할아버지께로")
+}
+
+quest {
+	quest_info (14226, "할아버지 주무신다")
+}
+
+quest {
+	quest_info (14227, "역시 할머니")
+}
+
+quest {
+	quest_info (14228, "갖고 가거라")
+}
+
+quest {
+	quest_info (14229, "달달의 간식")
+	qitem("GALAPAGO", "Delicious_Clam", 30)
+}
+
+quest {
+	quest_info (14230, "고파라의 간식")
+	qitem("SHELLFISH", "Delicious_Clam", 30)
+}
+
+quest {
+	quest_info (14231, "꽁치의 간식")
+	qitem("SWORD_FISH", "Delicious_Can", 30)
+}
+
+quest {
+	quest_info (14232, "내일 또!!")
+	time(82800)
+}
+
+quest {
+	quest_info (14233, "매일의 도전!")
+	time(82800)
+}
+
+quest {
+	quest_info (14234, "지금은 곤란하다")
+	time(82800)
+}
+
+// ----- 대만 2015 단오절
+quest {
+        quest_info (5469, "대만 2015 단오절")
+}
+// ----- 대만 2015 무더운 운동회
+quest {	
+	quest_info(2374,"대만 무더운 운동회")
+	hunt("SOCCER_BALL", 20)																
+}
+quest {	
+	quest_info(2375,"대만 무더운 운동회")
+}
+quest {	
+	quest_info(2376,"대만 무더운 운동회")
+}
+quest {	
+	quest_info(2377,"대만 무더운 운동회")
+}
+quest {	
+	quest_info(2378,"대만 무더운 운동회")
+	time(21600)
+}
+quest {
+	quest_info(2379,"대만 무더운 운동회")
+}
+// ----- 대만 2015 추석
+// 최종 수정일 15. 02. 11 (오전 10:33 2015-02-10 사크라이
+// 1번은 절대 지우면 안됩니다.
+quest {
+	quest_info (9429, "달토끼를 잡아라!")
+}
+quest {
+	quest_info (9430, "토끼모자")
+}
+quest {
+	quest_info (9431, "부드러운 토끼모자")
+}
+
+//ep15.1
+quest {
+        quest_info (4295, "방랑 바드")
+}
+
+quest {
+        quest_info (4296, "방랑 바드")
+        time(82800)
+}
+
+quest {
+        quest_info (4297, "방랑 바드")
+}
+
+quest {
+        quest_info (4298, "방랑 바드")
+}
+
+quest {
+        quest_info (4299, "방랑 바드")
+}
+
+quest {
+        quest_info (4300, "방랑 바드")
+}
+
+quest {
+        quest_info (4301, "방랑 바드")
+}
+
+quest {
+        quest_info (4302, "방랑 바드")
 }
 
 
-quest{			
-	quest_info(14373, "st valentin")		
-}			
-quest{			
-	quest_info(14374, "st valentin")		
-}			
-quest{			
-	quest_info(14375, "st valentin")		
-}			
-quest{			
-	quest_info(14376, "st valentin")		
-}			
-quest{			
-	quest_info(14377, "st valentin")		
-}			
-quest{			
-	quest_info(14378, "st valentin")		
-}			
-quest{			
-	quest_info(14379, "st valentin")		
-}			
-quest{			
-	quest_info(14380, "st valentin")		
-}			
-quest{			
-	quest_info(14381, "st valentin")		
-}			
-quest{			
-	quest_info(14382, "st valentin")		
-}			
-quest{			
-	quest_info(14383, "st valentin")		
-}			
-quest{			
-	quest_info(14384, "st valentin")
-	 qitem("STALACTIC_GOLEM", "Soft_Stone", 30)		
-}			
-quest{			
-	quest_info(14385, "st valentin")
-	qitem("BRADIUM_GOLEM", "Soft_Stone", 30)			
-}			
-quest{			
-	quest_info(14386, "st valentin")
-	time(86400)		
-}			
-quest{			
-	quest_info(14387, "st valentin")		
-}			
-quest{			
-	quest_info(14388, "st valentin")		
-}			
-quest{			
-	quest_info(14389, "st valentin")		
-}			
-quest{			
-	quest_info(14390, "st valentin")		
-}			
-quest{			
-	quest_info(14391, "st valentin")		
-}			
-quest{			
-	quest_info(14392, "st valentin")		
-}			
-quest{			
-	quest_info(14393, "st valentin")		
-}			
-quest{			
-	quest_info(14394, "st valentin")		
-}			
-quest{			
-	quest_info(14395, "st valentin")		
-}			
-quest{			
-	quest_info(14396, "st valentin")		
-}			
-quest{			
-	quest_info(14397, "st valentin")		
-}			
-quest{			
-	quest_info(14398, "st valentin")		
-}			
-quest{			
-	quest_info(14399, "st valentin")
-	qitem("SASQUATCH", "Aged_Poo", 30)
-}			
-quest{			
-	quest_info(14400, "st valentin")
-	qitem("TATACHO", "Aged_Poo", 30)
-}			
-quest{			
-	quest_info(14401, "st valentin")
-	time(86400)	
-}			
-quest{			
-	quest_info(14402, "st valentin")
+
+// 에피소드 15.1 판타스마고리카
+quest {
+        quest_info (5304, "EP15_1D01")
+}
+
+quest {
+        quest_info (5305, "EP15_1D02")
+}
+
+quest {
+        quest_info (5306, "EP15_1D03")
+}
+
+quest {
+        quest_info (5307, "EP15_1D04")
+}
+
+quest {
+        quest_info (5308, "EP15_1D05")
+}
+
+quest {
+        quest_info (5309, "EP15_1D06")
+}
+
+quest {
+        quest_info (5310, "EP15_1D07")
+}
+
+quest {
+        quest_info (5311, "EP15_1D08")
+}
+
+quest {
+        quest_info (5312, "EP15_1D09")
+}
+
+quest {
+        quest_info (5313, "EP15_1D10")
+}
+
+quest {
+        quest_info (5314, "EP15_1D11")
+        hunt("ILLEGAL_PROMOTION", 10)
+}
+
+quest {
+        quest_info (5315, "EP15_1D12")
+}
+
+quest {
+        quest_info (5316, "EP15_1D13")
+}
+
+quest {
+        quest_info (5317, "EP15_1D14")
+}
+
+quest {
+        quest_info (5318, "EP15_1D15")
+        time(82800)
+}
+
+//-- 베루스시티
+
+quest {
+	quest_info (7606, "아트나드발굴단")
+}
+
+quest {
+	quest_info (7607, "아트나드발굴단")
+}
+
+quest {
+	quest_info (7608, "아트나드발굴단")
+}
+
+quest {
+	quest_info (7609, "아트나드발굴단")
+}
+
+quest {
+	quest_info (7610, "아트나드발굴단")
+}
+
+quest {
+	quest_info (7611, "통로청소")
+	hunt("RECON_ROBOT", 10)
+}
+
+quest {
+	quest_info (7612, "통로청소-대기")
+	time(82800)
+}
+
+quest {
+	quest_info (7613, "위협차단")
+	hunt("EXPLORATION_ROVER", 15)
+	hunt("REPAIR_ROBOT", 15)
+}
+
+quest {
+	quest_info (7614, "위협차단-대기")
+	time(82800)
+}
+
+quest {
+	quest_info (7615, "코어수집")
+	qitem("EXPLORATION_ROVER", "Power_Control_Device", 50)
+	qitem("REPAIR_ROBOT", "Power_Control_Device", 50)
+	qitem("RECON_ROBOT", "Power_Control_Device", 50)
+}
+
+quest {
+	quest_info (7616, "코어수집-대기")
+	time(82800)
+}
+
+quest {
+	quest_info (7617, "보고서제출")
+}
+
+quest {
+	quest_info (7618, "보고서제출")
+	time(82800)
+}
+
+quest {
+	quest_info (7619, "발굴단의 일")
+}
+
+quest {
+	quest_info (7620, "발굴단의 일")
+}
+
+quest {
+	quest_info (7621, "발굴단의 일")
+}
+
+quest {
+	quest_info (7622, "발굴단의 일")
+}
+
+quest {
+	quest_info (7623, "발굴단의 일")
+}
+
+quest {
+	quest_info (7624, "발굴단의 일")
+}
+
+quest {
+	quest_info (7625, "발굴단의 일")
+}
+
+quest {
+	quest_info (7626, "발굴단의 일")
+}
+
+quest {
+	quest_info (7627, "발굴단의 일")
+}
+
+quest {
+	quest_info (7628, "발굴단의 일")
+}
+
+quest {
+	quest_info (7629, "새로운동력원-대기")
+	time(82800)
+}
+
+// ep15.1
+quest {
+     quest_info (11363, "판타스마고리카로!!")
+}
+
+quest {
+     quest_info (11364, "판타스마고리카로!!")
+}
+
+quest {
+     quest_info (11365, "판타스마고리카로!!")
+}
+
+quest {
+     quest_info (11366, "판타스마고리카로!!")
+}
+
+quest {
+     quest_info (11367, "흔적을 찾아서…")
+}
+
+quest {
+     quest_info (11368, "흔적을 찾아서…")
+}
+
+quest {
+     quest_info (11369, "흔적을 찾아서…")
+}
+
+quest {
+     quest_info (11370, "흔적을 찾아서…")
+}
+
+quest {
+     quest_info (11371, "흔적을 찾아서…")
+}
+
+quest {
+     quest_info (11372, "흔적을 찾아서…")
+}
+
+quest {
+     quest_info (11373, "흔적을 찾아서…")
+}
+
+quest {
+     quest_info (11374, "흔적을 찾아서…")
+}
+
+quest {
+     quest_info (11375, "흔적을 찾아서…")
+}
+
+quest {
+     quest_info (11376, "병은 의사에게 약은 약사에게")
+}
+
+quest {
+     quest_info (11377, "착한일은 기분 좋은것")
+     time(86400)
+}
+
+//-- ep15.1
+quest {
+	quest_info (13184, "찰스턴 공장")
+}
+
+quest {
+	quest_info (13185, "찰스턴 공장 - 대기")
+	time(72000)
+}
+
+quest {
+	quest_info (13186, "찰스턴 공장")
+}
+
+quest {
+	quest_info (13187, "스텝 처리")
+	hunt("STEP", 50)
+}
+
+quest {
+	quest_info (13188, "스텝 처리 - 대기")
+        time(72000)
+}
+
+// EP15_2 메모리 레코드
+quest {
+        quest_info (5341, "EP15_2_MR_01")
+        time(79200)
+}
+
+quest {
+        quest_info (5342, "EP15_2_MR_02")
+}
+
+quest {
+        quest_info (5343, "EP15_2_MR_03")
+}
+
+quest {
+        quest_info (5344, "EP15_2_MR_04")
+}
+
+quest {
+        quest_info (5345, "EP15_2_MR_05")
+}
+
+quest {
+        quest_info (5346, "EP15_2_MR_06")
+}
+
+quest {
+        quest_info (5347, "EP15_2_MR_07")
+}
+
+quest {
+        quest_info (5348, "EP15_2_MR_08")
+}
+
+quest {
+        quest_info (5349, "EP15_2_MR_09")
+}
+
+quest {
+        quest_info (5350, "EP15_2_MR_10")
+}
+
+quest {
+        quest_info (5351, "EP15_2_MR_11")
+        time(79200)
+}
+
+quest {
+        quest_info (5352, "EP15_2_MR_12")
+}
+
+quest {
+        quest_info (5353, "EP15_2_MR_13")
+}
+
+quest {
+        quest_info (5354, "EP15_2_MR_14")
+}
+
+quest {
+        quest_info (5355, "EP15_2_MR_15")
+}
+
+quest {
+        quest_info (5356, "EP15_2_MR_16")
+}
+
+quest {
+        quest_info (5357, "EP15_2_MR_17")
+}
+
+quest {
+        quest_info (5358, "EP15_2_MR_18")
+        time(79200)
+}
+
+quest {
+        quest_info (5359, "EP15_2_MR_19")
+}
+
+quest {
+        quest_info (5360, "EP15_2_MR_20")
+}
+
+quest {
+        quest_info (5361, "EP15_2_MR_21")
+}
+
+quest {
+        quest_info (5362, "EP15_2_MR_22")
+}
+
+quest {
+        quest_info (5363, "EP15_2_MR_23")
+        time(79200)
+}
+
+quest {
+        quest_info (5364, "EP15_2_MR_24")
+}
+
+quest {
+        quest_info (5365, "EP15_2_MR_25")
+}
+
+quest {
+        quest_info (5366, "EP15_2_MR_26")
+        time(79200)
+}
+
+quest {
+        quest_info (5367, "EP15_2_MR_27")
+}
+
+quest {
+        quest_info (5368, "EP15_2_MR_28")
+}
+
+quest {
+        quest_info (5369, "EP15_2_MR_29")
+}
+
+quest {
+        quest_info (5370, "EP15_2_MR_30")
+}
+
+
+//-- ep15.2 아트나드 발굴단 파트 2
+
+quest {
+	quest_info (7641, "아트나드발굴단_파트2")
+}
+
+quest {
+	quest_info (7642, "아트나드발굴단_파트2")
+}
+
+quest {
+	quest_info (7643, "아트나드발굴단_파트2")
+}
+
+quest {
+	quest_info (7644, "아트나드발굴단_파트2")
+}
+
+quest {
+	quest_info (7645, "아트나드발굴단_파트2")
+}
+
+quest {
+	quest_info (7646, "아트나드발굴단_파트2")
+}
+
+quest {
+	quest_info (7647, "아트나드발굴단_파트2")
+}
+
+quest {
+	quest_info (7648, "아트나드발굴단_파트2")
+}
+
+quest {
+	quest_info (7649, "아트나드발굴단_파트2")
+}
+
+quest {
+	quest_info (7650, "연구동메모리레코드")
+}
+
+quest {
+	quest_info (7651, "연구동메모리쿨타임")
+	time(82800)
+}
+
+quest {
+	quest_info (7652, "실험동메모리레코드")
+}
+
+quest {
+	quest_info (7653, "실험동메모리쿨타임")
+	time(82800)
+}
+
+quest {
+	quest_info (7654, "연구동메모리플레이")
+}
+
+quest {
+	quest_info (7655, "실험동메모리플레이")
+}
+
+quest {
+	quest_info (7656, "레켄베르본사초대")
+}
+
+// ep15.2
+quest {
+	quest_info (11379, "마지막 방")
+	time(82800)
+}
+quest {
+     quest_info (11380, "마지막 방")
+     hunt("T_W_O", 1)
+}
+
+quest {
+     quest_info (11381, "흔적")
+}
+
+quest {
+     quest_info (11382, "흔적")
+}
+
+quest {
+     quest_info (11383, "흔적")
+}
+
+quest {
+     quest_info (11384, "흔적")
+}
+
+quest {
+     quest_info (11385, "흔적")
+}
+
+quest {
+     quest_info (11386, "흔적")
+}
+
+quest {
+     quest_info (11387, "흔적")
+}
+
+quest {
+     quest_info (11388, "흔적")
+}
+
+quest {
+     quest_info (11389, "흔적")
+}
+
+// ep15.2
+
+quest {
+	quest_info (12346,"기묘한 고대 과학")
+}
+
+quest {
+	quest_info (12347,"연구실의 출입 흔적")
+	time(82800)
+}
+
+// ep15.2
+quest {
+	quest_info (13195, "월간 브리간1")
+}
+
+quest {
+	quest_info (13196, "월간 브리간2")
+}
+
+quest {
+	quest_info (13197, "월간 브리간3")
+}
+
+quest {
+	quest_info (13198, "케로첼 - 일일")
+}
+
+quest {
+	quest_info (13199, "케로첼 - 대기")
+	time(72000)
+}
+
+quest {
+	quest_info (13200, "신입 - 일일")
+	hunt("CENERE_G", 30)
+}
+
+quest {
+	quest_info (13201, "신입 - 대기")
+	time(72000)
+}
+
+quest {
+	quest_info (13202, "사진사 - 일일")
+	hunt("REPAIR_ROBOT_T", 30)
+}
+
+quest {
+	quest_info (13203, "사진사 - 대기")
+	time(72000)
+}
+
+quest {
+	quest_info (13204, "그릴스 - 일일")
+}
+
+quest {
+	quest_info (13205, "그릴스 - 대기")
+	time(72000)
+}
+
+//리벨리온
+
+quest {
+ quest_info (12340,"억울한 누명")
+}
+
+quest {
+ quest_info (12341,"새로운 도전")
+}
+
+quest {
+ quest_info (12342,"총기 조립 완료")
+}
+
+quest {
+ quest_info (12343,"적절한 목표 저격")
+ hunt("J_REB_SHECIL1", 10)
+}
+
+quest {
+ quest_info (12344,"적절치 못한 목표 저격")
+ hunt("J_REB_SHECIL2", 3)
+}
+
+quest {
+ quest_info (12345,"리벨리온의 일원되기")
+}
+
+// 영웅의 흔적3 펜릴과 사라
+
+
+quest {
+	quest_info (9335, "기간테스의 파편을 찾아서")
+}
+
+quest {
+	quest_info (9336, "번하드 박사를 다시 찾아가기")
+	time(601200)
+}
+
+
+quest {
+	quest_info (9337, "모험을 마치며")
+}
+
+quest {
+	quest_info (15050, "메모리얼: 비공정 습격 쿨타임1")
+	time(82800)
+}
+quest {
+	quest_info (15051, "메모리얼: 비공정 습격 쿨타임2")
+	time(300)
+}
+quest {
+	quest_info (15052, "메모리얼: 비공정 습격 쿨타임3")
+	time(300)
+}
+
+//대만 원유회 이벤트
+quest {	
+	quest_info(2381,"대만 원유회")
+}
+
+quest {	
+	quest_info(2382,"대만 원유회")
+}
+
+quest {	
+	quest_info(2383,"대만 원유회")
+}
+
+quest {	
+	quest_info(2384,"대만 원유회")
+}
+
+quest {	
+	quest_info(2385,"대만 원유회")
+}
+
+quest {	
+	quest_info(2386,"대만 원유회")
+	time(14400)
+}
+
+quest {	
+	quest_info(2387,"대만 원유회")
+}
+
+quest {	
+	quest_info(2388,"대만 원유회")
+	time(600)
+}
+
+//2015 할로윈 이벤트
+quest {
+     quest_info (11446, "잭과 잭의 잭한 나날")
+}
+
+quest {
+     quest_info (11447, "잭과 잭의 잭한 나날")
+}
+
+quest {
+     quest_info (11448, "잭과 잭의 잭한 나날")
+}
+
+quest {
+     quest_info (11449, "잭과 잭의 잭한 나날")
+     hunt("JAKK_H", 10)
+     qitem("JAKK_H", "Dry_White_Stem", 40)
+}
+
+quest {
+     quest_info (11450, "잭과 잭의 잭한 나날")
+     time (84000)
+}
+
+quest {
+     quest_info (11451, "잭과 잭의 잭한 나날")
+     hunt("JAKK_H", 10)
+     qitem("JAKK_H", "Dry_White_Stem", 40)
+}
+
+//------TW
+quest {	
+	quest_info(2389,"13th-최종완료")
+}
+quest {	
+	quest_info(2390,"13th-첫번째만남")
+}
+quest {	
+	quest_info(2391,"13th-포켓연인")
+}
+quest {	
+	quest_info(2392,"13th-사쿠라의웨딩")
+}
+quest {	
+	quest_info(2393,"13th-PS.오늘웃었나요?")
+}
+quest {	
+	quest_info(2394,"13th-천사-사념의계절")
+}
+quest {	
+	quest_info(2395,"13th-사랑의인술및달콤한리볼버")
+}
+quest {	
+	quest_info(2396,"13th-특수요원-용병")
+}
+quest {	
+	quest_info(2397,"13th-미지와의조우")
+}
+quest {	
+	quest_info(2398,"13th-RO리뉴얼")
+}
+quest {	
+	quest_info(2399,"13th-말랑도로출격!")
+}
+quest {	
+	quest_info(2400,"13th-점핑타임머신")
+}
+quest {	
+	quest_info(2401,"13th-라피네의3가지소망")
+}
+quest {	
+	quest_info(2402,"13th-모로크악몽의부활")
+}
+
+//2015 크리스마스 이벤트
+
+quest {
+	quest_info (9432, "안토니오의 제안")
+}
+
+quest {
+	quest_info (9433, "선물용 인형 수집")
+	qitem("MYSTCASE", "Gift_Stuffed_Doll", 30)
+
+}
+
+quest {
+	quest_info (9434, "착한일은 하루 한번")
+	time(79200)
+}
+
+//겨울 예술의 축제 이벤트
+
+quest {	
+	quest_info(2403,"대만 사계절 겨울")
+}
+quest {	
+	quest_info(2404,"대만 사계절 겨울")
+}
+quest {	
+	quest_info(2405,"대만 사계절 겨울")
+}
+quest {	
+	quest_info(2406,"대만 사계절 겨울")
+}
+quest {	
+	quest_info(2407,"대만 사계절 겨울")
+	time(14400)
+}
+quest {	
+	quest_info(2408,"대만 사계절 겨울")
+}
+
+//2016 신년
+quest {
+     quest_info (11452, "손님을 위한 배려")
+	qitem("E_OCTOPUS_LEG", "Sticky_Slime", 50)
+	qitem("E_GIANT_OCTOPUS", "Sticky_Slime", 50)
+}
+quest {
+     quest_info (11453, "손님을 위한 배려")
+     time(86400)
 }
