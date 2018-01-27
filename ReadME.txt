@@ -1,3 +1,4 @@
+NSTRCrypt.exe
 Aegis_ENC_V2.exe
 GF1GNCGFA = tai
 (New DB password encrypt and decrypt program)
